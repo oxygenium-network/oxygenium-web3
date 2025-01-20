@@ -1,6 +1,6 @@
 {
-  "name": "alephium-web3",
-  "repositoryUrl": "https://github.com/alephium/alephium-web3",
+  "name": "oxygenium-web3",
+  "repositoryUrl": "https://github.com/oxygenium/oxygenium-web3",
   "root": ".",
   "output": "./.autodoc",
   "llms": [

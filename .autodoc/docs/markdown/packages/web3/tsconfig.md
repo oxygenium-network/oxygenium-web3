@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/tsconfig.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/tsconfig.json)
 
-This code is a configuration file for the TypeScript compiler. It specifies the settings for compiling the TypeScript code in the alephium-web3 project. 
+This code is a configuration file for the TypeScript compiler. It specifies the settings for compiling the TypeScript code in the oxygenium-web3 project. 
 
 The "extends" property specifies that this configuration file extends another configuration file located at "../../tsconfig.json". This means that any settings specified in the parent configuration file will also apply to this file. 
 
@@ -10,7 +10,7 @@ The "exclude" property specifies which files should be excluded from the compila
 
 The "compilerOptions" property specifies additional options for the TypeScript compiler. In this case, it specifies that the compiled JavaScript files should be output to the "dist" directory. 
 
-Overall, this configuration file ensures that only the necessary files are compiled and that the compiled JavaScript files are output to the correct directory. It is an important part of the build process for the alephium-web3 project. 
+Overall, this configuration file ensures that only the necessary files are compiled and that the compiled JavaScript files are output to the correct directory. It is an important part of the build process for the oxygenium-web3 project. 
 
 Example usage:
 
@@ -22,7 +22,7 @@ tsc --project tsconfig.json
 
 This will compile all files specified in the "include" property and output the compiled JavaScript files to the "dist" directory.
 ## Questions: 
- 1. What is the purpose of this file and how is it used in the alephium-web3 project?
+ 1. What is the purpose of this file and how is it used in the oxygenium-web3 project?
 - This file is a TypeScript configuration file used to specify compiler options and project structure. It is used to compile the TypeScript code into JavaScript for use in the project.
 
 2. What is the significance of the "extends" property in this file?

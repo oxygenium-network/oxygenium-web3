@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/contexts/alephiumConnect.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/contexts/oxygeniumConnect.tsx)
 
 This file defines a React context and a custom hook for the Oxygenium Connect feature of the Oxygenium project. The Oxygenium Connect feature allows users to connect their wallets to the Oxygenium network and perform transactions.
 
@@ -6,7 +6,7 @@ The `OxygeniumConnectContext` is a context object that holds the state of the Ox
 
 The `useOxygeniumConnectContext` hook is used to access the `OxygeniumConnectContext` object from within a component. It throws an error if the hook is not used within a `Provider` component.
 
-This file also imports several types and classes from the `@alephium/web3` and `../types` modules. These modules contain type definitions and classes that are used to interact with the Oxygenium network and to define the types of the properties in the `OxygeniumConnectContext` object.
+This file also imports several types and classes from the `@oxygenium/web3` and `../types` modules. These modules contain type definitions and classes that are used to interact with the Oxygenium network and to define the types of the properties in the `OxygeniumConnectContext` object.
 
 Overall, this file provides the context and hook necessary to manage the state of the Oxygenium Connect feature in a React application. It can be used to connect a user's wallet to the Oxygenium network and to perform transactions on the network. Here is an example of how the `useOxygeniumConnectContext` hook can be used in a component:
 

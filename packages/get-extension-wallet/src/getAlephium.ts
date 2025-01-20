@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Oxygenium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -15,11 +15,11 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
-import { alephiumProvider, checkProviderMetadata, knownProviders } from './knownProviders'
+import { oxygeniumProvider, checkProviderMetadata, knownProviders } from './knownProviders'
 import { OxygeniumWindowObject, providerInitializedEvent, WalletProvider } from './types'
 
 export function getDefaultOxygeniumWallet(): Promise<OxygeniumWindowObject | undefined> {
-  return getKnownWallet(alephiumProvider)
+  return getKnownWallet(oxygeniumProvider)
 }
 
 export async function scanKnownWallets(): Promise<OxygeniumWindowObject[]> {
@@ -50,7 +50,7 @@ export function getKnownWallet(provider: WalletProvider): Promise<OxygeniumWindo
 
 export function getWalletObject(id: string): OxygeniumWindowObject | undefined {
   try {
-    const providers = window['alephiumProviders']
+    const providers = window['oxygeniumProviders']
     if (!providers) {
       return undefined
     }

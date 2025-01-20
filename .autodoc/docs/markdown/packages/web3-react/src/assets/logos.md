@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/assets/logos.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/assets/logos.tsx)
 
 This file contains several React components that render SVG icons for the Oxygenium project. The components are `OxygeniumIcon`, `WalletConnect`, `Ledger`, and `PlaceHolder`. 
 
@@ -13,7 +13,7 @@ This file contains several React components that render SVG icons for the Oxygen
 These components are used throughout the Oxygenium project to provide visual cues and branding. They can be imported into other React components and used like any other React component. For example, to use the `WalletConnect` icon in a component, you would import it like this:
 
 ```
-import { WalletConnect } from 'alephium-web3'
+import { WalletConnect } from 'oxygenium-web3'
 
 function MyComponent() {
   return (

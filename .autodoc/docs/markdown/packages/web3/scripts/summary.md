@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3/scripts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/scripts)
 
 The `.autodoc/docs/json/packages/web3/scripts` folder contains two important files for the Oxygenium blockchain explorer backend: `check-versions.js` and `header.js`.
 
@@ -16,13 +16,13 @@ Please, check that the configured node and explorer-backend versions in the pack
 Here is an example of how the license file might be used in the larger Oxygenium project:
 
 ```javascript
-const Oxygenium = require('alephium-web3');
+const Oxygenium = require('oxygenium-web3');
 
 // Use the Oxygenium library to interact with the Oxygenium blockchain
-const alephium = new Oxygenium();
+const oxygenium = new Oxygenium();
 
 // Display the license for the Oxygenium library
-console.log(alephium.license);
+console.log(oxygenium.license);
 ```
 
 In summary, the `.autodoc/docs/json/packages/web3/scripts` folder contains two important files for the Oxygenium project. `check-versions.js` ensures that the user has the correct version of Node.js installed, while `header.js` provides the license information for the Oxygenium library. Both files contribute to the overall functionality and legal compliance of the Oxygenium project.

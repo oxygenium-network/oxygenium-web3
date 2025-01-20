@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/utils/sign.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/utils/sign.ts)
 
 This file contains functions related to cryptographic signing and verification using elliptic curve cryptography (ECC) and the secp256k1 curve. The code imports the `elliptic` library for ECC and `@noble/secp256k1` for secp256k1 curve operations. It also imports other utility functions from the project's codebase.
 

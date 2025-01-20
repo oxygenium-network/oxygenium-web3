@@ -2,7 +2,7 @@ services:
   redis:
     image: redis:6-alpine
     depends_on:
-      alephium:
+      oxygenium:
         condition: service_healthy
     ports:
       - 6379:6379
@@ -28,8 +28,8 @@ services:
       redis:
         condition: service_healthy
 
-  alephium:
-    image: alephium/alephium:v3.10.0
+  oxygenium:
+    image: oxygenium/oxygenium:v3.10.0
     restart: unless-stopped
     ports:
       - 19973:19973/tcp
@@ -43,7 +43,7 @@ services:
     security_opt:
       - no-new-privileges:true
     volumes:
-      - ./devnet.conf:/alephium-home/.alephium/user.conf
+      - ./devnet.conf:/oxygenium-home/.oxygenium/user.conf
     healthcheck:
       test: curl --fail http://127.0.0.1:22973/wallets || exit 1
       interval: 3s

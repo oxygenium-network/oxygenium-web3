@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Oxygenium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -16,9 +16,9 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 import { useMemo } from 'react'
-import { useOxygeniumConnectContext } from '../contexts/alephiumConnect'
-import { NodeProvider, SignerProvider, Account, NetworkId, ExplorerProvider } from '@alephium/web3'
-import { KeyType } from '@alephium/web3'
+import { useOxygeniumConnectContext } from '../contexts/oxygeniumConnect'
+import { NodeProvider, SignerProvider, Account, NetworkId, ExplorerProvider } from '@oxygenium/web3'
+import { KeyType } from '@oxygenium/web3'
 
 export type Wallet =
   | {

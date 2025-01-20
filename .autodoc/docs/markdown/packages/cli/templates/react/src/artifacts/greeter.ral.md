@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/cli/templates/react/src/artifacts/greeter.ral.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/templates/react/src/artifacts/greeter.ral.json)
 
 This code represents a smart contract written in Solidity, a programming language used for creating decentralized applications on the Ethereum blockchain. The contract is named "Greeter" and has a version number of "v2.0.4". 
 

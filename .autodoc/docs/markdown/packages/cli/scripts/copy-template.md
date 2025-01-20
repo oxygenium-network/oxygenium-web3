@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/cli/scripts/copy-template.js)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/scripts/copy-template.js)
 
 The code above is a simple script that uses the `fs-extra` library to copy two files, `.gitignore` and `.npmignore`, from the root directory of the project to a subdirectory called `dist`. 
 

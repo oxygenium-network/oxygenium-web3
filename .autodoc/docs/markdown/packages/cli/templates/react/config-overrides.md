@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/cli/templates/react/config-overrides.js)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/templates/react/config-overrides.js)
 
 This code exports a function that overrides the default configuration of a webpack build. The purpose of this code is to provide fallback options for certain modules that may not be available in the browser environment. 
 
@@ -10,7 +10,7 @@ The `fallback` object is then assigned back to the `config` object's `resolve.fa
 
 Finally, a new plugin is added to the `config.plugins` array using the `concat` method. This plugin is an instance of `webpack.ProvidePlugin`, which provides global variables that can be used throughout the application. In this case, it provides the `process` and `Buffer` variables, which are commonly used in Node.js but may not be available in the browser environment.
 
-Overall, this code is an important part of the alephium-web3 project as it ensures that the project can be built and run in the browser environment, even if certain modules are not available. It also provides global variables that can be used throughout the application, making it easier to write cross-platform code. 
+Overall, this code is an important part of the oxygenium-web3 project as it ensures that the project can be built and run in the browser environment, even if certain modules are not available. It also provides global variables that can be used throughout the application, making it easier to write cross-platform code. 
 
 Example usage:
 
@@ -31,7 +31,7 @@ webpack(newConfig, (err, stats) => {
 ## Questions: 
  1. What is the purpose of this code?
     
-    This code is a webpack configuration override that sets up fallbacks for certain modules and plugins for the alephium-web3 project.
+    This code is a webpack configuration override that sets up fallbacks for certain modules and plugins for the oxygenium-web3 project.
 
 2. What modules are being set as fallbacks and why?
 

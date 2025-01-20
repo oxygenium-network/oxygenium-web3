@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-wallet/tsconfig.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-wallet/tsconfig.json)
 
-This code is a configuration file for the TypeScript compiler. It specifies the settings for compiling the TypeScript code in the `src` directory of the `alephium-web3` project. 
+This code is a configuration file for the TypeScript compiler. It specifies the settings for compiling the TypeScript code in the `src` directory of the `oxygenium-web3` project. 
 
 The `extends` property specifies that this configuration file extends another configuration file located at `../../tsconfig.json`. This means that any settings specified in the parent configuration file will also apply to this file. 
 
@@ -12,11 +12,11 @@ The `compilerOptions` property specifies additional options for the TypeScript c
 
 Overall, this configuration file ensures that the TypeScript code in the `src` directory is compiled with the specified settings and outputs the compiled JavaScript files to the `dist/src` directory. 
 
-This configuration file is an important part of the `alephium-web3` project as it ensures that the TypeScript code is compiled correctly and consistently. Without this configuration file, the TypeScript code would not be compiled correctly and the project would not function as intended. 
+This configuration file is an important part of the `oxygenium-web3` project as it ensures that the TypeScript code is compiled correctly and consistently. Without this configuration file, the TypeScript code would not be compiled correctly and the project would not function as intended. 
 
 Example usage:
 
-To compile the TypeScript code in the `src` directory of the `alephium-web3` project, run the following command in the terminal:
+To compile the TypeScript code in the `src` directory of the `oxygenium-web3` project, run the following command in the terminal:
 
 ```
 tsc
@@ -25,7 +25,7 @@ tsc
 This will use the settings specified in the `tsconfig.json` file to compile the TypeScript code and output the compiled JavaScript files to the `dist/src` directory.
 ## Questions: 
  1. What is the purpose of this file?
-- This file is a configuration file for the TypeScript compiler for the alephium-web3 project.
+- This file is a configuration file for the TypeScript compiler for the oxygenium-web3 project.
 
 2. What is the significance of the "extends" property?
 - The "extends" property specifies that this configuration file extends the configuration settings from another file located at "../../tsconfig.json".

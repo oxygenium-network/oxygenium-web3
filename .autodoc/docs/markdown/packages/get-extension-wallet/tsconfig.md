@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/get-extension-wallet/tsconfig.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/get-extension-wallet/tsconfig.json)
 
 This code is a configuration file for the TypeScript compiler. It specifies the settings for compiling the TypeScript code in the `src` directory of the project and outputting the compiled JavaScript files to the `dist` directory. 
 
@@ -12,7 +12,7 @@ The `"compilerOptions"` property specifies additional options for the TypeScript
 
 Overall, this configuration file ensures that the TypeScript code in the `src` directory is compiled and outputted to the `dist` directory, while also excluding unnecessary files and specifying additional compiler options. 
 
-An example of how this configuration file may be used in the larger project is by running the TypeScript compiler with this configuration file using the command `tsc -p alephium-web3/tsconfig.json`. This would compile the TypeScript code in the `src` directory and output the compiled JavaScript files to the `dist` directory, as specified in the configuration file.
+An example of how this configuration file may be used in the larger project is by running the TypeScript compiler with this configuration file using the command `tsc -p oxygenium-web3/tsconfig.json`. This would compile the TypeScript code in the `src` directory and output the compiled JavaScript files to the `dist` directory, as specified in the configuration file.
 ## Questions: 
  1. What is the purpose of this configuration file?
    - This configuration file is used to extend the settings from the `tsconfig.json` file and specify options for the TypeScript compiler.

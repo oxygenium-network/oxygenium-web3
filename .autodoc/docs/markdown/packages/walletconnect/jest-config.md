@@ -1,8 +1,8 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/walletconnect/jest-config.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/jest-config.json)
 
-This code is a configuration file for Jest, a popular JavaScript testing framework. Jest is used to test JavaScript code, and this configuration file specifies how Jest should run tests for the alephium-web3 project.
+This code is a configuration file for Jest, a popular JavaScript testing framework. Jest is used to test JavaScript code, and this configuration file specifies how Jest should run tests for the oxygenium-web3 project.
 
-The configuration file includes several key settings. First, the `testPathIgnorePatterns` setting specifies that Jest should ignore any test files located in the `node_modules` directory. This is because `node_modules` contains third-party libraries that are not part of the alephium-web3 project and do not need to be tested.
+The configuration file includes several key settings. First, the `testPathIgnorePatterns` setting specifies that Jest should ignore any test files located in the `node_modules` directory. This is because `node_modules` contains third-party libraries that are not part of the oxygenium-web3 project and do not need to be tested.
 
 Next, the `transform` setting specifies that Jest should use the `ts-jest` transformer to compile TypeScript files before running tests. This is because TypeScript is a superset of JavaScript that adds additional features, and Jest needs to be able to understand TypeScript syntax in order to run tests on TypeScript files.
 
@@ -16,7 +16,7 @@ The `coverageDirectory` setting specifies where Jest should save the code covera
 
 Finally, the `collectCoverageFrom` setting specifies which files Jest should collect coverage information for. In this case, Jest will collect coverage information for any TypeScript files located in the `src` directory or its subdirectories.
 
-Overall, this configuration file is an important part of the alephium-web3 project's testing infrastructure. By specifying how Jest should run tests, the configuration file helps ensure that the project's code is thoroughly tested and that any issues are caught before they can cause problems in production.
+Overall, this configuration file is an important part of the oxygenium-web3 project's testing infrastructure. By specifying how Jest should run tests, the configuration file helps ensure that the project's code is thoroughly tested and that any issues are caught before they can cause problems in production.
 ## Questions: 
  1. What testing framework is being used for this project?
 - The code is using Jest as the testing framework.

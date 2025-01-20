@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/signer/fixtures/wallets.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/signer/fixtures/wallets.json)
 
 The code above is a JSON object that contains an array of wallets. Each wallet is represented as an object with four properties: mnemonic, seed, password, and file. 
 
@@ -42,7 +42,7 @@ const decrypted = decryptWallet(wallet.file, wallet.password);
 
 // Use the decrypted wallet data to interact with the blockchain
 const privateKey = generatePrivateKey(wallet.mnemonic);
-const web3 = new Web3('https://api.alephium.org');
+const web3 = new Web3('https://api.oxygenium.org');
 const account = web3.eth.accounts.privateKeyToAccount(privateKey);
 web3.eth.getBalance(account.address).then(console.log);
 ```

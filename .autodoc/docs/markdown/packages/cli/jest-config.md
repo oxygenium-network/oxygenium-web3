@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/cli/jest-config.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/jest-config.json)
 
-This code is a configuration file for Jest, a JavaScript testing framework. Jest is used to test JavaScript code, and this configuration file specifies how Jest should run tests for the alephium-web3 project. 
+This code is a configuration file for Jest, a JavaScript testing framework. Jest is used to test JavaScript code, and this configuration file specifies how Jest should run tests for the oxygenium-web3 project. 
 
 The `testPathIgnorePatterns` property is an array of regular expressions that Jest uses to ignore certain files or directories when running tests. In this case, Jest will ignore any files in the `node_modules` directory or any files in a `templates` directory.
 
@@ -18,7 +18,7 @@ The `collectCoverageFrom` property is an array of globs that Jest uses to determ
 
 The `moduleDirectories` property is an array of directories that Jest should look in when resolving modules. In this case, Jest will only look in the `node_modules` directory.
 
-Overall, this configuration file sets up Jest to run tests for the alephium-web3 project, including collecting code coverage information. It specifies which files to include and exclude from testing and how to transform certain file types.
+Overall, this configuration file sets up Jest to run tests for the oxygenium-web3 project, including collecting code coverage information. It specifies which files to include and exclude from testing and how to transform certain file types.
 ## Questions: 
  1. What is the purpose of this file?
 - This file is a configuration file for Jest, a JavaScript testing framework.

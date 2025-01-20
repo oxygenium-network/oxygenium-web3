@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/BrowserIcon/styles.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/BrowserIcon/styles.ts)
 
 This code defines a styled component called `BrowserIconContainer` using the `styled-components` library. The component is a `motion.div` element that displays an SVG icon in the center of the container. The `motion` object is imported from the `framer-motion` library, which provides animation capabilities to React components. 
 
@@ -7,7 +7,7 @@ The `BrowserIconContainer` component is designed to be used in a larger project 
 Here is an example of how the `BrowserIconContainer` component can be used in a React component:
 
 ```
-import { BrowserIconContainer } from 'alephium-web3'
+import { BrowserIconContainer } from 'oxygenium-web3'
 
 function MyComponent() {
   return (

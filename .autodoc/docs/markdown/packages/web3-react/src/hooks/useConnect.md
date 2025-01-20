@@ -1,14 +1,14 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/hooks/useConnect.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/hooks/useConnect.tsx)
 
 This code defines a custom hook called `useConnect` that provides functionality for connecting to different wallet providers in the Oxygenium Web3 project. The hook returns an object with `connect` and `disconnect` methods for each supported provider. 
 
-The hook uses the `useOxygeniumConnectContext` hook to access the current wallet connection context. It also imports the `WalletConnectProvider` from the `@alephium/walletconnect-provider` package and the `QRCodeModal` from the `@walletconnect/qrcode-modal` package.
+The hook uses the `useOxygeniumConnectContext` hook to access the current wallet connection context. It also imports the `WalletConnectProvider` from the `@oxygenium/walletconnect-provider` package and the `QRCodeModal` from the `@walletconnect/qrcode-modal` package.
 
 The `useConnect` hook takes an options object as an argument, which is used to configure the wallet connection. The `options` object is passed to the `WalletConnectProvider.init` method when connecting to the WalletConnect provider.
 
 The hook defines three connection methods: `connectOxygenium`, `wcConnect`, and `desktopWalletConnect`. 
 
-The `connectOxygenium` method connects to the Oxygenium wallet using the `getDefaultOxygeniumWallet` method from the `@alephium/get-extension-wallet` package. It then enables the wallet and sets the signer provider and account in the context.
+The `connectOxygenium` method connects to the Oxygenium wallet using the `getDefaultOxygeniumWallet` method from the `@oxygenium/get-extension-wallet` package. It then enables the wallet and sets the signer provider and account in the context.
 
 The `wcConnect` method connects to the WalletConnect provider using the `WalletConnectProvider.init` method. It sets the `projectId`, `networkId`, and `addressGroup` options, and registers a callback for the `onDisconnected` event. When the connection is established, it sets the signer provider and account in the context.
 

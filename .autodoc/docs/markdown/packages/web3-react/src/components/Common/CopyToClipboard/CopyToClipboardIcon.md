@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/CopyToClipboard/CopyToClipboardIcon.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/CopyToClipboard/CopyToClipboardIcon.tsx)
 
 This code defines a React component called `CopyToClipboardIcon` that renders an icon used for copying content to the clipboard. The component imports `styled-components` and `framer-motion` libraries to style the icon and add animation effects. 
 

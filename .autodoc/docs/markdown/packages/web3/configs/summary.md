@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3/configs)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/configs)
 
 The `header.js` file in the `.autodoc/docs/json/packages/web3/configs` folder contains the license information for the Oxygenium project. This project is a library designed to interact with the Oxygenium blockchain, and the license ensures that it remains open source and accessible to anyone who wants to use it.
 
@@ -9,7 +9,7 @@ The presence of this license file in the Oxygenium project is important because 
 Here's an example of how the Oxygenium library might be used in a project:
 
 ```javascript
-import OxygeniumWeb3 from 'alephium-web3';
+import OxygeniumWeb3 from 'oxygenium-web3';
 
 const web3 = new OxygeniumWeb3('http://localhost:8545');
 

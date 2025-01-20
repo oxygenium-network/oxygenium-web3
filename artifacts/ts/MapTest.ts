@@ -32,7 +32,7 @@ import {
   addStdIdToFields,
   encodeContractFields,
   Narrow,
-} from "@alephium/web3";
+} from "@oxygenium/web3";
 import { default as MapTestContractJson } from "../test/MapTest.ral.json";
 import { getContractByCodeHash, registerContract } from "./contracts";
 import {
@@ -43,7 +43,7 @@ import {
   TokenBalance,
   AllStructs,
 } from "./types";
-import { RalphMap } from "@alephium/web3";
+import { RalphMap } from "@oxygenium/web3";
 
 // Custom types for the contract
 export namespace MapTestTypes {

@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/cli/src/types.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/src/types.ts)
 
-This file contains various interfaces, functions, and classes that are used in the Oxygenium project. The code imports several modules from the `@alephium/web3` package, which provides a set of tools for interacting with the Oxygenium blockchain. 
+This file contains various interfaces, functions, and classes that are used in the Oxygenium project. The code imports several modules from the `@oxygenium/web3` package, which provides a set of tools for interacting with the Oxygenium blockchain. 
 
 The `Network` interface defines the properties of a network, including the network ID, node URL, private keys, deployment status file, and confirmations. The `Configuration` interface defines the configuration options for the Oxygenium project, including the node version, node configuration file, source directory, artifact directory, deployment script directory, and compiler options. 
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/artifacts/greeter/greeter.ral.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/greeter/greeter.ral.json)
 
 This code represents a smart contract written in Solidity, a programming language used for creating decentralized applications on the Ethereum blockchain. The contract is named "Greeter" and has a version number of "v2.3.1". 
 
@@ -16,8 +16,8 @@ For example, a developer could modify the "btcPrice" variable to track the price
 
 Overall, this code provides a basic framework for creating a simple smart contract on the Ethereum blockchain.
 ## Questions: 
- 1. What is the purpose of this code and how is it used in the alephium-web3 project?
-- This code represents the bytecode and function signature of a contract called "Greeter" in the alephium-web3 project.
+ 1. What is the purpose of this code and how is it used in the oxygenium-web3 project?
+- This code represents the bytecode and function signature of a contract called "Greeter" in the oxygenium-web3 project.
 
 2. What is the significance of the "codeHash" value?
 - The "codeHash" value is a unique identifier for the bytecode of the contract, which can be used to verify that the contract has not been tampered with.

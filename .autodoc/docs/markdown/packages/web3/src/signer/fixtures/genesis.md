@@ -1,8 +1,8 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/signer/fixtures/genesis.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/signer/fixtures/genesis.json)
 
 The code provided is a JSON object containing four objects, each representing a different user account. Each account has an address, public key, private key, and mnemonic phrase. 
 
-In the context of the alephium-web3 project, this code may be used to generate test accounts for developers to use when testing the functionality of the project. The accounts can be used to simulate transactions and interactions with the blockchain without using real funds or accounts. 
+In the context of the oxygenium-web3 project, this code may be used to generate test accounts for developers to use when testing the functionality of the project. The accounts can be used to simulate transactions and interactions with the blockchain without using real funds or accounts. 
 
 For example, a developer may use this code to create test accounts for a smart contract they are developing. They can then use these accounts to test the functionality of the contract, such as sending and receiving tokens. 
 

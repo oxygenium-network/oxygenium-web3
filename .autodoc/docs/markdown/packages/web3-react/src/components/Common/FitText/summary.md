@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/FitText)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/FitText)
 
-The `FitText` component, located in the `alephium-web3/components/Common/FitText` folder, is a React component that automatically adjusts the font size of its child elements to fit within the available space. This is particularly useful for cases where the size of the text may vary depending on the user's device or screen size.
+The `FitText` component, located in the `oxygenium-web3/components/Common/FitText` folder, is a React component that automatically adjusts the font size of its child elements to fit within the available space. This is particularly useful for cases where the size of the text may vary depending on the user's device or screen size.
 
 The component utilizes the `useFitText` hook from the `../../../hooks/useFitText` module to calculate the appropriate font size. The hook accepts several options, such as `maxFontSize` and `minFontSize`, which define the maximum and minimum font sizes that the component can use. Additionally, the `onStart` and `onFinish` options are callbacks that are called when the font size calculation starts and finishes, respectively.
 
@@ -11,7 +11,7 @@ The calculated font size is applied to the `fontSize` style of the `div` element
 The `FitText` component can be imported and used in other parts of the project like any other React component. For example:
 
 ```jsx
-import FitText from 'alephium-web3/components/FitText'
+import FitText from 'oxygenium-web3/components/FitText'
 
 function MyComponent() {
   return (

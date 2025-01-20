@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/get-extension-wallet/rollup.config.js)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/get-extension-wallet/rollup.config.js)
 
 This code is a configuration file for the Rollup module bundler. It specifies how to bundle the code in the `src/index.ts` file and output it to the `dist/` directory. The bundled code will be in the CommonJS format and will include a source map if the `production` flag is not set. 
 

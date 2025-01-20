@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/tsconfig.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/tsconfig.json)
 
-This code is a configuration file for the TypeScript compiler used in the alephium-web3 project. The file is named `tsconfig.json` and is located in the root directory of the project. 
+This code is a configuration file for the TypeScript compiler used in the oxygenium-web3 project. The file is named `tsconfig.json` and is located in the root directory of the project. 
 
 The `compilerOptions` object contains various settings that determine how the TypeScript compiler should behave when compiling the project's TypeScript code into JavaScript. 
 
@@ -11,7 +11,7 @@ Some of the key options include:
 - `experimentalDecorators`: enables support for TypeScript's experimental decorator syntax, which is used to annotate classes and class members with metadata.
 - `noImplicitOverride`: prevents methods from being overridden without explicitly using the `override` keyword.
 
-This configuration file is important because it ensures that the TypeScript code in the alephium-web3 project is compiled in a consistent and predictable manner. It also enables the use of advanced TypeScript features like decorators and type checking, which can help catch errors at compile time rather than runtime.
+This configuration file is important because it ensures that the TypeScript code in the oxygenium-web3 project is compiled in a consistent and predictable manner. It also enables the use of advanced TypeScript features like decorators and type checking, which can help catch errors at compile time rather than runtime.
 
 Here is an example of how this configuration file might be used in the project's build process:
 
@@ -28,7 +28,7 @@ $ npm run build
 ```
 ## Questions: 
  1. What is the purpose of this code?
-- This code is the `compilerOptions` configuration for the TypeScript compiler used in the `alephium-web3` project.
+- This code is the `compilerOptions` configuration for the TypeScript compiler used in the `oxygenium-web3` project.
 
 2. What version of ECMAScript is being targeted?
 - The code is targeting ECMAScript 2020.
