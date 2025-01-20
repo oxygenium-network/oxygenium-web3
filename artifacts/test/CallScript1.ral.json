@@ -1,0 +1,34 @@
+{
+  "version": "v3.10.0",
+  "name": "CallScript1",
+  "bytecodeTemplate": "0101000000070a{1}0d0e{0}01030c11{2}010202",
+  "fieldsSig": {
+    "names": [
+      "mapTest",
+      "key",
+      "userAccount"
+    ],
+    "types": [
+      "MapTest",
+      "Address",
+      "UserAccount"
+    ],
+    "isMutable": [
+      false,
+      false,
+      false
+    ]
+  },
+  "functions": [
+    {
+      "name": "main",
+      "paramNames": [],
+      "paramTypes": [],
+      "paramIsMutable": [],
+      "returnTypes": [
+        "MapValue",
+        "Balances"
+      ]
+    }
+  ]
+}

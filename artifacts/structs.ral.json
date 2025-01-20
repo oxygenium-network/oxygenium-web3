@@ -1,0 +1,77 @@
+[
+  {
+    "name": "AddStruct1",
+    "fieldNames": [
+      "a",
+      "b"
+    ],
+    "fieldTypes": [
+      "U256",
+      "[AddStruct2;2]"
+    ],
+    "isMutable": [
+      false,
+      false
+    ]
+  },
+  {
+    "name": "AddStruct2",
+    "fieldNames": [
+      "a",
+      "b"
+    ],
+    "fieldTypes": [
+      "U256",
+      "[U256;2]"
+    ],
+    "isMutable": [
+      false,
+      false
+    ]
+  },
+  {
+    "name": "MapValue",
+    "fieldNames": [
+      "id",
+      "balance"
+    ],
+    "fieldTypes": [
+      "U256",
+      "U256"
+    ],
+    "isMutable": [
+      false,
+      true
+    ]
+  },
+  {
+    "name": "TokenBalance",
+    "fieldNames": [
+      "tokenId",
+      "amount"
+    ],
+    "fieldTypes": [
+      "ByteVec",
+      "U256"
+    ],
+    "isMutable": [
+      false,
+      true
+    ]
+  },
+  {
+    "name": "Balances",
+    "fieldNames": [
+      "totalAmount",
+      "tokens"
+    ],
+    "fieldTypes": [
+      "U256",
+      "[TokenBalance;2]"
+    ],
+    "isMutable": [
+      true,
+      true
+    ]
+  }
+]

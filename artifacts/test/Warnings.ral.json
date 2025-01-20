@@ -1,0 +1,49 @@
+{
+  "version": "v3.10.0",
+  "name": "Warnings",
+  "bytecode": "02010c010002020002d31bbce4a602",
+  "codeHash": "873e095edb39cdb4b11b1157003daeacad06d259a938cd270e22b8e89b75feea",
+  "fieldsSig": {
+    "names": [
+      "a",
+      "b"
+    ],
+    "types": [
+      "U256",
+      "U256"
+    ],
+    "isMutable": [
+      false,
+      false
+    ]
+  },
+  "eventsSig": [],
+  "functions": [
+    {
+      "name": "foo",
+      "paramNames": [
+        "x",
+        "y"
+      ],
+      "paramTypes": [
+        "U256",
+        "U256"
+      ],
+      "paramIsMutable": [
+        false,
+        false
+      ],
+      "returnTypes": []
+    }
+  ],
+  "constants": [
+    {
+      "name": "C",
+      "value": {
+        "type": "U256",
+        "value": "0"
+      }
+    }
+  ],
+  "enums": []
+}

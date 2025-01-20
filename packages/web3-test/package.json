@@ -1,0 +1,48 @@
+{
+  "name": "@alephium/web3-test",
+  "version": "1.11.1",
+  "description": "Utility functions for Oxygenium test",
+  "keywords": [
+    "alephium",
+    "web3"
+  ],
+  "license": "GPL",
+  "main": "dist/src/index.js",
+  "browser": "dist/alephium-web3.min.js",
+  "types": "dist/src/index.d.ts",
+  "exports": {
+    ".": "./dist/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alephium/alephium-web3.git"
+  },
+  "homepage": "https://github.com/alephium/alephium-web3",
+  "bugs": {
+    "url": "https://github.com/alephium/alephium-web3/issues"
+  },
+  "author": "Oxygenium dev <dev@alephium.org>",
+  "scripts": {
+    "build": "rm -rf dist/* && npx tsc --build .",
+    "test": "jest -i --config ./jest-config.json"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@alephium/web3": "workspace:^",
+    "@alephium/web3-wallet": "workspace:^"
+  },
+  "devDependencies": {
+    "@types/find-up": "^2.1.1",
+    "@types/fs-extra": "^9.0.13",
+    "@types/jest": "^27.5.2",
+    "@types/mock-fs": "^4.13.1",
+    "@types/rewire": "^2.5.28",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "crypto-browserify": "^3.12.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
+  }
+}

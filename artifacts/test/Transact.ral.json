@@ -1,0 +1,86 @@
+{
+  "version": "v3.10.0",
+  "name": "Transact",
+  "bytecode": "03064027404e40674080408e409c010100000009d353dbb7aab413c40de0b6b3a7640000a9a00013c40de0b6b3a76400002aa10002010200000009d3a248861cb413c40de0b6b3a7640000a8a00013c40de0b6b3a76400002ba1000201010101000ad3bf2d01bdb4ce001600aca00116002aa1010201020101000ad35496306fb4ce001600aba00116002ba10102010000000103d3815a8d0da00002010000000103d3a51b051ca00102",
+  "codeHash": "0b6427253638fa8f32b04e7c5915d41d51b0148a8e219e4881eba5548a42ae41",
+  "fieldsSig": {
+    "names": [
+      "tokenId",
+      "totalALPH",
+      "totalTokens"
+    ],
+    "types": [
+      "ByteVec",
+      "U256",
+      "U256"
+    ],
+    "isMutable": [
+      false,
+      true,
+      true
+    ]
+  },
+  "eventsSig": [],
+  "functions": [
+    {
+      "name": "deposit",
+      "paramNames": [],
+      "paramTypes": [],
+      "paramIsMutable": [],
+      "returnTypes": []
+    },
+    {
+      "name": "withdraw",
+      "paramNames": [],
+      "paramTypes": [],
+      "paramIsMutable": [],
+      "returnTypes": []
+    },
+    {
+      "name": "depositToken",
+      "paramNames": [
+        "amount"
+      ],
+      "paramTypes": [
+        "U256"
+      ],
+      "paramIsMutable": [
+        false
+      ],
+      "returnTypes": []
+    },
+    {
+      "name": "withdrawToken",
+      "paramNames": [
+        "amount"
+      ],
+      "paramTypes": [
+        "U256"
+      ],
+      "paramIsMutable": [
+        false
+      ],
+      "returnTypes": []
+    },
+    {
+      "name": "getTotalALPH",
+      "paramNames": [],
+      "paramTypes": [],
+      "paramIsMutable": [],
+      "returnTypes": [
+        "U256"
+      ]
+    },
+    {
+      "name": "getTotalTokens",
+      "paramNames": [],
+      "paramTypes": [],
+      "paramIsMutable": [],
+      "returnTypes": [
+        "U256"
+      ]
+    }
+  ],
+  "constants": [],
+  "enums": []
+}

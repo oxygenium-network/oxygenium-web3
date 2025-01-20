@@ -1,0 +1,11 @@
+TxScript MintNFTTest(
+    nftCollectionContractId: ByteVec,
+    uri: ByteVec,
+    royalty: Bool
+) {
+    if (royalty) {
+        NFTCollectionWithRoyaltyTest(nftCollectionContractId).mint{callerAddress!() -> ALPH: 1 alph}(uri)
+    } else {
+        NFTCollectionTest(nftCollectionContractId).mint{callerAddress!() -> ALPH: 1 alph}(uri)
+    }
+}

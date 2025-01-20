@@ -1,0 +1,28 @@
+{
+  "version": "v3.10.0",
+  "name": "AddMain",
+  "bytecodeTemplate": "0101030002000c{1}{2}17011700160016010e0e{0}01001818",
+  "fieldsSig": {
+    "names": [
+      "add",
+      "array"
+    ],
+    "types": [
+      "Add",
+      "[U256;2]"
+    ],
+    "isMutable": [
+      false,
+      false
+    ]
+  },
+  "functions": [
+    {
+      "name": "main",
+      "paramNames": [],
+      "paramTypes": [],
+      "paramIsMutable": [],
+      "returnTypes": []
+    }
+  ]
+}

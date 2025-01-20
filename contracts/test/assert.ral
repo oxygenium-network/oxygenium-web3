@@ -1,0 +1,9 @@
+Contract Assert() {
+    pub fn test() -> () {
+        assert!(1 == 2, AssertError)
+    }
+}
+
+TxScript TestAssert(assert: Assert) {
+    assert.test()
+}

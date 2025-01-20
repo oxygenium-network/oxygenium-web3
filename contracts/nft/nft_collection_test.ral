@@ -1,0 +1,8 @@
+import "std/nft_collection_interface"
+
+Contract NFTCollectionTest(
+  nftTemplateId: ByteVec,
+  collectionUri: ByteVec,
+  mut totalSupply: U256
+) extends NFTCollectionTestBase(nftTemplateId, collectionUri, totalSupply) {
+}
