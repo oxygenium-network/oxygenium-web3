@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/jest-config.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/jest-config.json)
 
 This code is a configuration file for Jest, a JavaScript testing framework. Jest is used to test JavaScript code, and this configuration file specifies how Jest should run tests for the oxygenium-web3 project. 
 

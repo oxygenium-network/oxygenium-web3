@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-wallet/src/password-crypto.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-wallet/src/password-crypto.ts)
 
 This file contains functions for encrypting and decrypting data using the Advanced Encryption Standard (AES) algorithm with a 256-bit key and Galois/Counter Mode (GCM) for authenticated encryption. The purpose of this code is to provide a secure way to store and transmit sensitive data, such as passwords or private keys, within the Oxygenium project.
 

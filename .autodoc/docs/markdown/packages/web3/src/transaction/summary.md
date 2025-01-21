@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/src/transaction)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3/src/transaction)
 
 The code in the `transaction` folder of the `oxygenium-web3` project provides functionality for handling transactions, signing, verifying signatures, and subscribing to transaction status updates on the Oxygenium blockchain network. It consists of three main files: `index.ts`, `sign-verify.ts`, and `status.ts`.
 

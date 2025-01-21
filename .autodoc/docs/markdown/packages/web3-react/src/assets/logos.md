@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/assets/logos.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/assets/logos.tsx)
 
 This file contains several React components that render SVG icons for the Oxygenium project. The components are `OxygeniumIcon`, `WalletConnect`, `Ledger`, and `PlaceHolder`. 
 

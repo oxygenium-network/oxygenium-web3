@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/api/node-provider.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/api/node-provider.ts)
 
 This file contains the implementation of a NodeProvider class that serves as a wrapper around the Oxygenium node API. The NodeProvider class provides a convenient way to interact with the Oxygenium blockchain by exposing methods that correspond to various API endpoints. 
 

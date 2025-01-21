@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/constants)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/constants)
 
 The code in the `constants` folder of the `oxygenium-web3` project provides essential constant values and configurations that are used throughout the project. These constants ensure consistency and maintainability in the codebase.
 

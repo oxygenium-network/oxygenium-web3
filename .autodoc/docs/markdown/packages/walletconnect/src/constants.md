@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/src/constants.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/walletconnect/src/constants.ts)
 
 This file contains several constants that are used in the Oxygenium project. 
 

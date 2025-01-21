@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/scripts/stop-devnet.js)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/scripts/stop-devnet.js)
 
 This code defines a function called `stopDevnet` that is used to stop a running Oxygenium devnet. The devnet is a local development network used for testing and development purposes. The function reads a PID (process ID) from a file called `oxygenium.pid` located in the `devDir` directory. The PID is used to identify the running devnet process. If a PID is found, the function kills the process using the `process.kill` method and logs a message indicating that the devnet has been stopped. If no PID is found, an error message is logged.
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/utils/djb2.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/utils/djb2.ts)
 
 The code provided is a JavaScript function called `djb2` that exports a hash function. The purpose of this function is to generate a hash value for a given input `Uint8Array` of bytes. The hash function uses the djb2 algorithm, which is a simple non-cryptographic hash function that is commonly used in hash tables.
 

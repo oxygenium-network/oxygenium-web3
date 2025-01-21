@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/wallets/useDefaultWallets.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/wallets/useDefaultWallets.tsx)
 
 This code defines a function called `useDefaultWallets` that returns an array of `WalletProps` objects. The purpose of this function is to provide a default set of wallets for the Oxygenium project. 
 

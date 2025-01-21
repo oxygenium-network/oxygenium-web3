@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Pages)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Pages)
 
 The `Pages` folder in the Oxygenium web3 project contains components related to the main user interface, such as connecting wallets and displaying account information. It consists of two subfolders: `Connectors` and `Profile`.
 

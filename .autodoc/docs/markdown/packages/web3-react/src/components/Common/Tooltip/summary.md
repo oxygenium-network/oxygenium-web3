@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/Tooltip)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/Tooltip)
 
 The `Tooltip` component in the `oxygenium-web3` project provides a customizable and visually appealing tooltip window that can be used throughout the project to enhance the user experience. The component is defined in the `index.tsx` file and uses several React hooks to manage its state and layout. It also uses the `motion` component from the `framer-motion` library for animations and the `Portal` component to render the tooltip window outside the current React tree.
 

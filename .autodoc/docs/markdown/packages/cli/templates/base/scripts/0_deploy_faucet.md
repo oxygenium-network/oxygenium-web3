@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/templates/base/scripts/0_deploy_faucet.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/templates/base/scripts/0_deploy_faucet.ts)
 
 This code is a deployment script for a token faucet contract in the Oxygenium blockchain network. The purpose of this script is to deploy the TokenFaucet contract and set its initial state. The TokenFaucet contract is responsible for distributing tokens to users who request them. 
 

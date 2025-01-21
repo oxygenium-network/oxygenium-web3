@@ -33,10 +33,10 @@ There are a few packages in this repository:
 Please refer to `package.json`.
 
 
-[test-badge]: https://github.com/oxygenium/oxygenium-web3/actions/workflows/test.yml/badge.svg
-[test-link]: https://github.com/oxygenium/oxygenium-web3/actions/workflows/test.yml
+[test-badge]: https://github.com/oxygenium-network/oxygenium-web3/actions/workflows/test.yml/badge.svg
+[test-link]: https://github.com/oxygenium-network/oxygenium-web3/actions/workflows/test.yml
 [npm-badge]: https://img.shields.io/npm/v/@oxygenium/web3.svg
 [npm-link]: https://www.npmjs.org/package/@oxygenium/web3
 [prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
 [prettier-link]: https://github.com/prettier/prettier
-[release-notes]: https://github.com/oxygenium/oxygenium-web3/releases
+[release-notes]: https://github.com/oxygenium-network/oxygenium-web3/releases

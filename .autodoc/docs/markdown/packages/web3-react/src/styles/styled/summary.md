@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/styles/styled)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/styles/styled)
 
 The `index.ts` file in the `styled` folder is responsible for exporting a styled component from the `styled-components` library. This library enables developers to create reusable UI components with custom styles using a CSS-in-JS approach. Instead of using separate CSS files, styles are defined in JavaScript code, offering better encapsulation, easier theming, and improved performance.
 

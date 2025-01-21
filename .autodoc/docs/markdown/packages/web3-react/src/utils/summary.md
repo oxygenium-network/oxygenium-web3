@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/utils)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/utils)
 
 The `index.ts` file in the `utils` folder provides a set of utility functions that enhance the user experience in the Oxygenium web3 project. These functions are primarily focused on detecting the user's browser, operating system, and device type, as well as providing helper functions for rendering React components and Ethereum addresses.
 

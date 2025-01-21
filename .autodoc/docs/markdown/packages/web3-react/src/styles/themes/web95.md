@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/themes/web95.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/styles/themes/web95.ts)
 
 This code file is part of the Oxygenium-web3 project and contains a set of CSS custom properties (variables) that define the styling for various UI components. These variables are used to maintain a consistent look and feel across the application, making it easier to update the design in the future.
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/assets/icons.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/assets/icons.tsx)
 
 This code file contains a collection of SVG icons that are used in the Oxygenium-web3 project. These icons are defined as React functional components, which can be easily imported and used in other parts of the project. The icons included in this file are:
 

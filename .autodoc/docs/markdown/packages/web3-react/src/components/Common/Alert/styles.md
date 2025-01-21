@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Alert/styles.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/Common/Alert/styles.ts)
 
 This code defines two styled components, `AlertContainer` and `IconContainer`, which are used to create alert messages with icons in the Oxygenium web3 project. 
 

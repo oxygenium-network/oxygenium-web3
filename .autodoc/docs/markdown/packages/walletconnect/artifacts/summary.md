@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/walletconnect/artifacts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/walletconnect/artifacts)
 
 The code in the `.autodoc/docs/json/packages/walletconnect/artifacts` folder is crucial for defining and interacting with smart contracts on the Oxygenium blockchain, specifically the `Greeter` contract. The folder contains two JSON files, `greeter.ral.json` and `greeter_main.ral.json`, which define the structure and behavior of the `Greeter` and `Main` contracts, respectively. Additionally, there is a subfolder named `ts` containing TypeScript files for interacting with the Oxygenium blockchain through the `Greeter` contract.
 

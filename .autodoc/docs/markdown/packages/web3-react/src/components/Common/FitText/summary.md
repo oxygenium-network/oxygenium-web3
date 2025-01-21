@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/FitText)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/FitText)
 
 The `FitText` component, located in the `oxygenium-web3/components/Common/FitText` folder, is a React component that automatically adjusts the font size of its child elements to fit within the available space. This is particularly useful for cases where the size of the text may vary depending on the user's device or screen size.
 

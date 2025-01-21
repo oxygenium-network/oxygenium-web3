@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/src/codegen.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/src/codegen.ts)
 
 This code is responsible for generating TypeScript code for the Oxygenium blockchain project. It focuses on creating code for contracts, scripts, and deployment files. The generated code allows developers to interact with the Oxygenium blockchain using TypeScript, making it easier to build and test applications.
 

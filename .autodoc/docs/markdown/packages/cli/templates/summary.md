@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/templates)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/cli/templates)
 
 The `.autodoc/docs/json/packages/cli/templates` folder contains templates for the `oxygenium-web3` project, which is a JavaScript library for interacting with the Oxygenium blockchain. The templates provide a starting point for developers to build applications that interact with the Oxygenium blockchain using the `@oxygenium/web3` library.
 

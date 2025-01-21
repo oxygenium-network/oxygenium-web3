@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/gen.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/gen.ts)
 
 This code is responsible for generating code artifacts for the Oxygenium project using the Oxygenium Web3 library. The Oxygenium project is a blockchain platform that aims to provide a scalable and secure infrastructure for decentralized applications. The Oxygenium Web3 library is a JavaScript library that provides a set of APIs for interacting with the Oxygenium blockchain.
 

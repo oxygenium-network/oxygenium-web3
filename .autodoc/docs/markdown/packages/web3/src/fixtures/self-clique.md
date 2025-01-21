@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/fixtures/self-clique.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/fixtures/self-clique.json)
 
 The code above is a JSON object that contains information about a network. Specifically, it provides details about a Clique consensus network, which is a type of Proof of Authority (PoA) consensus algorithm used in Ethereum-based networks. 
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/styles)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/styles)
 
 The code in the `.autodoc/docs/json/packages/web3-react/src/styles` folder is responsible for defining and managing the visual styles of the Oxygenium Web3 project. It provides a centralized and flexible way to create and customize themes for different parts of the application, allowing users to switch between light and dark modes based on their preferences.
 

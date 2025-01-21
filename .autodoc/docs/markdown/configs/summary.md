@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/configs)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/configs)
 
 The `header.js` file in the `.autodoc/docs/json/configs` folder is a crucial component of the Oxygenium project, as it contains the license information for the software. The Oxygenium project is licensed under the GNU Lesser General Public License (LGPL), which allows users to freely use, modify, and distribute the software, as long as they adhere to the terms of the license.
 

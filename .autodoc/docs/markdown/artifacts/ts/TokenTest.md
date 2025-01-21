@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/TokenTest.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/artifacts/ts/TokenTest.ts)
 
 The code is a TypeScript module that provides a contract factory and instance for interacting with a smart contract called `TokenTest`. The module imports various types and functions from the `@oxygenium/web3` library, which is a JavaScript library for interacting with the Oxygenium blockchain.
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/walletconnect/artifacts/ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/walletconnect/artifacts/ts)
 
 The code in the `oxygenium-web3` project's `.autodoc/docs/json/packages/walletconnect/artifacts/ts` folder provides functionality for interacting with the Oxygenium blockchain, specifically through a smart contract called `Greeter`. The folder contains three TypeScript files: `Greeter.ts`, `index.ts`, and `scripts.ts`.
 

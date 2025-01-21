@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/Sub.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/artifacts/ts/Sub.ts)
 
 This code is part of the Oxygenium-web3 project and provides a TypeScript interface for interacting with a smart contract called "Sub". The code imports various modules from the "@oxygenium/web3" package, which is a library for interacting with the Oxygenium blockchain. 
 

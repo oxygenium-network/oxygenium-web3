@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/global.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/global.ts)
 
 This file contains code that sets and gets the current node and explorer providers for the Oxygenium project. The `NodeProvider` and `ExplorerProvider` classes are imported from the `api` module. 
 

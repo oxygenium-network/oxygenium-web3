@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/shared)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/shared)
 
 The `tsconfig.json` file in the `.autodoc/docs/json/packages/cli/templates/shared` folder is a crucial configuration file for the TypeScript compiler in the oxygenium-web3 project. It contains various settings that dictate how the TypeScript code should be compiled and ensures that the code is compiled correctly with the desired settings.
 

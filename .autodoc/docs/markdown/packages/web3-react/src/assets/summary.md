@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/assets)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/assets)
 
 The `assets` folder in the `oxygenium-web3` project contains two files, `icons.tsx` and `logos.tsx`, which define various SVG icons and logos as React components. These components can be easily imported and used in other parts of the project to provide visual cues and branding.
 

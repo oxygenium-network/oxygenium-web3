@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-wallet/src/hd-wallet.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-wallet/src/hd-wallet.ts)
 
 This file contains functions and classes related to HD wallets and private key derivation. The code is part of the Oxygenium project and is licensed under the GNU Lesser General Public License.
 

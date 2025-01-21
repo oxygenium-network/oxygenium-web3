@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/pnpm-workspace.yaml)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/pnpm-workspace.yaml)
 
 This code is a configuration file for the oxygenium-web3 project. It sets the preference for workspace packages to true and specifies the location of the packages directory. 
 

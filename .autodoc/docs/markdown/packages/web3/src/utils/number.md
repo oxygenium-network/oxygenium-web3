@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/utils/number.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/utils/number.ts)
 
 This file contains a set of utility functions for formatting and converting numbers used in the Oxygenium project. The functions are exported and can be used in other parts of the project.
 

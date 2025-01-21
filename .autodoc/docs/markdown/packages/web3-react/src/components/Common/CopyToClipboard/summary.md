@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/CopyToClipboard)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/CopyToClipboard)
 
 The `CopyToClipboard` component in the `oxygenium-web3` project provides a simple and reusable way to copy a given string to the clipboard. It can be used in various contexts, such as copying a URL, a code snippet, or any other text content. The component can be rendered either as a standalone icon or as a button with the icon.
 

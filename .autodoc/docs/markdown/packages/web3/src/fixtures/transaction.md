@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/fixtures/transaction.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/fixtures/transaction.json)
 
 The code provided is a JSON object that contains information about a transaction in the Oxygenium network. The transaction has two main stages: "created" and "submitted". 
 

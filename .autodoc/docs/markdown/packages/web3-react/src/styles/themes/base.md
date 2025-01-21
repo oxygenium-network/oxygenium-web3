@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/themes/base.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/styles/themes/base.ts)
 
 This code exports an object that contains CSS variables for a light and dark theme. These variables are used to style the UI of the Oxygenium Web3 project. 
 

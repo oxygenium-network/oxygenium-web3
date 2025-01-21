@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/Assert.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/artifacts/ts/Assert.ts)
 
 This code is part of the Oxygenium Web3 project and provides functionality for interacting with a smart contract called Assert. The code imports various modules from the Oxygenium Web3 library, including Contract, ContractState, ContractFactory, and others. It also imports a JSON file containing the contract's ABI (AssertContractJson).
 

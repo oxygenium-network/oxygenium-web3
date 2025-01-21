@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Portal/index.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/Common/Portal/index.tsx)
 
 The `Portal` component in the `oxygenium-web3` project is a React component that allows rendering of child components outside of the parent component's DOM hierarchy. This is useful when a component needs to be rendered at a specific location in the DOM, such as a modal or a tooltip.
 

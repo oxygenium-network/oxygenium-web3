@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/ConnectModal/ConnectUsing.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/ConnectModal/ConnectUsing.tsx)
 
 The `ConnectUsing` component is a React functional component that provides a way for users to connect to the Oxygenium network using various methods. It imports `AnimatePresence` and `motion` from the `framer-motion` library, which are used to animate the transition between different connection methods. It also imports `useState` from React, which is used to manage the state of the component.
 

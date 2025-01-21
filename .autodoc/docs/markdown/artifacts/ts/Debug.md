@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/Debug.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/artifacts/ts/Debug.ts)
 
 This code is part of the Oxygenium Web3 project and provides functionality for interacting with a smart contract called Debug. The code imports various functions and classes from the "@oxygenium/web3" library, which is used to interact with the Oxygenium blockchain. 
 

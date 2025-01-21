@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/webpack.config.js)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/webpack.config.js)
 
 This code is a configuration file for the webpack module bundler. It exports an object that specifies how to bundle the Oxygenium Web3 library. 
 

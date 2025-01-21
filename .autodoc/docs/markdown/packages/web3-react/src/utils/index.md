@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/utils/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/utils/index.ts)
 
 This file contains utility functions that are used in the Oxygenium web3 project. The code is written in TypeScript and is used to detect the browser and operating system of the user, check if the user is on a mobile device, flatten React child elements, and truncate Ethereum addresses.
 

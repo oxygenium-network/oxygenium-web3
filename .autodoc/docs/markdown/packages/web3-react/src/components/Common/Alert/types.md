@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Alert/types.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/Common/Alert/types.ts)
 
 This code defines a TypeScript type called `AlertProps` that is exported for use in other parts of the Oxygenium project. The `AlertProps` type is an object that can have two properties: `children` and `icon`. The `children` property is of type `React.ReactNode`, which means it can accept any valid React node as its value. The `icon` property is also of type `React.ReactNode`, which means it can accept any valid React node as its value.
 

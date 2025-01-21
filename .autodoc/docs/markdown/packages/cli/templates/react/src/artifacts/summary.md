@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/react/src/artifacts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/react/src/artifacts)
 
 The `.autodoc/docs/json/packages/cli/templates/react/src/artifacts` folder contains JSON files that provide information about smart contracts used in the oxygenium-web3 project. These contracts are designed to interact with the Oxygenium blockchain and can be used as building blocks for decentralized applications.
 

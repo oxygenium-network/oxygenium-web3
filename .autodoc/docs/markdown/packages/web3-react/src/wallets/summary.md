@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/wallets)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/wallets)
 
 The code in the `wallets` folder of the `oxygenium-web3` project provides a set of functions and interfaces to interact with different types of cryptocurrency wallets. It includes three wallet connectors (`injected`, `walletConnect`, and `desktopWallet`) that can be used to interact with wallets such as MetaMask, Trust Wallet, and Oxygenium Desktop Wallet.
 

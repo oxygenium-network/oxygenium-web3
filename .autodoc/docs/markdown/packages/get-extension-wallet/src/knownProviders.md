@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/get-extension-wallet/src/knownProviders.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/get-extension-wallet/src/knownProviders.ts)
 
 This code defines a wallet provider for the Oxygenium blockchain and exports it for use in the larger project. The `oxygeniumProvider` object contains metadata about the provider, including an ID, name, icon, and download links for the Chrome and Firefox extensions. This object is then added to the `knownProviders` array, which is used to keep track of all available wallet providers.
 

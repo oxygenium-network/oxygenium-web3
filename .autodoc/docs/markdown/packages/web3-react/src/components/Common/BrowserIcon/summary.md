@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/BrowserIcon)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/BrowserIcon)
 
 The `oxygenium-web3` project contains a reusable React component called `BrowserIcon` that renders an icon for a specific web browser. The component is located in the `.autodoc/docs/json/packages/web3-react/src/components/Common/BrowserIcon` folder and consists of three files: `index.tsx`, `styles.ts`, and `types.ts`.
 

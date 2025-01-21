@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/contexts/oxygeniumConnect.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/contexts/oxygeniumConnect.tsx)
 
 This file defines a React context and a custom hook for the Oxygenium Connect feature of the Oxygenium project. The Oxygenium Connect feature allows users to connect their wallets to the Oxygenium network and perform transactions.
 

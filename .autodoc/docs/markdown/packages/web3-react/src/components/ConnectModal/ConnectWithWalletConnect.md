@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/ConnectModal/ConnectWithWalletConnect.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/ConnectModal/ConnectWithWalletConnect.tsx)
 
 This code defines a React functional component called `ConnectWithWalletConnect` that is used to connect to a wallet using the WalletConnect protocol. The component is part of the Oxygenium project and is located in the `oxygenium-web3` directory.
 

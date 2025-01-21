@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Pages/Connectors)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Pages/Connectors)
 
 The `Connectors` component in `index.tsx` is a crucial part of the Oxygenium Web3 project, as it enables users to connect their wallets to the Oxygenium network. It renders a list of supported wallet connectors based on the user's device type (mobile or desktop) and allows users to select the desired connector. The component imports the `useOxygeniumConnectContext` hook, which provides access to the current connector and route, and the `supportedConnectors` constant, which defines the various wallet connectors supported by the Oxygenium network.
 

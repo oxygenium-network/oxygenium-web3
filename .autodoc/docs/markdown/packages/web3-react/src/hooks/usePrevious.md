@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/hooks/usePrevious.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/hooks/usePrevious.tsx)
 
 The code above is a custom React hook called `usePrevious` that allows developers to access the previous value of a given variable. This hook is part of the Oxygenium project and is licensed under the GNU Lesser General Public License.
 

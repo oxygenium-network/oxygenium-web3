@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/scripts/create-project.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/scripts/create-project.ts)
 
 This code is a script that creates a new project based on one of three templates: base, react, or Next.js. The script is part of the oxygenium-web3 project and is written in TypeScript. 
 

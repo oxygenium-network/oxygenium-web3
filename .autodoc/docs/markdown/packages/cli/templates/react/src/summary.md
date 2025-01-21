@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/react/src)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/react/src)
 
 The `App.tsx` file in the `.autodoc/docs/json/packages/cli/templates/react/src` folder serves as the entry point for a React application that interacts with the Oxygenium blockchain using the `@oxygenium/web3` library. The application provides a simple dashboard that displays the total number of blocks on the blockchain and information about smart contracts and scripts.
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/ConnectModal/ConnectWithInjector)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/ConnectModal/ConnectWithInjector)
 
 The `ConnectWithInjector` component, located in the `index.tsx` file, is responsible for managing the connection between the Oxygenium wallet and supported browser extensions (injectors). It handles various connection states and renders different content based on the current state. For example, when connecting, it displays a spinner animation with the logo of the selected connector. If the state is `failed` or `rejected`, it shows an error message and a retry button. If the state is `unavailable`, it suggests installing the required browser extension.
 

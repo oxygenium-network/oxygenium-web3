@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/src/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/walletconnect/src/index.ts)
 
 This code exports various modules from the oxygenium-web3 project. The purpose of this file is to make these modules available for use in other parts of the project. 
 

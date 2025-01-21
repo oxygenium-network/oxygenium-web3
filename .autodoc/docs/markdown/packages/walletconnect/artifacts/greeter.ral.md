@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/artifacts/greeter.ral.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/walletconnect/artifacts/greeter.ral.json)
 
 This code represents a smart contract called "Greeter" in the oxygenium-web3 project. The contract has a version number, a name, bytecode, and a code hash. It also has a field signature that includes the name, type, and mutability of the contract's fields, and an empty events signature. 
 

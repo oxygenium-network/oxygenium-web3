@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/templates/shared/tsconfig.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/templates/shared/tsconfig.json)
 
 This code is a configuration file for the TypeScript compiler used in the oxygenium-web3 project. The file is named `tsconfig.json` and is located in the root directory of the project. 
 

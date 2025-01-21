@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/token/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/token/index.ts)
 
 This code is a license and an export statement for a module called `nft` in the Oxygenium project's `oxygenium-web3` library. The license specifies that the library is free software and can be redistributed or modified under the terms of the GNU Lesser General Public License. The license also disclaims any warranty for the library.
 

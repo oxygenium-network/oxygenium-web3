@@ -1,6 +1,6 @@
 {
   "name": "oxygenium-web3",
-  "repositoryUrl": "https://github.com/oxygenium/oxygenium-web3",
+  "repositoryUrl": "https://github.com/oxygenium-network/oxygenium-web3",
   "root": ".",
   "output": "./.autodoc",
   "llms": [

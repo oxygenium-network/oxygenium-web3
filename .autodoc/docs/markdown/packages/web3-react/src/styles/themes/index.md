@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/themes/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/styles/themes/index.ts)
 
 This code exports an object containing various themes for a web3 interface library called Oxygenium. The themes are defined in separate files and imported into this file using ES6 module syntax. The exported object contains properties for each theme, with the property name being the name of the theme and the value being an object containing the theme's styles.
 

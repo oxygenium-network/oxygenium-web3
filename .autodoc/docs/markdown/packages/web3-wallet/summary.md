@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-wallet)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-wallet)
 
 The `oxygenium-web3` project provides a library for developers to interact with the Oxygenium blockchain. The code in the `web3-wallet` folder focuses on managing Oxygenium wallets and performing cryptographic operations.
 

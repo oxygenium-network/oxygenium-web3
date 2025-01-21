@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components)
 
 The `.autodoc/docs/json/packages/web3-react/src/components` folder contains various components and utilities for the Oxygenium Web3 project, which enables users to connect their wallets to the Oxygenium blockchain network and interact with it.
 

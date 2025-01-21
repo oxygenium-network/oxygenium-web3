@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/get-extension-wallet/src/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/get-extension-wallet/src/index.ts)
 
 This code is a license header and a set of exports for the Oxygenium Web3 library. The purpose of this code is to provide licensing information and to export various modules that are used in the larger Oxygenium Web3 project.
 

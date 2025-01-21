@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/wallets/connectors/desktopWallet.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/wallets/connectors/desktopWallet.tsx)
 
 This code defines a function called `desktopWallet` that returns a `WalletProps` object. The purpose of this function is to provide a connector configuration for the desktop wallet. 
 

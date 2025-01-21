@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/contexts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/contexts)
 
 The `oxygeniumConnect.tsx` file in the `contexts` folder is responsible for managing the state of the Oxygenium Connect feature in a React application. This feature allows users to connect their wallets to the Oxygenium network and perform transactions. The file defines a React context, `OxygeniumConnectContext`, and a custom hook, `useOxygeniumConnectContext`, to provide access to the current state of the feature to other components in the application.
 

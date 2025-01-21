@@ -46,7 +46,7 @@ const App = () => {
 ```
 
 `useTheme` is optional, there are [a
-dozon](https://github.com/oxygenium/oxygenium-web3-react/blob/99bdf241dd48992872fb5b8346460af88e0060e6/src/types.ts#L1)
+dozon](https://github.com/oxygenium-network/oxygenium-web3-react/blob/99bdf241dd48992872fb5b8346460af88e0060e6/src/types.ts#L1)
 themes that can be chosen from.
 
 ## Credits

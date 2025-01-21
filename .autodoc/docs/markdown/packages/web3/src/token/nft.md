@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/token/nft.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/token/nft.ts)
 
 This file contains two interfaces, `NFTMetadata` and `NFTCollectionMetadata`, which define the JSON schema for the metadata of non-fungible tokens (NFTs) and NFT collections, respectively. 
 

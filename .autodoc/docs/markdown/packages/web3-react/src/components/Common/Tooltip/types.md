@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Tooltip/types.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/Common/Tooltip/types.ts)
 
 This file contains two TypeScript type definitions for a tooltip component that can be used in the Oxygenium project. The first type definition, `TooltipSizeProps`, is a union type that specifies the possible sizes of the tooltip. The two possible values are `'small'` and `'large'`. 
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/hooks/useConnect.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/hooks/useConnect.tsx)
 
 This code defines a custom hook called `useConnect` that provides functionality for connecting to different wallet providers in the Oxygenium Web3 project. The hook returns an object with `connect` and `disconnect` methods for each supported provider. 
 

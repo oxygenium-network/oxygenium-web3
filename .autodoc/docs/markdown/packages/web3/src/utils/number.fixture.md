@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/utils/number.fixture.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/utils/number.fixture.ts)
 
 This file contains two arrays of objects, `tests` and `tests1`, which are used for testing and formatting numerical values in the Oxygenium blockchain. 
 

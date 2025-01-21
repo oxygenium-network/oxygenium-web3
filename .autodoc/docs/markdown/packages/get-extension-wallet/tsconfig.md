@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/get-extension-wallet/tsconfig.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/get-extension-wallet/tsconfig.json)
 
 This code is a configuration file for the TypeScript compiler. It specifies the settings for compiling the TypeScript code in the `src` directory of the project and outputting the compiled JavaScript files to the `dist` directory. 
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/cli.js)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/cli.js)
 
 This code is a Node.js script that serves as an entry point for the Oxygenium command-line interface (CLI). The CLI is a tool that allows users to interact with the Oxygenium blockchain network through a terminal interface. 
 

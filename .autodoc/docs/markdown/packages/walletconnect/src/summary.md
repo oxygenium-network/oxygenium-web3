@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/walletconnect/src)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/walletconnect/src)
 
 The code in this folder is responsible for providing a bridge between the Oxygenium blockchain and WalletConnect, a protocol for connecting decentralized applications (dApps) with mobile wallets. It contains several files that define constants, types, and a provider class for interacting with the Oxygenium blockchain through WalletConnect.
 

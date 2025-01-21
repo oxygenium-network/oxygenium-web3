@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/base)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/base)
 
 The `oxygenium.config.ts` file in the `oxygenium-web3` project serves as a central configuration file for network and settings information. It defines a `Settings` type with a single property `issueTokenAmount` of type `Number256` and a `defaultSettings` object with a default value of 100n for the `issueTokenAmount` property. The configuration object has three network configurations: `devnet`, `testnet`, and `mainnet`, each with a `nodeUrl` property specifying the Oxygenium node URL to connect to. The `devnet` network configuration also has a `privateKeys` property for deploying contracts.
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react)
 
 The `oxygenium-web3` project provides a set of components, hooks, and utilities for developers to easily integrate the Oxygenium blockchain into their web applications. The main component, `OxygeniumConnectProvider`, wraps the entire application and provides access to the web3 provider, allowing users to connect their wallets and interact with the Oxygenium blockchain.
 

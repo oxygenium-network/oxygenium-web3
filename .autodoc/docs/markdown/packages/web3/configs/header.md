@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/configs/header.js)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/configs/header.js)
 
 This code is a license file for the Oxygenium project, which is a library that can be used to interact with the Oxygenium blockchain. The license specifies that the library is free software and can be redistributed or modified under the terms of the GNU Lesser General Public License (LGPL) version 3 or any later version. 
 

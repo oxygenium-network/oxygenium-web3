@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/signer/fixtures/wallets.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/signer/fixtures/wallets.json)
 
 The code above is a JSON object that contains an array of wallets. Each wallet is represented as an object with four properties: mnemonic, seed, password, and file. 
 

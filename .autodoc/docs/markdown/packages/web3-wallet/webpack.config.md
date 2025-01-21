@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-wallet/webpack.config.js)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-wallet/webpack.config.js)
 
 This file is a configuration file for the oxygenium-web3 project. It exports an object that contains various configuration options for webpack, a popular module bundler for JavaScript. 
 

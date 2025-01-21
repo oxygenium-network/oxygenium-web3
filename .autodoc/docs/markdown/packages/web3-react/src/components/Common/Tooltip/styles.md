@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Tooltip/styles.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/Common/Tooltip/styles.ts)
 
 This file contains styled components for a tooltip window that can be used in the Oxygenium web3 project. The tooltip window is a UI element that displays additional information when the user hovers over a specific element on the page. 
 

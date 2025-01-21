@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/ConnectButton/styles.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/ConnectButton/styles.ts)
 
 This code defines a styled component called `TextContainer` using the `styled-components` library. The component is a `motion.div` element imported from the `framer-motion` library, which provides animation capabilities. The `TextContainer` component is designed to be used as a container for text elements, with properties that center and align the text within the container.
 

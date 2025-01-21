@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/wallets/connectors/walletConnect.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/wallets/connectors/walletConnect.tsx)
 
 This code defines a function called `walletConnect` that returns an object with properties representing a wallet connector. The purpose of this code is to provide a way for users to connect their wallets to the Oxygenium network. 
 

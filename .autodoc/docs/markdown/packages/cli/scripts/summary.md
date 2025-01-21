@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/scripts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/cli/scripts)
 
 The `cli/scripts` folder in the `oxygenium-web3` project contains several scripts that are used for various purposes such as setting up new projects, deploying smart contracts, and managing a local Oxygenium development network (devnet).
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/ConnectButton)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/ConnectButton)
 
 The `ConnectButton` folder in the `oxygenium-web3` project contains code for a React component that allows users to connect their Oxygenium wallet to a web application. The main component, `OxygeniumConnectButton`, renders a button that opens a modal for wallet connection or profile viewing. It takes several optional props, such as a label, an `onClick` function, and a `displayAccount` function.
 

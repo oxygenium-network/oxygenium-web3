@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/Alert)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/Alert)
 
 The `Alert` component in the `index.tsx` file is a reusable React component designed to display alerts on a web page. It accepts two props: `children` and `icon`. The `children` prop is used to pass the content of the alert, while the `icon` prop is used to pass an optional icon to be displayed alongside the content. The component is defined using `React.forwardRef`, allowing it to forward a ref to one of its children, which can be useful for accessing the DOM node of a child element.
 

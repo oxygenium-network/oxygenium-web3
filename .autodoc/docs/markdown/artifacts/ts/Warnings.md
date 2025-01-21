@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/Warnings.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/artifacts/ts/Warnings.ts)
 
 This code is part of the oxygenium-web3 project and provides functionality for interacting with a smart contract called Warnings. The code imports various functions and classes from the "@oxygenium/web3" library, which is a TypeScript library for interacting with the Oxygenium blockchain. 
 

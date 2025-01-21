@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/transaction/sign-verify.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/transaction/sign-verify.ts)
 
 This file contains two functions that are used for transaction signing and signature verification in the Oxygenium project. The functions are exported and can be used by other modules in the project.
 
