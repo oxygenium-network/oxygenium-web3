@@ -5,7 +5,7 @@ The `cli` folder in the `alephium-web3` project provides a command-line interfac
 The `cli.js` script serves as an entry point for the Alephium CLI, allowing users to execute various commands through a terminal interface. For example, to print the version of the Alephium CLI, a user would run:
 
 ```bash
-npx @alephium/cli@latest version
+npx @oxygenium-network/cli@latest version
 ```
 
 The `cli_internal.ts` file contains the actual implementation of the CLI commands, such as creating a new project, starting or stopping a local development network, compiling smart contracts, running tests, and deploying contracts to a specified network. These commands can be executed from the command line to perform various tasks.
@@ -20,6 +20,6 @@ The `cli/scripts` folder contains several scripts for various purposes, such as 
 
 The `cli/src` folder provides essential tools for developers to interact with the Alephium blockchain, simplifying the process of generating TypeScript interfaces, deploying smart contracts and scripts, and managing configurations and networks.
 
-The `cli/templates` folder contains templates for the `alephium-web3` project, providing a starting point for developers to build applications that interact with the Alephium blockchain using the `@alephium/web3` library.
+The `cli/templates` folder contains templates for the `alephium-web3` project, providing a starting point for developers to build applications that interact with the Alephium blockchain using the `@oxygenium-network/web3` library.
 
 Overall, the code in the `cli` folder of the `alephium-web3` project is essential for developers working with the Alephium blockchain. It provides a convenient and powerful CLI for managing smart contract projects, as well as essential tools and templates for building applications that interact with the Alephium blockchain.

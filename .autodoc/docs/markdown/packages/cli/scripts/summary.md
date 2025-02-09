@@ -24,7 +24,7 @@ $ alephium-web3 create-project react /path/to/package /path/to/project
 ```javascript
 import { Configuration } from '../src/types'
 import { deployAndSaveProgress } from '../src/deployer'
-import { NetworkId } from '@alephium/web3'
+import { NetworkId } from '@oxygenium-network/web3'
 
 const configuration: Configuration = {
   // configuration settings for deployment

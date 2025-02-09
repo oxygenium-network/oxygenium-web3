@@ -86,11 +86,11 @@ export function genRalph(packageRoot: string, projectRoot: string) {
   console.log('✅ Done.')
   console.log(`
 Please install the dependencies:
-    @alephium/web3
-    @alephium/web3-wallet
+    @oxygenium-network/web3
+    @oxygenium-network/web3-wallet
 
 Dev dependencies:
-    @alephium/web3-test
+    @oxygenium-network/web3-test
 
 And add the following to your package.json scripts:
     "compile": "npx cli compile",

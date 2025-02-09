@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { Account, NetworkId } from '@alephium/web3'
+import { Account, NetworkId } from '@oxygenium-network/web3'
 import { ConnectorId } from '../types'
 
 export const LastConnectedAccountKey = 'alph:lastConnectedAccount'

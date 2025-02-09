@@ -19,7 +19,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 import path from 'path'
 import fs from 'fs'
 import { Configuration, DEFAULT_CONFIGURATION_VALUES, Network } from './types'
-import { NetworkId } from '@alephium/web3'
+import { NetworkId } from '@oxygenium-network/web3'
 import * as fetchRetry from 'fetch-retry'
 import * as readline from 'readline'
 
@@ -63,7 +63,7 @@ export async function isNetworkLive(url: string): Promise<boolean> {
 
 export function getSdkFullNodeVersion() {
   /* eslint-disable @typescript-eslint/no-var-requires */
-  const web3Path = require.resolve('@alephium/web3')
+  const web3Path = require.resolve('@oxygenium-network/web3')
   const packageJsonPath = path.join(web3Path, '..', '..', '..', 'package.json')
   return require(packageJsonPath).config.alephium_version
   /* eslint-enable @typescript-eslint/no-var-requires */

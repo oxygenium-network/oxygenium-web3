@@ -24,7 +24,7 @@ import {
   addressFromPublicKey,
   groupOfAddress,
   MessageHasher
-} from '@alephium/web3'
+} from '@oxygenium-network/web3'
 import {
   deriveSchnorrPrivateKey,
   deriveSchnorrPrivateKeyForGroup,

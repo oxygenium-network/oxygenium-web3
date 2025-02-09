@@ -33,7 +33,7 @@ import {
   NetworkId,
   SignChainedTxParams,
   SignChainedTxResult
-} from '@alephium/web3'
+} from '@oxygenium-network/web3'
 import { SignClientTypes } from '@walletconnect/types'
 import { RELAY_METHODS } from './constants'
 

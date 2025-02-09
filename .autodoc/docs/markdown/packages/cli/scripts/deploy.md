@@ -17,7 +17,7 @@ This function is likely used in the larger project to automate the deployment pr
 ```
 import { Configuration } from '../src/types'
 import { deployAndSaveProgress } from '../src/deployer'
-import { NetworkId } from '@alephium/web3'
+import { NetworkId } from '@oxygenium-network/web3'
 
 const configuration: Configuration = {
   // configuration settings for deployment
@@ -33,6 +33,6 @@ deployAndSaveProgress(configuration, networkId)
  1. What is the purpose of this code?
    - This code is for deploying and saving progress of a project called Alephium.
 2. What dependencies does this code have?
-   - This code imports types from '../src/types', functions from '../src/deployment' and '../src', and a NetworkId from '@alephium/web3'.
+   - This code imports types from '../src/types', functions from '../src/deployment' and '../src', and a NetworkId from '@oxygenium-network/web3'.
 3. What license is this code released under?
    - This code is released under the GNU Lesser General Public License, version 3 or later.

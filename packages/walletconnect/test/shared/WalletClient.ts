@@ -28,8 +28,8 @@ import {
   groupOfAddress,
   ApiRequestArguments,
   NetworkId
-} from '@alephium/web3'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+} from '@oxygenium-network/web3'
+import { PrivateKeyWallet } from '@oxygenium-network/web3-wallet'
 
 import {
   parseChain,

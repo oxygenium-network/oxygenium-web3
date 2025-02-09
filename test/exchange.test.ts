@@ -16,8 +16,8 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { PrivateKeyWallet, deriveHDWalletPrivateKey } from '@alephium/web3-wallet'
-import { getSigners, transfer } from '@alephium/web3-test'
+import { PrivateKeyWallet, deriveHDWalletPrivateKey } from '@oxygenium-network/web3-wallet'
+import { getSigners, transfer } from '@oxygenium-network/web3-test'
 import {
   Address,
   web3,
@@ -32,9 +32,9 @@ import {
   groupOfAddress,
   BlockSubscription,
   waitForTxConfirmation
-} from '@alephium/web3'
+} from '@oxygenium-network/web3'
 import * as bip39 from 'bip39'
-import { testPrivateKey } from '@alephium/web3-test'
+import { testPrivateKey } from '@oxygenium-network/web3-test'
 
 const WithdrawFee = ONE_ALPH
 

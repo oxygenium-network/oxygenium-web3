@@ -33,7 +33,7 @@ import {
   node,
   subscribeToTxStatus,
   web3
-} from '@alephium/web3'
+} from '@oxygenium-network/web3'
 import { Theme, Mode, CustomTheme, connectorIds, ProviderTheme } from '../types'
 import { routes } from './Common/Modal'
 import {

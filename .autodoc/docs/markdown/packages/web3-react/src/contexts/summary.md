@@ -6,7 +6,7 @@ The `alephiumConnect.tsx` file in the `contexts` folder is responsible for manag
 
 The `useAlephiumConnectContext` hook is used to access the `AlephiumConnectContext` object from within a component. It throws an error if the hook is not used within a `Provider` component.
 
-This file also imports several types and classes from the `@alephium/web3` and `../types` modules. These modules contain type definitions and classes that are used to interact with the Alephium network and to define the types of the properties in the `AlephiumConnectContext` object.
+This file also imports several types and classes from the `@oxygenium-network/web3` and `../types` modules. These modules contain type definitions and classes that are used to interact with the Alephium network and to define the types of the properties in the `AlephiumConnectContext` object.
 
 Here is an example of how the `useAlephiumConnectContext` hook can be used in a component:
 

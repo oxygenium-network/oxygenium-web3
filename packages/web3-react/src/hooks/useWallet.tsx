@@ -17,8 +17,8 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 import { useMemo } from 'react'
 import { useAlephiumConnectContext } from '../contexts/alephiumConnect'
-import { NodeProvider, SignerProvider, Account, NetworkId, ExplorerProvider } from '@alephium/web3'
-import { KeyType } from '@alephium/web3'
+import { NodeProvider, SignerProvider, Account, NetworkId, ExplorerProvider } from '@oxygenium-network/web3'
+import { KeyType } from '@oxygenium-network/web3'
 
 export type Wallet =
   | {

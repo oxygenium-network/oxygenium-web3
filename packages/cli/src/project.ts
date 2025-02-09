@@ -32,7 +32,7 @@ import {
   Enum,
   TraceableError,
   getContractCodeByCodeHash
-} from '@alephium/web3'
+} from '@oxygenium-network/web3'
 import * as path from 'path'
 import fs from 'fs'
 import { promises as fsPromises } from 'fs'

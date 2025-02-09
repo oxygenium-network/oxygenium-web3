@@ -23,7 +23,7 @@ import {
   fetchContractState,
   ContractInstance,
   getContractEventsCurrentCount,
-} from "@alephium/web3";
+} from "@oxygenium-network/web3";
 import { default as GreeterContractJson } from "../Greeter.ral.json";
 import { getContractByCodeHash } from "../../../../artifacts/ts/contracts";
 

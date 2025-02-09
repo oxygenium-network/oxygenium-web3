@@ -16,12 +16,12 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { publicKeyFromPrivateKey } from '@alephium/web3'
-import { Account, KeyType, ExplorerProvider, NodeProvider } from '@alephium/web3'
-import { addressFromPublicKey } from '@alephium/web3'
-import { Address } from '@alephium/web3'
-import { groupOfAddress } from '@alephium/web3'
-import { groupOfPrivateKey, SignerProviderWithCachedAccounts, TOTAL_NUMBER_OF_GROUPS, web3 } from '@alephium/web3'
+import { publicKeyFromPrivateKey } from '@oxygenium-network/web3'
+import { Account, KeyType, ExplorerProvider, NodeProvider } from '@oxygenium-network/web3'
+import { addressFromPublicKey } from '@oxygenium-network/web3'
+import { Address } from '@oxygenium-network/web3'
+import { groupOfAddress } from '@oxygenium-network/web3'
+import { groupOfPrivateKey, SignerProviderWithCachedAccounts, TOTAL_NUMBER_OF_GROUPS, web3 } from '@oxygenium-network/web3'
 import * as bip39 from 'bip39'
 import { bip32 } from './noble-wrapper'
 import { PrivateKeyWallet } from './privatekey-wallet'

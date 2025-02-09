@@ -23,4 +23,4 @@ Overall, these functions provide useful utilities for loading and working with A
 - This code file is licensed under the GNU Lesser General Public License, version 3 or later.
 
 3. What external dependencies does this code file have?
-- This code file imports the `path` and `fs` modules from Node.js, as well as types and functions from other files in the `alephium-web3` project such as `types` and `@alephium/web3`. It also uses the `fetch` function, which is a global function in web browsers but needs to be imported in Node.js.
+- This code file imports the `path` and `fs` modules from Node.js, as well as types and functions from other files in the `alephium-web3` project such as `types` and `@oxygenium-network/web3`. It also uses the `fetch` function, which is a global function in web browsers but needs to be imported in Node.js.

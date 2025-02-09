@@ -1,3 +1,3 @@
-# `@alephium/web3`
+# `@oxygenium-network/web3`
 
 The package is the core of web3 SDKs

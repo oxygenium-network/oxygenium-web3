@@ -17,7 +17,7 @@ console.log(`The greeting is: ${greeting}`);
 
 `greeter_main.ral.json` is a configuration file for the `Main` contract, which has a single public function called `main`. This file provides important information about the contract's structure and behavior, allowing developers to deploy and interact with the contract consistently. For example, a developer might use this information to write code that interacts with the `Main` contract's `main` function.
 
-The `ts` subfolder contains three TypeScript files: `Greeter.ts`, `index.ts`, and `scripts.ts`. `Greeter.ts` defines the `Greeter` contract using the `Contract` class from the `@alephium/web3` library, providing methods to interact with smart contracts on the Alephium blockchain. The `Greeter` contract has a single method called `greet`, which returns a `bigint`.
+The `ts` subfolder contains three TypeScript files: `Greeter.ts`, `index.ts`, and `scripts.ts`. `Greeter.ts` defines the `Greeter` contract using the `Contract` class from the `@oxygenium-network/web3` library, providing methods to interact with smart contracts on the Alephium blockchain. The `Greeter` contract has a single method called `greet`, which returns a `bigint`.
 
 `index.ts` exports two modules, "Greeter" and "scripts", making them available for use in other parts of the project or in external projects that depend on alephium-web3. The "Greeter" module is related to greeting users, while the "scripts" module contains various scripts or utilities used throughout the project.
 

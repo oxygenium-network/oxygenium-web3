@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { TOTAL_NUMBER_OF_GROUPS, groupOfAddress } from '@alephium/web3'
+import { TOTAL_NUMBER_OF_GROUPS, groupOfAddress } from '@oxygenium-network/web3'
 import { randomContractAddress } from './test-wallet'
 
 describe('test-wallet', function () {

@@ -5,7 +5,7 @@ The `cli/src` folder in the `alephium-web3` project contains code for generating
 The `codegen.ts` file generates TypeScript code for contracts, scripts, and deployment files. This simplifies the process of interacting with the Alephium blockchain by providing a TypeScript interface for contracts and scripts. For example:
 
 ```typescript
-import { MyContract, MyScript } from '@alephium/web3';
+import { MyContract, MyScript } from '@oxygenium-network/web3';
 
 // Deploy a contract
 const contractInstance = await MyContract.deploy(params);

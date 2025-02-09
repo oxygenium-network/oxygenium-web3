@@ -16,8 +16,8 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { stringToHex } from '@alephium/web3'
-import { getSigner, testAddress, testNodeWallet, testWalletName } from '@alephium/web3-test'
+import { stringToHex } from '@oxygenium-network/web3'
+import { getSigner, testAddress, testNodeWallet, testWalletName } from '@oxygenium-network/web3-test'
 import { MapTest, NFTTest, NFTTestStd, TokenTest, TokenTestStd } from '../artifacts/ts'
 import { web3, NodeProvider } from '../packages/web3/src'
 

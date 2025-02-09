@@ -16,8 +16,8 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { NodeProvider, web3 } from '@alephium/web3'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+import { NodeProvider, web3 } from '@oxygenium-network/web3'
+import { PrivateKeyWallet } from '@oxygenium-network/web3-wallet'
 
 export const testPrivateKeys = [
   'a642942e67258589cd2b1822c631506632db5a12aabcf413604e785300d762a5',

@@ -51,7 +51,7 @@ import {
   SignChainedTxParams,
   SignChainedTxResult,
   TraceableError
-} from '@alephium/web3'
+} from '@oxygenium-network/web3'
 
 import { ALEPHIUM_DEEP_LINK, LOGGER, PROVIDER_NAMESPACE, RELAY_METHODS, RELAY_URL } from './constants'
 import {

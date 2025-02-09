@@ -17,9 +17,9 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 import React, { createContext, useContext } from 'react'
 
-import { Account, KeyType, SignerProvider, NetworkId } from '@alephium/web3'
+import { Account, KeyType, SignerProvider, NetworkId } from '@oxygenium-network/web3'
 import { Theme, Mode, CustomTheme, ConnectorId } from '../types'
-import { node } from '@alephium/web3'
+import { node } from '@oxygenium-network/web3'
 import { Connectors } from '../utils/connector'
 
 type Error = string | React.ReactNode | null

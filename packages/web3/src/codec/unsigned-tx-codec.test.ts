@@ -16,10 +16,10 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { web3, ONE_ALPH, buildScriptByteCode, buildContractByteCode, binToHex, hexToBinUnsafe } from '@alephium/web3'
-import { getSigners } from '@alephium/web3-test'
+import { web3, ONE_ALPH, buildScriptByteCode, buildContractByteCode, binToHex, hexToBinUnsafe } from '@oxygenium-network/web3'
+import { getSigners } from '@oxygenium-network/web3-test'
 import { unsignedTxCodec } from './index'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+import { PrivateKeyWallet } from '@oxygenium-network/web3-wallet'
 import { DUST_AMOUNT } from '../constants'
 import { UnsignedTx } from '../api/api-alephium'
 

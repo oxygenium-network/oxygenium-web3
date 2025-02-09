@@ -17,7 +17,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
 import { tokenCodec } from './token-codec'
-import { randomContractId } from '@alephium/web3-test'
+import { randomContractId } from '@oxygenium-network/web3-test'
 import { randomBytes } from 'crypto'
 import { hexToBinUnsafe } from '../utils'
 

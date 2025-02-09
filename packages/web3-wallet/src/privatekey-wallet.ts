@@ -17,8 +17,8 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
 import { ec as EC } from 'elliptic'
-import { Account, KeyType, ExplorerProvider, NodeProvider, SignerProviderSimple, utils, web3 } from '@alephium/web3'
-import { publicKeyFromPrivateKey, addressFromPublicKey, groupOfAddress } from '@alephium/web3'
+import { Account, KeyType, ExplorerProvider, NodeProvider, SignerProviderSimple, utils, web3 } from '@oxygenium-network/web3'
+import { publicKeyFromPrivateKey, addressFromPublicKey, groupOfAddress } from '@oxygenium-network/web3'
 import { deriveHDWalletPrivateKey, deriveHDWalletPrivateKeyForGroup } from './hd-wallet'
 
 const ec = new EC('secp256k1')

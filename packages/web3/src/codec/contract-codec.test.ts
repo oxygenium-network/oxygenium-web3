@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { Contract, web3, decodeArrayType, hexToBinUnsafe, binToHex } from '@alephium/web3'
+import { Contract, web3, decodeArrayType, hexToBinUnsafe, binToHex } from '@oxygenium-network/web3'
 import { Method } from './method-codec'
 import { contractCodec } from './contract-codec'
 import {

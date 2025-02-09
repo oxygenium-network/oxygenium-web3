@@ -16,9 +16,9 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { codegen } from '@alephium/cli'
+import { codegen } from '@oxygenium-network/cli'
 import { Project } from './packages/cli/src/project'
-import { web3 } from '@alephium/web3'
+import { web3 } from '@oxygenium-network/web3'
 
 async function gen() {
   web3.setCurrentNodeProvider('http://127.0.0.1:22973')

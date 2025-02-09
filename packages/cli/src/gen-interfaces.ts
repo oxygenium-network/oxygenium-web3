@@ -17,7 +17,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
 import path from 'path'
-import { Contract, decodeArrayType, PrimitiveTypes, Struct } from '@alephium/web3'
+import { Contract, decodeArrayType, PrimitiveTypes, Struct } from '@oxygenium-network/web3'
 import { Project } from './project'
 import { promises as fsPromises } from 'fs'
 

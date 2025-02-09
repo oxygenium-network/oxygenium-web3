@@ -15,7 +15,7 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
-import { node, SubscribeOptions, subscribeToTxStatus } from '@alephium/web3'
+import { node, SubscribeOptions, subscribeToTxStatus } from '@oxygenium-network/web3'
 import { useEffect, useMemo, useState } from 'react'
 
 export function useTxStatus(txId: string, txStatusCallback?: (status: node.TxStatus) => Promise<any>) {

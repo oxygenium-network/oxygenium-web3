@@ -23,7 +23,7 @@ webpack(newConfig, (err, stats) => {
 })
 ```
 
-The `src` folder contains the `App.tsx` file, which serves as the entry point for a React application that interacts with the Alephium blockchain using the `@alephium/web3` library. The application provides a simple dashboard displaying the total number of blocks on the blockchain and information about smart contracts and scripts.
+The `src` folder contains the `App.tsx` file, which serves as the entry point for a React application that interacts with the Alephium blockchain using the `@oxygenium-network/web3` library. The application provides a simple dashboard displaying the total number of blocks on the blockchain and information about smart contracts and scripts.
 
 The `Dashboard` component fetches and displays the total number of blocks on the Alephium blockchain using the `api.blocks.getBlocks` method. The `App` component renders the `Dashboard` component in the header of the page.
 
@@ -45,4 +45,4 @@ const contractInstance = new Contract(contractJson.abi, contractJson.bytecode, c
 const result = await contractInstance.methods.myMethod().call();
 ```
 
-In summary, the code in the `App.tsx` file and its subfolders provides a foundation for building web applications that interact with the Alephium blockchain using the `@alephium/web3` library. Developers can extend this code to create more complex applications that leverage the power of the Alephium blockchain and its smart contracts.
+In summary, the code in the `App.tsx` file and its subfolders provides a foundation for building web applications that interact with the Alephium blockchain using the `@oxygenium-network/web3` library. Developers can extend this code to create more complex applications that leverage the power of the Alephium blockchain and its smart contracts.

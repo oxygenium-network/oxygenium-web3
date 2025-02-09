@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { web3 } from '@alephium/web3'
+import { web3 } from '@oxygenium-network/web3'
 import { PrivateKeyWallet } from './privatekey-wallet'
 
 describe('privatekey wallet', () => {

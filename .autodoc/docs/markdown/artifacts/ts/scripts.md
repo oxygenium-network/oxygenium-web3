@@ -9,7 +9,7 @@ For example, to execute the `DestroyAdd` script, you would call the `execute` fu
 Here is an example of how to execute the `DestroyAdd` script:
 
 ```typescript
-import { DestroyAdd } from "@alephium/web3";
+import { DestroyAdd } from "@oxygenium-network/web3";
 
 const signer = ...; // create a SignerProvider
 const params = { add: "0x123456789abcdef", caller: "0x987654321fedcba" }; // set the parameters

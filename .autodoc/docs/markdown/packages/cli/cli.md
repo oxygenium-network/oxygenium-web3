@@ -12,7 +12,7 @@ Overall, this script serves as a bridge between the user's command-line input an
 
 Example usage:
 ```
-npx @alephium/cli@latest version
+npx @oxygenium-network/cli@latest version
 ```
 This command will print the version of the Alephium CLI.
 ## Questions: 

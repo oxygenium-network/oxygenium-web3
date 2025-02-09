@@ -12,7 +12,7 @@ The main functions in this code are:
 Here's an example of how the generated code might be used in a larger project:
 
 ```typescript
-import { MyContract, MyScript } from '@alephium/web3';
+import { MyContract, MyScript } from '@oxygenium-network/web3';
 
 // Deploy a contract
 const contractInstance = await MyContract.deploy(params);

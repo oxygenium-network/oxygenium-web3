@@ -19,7 +19,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 import { Configuration } from '../src/types'
 import { deploy, Deployments } from '../src/deployment'
 import { getDeploymentFilePath } from '../src'
-import { NetworkId, TraceableError } from '@alephium/web3'
+import { NetworkId, TraceableError } from '@oxygenium-network/web3'
 
 export async function deployAndSaveProgress<Settings = unknown>(
   configuration: Configuration<Settings>,

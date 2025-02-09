@@ -16,10 +16,10 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { Account, NetworkId, SignerProvider, KeyType } from '@alephium/web3'
-import { WalletConnectProvider, SignClientOptions } from '@alephium/walletconnect-provider'
-import QRCodeModal from '@alephium/walletconnect-qrcode-modal'
-import { AlephiumWindowObject, getDefaultAlephiumWallet } from '@alephium/get-extension-wallet'
+import { Account, NetworkId, SignerProvider, KeyType } from '@oxygenium-network/web3'
+import { WalletConnectProvider, SignClientOptions } from '@oxygenium-network/walletconnect-provider'
+import QRCodeModal from '@oxygenium-network/walletconnect-qrcode-modal'
+import { AlephiumWindowObject, getDefaultAlephiumWallet } from '@oxygenium-network/get-extension-wallet'
 import { setLastConnectedAccount } from './storage'
 import { ConnectorId, InjectedProviderId } from '../types'
 import { getInjectedProvider } from './injectedProviders'

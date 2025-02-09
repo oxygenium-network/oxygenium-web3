@@ -17,11 +17,11 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 import { formatChain, parseChain, ProviderOptions, WalletConnectProvider } from '../src/index'
 import { WalletClient } from './shared'
-import { web3, node, NodeProvider, verifySignedMessage, groupOfAddress, NetworkId } from '@alephium/web3'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+import { web3, node, NodeProvider, verifySignedMessage, groupOfAddress, NetworkId } from '@oxygenium-network/web3'
+import { PrivateKeyWallet } from '@oxygenium-network/web3-wallet'
 import { SignClientTypes } from '@walletconnect/types'
 import { Greeter, Main } from '../artifacts/ts'
-import { sleep } from '@alephium/web3'
+import { sleep } from '@oxygenium-network/web3'
 
 const NETWORK_ID = 'devnet'
 const ADDRESS_GROUP = 0

@@ -33,7 +33,7 @@ import {
   ContractInstance,
   DeployContractExecutionResult,
   RunScriptResult
-} from '@alephium/web3'
+} from '@oxygenium-network/web3'
 import { getConfigFile, loadConfig } from './utils'
 import { Project } from './project'
 

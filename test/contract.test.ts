@@ -52,7 +52,7 @@ import {
   mintToken,
   randomContractId
 } from '../packages/web3-test'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+import { PrivateKeyWallet } from '@oxygenium-network/web3-wallet'
 import { Greeter, GreeterTypes } from '../artifacts/ts/Greeter'
 import {
   GreeterMain,

@@ -16,8 +16,8 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { DUST_AMOUNT, ONE_ALPH, ScriptSimulator } from '@alephium/web3'
-import { getSigner, mintToken } from '@alephium/web3-test'
+import { DUST_AMOUNT, ONE_ALPH, ScriptSimulator } from '@oxygenium-network/web3'
+import { getSigner, mintToken } from '@oxygenium-network/web3-test'
 import { MultiDeposit, MultiWithdraw, Transact } from '../artifacts/ts'
 
 describe('transact', function () {

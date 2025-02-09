@@ -24,7 +24,7 @@ import { AnimatePresence, Variants } from 'framer-motion'
 import ThemedButton, { ThemeContainer } from '../Common/ThemedButton'
 import { ResetContainer } from '../../styles'
 import { truncatedAddress } from '../../utils'
-import { Account } from '@alephium/web3'
+import { Account } from '@oxygenium-network/web3'
 import { routes } from '../Common/Modal'
 import { useConnect } from '../../hooks/useConnect'
 

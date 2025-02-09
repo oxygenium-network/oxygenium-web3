@@ -16,8 +16,8 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { ONE_ALPH, web3 } from '@alephium/web3'
-import { getSigner, getSigners } from '@alephium/web3-test'
+import { ONE_ALPH, web3 } from '@oxygenium-network/web3'
+import { getSigner, getSigners } from '@oxygenium-network/web3-test'
 
 describe('get signers', () => {
   beforeAll(() => {

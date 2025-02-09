@@ -28,8 +28,8 @@ import {
   getContractIdFromUnsignedTx,
   groupOfAddress,
   stringToHex
-} from '@alephium/web3'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+} from '@oxygenium-network/web3'
+import { PrivateKeyWallet } from '@oxygenium-network/web3-wallet'
 import { testPrivateKeys, tryGetDevnetNodeProvider } from './const'
 
 function createTokenContract(symbol: string, name: string): string {

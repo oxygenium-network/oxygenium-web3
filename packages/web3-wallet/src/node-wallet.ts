@@ -24,7 +24,7 @@ import {
   groupOfAddress,
   ExplorerProvider,
   Address
-} from '@alephium/web3'
+} from '@oxygenium-network/web3'
 
 export class NodeWallet extends SignerProviderWithMultipleAccounts {
   walletName: string

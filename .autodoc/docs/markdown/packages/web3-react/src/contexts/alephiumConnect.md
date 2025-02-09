@@ -6,7 +6,7 @@ The `AlephiumConnectContext` is a context object that holds the state of the Ale
 
 The `useAlephiumConnectContext` hook is used to access the `AlephiumConnectContext` object from within a component. It throws an error if the hook is not used within a `Provider` component.
 
-This file also imports several types and classes from the `@alephium/web3` and `../types` modules. These modules contain type definitions and classes that are used to interact with the Alephium network and to define the types of the properties in the `AlephiumConnectContext` object.
+This file also imports several types and classes from the `@oxygenium-network/web3` and `../types` modules. These modules contain type definitions and classes that are used to interact with the Alephium network and to define the types of the properties in the `AlephiumConnectContext` object.
 
 Overall, this file provides the context and hook necessary to manage the state of the Alephium Connect feature in a React application. It can be used to connect a user's wallet to the Alephium network and to perform transactions on the network. Here is an example of how the `useAlephiumConnectContext` hook can be used in a component:
 

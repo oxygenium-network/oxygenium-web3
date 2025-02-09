@@ -27,10 +27,10 @@ function Balance() {
 This component uses the `useBalance` hook to retrieve the user's balance and display it on the screen. If the balance is not available yet, it displays a loading message.
 ## Questions: 
  1. What is the purpose of this code?
-   This code defines a custom hook called `useBalance` that retrieves the balance of a user's Alephium account using the `@alephium/web3` library and the `useEffect` and `useState` hooks from React.
+   This code defines a custom hook called `useBalance` that retrieves the balance of a user's Alephium account using the `@oxygenium-network/web3` library and the `useEffect` and `useState` hooks from React.
 
 2. What dependencies does this code have?
-   This code imports the `Balance` type from the `@alephium/web3` library and the `useEffect` and `useState` hooks from React. It also imports a custom hook called `useAlephiumConnectContext` from a context file.
+   This code imports the `Balance` type from the `@oxygenium-network/web3` library and the `useEffect` and `useState` hooks from React. It also imports a custom hook called `useAlephiumConnectContext` from a context file.
 
 3. What license is this code released under?
    This code is released under the GNU Lesser General Public License, version 3 or later.

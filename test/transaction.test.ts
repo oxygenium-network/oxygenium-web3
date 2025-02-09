@@ -21,12 +21,12 @@ import { node, ONE_ALPH, DUST_AMOUNT, MINIMAL_CONTRACT_DEPOSIT } from '../packag
 import { SubscribeOptions, sleep } from '../packages/web3'
 import { web3 } from '../packages/web3'
 import { TxStatus } from '../packages/web3'
-import { HDWallet, HDWalletAccount, PrivateKeyWallet, generateMnemonic } from '@alephium/web3-wallet'
+import { HDWallet, HDWalletAccount, PrivateKeyWallet, generateMnemonic } from '@oxygenium-network/web3-wallet'
 import { Add, Sub, AddMain, Transact, Deposit, DepositToken } from '../artifacts/ts'
 import { getSigner, mintToken, testPrivateKeyWallet } from '../packages/web3-test'
 import { TransactionBuilder } from '../packages/web3'
 import { ALPH_TOKEN_ID } from '../packages/web3'
-import { Balance } from '@alephium/web3/src/api/api-alephium'
+import { Balance } from '@oxygenium-network/web3/src/api/api-alephium'
 
 describe('transactions', function () {
   let signer: PrivateKeyWallet

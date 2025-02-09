@@ -29,8 +29,8 @@ import {
   TOTAL_NUMBER_OF_GROUPS,
   binToHex,
   TraceableError
-} from '@alephium/web3'
-import { NodeWallet, PrivateKeyWallet } from '@alephium/web3-wallet'
+} from '@oxygenium-network/web3'
+import { NodeWallet, PrivateKeyWallet } from '@oxygenium-network/web3-wallet'
 import { randomBytes } from 'crypto'
 import {
   testAddress,

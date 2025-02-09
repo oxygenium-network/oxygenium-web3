@@ -23,7 +23,7 @@ import {
   getWalletObject,
   isWalletObj,
   providerInitializedEvent
-} from '@alephium/get-extension-wallet'
+} from '@oxygenium-network/get-extension-wallet'
 import { InjectedProviderId } from '../types'
 
 export type InjectedProviderListener = (providers: AlephiumWindowObject[]) => void

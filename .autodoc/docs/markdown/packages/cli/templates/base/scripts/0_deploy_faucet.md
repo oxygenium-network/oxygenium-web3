@@ -24,7 +24,7 @@ This code imports the deployFaucet function from the current directory and calls
    - This code is a deployment script for a token faucet contract in the Alephium blockchain network.
 
 2. What dependencies are required for this code to run?
-   - This code requires the `@alephium/cli` package and a custom `Settings` object defined in `alephium.config`. It also imports the `TokenFaucet` contract from an artifacts directory.
+   - This code requires the `@oxygenium-network/cli` package and a custom `Settings` object defined in `alephium.config`. It also imports the `TokenFaucet` contract from an artifacts directory.
 
 3. What is the expected output of running this code?
    - Running this code will deploy a token faucet contract with initial state values specified in the `initialFields` object. The contract ID and address will be logged to the console.

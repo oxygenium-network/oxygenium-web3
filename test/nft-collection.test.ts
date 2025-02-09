@@ -26,13 +26,13 @@ import {
   addressFromContractId,
   hexToString,
   ContractFactory
-} from '@alephium/web3'
+} from '@oxygenium-network/web3'
 import { NFTTest } from '../artifacts/ts/NFTTest'
 import { WrongNFTTest } from '../artifacts/ts/WrongNFTTest'
 import { NFTCollectionTest, NFTCollectionTestInstance } from '../artifacts/ts/NFTCollectionTest'
 import { MintNFTTest, WithdrawNFTCollectionTest } from '../artifacts/ts/scripts'
-import { getSigner, randomContractId } from '@alephium/web3-test'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+import { getSigner, randomContractId } from '@oxygenium-network/web3-test'
+import { PrivateKeyWallet } from '@oxygenium-network/web3-wallet'
 import {
   DeprecatedNFTTest1,
   DeprecatedNFTTest1Instance,

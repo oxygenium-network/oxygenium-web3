@@ -16,10 +16,10 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+import { PrivateKeyWallet } from '@oxygenium-network/web3-wallet'
 import { Deployments, DeploymentsPerAddress, recordEqual, validatePrivateKeys } from './deployment'
-import { DeployContractExecutionResult, ContractInstance, web3 } from '@alephium/web3'
-import { randomContractAddress, testAddress } from '@alephium/web3-test'
+import { DeployContractExecutionResult, ContractInstance, web3 } from '@oxygenium-network/web3'
+import { randomContractAddress, testAddress } from '@oxygenium-network/web3-test'
 
 describe('deployments', () => {
   it('test record equal', () => {

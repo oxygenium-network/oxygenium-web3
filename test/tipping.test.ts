@@ -16,9 +16,9 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { NodeProvider, convertAlphAmountWithDecimals, number256ToNumber, DEFAULT_GAS_ALPH_AMOUNT } from '@alephium/web3'
-import { testNodeWallet } from '@alephium/web3-test'
-import { PrivateKeyWallet, deriveHDWalletPrivateKey } from '@alephium/web3-wallet'
+import { NodeProvider, convertAlphAmountWithDecimals, number256ToNumber, DEFAULT_GAS_ALPH_AMOUNT } from '@oxygenium-network/web3'
+import { testNodeWallet } from '@oxygenium-network/web3-test'
+import { PrivateKeyWallet, deriveHDWalletPrivateKey } from '@oxygenium-network/web3-wallet'
 import * as bip39 from 'bip39'
 
 class TippingBot {

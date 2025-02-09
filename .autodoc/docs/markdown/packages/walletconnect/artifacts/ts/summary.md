@@ -2,7 +2,7 @@
 
 The code in the `alephium-web3` project's `.autodoc/docs/json/packages/walletconnect/artifacts/ts` folder provides functionality for interacting with the Alephium blockchain, specifically through a smart contract called `Greeter`. The folder contains three TypeScript files: `Greeter.ts`, `index.ts`, and `scripts.ts`.
 
-`Greeter.ts` defines the `Greeter` contract using the `Contract` class from the `@alephium/web3` library. This class provides methods to interact with smart contracts on the Alephium blockchain. The `Greeter` contract has a single method called `greet`, which returns a `bigint`. The `Factory` class creates instances of the `GreeterInstance` class, which can be used to interact with the contract on the blockchain. The `GreeterInstance` class provides methods like `fetchState` and `multicall`. The `GreeterTypes` namespace defines custom types for the contract, such as `Fields` and `CallMethodTable`.
+`Greeter.ts` defines the `Greeter` contract using the `Contract` class from the `@oxygenium-network/web3` library. This class provides methods to interact with smart contracts on the Alephium blockchain. The `Greeter` contract has a single method called `greet`, which returns a `bigint`. The `Factory` class creates instances of the `GreeterInstance` class, which can be used to interact with the contract on the blockchain. The `GreeterInstance` class provides methods like `fetchState` and `multicall`. The `GreeterTypes` namespace defines custom types for the contract, such as `Fields` and `CallMethodTable`.
 
 Example usage of `Greeter.ts`:
 
