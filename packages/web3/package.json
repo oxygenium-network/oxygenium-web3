@@ -27,8 +27,8 @@
   },
   "author": "Oxygenium dev <dev@oxygenium.org>",
   "config": {
-    "oxygenium_version": "3.12.0",
-    "explorer_backend_version": "3.12.0"
+    "oxygenium_version": "3.12.0-TEST-0",
+    "explorer_backend_version": "3.12.0-TEST-0"
   },
   "scripts": {
     "build": "rm -rf dist/* && npx tsc --build . && webpack",
