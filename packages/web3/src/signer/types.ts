@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -137,7 +137,7 @@ export interface SignUnsignedTxResult {
 assertType<Eq<SignUnsignedTxResult, SignTransferTxResult>>
 
 export type MessageHasher =
-  | 'oxygenium' // Message is prefixed with 'Alephium signed message: ' before hashed with blake2b
+  | 'oxygenium' // Message is prefixed with 'Oxygenium signed message: ' before hashed with blake2b
   | 'sha256'
   | 'blake2b'
   | 'identity' // No hash is used, the message to be 32 bytes

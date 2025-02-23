@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -50,17 +50,17 @@ export const useConnectSettingContext = () => {
   return context
 }
 
-export type AlephiumConnectContextValue = {
+export type OxygeniumConnectContextValue = {
   account?: Account & { network: NetworkId }
   setAccount: React.Dispatch<React.SetStateAction<(Account & { network: NetworkId }) | undefined>>
   signerProvider?: SignerProvider
   setSignerProvider: React.Dispatch<React.SetStateAction<SignerProvider | undefined>>
 }
 
-export const AlephiumConnectContext = createContext<AlephiumConnectContextValue | null>(null)
+export const OxygeniumConnectContext = createContext<OxygeniumConnectContextValue | null>(null)
 
-export const useAlephiumConnectContext = () => {
-  const context = useContext(AlephiumConnectContext)
-  if (!context) throw Error('AlephiumConnect Hook must be inside a Provider.')
+export const useOxygeniumConnectContext = () => {
+  const context = useContext(OxygeniumConnectContext)
+  if (!context) throw Error('OxygeniumConnect Hook must be inside a Provider.')
   return context
 }

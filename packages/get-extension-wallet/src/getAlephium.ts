@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -16,14 +16,14 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 import { oxygeniumProvider, checkProviderMetadata, knownProviders } from './knownProviders'
-import { AlephiumWindowObject, providerInitializedEvent, WalletProvider } from './types'
+import { OxygeniumWindowObject, providerInitializedEvent, WalletProvider } from './types'
 
-export function getDefaultAlephiumWallet(): Promise<AlephiumWindowObject | undefined> {
+export function getDefaultOxygeniumWallet(): Promise<OxygeniumWindowObject | undefined> {
   return getKnownWallet(oxygeniumProvider)
 }
 
-export async function scanKnownWallets(): Promise<AlephiumWindowObject[]> {
-  const wallets: AlephiumWindowObject[] = []
+export async function scanKnownWallets(): Promise<OxygeniumWindowObject[]> {
+  const wallets: OxygeniumWindowObject[] = []
   for (const provider of knownProviders) {
     const wallet = await getKnownWallet(provider)
     if (wallet !== undefined) {
@@ -33,8 +33,8 @@ export async function scanKnownWallets(): Promise<AlephiumWindowObject[]> {
   return wallets
 }
 
-export function getKnownWallet(provider: WalletProvider): Promise<AlephiumWindowObject | undefined> {
-  return new Promise<AlephiumWindowObject | undefined>((resolve) => {
+export function getKnownWallet(provider: WalletProvider): Promise<OxygeniumWindowObject | undefined> {
+  return new Promise<OxygeniumWindowObject | undefined>((resolve) => {
     const fetch = () => {
       const wallet = getWalletObject(provider.id)
       if (!!wallet && checkProviderMetadata(wallet, provider)) {
@@ -48,7 +48,7 @@ export function getKnownWallet(provider: WalletProvider): Promise<AlephiumWindow
   })
 }
 
-export function getWalletObject(id: string): AlephiumWindowObject | undefined {
+export function getWalletObject(id: string): OxygeniumWindowObject | undefined {
   try {
     const providers = window['oxygeniumProviders']
     if (!providers) {
@@ -70,7 +70,7 @@ export function isWalletObj(wallet: any): boolean {
     return (
       wallet &&
       [
-        // wallet's must have methods/members, see AlephiumWindowObject
+        // wallet's must have methods/members, see OxygeniumWindowObject
         'id',
         'name',
         'icon',

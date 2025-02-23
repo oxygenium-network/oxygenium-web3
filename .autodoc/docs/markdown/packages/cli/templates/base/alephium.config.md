@@ -4,9 +4,9 @@ The code above is a configuration file for the oxygenium-web3 project. It import
 
 The configuration object is an instance of the Configuration class, which is a generic class that takes a type parameter. In this case, the type parameter is Settings, which means that the configuration object has a settings property of type Settings.
 
-The configuration object has three network configurations: devnet, testnet, and mainnet. Each network configuration has a nodeUrl property that specifies the URL of the Alephium node to connect to. The devnet network configuration also has a privateKeys property that specifies an array of private keys to use for deploying contracts. The testnet and mainnet network configurations get their private keys from environment variables.
+The configuration object has three network configurations: devnet, testnet, and mainnet. Each network configuration has a nodeUrl property that specifies the URL of the Oxygenium node to connect to. The devnet network configuration also has a privateKeys property that specifies an array of private keys to use for deploying contracts. The testnet and mainnet network configurations get their private keys from environment variables.
 
-This configuration file can be used throughout the oxygenium-web3 project to provide network and settings information. For example, other modules in the project can import this configuration object and use it to connect to the Alephium node and deploy contracts. Here is an example of how this configuration file could be used:
+This configuration file can be used throughout the oxygenium-web3 project to provide network and settings information. For example, other modules in the project can import this configuration object and use it to connect to the Oxygenium node and deploy contracts. Here is an example of how this configuration file could be used:
 
 ```typescript
 import configuration, { Settings } from './configuration'
@@ -16,7 +16,7 @@ const devnetSettings: Settings = configuration.networks.devnet.settings
 const nodeUrl: string = configuration.networks.devnet.nodeUrl
 const privateKeys: string[] = configuration.networks.devnet.privateKeys
 
-// Use the settings and nodeUrl to connect to the Alephium node and deploy contracts
+// Use the settings and nodeUrl to connect to the Oxygenium node and deploy contracts
 // Use the privateKeys to sign transactions
 ``` 
 

@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/utils/number.ts)
 
-This file contains a set of utility functions for formatting and converting numbers used in the Alephium project. The functions are exported and can be used in other parts of the project.
+This file contains a set of utility functions for formatting and converting numbers used in the Oxygenium project. The functions are exported and can be used in other parts of the project.
 
 The `prettifyNumber` function takes a `Number256` value, which is a custom type used in the project to represent large integers, and formats it as a string with a specified number of decimal places. The function uses a configuration object to determine the minimum and maximum number of decimal places, the minimum number of significant digits to show in decimals, and the number of decimal places to show when the value is zero. The function first converts the `Number256` value to a `BigNumber` object from the `bignumber.js` library, then formats the number based on its value and the configuration object. The function returns the formatted string or `undefined` if the input value is not numeric.
 
@@ -10,7 +10,7 @@ The `convertAmountWithDecimals` and `convertAlphAmountWithDecimals` functions co
 
 The `number256ToBigint` function converts a `Number256` value to a `BigInt` value. If the input value is already a `BigInt`, the function returns it unchanged. Otherwise, the function converts the input value to a `BigInt` using the `BigInt` constructor.
 
-Overall, this file provides a set of utility functions for formatting and converting numbers used in the Alephium project. These functions can be used in other parts of the project to ensure consistent formatting and conversion of numbers.
+Overall, this file provides a set of utility functions for formatting and converting numbers used in the Oxygenium project. These functions can be used in other parts of the project to ensure consistent formatting and conversion of numbers.
 ## Questions: 
  1. What is the purpose of this code file?
 - This code file contains functions for prettifying and converting numbers with decimals, as well as a function for converting a Number256 type to a bigint.

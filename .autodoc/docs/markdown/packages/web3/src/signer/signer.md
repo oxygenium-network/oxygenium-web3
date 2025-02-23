@@ -15,10 +15,10 @@ The `SignerProviderWithCachedAccounts` class is a subclass of `SignerProviderWit
 The file also includes several utility functions, including `extendMessage`, `hashMessage`, `verifySignedMessage`, `toApiDestination`, `toApiDestinations`, `fromApiDestination`, and `fromApiDestinations`. These functions are used for extending and hashing messages, verifying signed messages, and converting between different data formats.
 ## Questions: 
  1. What is the purpose of the `SignerProvider` class and its subclasses?
-- The `SignerProvider` class and its subclasses provide an abstraction for interacting with a signer, such as a wallet or extension, to sign and submit transactions on the Alephium network.
+- The `SignerProvider` class and its subclasses provide an abstraction for interacting with a signer, such as a wallet or extension, to sign and submit transactions on the Oxygenium network.
 
 2. What is the `hashMessage` function used for?
 - The `hashMessage` function is used to hash a message using a specified hashing algorithm, such as blake2b or sha256, and return the result in hexadecimal format.
 
 3. What is the purpose of the `toApiDestination` and `fromApiDestination` functions?
-- The `toApiDestination` and `fromApiDestination` functions are used to convert between the `Destination` type used in the `SignerProvider` class and the `node.Destination` type used in the Alephium API.
+- The `toApiDestination` and `fromApiDestination` functions are used to convert between the `Destination` type used in the `SignerProvider` class and the `node.Destination` type used in the Oxygenium API.

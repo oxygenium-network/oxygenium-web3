@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/docker/devnet.conf)
 
-This code sets various configuration parameters for the Alephium blockchain network. The `oxygenium.genesis.allocations` array specifies the initial distribution of tokens among a set of addresses. Each object in the array contains an `address` field, which is the recipient of the tokens, an `amount` field, which specifies the number of tokens to be allocated, and a `lock-duration` field, which specifies the duration for which the tokens will be locked. 
+This code sets various configuration parameters for the Oxygenium blockchain network. The `oxygenium.genesis.allocations` array specifies the initial distribution of tokens among a set of addresses. Each object in the array contains an `address` field, which is the recipient of the tokens, an `amount` field, which specifies the number of tokens to be allocated, and a `lock-duration` field, which specifies the duration for which the tokens will be locked. 
 
 The `oxygenium.consensus` object specifies the consensus parameters for the network. `num-zeros-at-least-in-hash` specifies the number of leading zeros required in the hash of a block to be considered valid. `block-target-time` specifies the target time between blocks, and `uncle-dependency-gap-time` specifies the maximum time difference between the block and its uncle blocks. 
 
@@ -14,7 +14,7 @@ The `oxygenium.node` object specifies the node parameters. `event-log.enabled` s
 
 The `oxygenium.mining` object specifies the mining parameters. `miner-addresses` specifies the list of mining addresses that will be used to mine blocks. 
 
-Overall, this code sets various configuration parameters for the Alephium blockchain network, which are used to specify the initial token distribution, consensus rules, network parameters, wallet parameters, mempool parameters, node parameters, and mining parameters. These parameters are essential for the proper functioning of the network and can be modified as needed to suit the requirements of the network. 
+Overall, this code sets various configuration parameters for the Oxygenium blockchain network, which are used to specify the initial token distribution, consensus rules, network parameters, wallet parameters, mempool parameters, node parameters, and mining parameters. These parameters are essential for the proper functioning of the network and can be modified as needed to suit the requirements of the network. 
 
 Example usage:
 

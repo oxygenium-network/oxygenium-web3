@@ -1,10 +1,10 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/src/utils.ts)
 
-This file contains several utility functions that are used in the Alephium project. 
+This file contains several utility functions that are used in the Oxygenium project. 
 
 The `loadConfig` function takes a filename as input and returns a configuration object. It first checks if the file exists and then loads the content of the file using `require`. The loaded content is expected to have a default export that matches the `Configuration` type defined in `types.ts`. The function then merges the loaded configuration with the default configuration values and returns the resulting object.
 
-The `getConfigFile` function returns the path to the Alephium configuration file. It first checks if `oxygenium.config.ts` exists in the project root directory, and if not, it checks for `oxygenium.config.js`. If neither file exists, it returns the path to the default configuration file located in the `templates/base` directory.
+The `getConfigFile` function returns the path to the Oxygenium configuration file. It first checks if `oxygenium.config.ts` exists in the project root directory, and if not, it checks for `oxygenium.config.js`. If neither file exists, it returns the path to the default configuration file located in the `templates/base` directory.
 
 The `isNetworkLive` function takes a URL as input and returns a boolean indicating whether the network at that URL is live. It sends a GET request to the `/infos/node` endpoint of the network and checks if the response status is 200.
 
@@ -14,10 +14,10 @@ The `getDeploymentFilePath` function takes a configuration object and a network 
 
 The `getNetwork` function takes a configuration object and a network ID as input and returns the network object for that ID. The function first retrieves the network object from the configuration using the network ID as the key. It then merges the retrieved object with the default network values for that ID and returns the resulting object.
 
-Overall, these functions provide useful utilities for loading and working with Alephium configurations and networks. They can be used in various parts of the Alephium project to simplify configuration management and network interaction.
+Overall, these functions provide useful utilities for loading and working with Oxygenium configurations and networks. They can be used in various parts of the Oxygenium project to simplify configuration management and network interaction.
 ## Questions: 
  1. What is the purpose of this code file?
-- This code file contains functions related to loading configuration, checking network status, and getting network information for the Alephium project.
+- This code file contains functions related to loading configuration, checking network status, and getting network information for the Oxygenium project.
 
 2. What is the license for this code file?
 - This code file is licensed under the GNU Lesser General Public License, version 3 or later.

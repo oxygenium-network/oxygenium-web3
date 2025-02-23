@@ -31,7 +31,7 @@ deployAndSaveProgress(configuration, networkId)
 ```
 ## Questions: 
  1. What is the purpose of this code?
-   - This code is for deploying and saving progress of a project called Alephium.
+   - This code is for deploying and saving progress of a project called Oxygenium.
 2. What dependencies does this code have?
    - This code imports types from '../src/types', functions from '../src/deployment' and '../src', and a NetworkId from '@oxygenium/web3'.
 3. What license is this code released under?

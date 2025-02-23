@@ -4,17 +4,17 @@ This code is a configuration file for the Rollup module bundler. It specifies ho
 
 The configuration file uses several Rollup plugins to transform the code before bundling. The `@rollup/plugin-commonjs` plugin converts CommonJS modules to ES6 modules, which can be bundled by Rollup. The `@rollup/plugin-json` plugin allows importing JSON files as modules. The `@rollup/plugin-typescript` plugin compiles TypeScript code to JavaScript. The `rollup-plugin-esbuild` plugin uses the esbuild JavaScript bundler to optimize and minify the code. The `rollup-plugin-generate-declarations` plugin generates TypeScript declaration files for the bundled code. Finally, the `rollup-plugin-terser` plugin minifies the code further if the `production` flag is set.
 
-This configuration file can be used to build the Alephium Web3 library, which provides a JavaScript API for interacting with the Alephium blockchain. The bundled code can be included in a web page or used in a Node.js application. For example, to use the library in a Node.js application, the following code can be used:
+This configuration file can be used to build the Oxygenium Web3 library, which provides a JavaScript API for interacting with the Oxygenium blockchain. The bundled code can be included in a web page or used in a Node.js application. For example, to use the library in a Node.js application, the following code can be used:
 
 ```javascript
-const AlephiumWeb3 = require('./dist/index.js');
+const OxygeniumWeb3 = require('./dist/index.js');
 
-const web3 = new AlephiumWeb3('http://localhost:1234');
+const web3 = new OxygeniumWeb3('http://localhost:1234');
 
 web3.eth.getBlockNumber().then(console.log);
 ```
 
-This code imports the bundled Alephium Web3 library and creates a new instance of the `AlephiumWeb3` class, which connects to a local Alephium node. It then uses the `getBlockNumber` method of the `eth` object to retrieve the current block number and logs it to the console.
+This code imports the bundled Oxygenium Web3 library and creates a new instance of the `OxygeniumWeb3` class, which connects to a local Oxygenium node. It then uses the `getBlockNumber` method of the `eth` object to retrieve the current block number and logs it to the console.
 ## Questions: 
  1. What is the purpose of this code and what does it do?
    - This code is a configuration file for the Rollup bundler and it specifies the input file, output format, and plugins to use for the build process.

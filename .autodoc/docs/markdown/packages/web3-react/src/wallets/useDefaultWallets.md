@@ -1,12 +1,12 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/wallets/useDefaultWallets.tsx)
 
-This code defines a function called `useDefaultWallets` that returns an array of `WalletProps` objects. The purpose of this function is to provide a default set of wallets for the Alephium project. 
+This code defines a function called `useDefaultWallets` that returns an array of `WalletProps` objects. The purpose of this function is to provide a default set of wallets for the Oxygenium project. 
 
 The function imports another function called `getWallets` from a file located in the same directory. This function is not defined in the code provided, but it is likely that it retrieves a list of wallets from some source, such as a database or API. The `getWallets` function takes an empty object as an argument, which suggests that it may have additional options for filtering or sorting the list of wallets.
 
 The `useDefaultWallets` function simply calls `getWallets` with an empty object and returns the resulting array of `WalletProps` objects. It is not clear from the code what properties are included in a `WalletProps` object, but it can be assumed that they contain information about a wallet, such as its address, balance, and transaction history.
 
-This function may be used in the larger Alephium project to provide a default set of wallets for testing or demonstration purposes. For example, if the project includes a user interface for managing wallets, the `useDefaultWallets` function could be used to populate the initial list of wallets displayed to the user. Alternatively, the function could be used in automated tests to ensure that certain wallets are always present and have expected properties.
+This function may be used in the larger Oxygenium project to provide a default set of wallets for testing or demonstration purposes. For example, if the project includes a user interface for managing wallets, the `useDefaultWallets` function could be used to populate the initial list of wallets displayed to the user. Alternatively, the function could be used in automated tests to ensure that certain wallets are always present and have expected properties.
 
 Here is an example of how the `useDefaultWallets` function might be used in a React component:
 

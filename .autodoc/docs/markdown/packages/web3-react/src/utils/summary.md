@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/utils)
 
-The `index.ts` file in the `utils` folder provides a set of utility functions that enhance the user experience in the Alephium web3 project. These functions are primarily focused on detecting the user's browser, operating system, and device type, as well as providing helper functions for rendering React components and Ethereum addresses.
+The `index.ts` file in the `utils` folder provides a set of utility functions that enhance the user experience in the Oxygenium web3 project. These functions are primarily focused on detecting the user's browser, operating system, and device type, as well as providing helper functions for rendering React components and Ethereum addresses.
 
 For example, the `detectBrowser` function uses the `detect-browser` library to identify the user's browser. This information can be used to optimize the application's performance or display for specific browsers. Similarly, the `detectOS` function identifies the user's operating system, which can be useful for tailoring the application's behavior or appearance to different platforms.
 
@@ -30,4 +30,4 @@ const shortAddress = truncatedAddress("0x742d35Cc6634C0532925a3b844Bc454e4438f44
 // Output: "0x742d...8f44e"
 ```
 
-In summary, the utility functions in the `index.ts` file play a crucial role in enhancing the user experience of the Alephium web3 project. They provide valuable information about the user's environment and offer helper functions for rendering React components and Ethereum addresses, making the application more adaptable and user-friendly.
+In summary, the utility functions in the `index.ts` file play a crucial role in enhancing the user experience of the Oxygenium web3 project. They provide valuable information about the user's environment and offer helper functions for rendering React components and Ethereum addresses, making the application more adaptable and user-friendly.

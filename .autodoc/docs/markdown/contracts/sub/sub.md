@@ -4,7 +4,7 @@ The code above defines a smart contract function called `sub` that subtracts two
 
 The `@using` decorator above the `sub` function is used to set two options for the function. The `checkExternalCaller` option is set to `false`, which means that the function can be called by any account on the blockchain, not just the contract owner. The `updateFields` option is set to `true`, which means that the `result` variable can be updated by the function.
 
-This code is part of the larger Alephium Web3 project, which is a library for interacting with the Alephium blockchain. The `sub` function can be called by other contracts or by external accounts to perform subtraction operations on the blockchain. The emitted event can be used to track the history of these operations and to provide transparency to users of the blockchain.
+This code is part of the larger Oxygenium Web3 project, which is a library for interacting with the Oxygenium blockchain. The `sub` function can be called by other contracts or by external accounts to perform subtraction operations on the blockchain. The emitted event can be used to track the history of these operations and to provide transparency to users of the blockchain.
 
 Here is an example of how the `sub` function could be called from another contract:
 

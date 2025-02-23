@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Tooltip/types.ts)
 
-This file contains two TypeScript type definitions for a tooltip component that can be used in the Alephium project. The first type definition, `TooltipSizeProps`, is a union type that specifies the possible sizes of the tooltip. The two possible values are `'small'` and `'large'`. 
+This file contains two TypeScript type definitions for a tooltip component that can be used in the Oxygenium project. The first type definition, `TooltipSizeProps`, is a union type that specifies the possible sizes of the tooltip. The two possible values are `'small'` and `'large'`. 
 
 The second type definition, `TooltipProps`, specifies the props that can be passed to the tooltip component. These props include:
 
@@ -11,7 +11,7 @@ The second type definition, `TooltipProps`, specifies the props that can be pass
 - `yOffset`: A number that specifies the vertical offset of the tooltip from its attached element.
 - `delay`: A number that specifies the delay (in milliseconds) before the tooltip is displayed.
 
-These type definitions can be used to ensure that the tooltip component is used correctly throughout the Alephium project. For example, when defining a tooltip component, the `TooltipProps` type can be used to specify the expected props:
+These type definitions can be used to ensure that the tooltip component is used correctly throughout the Oxygenium project. For example, when defining a tooltip component, the `TooltipProps` type can be used to specify the expected props:
 
 ```typescript
 import { TooltipProps } from 'oxygenium-web3'
@@ -21,7 +21,7 @@ const MyTooltip = ({ message, children, open, xOffset, yOffset, delay }: Tooltip
 }
 ```
 
-Overall, this file provides a useful abstraction for creating and using tooltips in the Alephium project, making it easier to maintain and update the tooltip component in the future.
+Overall, this file provides a useful abstraction for creating and using tooltips in the Oxygenium project, making it easier to maintain and update the tooltip component in the future.
 ## Questions: 
  1. What is the purpose of this file?
 - This file contains a type definition for `TooltipProps` and `TooltipSizeProps`, which are used for defining the props of a tooltip component.

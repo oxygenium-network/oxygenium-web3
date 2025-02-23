@@ -1,8 +1,8 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-wallet/src/hd-wallet.ts)
 
-This file contains functions and classes related to HD wallets and private key derivation. The code is part of the Alephium project and is licensed under the GNU Lesser General Public License.
+This file contains functions and classes related to HD wallets and private key derivation. The code is part of the Oxygenium project and is licensed under the GNU Lesser General Public License.
 
-The file imports several modules from the `@oxygenium/web3` package, which provides a JavaScript library for interacting with the Alephium blockchain. It also imports the `bip39` and `bip32` modules, which are used for mnemonic phrase generation and hierarchical deterministic (HD) key derivation, respectively.
+The file imports several modules from the `@oxygenium/web3` package, which provides a JavaScript library for interacting with the Oxygenium blockchain. It also imports the `bip39` and `bip32` modules, which are used for mnemonic phrase generation and hierarchical deterministic (HD) key derivation, respectively.
 
 The file exports several functions for deriving private keys from a mnemonic phrase, including `deriveHDWalletPrivateKey`, `deriveSecp256K1PrivateKey`, and `deriveSchnorrPrivateKey`. These functions take a mnemonic phrase, a key type (either 'default' or 'bip340-schnorr'), an optional address index, and an optional passphrase. They return a private key in hexadecimal format.
 
@@ -13,7 +13,7 @@ The file exports several utility functions for constructing HD wallet paths, inc
 Finally, the file exports a `HDWallet` class, which provides an in-memory HD wallet implementation. The class extends the `SignerProviderWithCachedAccounts` class from the `@oxygenium/web3` package and provides methods for deriving and adding new accounts, as well as signing raw transactions. The `HDWallet` constructor takes a mnemonic phrase, a key type, a node provider, an explorer provider, and an optional passphrase. The class uses the `deriveHDWalletPrivateKey` and `deriveHDWalletPrivateKeyForGroup` functions to derive private keys and construct accounts.
 ## Questions: 
  1. What is the purpose of this code file?
-- This code file contains functions and classes related to HD wallets and private key derivation for the Alephium blockchain.
+- This code file contains functions and classes related to HD wallets and private key derivation for the Oxygenium blockchain.
 
 2. What is the license for this code?
 - This code is licensed under the GNU Lesser General Public License version 3 or later.

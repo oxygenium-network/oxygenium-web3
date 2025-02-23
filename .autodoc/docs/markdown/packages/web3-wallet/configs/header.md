@@ -1,18 +1,18 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-wallet/configs/header.js)
 
-This code is a license file for the Alephium project, which is a library that can be used to interact with the Alephium blockchain. The license specifies that the library is free software and can be redistributed or modified under the terms of the GNU Lesser General Public License (LGPL) version 3 or later.
+This code is a license file for the Oxygenium project, which is a library that can be used to interact with the Oxygenium blockchain. The license specifies that the library is free software and can be redistributed or modified under the terms of the GNU Lesser General Public License (LGPL) version 3 or later.
 
 The LGPL is a permissive open-source license that allows developers to use and modify the library without having to release their own code under the same license. However, any changes made to the library must be made available under the LGPL.
 
-This license file is important for the Alephium project because it ensures that the library can be used and modified by developers without any legal issues. It also promotes collaboration and innovation by allowing developers to build on top of the library and create new applications that interact with the Alephium blockchain.
+This license file is important for the Oxygenium project because it ensures that the library can be used and modified by developers without any legal issues. It also promotes collaboration and innovation by allowing developers to build on top of the library and create new applications that interact with the Oxygenium blockchain.
 
-Here is an example of how this license file might be used in the larger Alephium project:
+Here is an example of how this license file might be used in the larger Oxygenium project:
 
 ```javascript
-const AlephiumWeb3 = require('oxygenium-web3');
-const web3 = new AlephiumWeb3('http://localhost:8545');
+const OxygeniumWeb3 = require('oxygenium-web3');
+const web3 = new OxygeniumWeb3('http://localhost:8545');
 
-// Use the web3 library to interact with the Alephium blockchain
+// Use the web3 library to interact with the Oxygenium blockchain
 web3.eth.getBlockNumber((err, blockNumber) => {
   if (err) {
     console.error(err);
@@ -22,7 +22,7 @@ web3.eth.getBlockNumber((err, blockNumber) => {
 });
 ```
 
-In this example, the `oxygenium-web3` library is used to create a new instance of the `web3` object, which can be used to interact with the Alephium blockchain. The `getBlockNumber` method is called to retrieve the latest block number on the blockchain. This code is made possible by the LGPL license, which allows developers to use and modify the `oxygenium-web3` library without any legal issues.
+In this example, the `oxygenium-web3` library is used to create a new instance of the `web3` object, which can be used to interact with the Oxygenium blockchain. The `getBlockNumber` method is called to retrieve the latest block number on the blockchain. This code is made possible by the LGPL license, which allows developers to use and modify the `oxygenium-web3` library without any legal issues.
 ## Questions: 
  1. What is the purpose of this file in the oxygenium-web3 project?
 - The code in this file is related to the licensing of the oxygenium project and the use of the GNU Lesser General Public License.

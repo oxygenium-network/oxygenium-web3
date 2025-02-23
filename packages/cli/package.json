@@ -1,7 +1,7 @@
 {
   "name": "@oxygenium/cli",
   "version": "0.16.1",
-  "description": "Alephium command line tool",
+  "description": "Oxygenium command line tool",
   "license": "GPL",
   "repository": {
     "type": "git",
@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/oxygenium/oxygenium-web3/issues"
   },
-  "author": "Alephium dev <dev@oxygenium.org>",
+  "author": "Oxygenium dev <dev@oxygenium.org>",
   "main": "dist/index.js",
   "exports": {
     ".": "./dist/index.js"

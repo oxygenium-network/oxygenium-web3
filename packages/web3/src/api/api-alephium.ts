@@ -1227,7 +1227,7 @@ export class HttpClient<SecurityDataType = unknown> {
 }
 
 /**
- * @title Alephium API
+ * @title Oxygenium API
  * @version 2.3.5
  * @baseUrl ../
  */

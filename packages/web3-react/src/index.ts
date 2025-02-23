@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -15,9 +15,9 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
-export { AlephiumWalletProvider } from './components/AlephiumConnect'
-export { useAlephiumConnectContext } from './contexts/oxygeniumConnect'
-export { AlephiumConnectButton } from './components/ConnectButton'
+export { OxygeniumWalletProvider } from './components/OxygeniumConnect'
+export { useOxygeniumConnectContext } from './contexts/oxygeniumConnect'
+export { OxygeniumConnectButton } from './components/ConnectButton'
 
 export { default as supportedConnectors } from './constants/supportedConnectors'
 

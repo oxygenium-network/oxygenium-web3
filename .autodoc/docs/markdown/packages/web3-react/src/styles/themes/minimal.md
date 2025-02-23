@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/themes/minimal.ts)
 
-This file contains a set of CSS variables that define the styling for various components in the Alephium web3 project. These variables are exported as an object with their names as keys and their values as the corresponding CSS property values. 
+This file contains a set of CSS variables that define the styling for various components in the Oxygenium web3 project. These variables are exported as an object with their names as keys and their values as the corresponding CSS property values. 
 
 The purpose of this file is to provide a centralized location for defining the styling of components in the project. By using CSS variables, the styling can be easily customized and updated throughout the project. For example, if the color scheme of the project needs to be changed, the values of the variables in this file can be updated, and the changes will be reflected throughout the project.
 
@@ -14,10 +14,10 @@ button.primary {
 }
 ```
 
-Overall, this file plays an important role in defining the visual style of the Alephium web3 project and provides a convenient way for developers to apply and customize the styling of components.
+Overall, this file plays an important role in defining the visual style of the Oxygenium web3 project and provides a convenient way for developers to apply and customize the styling of components.
 ## Questions: 
- 1. What is the purpose of this code and how is it used in the Alephium project?
-- This code exports a set of CSS variables that define the styling for various UI elements in the Alephium project's web3 interface. It is likely used to ensure consistent styling across the project.
+ 1. What is the purpose of this code and how is it used in the Oxygenium project?
+- This code exports a set of CSS variables that define the styling for various UI elements in the Oxygenium project's web3 interface. It is likely used to ensure consistent styling across the project.
 
 2. What license is this code released under?
 - This code is released under the GNU Lesser General Public License, version 3 or later.

@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/src/signer/fixtures)
 
-The `fixtures` folder in the `oxygenium-web3` project contains two JSON files, `genesis.json` and `wallets.json`, which are used for testing purposes and simulating interactions with the Alephium blockchain.
+The `fixtures` folder in the `oxygenium-web3` project contains two JSON files, `genesis.json` and `wallets.json`, which are used for testing purposes and simulating interactions with the Oxygenium blockchain.
 
 `genesis.json` contains an array of four user accounts, each with an address, public key, private key, and mnemonic phrase. Developers can use these test accounts to simulate transactions and interactions with the blockchain without using real funds or accounts. For instance, a developer may use this code to create test accounts for a smart contract they are developing and test the functionality of the contract, such as sending and receiving tokens.
 
@@ -31,6 +31,6 @@ const account = web3.eth.accounts.privateKeyToAccount(privateKey);
 web3.eth.getBalance(account.address).then(console.log);
 ```
 
-In this example, the first wallet in the array is selected, and its file is decrypted using the password. The mnemonic is then used to generate the private key, which is used to create a new account on the Alephium blockchain. Finally, the balance of the account is retrieved and logged to the console.
+In this example, the first wallet in the array is selected, and its file is decrypted using the password. The mnemonic is then used to generate the private key, which is used to create a new account on the Oxygenium blockchain. Finally, the balance of the account is retrieved and logged to the console.
 
-In summary, the `fixtures` folder provides developers with test accounts and wallets to simulate transactions and interactions with the Alephium blockchain, allowing them to test their smart contracts and other functionalities without using real funds or accounts.
+In summary, the `fixtures` folder provides developers with test accounts and wallets to simulate transactions and interactions with the Oxygenium blockchain, allowing them to test their smart contracts and other functionalities without using real funds or accounts.

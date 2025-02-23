@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/scripts)
 
-The `cli/scripts` folder in the `oxygenium-web3` project contains several scripts that are used for various purposes such as setting up new projects, deploying smart contracts, and managing a local Alephium development network (devnet).
+The `cli/scripts` folder in the `oxygenium-web3` project contains several scripts that are used for various purposes such as setting up new projects, deploying smart contracts, and managing a local Oxygenium development network (devnet).
 
 `copy-template.js` is a script that copies the `.gitignore` and `.npmignore` files from the root directory of the project to the `dist` subdirectory. This ensures that these files are included in the distribution package and properly ignored by Git and npm. For example, in the `package.json` file, the `build` script might run `build.js`, which includes this script to copy the necessary files:
 
@@ -37,7 +37,7 @@ deployAndSaveProgress(configuration, networkId)
   .catch(error => console.error(error))
 ```
 
-`start-devnet.js` contains code to launch and manage a local Alephium devnet for testing and development purposes. It provides a convenient way to launch and manage a local devnet and create a test wallet for use in the devnet. The main function, `startDevnet`, can be called with the version tag of the full node software and the path to the configuration file:
+`start-devnet.js` contains code to launch and manage a local Oxygenium devnet for testing and development purposes. It provides a convenient way to launch and manage a local devnet and create a test wallet for use in the devnet. The main function, `startDevnet`, can be called with the version tag of the full node software and the path to the configuration file:
 
 ```javascript
 const { startDevnet } = require('oxygenium-web3')
@@ -45,7 +45,7 @@ const { startDevnet } = require('oxygenium-web3')
 startDevnet('v1.0.0', '/path/to/config/file')
 ```
 
-`stop-devnet.js` defines a function called `stopDevnet` that is used to stop a running Alephium devnet. This function can be called from other parts of the project or from external scripts to stop the devnet before running new tests or making changes to the devnet configuration:
+`stop-devnet.js` defines a function called `stopDevnet` that is used to stop a running Oxygenium devnet. This function can be called from other parts of the project or from external scripts to stop the devnet before running new tests or making changes to the devnet configuration:
 
 ```javascript
 const { stopDevnet } = require('oxygenium-web3')

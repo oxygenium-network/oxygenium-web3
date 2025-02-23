@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -19,12 +19,12 @@ import React, { useContext, useEffect, useState } from 'react'
 
 import defaultTheme from '../styles/defaultTheme'
 
-import AlephiumConnectModal from '../components/ConnectModal'
+import OxygeniumConnectModal from '../components/ConnectModal'
 import { ThemeProvider } from 'styled-components'
 import { Account, KeyType, NetworkId, SignerProvider } from '@oxygenium/web3'
 import { Theme, Mode, CustomTheme } from '../types'
 import { routes } from './Common/Modal'
-import { AlephiumConnectContext, ConnectSettingContext, ConnectSettingValue } from '../contexts/oxygeniumConnect'
+import { OxygeniumConnectContext, ConnectSettingContext, ConnectSettingValue } from '../contexts/oxygeniumConnect'
 
 type ConnectSettingProviderProps = {
   useTheme?: Theme
@@ -89,18 +89,18 @@ export const ConnectSettingProvider: React.FC<ConnectSettingProviderProps> = ({
     <ConnectSettingContext.Provider value={value}>
       <ThemeProvider theme={defaultTheme}>
         {children}
-        <AlephiumConnectModal theme={theme} mode={mode} customTheme={customTheme} />
+        <OxygeniumConnectModal theme={theme} mode={mode} customTheme={customTheme} />
       </ThemeProvider>
     </ConnectSettingContext.Provider>
   )
 }
 
-export const AlephiumConnectProvider: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
-  // Only allow for mounting AlephiumConnectProvider once, so we avoid weird global
+export const OxygeniumConnectProvider: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
+  // Only allow for mounting OxygeniumConnectProvider once, so we avoid weird global
   // state collisions.
-  const context = useContext(AlephiumConnectContext)
+  const context = useContext(OxygeniumConnectContext)
   if (context) {
-    throw new Error('Multiple, nested usages of AlephiumConnectProvider detected. Please use only one.')
+    throw new Error('Multiple, nested usages of OxygeniumConnectProvider detected. Please use only one.')
   }
 
   const [account, setAccount] = useState<Account & { network: NetworkId }>()
@@ -113,10 +113,10 @@ export const AlephiumConnectProvider: React.FC<{ children?: React.ReactNode }> =
     setSignerProvider
   }
 
-  return <AlephiumConnectContext.Provider value={value}>{children}</AlephiumConnectContext.Provider>
+  return <OxygeniumConnectContext.Provider value={value}>{children}</OxygeniumConnectContext.Provider>
 }
 
-export const AlephiumWalletProvider = ({
+export const OxygeniumWalletProvider = ({
   useTheme,
   useMode,
   useCustomTheme,
@@ -126,7 +126,7 @@ export const AlephiumWalletProvider = ({
   children
 }: ConnectSettingProviderProps) => {
   return (
-    <AlephiumConnectProvider>
+    <OxygeniumConnectProvider>
       <ConnectSettingProvider
         useTheme={useTheme}
         useMode={useMode}
@@ -137,6 +137,6 @@ export const AlephiumWalletProvider = ({
       >
         {children}
       </ConnectSettingProvider>
-    </AlephiumConnectProvider>
+    </OxygeniumConnectProvider>
   )
 }

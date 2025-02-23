@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -71,7 +71,7 @@ export abstract class SignerProvider {
   abstract signAndSubmitUnsignedTx(params: SignUnsignedTxParams): Promise<SignUnsignedTxResult>
 
   abstract signUnsignedTx(params: SignUnsignedTxParams): Promise<SignUnsignedTxResult>
-  // The message will be prefixed with 'Alephium Signed Message: ' before signing
+  // The message will be prefixed with 'Oxygenium Signed Message: ' before signing
   // so that the resulted signature cannot be reused for building transactions.
   abstract signMessage(params: SignMessageParams): Promise<SignMessageResult>
 }
@@ -245,7 +245,7 @@ export abstract class SignerProviderWithCachedAccounts<T extends Account> extend
 }
 
 export function extendMessage(message: string): string {
-  return 'Alephium Signed Message: ' + message
+  return 'Oxygenium Signed Message: ' + message
 }
 
 export function hashMessage(message: string, hasher: MessageHasher): string {

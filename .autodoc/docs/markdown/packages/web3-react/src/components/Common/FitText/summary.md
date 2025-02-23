@@ -24,4 +24,4 @@ function MyComponent() {
 }
 ```
 
-In summary, the `FitText` component is a useful utility for ensuring that text content fits within the available space, regardless of the user's device or screen size. By leveraging the `useFitText` hook, it provides a flexible and efficient solution for automatically adjusting font sizes in the Alephium Web3 project.
+In summary, the `FitText` component is a useful utility for ensuring that text content fits within the available space, regardless of the user's device or screen size. By leveraging the `useFitText` hook, it provides a flexible and efficient solution for automatically adjusting font sizes in the Oxygenium Web3 project.

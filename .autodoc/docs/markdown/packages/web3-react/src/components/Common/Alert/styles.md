@@ -1,12 +1,12 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Alert/styles.ts)
 
-This code defines two styled components, `AlertContainer` and `IconContainer`, which are used to create alert messages with icons in the Alephium web3 project. 
+This code defines two styled components, `AlertContainer` and `IconContainer`, which are used to create alert messages with icons in the Oxygenium web3 project. 
 
 The `AlertContainer` component is a container for the alert message and can be customized using CSS variables. It is a flex container with a gap of 8px between its child elements. It has a position of relative and a border radius of 9px. The `padding`, `text-align`, `font-size`, `line-height`, and `font-weight` properties are also set. The `max-width` is set to 260px and the `min-width` is set to 100%. The component also has CSS variables for `border-radius`, `color`, `background`, and `box-shadow` which can be customized. 
 
 The `IconContainer` component is a container for the icon that appears in the alert message. It has a fixed width and height of 24px and is a flex container with its child elements centered both horizontally and vertically. The SVG icon is set to display block and has a width of 100% and height of auto. 
 
-These components are used to create alert messages throughout the Alephium web3 project. For example, an alert message could be created with the following code:
+These components are used to create alert messages throughout the Oxygenium web3 project. For example, an alert message could be created with the following code:
 
 ```
 import { AlertContainer, IconContainer } from 'oxygenium-web3'

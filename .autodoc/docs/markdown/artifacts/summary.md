@@ -41,7 +41,7 @@ deployedContract.main((err, result) => {
 
 Similarly, the `main.ral.json` file provides metadata about a "Main" contract, which can be used to deploy the contract and call its functions. The `add` subfolder contains JSON files for contracts that perform addition operations and manage assets, while the `greeter` subfolder contains a simple "Greeter" contract that returns a greeting message. The `sub` subfolder contains a "Sub" contract that performs subtraction operations.
 
-These contracts can be used as building blocks for more complex decentralized applications on the Alephium blockchain network. For example, a developer could use the "Add" contract from the `add` subfolder to create a new contract that performs arithmetic operations on user-provided input:
+These contracts can be used as building blocks for more complex decentralized applications on the Oxygenium blockchain network. For example, a developer could use the "Add" contract from the `add` subfolder to create a new contract that performs arithmetic operations on user-provided input:
 
 ```solidity
 contract MyContract {

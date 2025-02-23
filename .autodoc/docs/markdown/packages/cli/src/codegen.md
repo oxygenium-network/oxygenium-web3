@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/src/codegen.ts)
 
-This code is responsible for generating TypeScript code for the Alephium blockchain project. It focuses on creating code for contracts, scripts, and deployment files. The generated code allows developers to interact with the Alephium blockchain using TypeScript, making it easier to build and test applications.
+This code is responsible for generating TypeScript code for the Oxygenium blockchain project. It focuses on creating code for contracts, scripts, and deployment files. The generated code allows developers to interact with the Oxygenium blockchain using TypeScript, making it easier to build and test applications.
 
 The main functions in this code are:
 
@@ -24,11 +24,11 @@ const result = await contractInstance.methods.myMethod(params);
 const scriptResult = await MyScript.execute(params);
 ```
 
-Overall, this code generation module simplifies the process of interacting with the Alephium blockchain by providing a TypeScript interface for contracts and scripts.
+Overall, this code generation module simplifies the process of interacting with the Oxygenium blockchain by providing a TypeScript interface for contracts and scripts.
 ## Questions: 
  1. **What is the purpose of the `toTsType` function?**
 
-   The `toTsType` function is used to convert a given `ralphType` (a custom type used in the Alephium project) to its corresponding TypeScript type. It handles basic types like 'U256', 'I256', 'Bool', 'Address', and 'ByteVec', as well as array types.
+   The `toTsType` function is used to convert a given `ralphType` (a custom type used in the Oxygenium project) to its corresponding TypeScript type. It handles basic types like 'U256', 'I256', 'Bool', 'Address', and 'ByteVec', as well as array types.
 
 2. **How does the `genContract` function work?**
 

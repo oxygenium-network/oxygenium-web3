@@ -1,12 +1,12 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/scripts/start-devnet.js)
 
-This file contains code that is used to launch and manage a local development network (devnet) for the Alephium blockchain. The devnet is used for testing and development purposes, and is not part of the main Alephium network. 
+This file contains code that is used to launch and manage a local development network (devnet) for the Oxygenium blockchain. The devnet is used for testing and development purposes, and is not part of the main Oxygenium network. 
 
 The code imports several Node.js modules, including `fs`, `fs-extra`, `process`, `path`, `fetch`, `spawn`, and `os`. It also imports a function called `isDevnetLive` from another module located in the `src` directory. 
 
 The `devDir` constant is defined as the path to the directory where the devnet files will be stored. This directory is created in the user's home directory. 
 
-The `_downloadFullNode` function is an internal function that downloads the Alephium full node software from GitHub. It takes two arguments: the version tag of the software to download, and the name of the file to save the downloaded software to. It uses the `fetch` module to download the software, and saves it to the specified file using the `fs` module. 
+The `_downloadFullNode` function is an internal function that downloads the Oxygenium full node software from GitHub. It takes two arguments: the version tag of the software to download, and the name of the file to save the downloaded software to. It uses the `fetch` module to download the software, and saves it to the specified file using the `fs` module. 
 
 The `downloadFullNode` function is called by `startDevnet` to download the full node software if it has not already been downloaded. It takes three arguments: the version tag of the software to download, the path to the devnet directory, and the name of the file to save the downloaded software to. If the devnet directory does not exist, it is created using the `fs` module. If the specified file does not exist, `_downloadFullNode` is called to download the software. 
 
@@ -20,10 +20,10 @@ The `timeout` and `wait` functions are used to wait for the devnet to become liv
 
 The `startDevnet` function is the main function of the file. It takes two arguments: the version tag of the full node software to use, and the path to the configuration file to use. It first downloads the full node software and copies the configuration file to the devnet directory. It then checks if the devnet is already running by calling `isDevnetLive`. If it is, it prints an error message and exits. If it is not, it launches the devnet by calling `launchDevnet`, waits for it to become live by calling `wait`, and prepares the test wallet by calling `prepareWallet`. Finally, it prints a message indicating that the devnet is ready. 
 
-Overall, this file provides a convenient way to launch and manage a local devnet for the Alephium blockchain, and to create and manage a test wallet for use in the devnet. It is likely used in conjunction with other files and modules in the Alephium project to facilitate testing and development of the blockchain.
+Overall, this file provides a convenient way to launch and manage a local devnet for the Oxygenium blockchain, and to create and manage a test wallet for use in the devnet. It is likely used in conjunction with other files and modules in the Oxygenium project to facilitate testing and development of the blockchain.
 ## Questions: 
  1. What is the purpose of this code?
-- This code is used to download and launch a devnet for the Alephium blockchain project, as well as prepare a test wallet for use with the devnet.
+- This code is used to download and launch a devnet for the Oxygenium blockchain project, as well as prepare a test wallet for use with the devnet.
 
 2. What dependencies does this code have?
 - This code imports several external libraries, including `cross-fetch`, `fs`, `fs-extra`, `os`, `path`, and `child_process`.

@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -15,9 +15,9 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
-import { getDefaultAlephiumWallet } from '@oxygenium/get-extension-wallet'
+import { getDefaultOxygeniumWallet } from '@oxygenium/get-extension-wallet'
 import { NetworkId } from '@oxygenium/web3'
-import { useAlephiumConnectContext, useConnectSettingContext } from '../contexts/oxygeniumConnect'
+import { useOxygeniumConnectContext, useConnectSettingContext } from '../contexts/oxygeniumConnect'
 import { useCallback, useMemo } from 'react'
 import { WalletConnectProvider } from '@oxygenium/walletconnect-provider'
 import QRCodeModal from '@walletconnect/qrcode-modal'
@@ -31,7 +31,7 @@ export interface ConnectOptions {
 
 export function useConnect(options: ConnectOptions) {
   const settings = useConnectSettingContext()
-  const context = useAlephiumConnectContext()
+  const context = useOxygeniumConnectContext()
 
   const wcDisconnect = useCallback(async () => {
     if (
@@ -96,8 +96,8 @@ export function useConnect(options: ConnectOptions) {
     }
   }, [options, wcDisconnect])
 
-  const disconnectAlephium = () => {
-    getDefaultAlephiumWallet()
+  const disconnectOxygenium = () => {
+    getDefaultOxygeniumWallet()
       .then((oxygenium) => {
         if (!!oxygenium) {
           oxygenium.disconnect()
@@ -119,26 +119,26 @@ export function useConnect(options: ConnectOptions) {
     }
   }, [options, settings.keyType])
 
-  const connectAlephium = useCallback(async () => {
-    const windowAlephium = await getDefaultAlephiumWallet()
+  const connectOxygenium = useCallback(async () => {
+    const windowOxygenium = await getDefaultOxygeniumWallet()
 
-    const enabledAccount = await windowAlephium?.enable(enableOptions).catch(() => undefined) // Need to catch the exception here
+    const enabledAccount = await windowOxygenium?.enable(enableOptions).catch(() => undefined) // Need to catch the exception here
 
-    if (windowAlephium && enabledAccount) {
-      context.setSignerProvider(windowAlephium)
+    if (windowOxygenium && enabledAccount) {
+      context.setSignerProvider(windowOxygenium)
       context.setAccount({ ...enabledAccount, network: enableOptions.networkId })
     }
 
     return enabledAccount
   }, [enableOptions])
 
-  const autoConnectAlephium = useCallback(async () => {
-    const windowAlephium = await getDefaultAlephiumWallet()
+  const autoConnectOxygenium = useCallback(async () => {
+    const windowOxygenium = await getDefaultOxygeniumWallet()
 
-    const enabledAccount = await windowAlephium?.enableIfConnected(enableOptions).catch(() => undefined) // Need to catch the exception here
+    const enabledAccount = await windowOxygenium?.enableIfConnected(enableOptions).catch(() => undefined) // Need to catch the exception here
 
-    if (windowAlephium && enabledAccount) {
-      context.setSignerProvider(windowAlephium)
+    if (windowOxygenium && enabledAccount) {
+      context.setSignerProvider(windowOxygenium)
       context.setAccount({ ...enabledAccount, network: enableOptions.networkId })
     }
   }, [enableOptions])
@@ -146,7 +146,7 @@ export function useConnect(options: ConnectOptions) {
   return useMemo(
     () =>
       ({
-        injected: { connect: connectAlephium, disconnect: disconnectAlephium, autoConnect: autoConnectAlephium },
+        injected: { connect: connectOxygenium, disconnect: disconnectOxygenium, autoConnect: autoConnectOxygenium },
         walletConnect: { connect: wcConnect, disconnect: wcDisconnect },
         desktopWallet: { connect: desktopWalletConnect, disconnect: wcDisconnect }
       }[settings.connectorId]),

@@ -1,12 +1,12 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/themes/base.ts)
 
-This code exports an object that contains CSS variables for a light and dark theme. These variables are used to style the UI of the Alephium Web3 project. 
+This code exports an object that contains CSS variables for a light and dark theme. These variables are used to style the UI of the Oxygenium Web3 project. 
 
 The light theme contains variables for styling buttons, modals, tooltips, and the network dropdown. The `--ck-connectbutton` variables are used to style the "Connect Wallet" button, which is a prominent feature of the UI. The `--ck-primary-button` and `--ck-secondary-button` variables are used to style primary and secondary buttons respectively. The `--ck-modal` variables are used to style the modal component, which is used to display important information to the user. The `--ck-tooltip` variables are used to style tooltips, which provide additional information when the user hovers over certain elements. The `--ck-dropdown-button` variables are used to style the network dropdown, which allows the user to switch between different networks.
 
 The dark theme contains similar variables to the light theme, but with different color values to create a dark UI. The `--ck-connectbutton` variables are used to style the "Connect Wallet" button, which is still a prominent feature of the UI. The `--ck-primary-button` and `--ck-secondary-button` variables are used to style primary and secondary buttons respectively. The `--ck-modal` variables are used to style the modal component, which is used to display important information to the user. The `--ck-tooltip` variables are used to style tooltips, which provide additional information when the user hovers over certain elements. The `--ck-dropdown-button` variables are used to style the network dropdown, which allows the user to switch between different networks.
 
-Overall, this code provides a way to easily customize the styling of the Alephium Web3 project based on a light or dark theme. Developers can use these variables to create a consistent and visually appealing UI for their users. 
+Overall, this code provides a way to easily customize the styling of the Oxygenium Web3 project based on a light or dark theme. Developers can use these variables to create a consistent and visually appealing UI for their users. 
 
 Example usage:
 

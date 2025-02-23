@@ -1,7 +1,7 @@
 {
   "name": "@oxygenium/web3",
   "version": "0.16.1",
-  "description": "A JS/TS library to interact with the Alephium platform",
+  "description": "A JS/TS library to interact with the Oxygenium platform",
   "license": "GPL",
   "main": "dist/src/index.js",
   "browser": "dist/oxygenium-web3.min.js",
@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/oxygenium/oxygenium-web3/issues"
   },
-  "author": "Alephium dev <dev@oxygenium.org>",
+  "author": "Oxygenium dev <dev@oxygenium.org>",
   "config": {
     "oxygenium_version": "2.3.5",
     "explorer_backend_version": "1.15.1"

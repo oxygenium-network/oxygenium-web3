@@ -1,10 +1,10 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/contract/events.ts)
 
-This file contains code for an event subscription class and a function to subscribe to events. The purpose of this code is to allow users to subscribe to events emitted by a smart contract on the Alephium blockchain. 
+This file contains code for an event subscription class and a function to subscribe to events. The purpose of this code is to allow users to subscribe to events emitted by a smart contract on the Oxygenium blockchain. 
 
 The `EventSubscription` class extends a `Subscription` class and takes in a `SubscribeOptions` object and a contract address as parameters. It also has a `fromCount` property that keeps track of the number of events that have been processed so far. The `startPolling` method sets up an event listener that triggers the `polling` method to fetch new events. The `polling` method fetches events emitted by the contract using the `web3` library and processes them by calling the `messageCallback` function. If there are more events to fetch, the `fromCount` property is updated and the `polling` method is called again. 
 
-The `subscribeToEvents` function takes in the same parameters as the `EventSubscription` class and returns a new instance of the `EventSubscription` class. This function can be used by developers to subscribe to events emitted by a smart contract on the Alephium blockchain. 
+The `subscribeToEvents` function takes in the same parameters as the `EventSubscription` class and returns a new instance of the `EventSubscription` class. This function can be used by developers to subscribe to events emitted by a smart contract on the Oxygenium blockchain. 
 
 Here is an example of how this code can be used:
 
@@ -25,7 +25,7 @@ In this example, we import the `subscribeToEvents` function from the `oxygenium-
 ## Questions: 
  1. What is the purpose of this code and what does it do?
    
-   This code defines a class `EventSubscription` and a function `subscribeToEvents` that allow developers to subscribe to events emitted by a smart contract on the Alephium blockchain. The `EventSubscription` class extends a `Subscription` class and overrides some of its methods to implement polling for new events and handling of event data.
+   This code defines a class `EventSubscription` and a function `subscribeToEvents` that allow developers to subscribe to events emitted by a smart contract on the Oxygenium blockchain. The `EventSubscription` class extends a `Subscription` class and overrides some of its methods to implement polling for new events and handling of event data.
 
 2. What is the license for this code and where can I find more information about it?
    

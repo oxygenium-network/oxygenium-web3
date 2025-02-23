@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/cli_internal.ts)
 
-This file contains a set of commands that can be used to manage and interact with a smart contract project built on the Alephium blockchain. The file imports several modules from the `@oxygenium/web3` package, which provides a set of tools for interacting with the Alephium blockchain. 
+This file contains a set of commands that can be used to manage and interact with a smart contract project built on the Oxygenium blockchain. The file imports several modules from the `@oxygenium/web3` package, which provides a set of tools for interacting with the Oxygenium blockchain. 
 
 The `getConfig` function is used to load the configuration file for the project. The function takes an optional `options` parameter, which can be used to specify the path to the configuration file. If no path is specified, the function will look for a file named `oxygenium.config.{ts|js}` in the project directory. The function returns an object containing the configuration values for the project.
 
@@ -14,10 +14,10 @@ The `test` command uses the `jest` package to run tests for the smart contracts.
 
 The `deploy` command uses the `deployAndSaveProgress` function to deploy the smart contracts to a specified network. The function takes the project configuration and the network ID as parameters.
 
-Overall, this file provides a set of tools for managing and interacting with a smart contract project built on the Alephium blockchain. The commands can be executed from the command line to perform various tasks, such as compiling the smart contracts, running tests, and deploying the contracts to a network.
+Overall, this file provides a set of tools for managing and interacting with a smart contract project built on the Oxygenium blockchain. The commands can be executed from the command line to perform various tasks, such as compiling the smart contracts, running tests, and deploying the contracts to a network.
 ## Questions: 
  1. What is the purpose of this code file?
-- This code file contains a CLI tool for managing Alephium projects, including creating new projects, starting/stopping a devnet, compiling and testing contracts, and deploying contracts.
+- This code file contains a CLI tool for managing Oxygenium projects, including creating new projects, starting/stopping a devnet, compiling and testing contracts, and deploying contracts.
 
 2. What license is this code file released under?
 - This code file is released under the GNU Lesser General Public License, either version 3 or any later version.

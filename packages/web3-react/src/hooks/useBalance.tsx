@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -17,11 +17,11 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 import { Balance } from '@oxygenium/web3/dist/src/api/api-oxygenium'
 import { useCallback, useEffect, useState } from 'react'
-import { useAlephiumConnectContext } from '../contexts/oxygeniumConnect'
+import { useOxygeniumConnectContext } from '../contexts/oxygeniumConnect'
 import { SubscribeOptions, Subscription, isBalanceEqual, node, subscribeToTxStatus } from '@oxygenium/web3'
 
 export function useBalance() {
-  const context = useAlephiumConnectContext()
+  const context = useOxygeniumConnectContext()
   const [balance, setBalance] = useState<Balance>()
 
   const updateBalance = useCallback(async () => {

@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -16,10 +16,10 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 import { useMemo } from 'react'
-import { useAlephiumConnectContext } from '../contexts/oxygeniumConnect'
+import { useOxygeniumConnectContext } from '../contexts/oxygeniumConnect'
 
 export function useAccount() {
-  const context = useAlephiumConnectContext()
+  const context = useOxygeniumConnectContext()
 
   return useMemo(() => {
     return context.account ? { ...context.account } : undefined

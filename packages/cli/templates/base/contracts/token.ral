@@ -2,7 +2,7 @@ import "std/fungible_token_interface"
 
 // Defines a contract named `TokenFaucet`.
 // A contract is a collection of fields (its state) and functions.
-// Once deployed, a contract resides at a specific address on the Alephium blockchain.
+// Once deployed, a contract resides at a specific address on the Oxygenium blockchain.
 // Contract fields are permanently stored in contract storage.
 // A contract can issue an initial amount of token at its deployment.
 Contract TokenFaucet(
@@ -14,7 +14,7 @@ Contract TokenFaucet(
 ) implements IFungibleToken {
 
     // Events allow for logging of activities on the blockchain.
-    // Alephium clients can listen to events in order to react to contract state changes.
+    // Oxygenium clients can listen to events in order to react to contract state changes.
     event Withdraw(to: Address, amount: U256)
 
     enum ErrorCodes {

@@ -1,8 +1,8 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/ConnectModal/ConnectWithWalletConnect.tsx)
 
-This code defines a React functional component called `ConnectWithWalletConnect` that is used to connect to a wallet using the WalletConnect protocol. The component is part of the Alephium project and is located in the `oxygenium-web3` directory.
+This code defines a React functional component called `ConnectWithWalletConnect` that is used to connect to a wallet using the WalletConnect protocol. The component is part of the Oxygenium project and is located in the `oxygenium-web3` directory.
 
-The component imports several modules, including `React`, `useEffect`, `useState`, and custom hooks and contexts from the Alephium project. It also defines a boolean variable `_init` that is used to keep track of whether the component has been initialized.
+The component imports several modules, including `React`, `useEffect`, `useState`, and custom hooks and contexts from the Oxygenium project. It also defines a boolean variable `_init` that is used to keep track of whether the component has been initialized.
 
 The `ConnectWithWalletConnect` component renders a `PageContent` component that contains a `Container` component. The `Container` component displays a message indicating that the component is connecting to a wallet using the WalletConnect protocol. If an error occurs during the connection process, the error message is displayed instead.
 
@@ -13,7 +13,7 @@ The `useEffect` hook is only executed once, when the component is mounted. If th
 This component is likely used in a larger project to provide users with a way to connect to a wallet using the WalletConnect protocol. The component is designed to be reusable and can be easily integrated into other parts of the project. Developers can customize the `addressGroup`, `keyType`, and `networkId` properties to configure the connection to the wallet.
 ## Questions: 
  1. What is the purpose of this code and how does it fit into the overall oxygenium-web3 project?
-- This code is a React component called `ConnectWithWalletConnect` that handles connecting to a wallet using the WalletConnect protocol. It is likely part of a larger project that involves interacting with the Alephium blockchain.
+- This code is a React component called `ConnectWithWalletConnect` that handles connecting to a wallet using the WalletConnect protocol. It is likely part of a larger project that involves interacting with the Oxygenium blockchain.
 
 2. What dependencies does this code rely on?
 - This code relies on several dependencies, including `React`, `useEffect`, `useState`, and several custom hooks and components from the `oxygeniumConnect` and `Common` directories.

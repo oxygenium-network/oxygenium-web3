@@ -1,12 +1,12 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/scripts/check-versions.js)
 
-This code is a Node.js script that checks if the version of Node.js installed on the user's machine matches the version expected by the Alephium blockchain explorer backend. The script takes two arguments: the first argument is the version of Node.js installed on the user's machine, and the second argument is the version of the explorer backend that the user wants to use. 
+This code is a Node.js script that checks if the version of Node.js installed on the user's machine matches the version expected by the Oxygenium blockchain explorer backend. The script takes two arguments: the first argument is the version of Node.js installed on the user's machine, and the second argument is the version of the explorer backend that the user wants to use. 
 
 The script first defines a function called `extractNodeVersionFromExplorer` that takes the explorer version as an argument and returns the expected version of Node.js. This function extracts the expected Node.js version from a Scala file in the explorer-backend repository on GitHub. It does this by constructing a URL to the file based on the explorer version, fetching the file contents using the `fetch` function from the `cross-fetch` library, and then using a regular expression to extract the expected Node.js version from the file contents. 
 
 The script then defines a `main` function that reads the two arguments passed to the script, calls `extractNodeVersionFromExplorer` to get the expected Node.js version, and compares it to the actual Node.js version installed on the user's machine. If the two versions do not match, the script prints an error message to the console and exits with a non-zero status code. 
 
-This script is likely used as part of the build or deployment process for the Alephium blockchain explorer backend. By checking that the user has the correct version of Node.js installed, the script ensures that the backend will run correctly and avoids potential issues caused by version mismatches. The script could be invoked manually by a developer or as part of an automated build or deployment pipeline. 
+This script is likely used as part of the build or deployment process for the Oxygenium blockchain explorer backend. By checking that the user has the correct version of Node.js installed, the script ensures that the backend will run correctly and avoids potential issues caused by version mismatches. The script could be invoked manually by a developer or as part of an automated build or deployment pipeline. 
 
 Example usage:
 
