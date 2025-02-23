@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/Modal/index.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Modal/index.tsx)
 
 The `Modal` component in this code is a part of the Alephium-web3 project and serves as a reusable, customizable modal dialog with various features such as transitions, animations, and focus trapping. It is designed to be used in different parts of the project with different content and actions.
 
@@ -47,9 +47,9 @@ const MyComponent = () => {
 
 In this example, a button is used to open the modal, and the `handleModalClose` function is passed as the `onClose` prop to close the modal. The `pages` array contains the content for each page within the modal, and the `pageId` prop is set to display the "Connectors" page initially.
 ## Questions: 
- 1. **What is the purpose of the `alephium-web3` project?**
+ 1. **What is the purpose of the `oxygenium-web3` project?**
 
-   The code provided does not give a clear indication of the overall purpose of the `alephium-web3` project. However, it appears to be a React-based web application that involves connecting to different connectors, profiles, and other features.
+   The code provided does not give a clear indication of the overall purpose of the `oxygenium-web3` project. However, it appears to be a React-based web application that involves connecting to different connectors, profiles, and other features.
 
 2. **What are the different routes available in the `routes` object and how are they used?**
 

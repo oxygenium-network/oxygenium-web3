@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Pages/Profile/index.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Pages/Profile/index.tsx)
 
 This code defines a React functional component called `Profile` that displays the user's account information and balance. It imports several hooks and components from other files in the project, including `useAlephiumConnectContext`, `useAccount`, `useBalance`, `AnimatePresence`, `prettifyAttoAlphAmount`, and `useConnect`. 
 
@@ -12,7 +12,7 @@ Overall, this code provides a simple way for users to view their account informa
 - This code defines a React component called `Profile` that displays the user's account address and balance, and allows the user to disconnect from the Alephium network.
 
 2. What external dependencies does this code rely on?
-- This code relies on several external dependencies, including React, framer-motion, and @alephium/web3.
+- This code relies on several external dependencies, including React, framer-motion, and @oxygenium/web3.
 
 3. What license is this code released under?
 - This code is released under the GNU Lesser General Public License, version 3 or later.

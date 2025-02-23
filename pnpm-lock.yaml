@@ -9,10 +9,10 @@ importers:
 
   .:
     specifiers:
-      '@alephium/cli': workspace:*
-      '@alephium/web3': workspace:*
-      '@alephium/web3-test': workspace:*
-      '@alephium/web3-wallet': workspace:*
+      '@oxygenium/cli': workspace:*
+      '@oxygenium/web3': workspace:*
+      '@oxygenium/web3-test': workspace:*
+      '@oxygenium/web3-wallet': workspace:*
       '@types/jest': ^28.1.8
       '@types/node': ^16.18.23
       eslint: ^8.37.0
@@ -21,10 +21,10 @@ importers:
       ts-node: ^10.9.1
       typescript: ^4.9.5
     dependencies:
-      '@alephium/cli': link:packages/cli
-      '@alephium/web3': link:packages/web3
-      '@alephium/web3-test': link:packages/web3-test
-      '@alephium/web3-wallet': link:packages/web3-wallet
+      '@oxygenium/cli': link:packages/cli
+      '@oxygenium/web3': link:packages/web3
+      '@oxygenium/web3-test': link:packages/web3-test
+      '@oxygenium/web3-wallet': link:packages/web3-wallet
     devDependencies:
       '@types/jest': 28.1.8
       '@types/node': 16.18.24
@@ -36,8 +36,8 @@ importers:
 
   packages/cli:
     specifiers:
-      '@alephium/web3': workspace:^
-      '@alephium/web3-wallet': workspace:^
+      '@oxygenium/web3': workspace:^
+      '@oxygenium/web3-wallet': workspace:^
       '@types/jest': ^27.5.2
       '@types/node': ^16.18.23
       '@types/prettier': ^2.7.2
@@ -54,8 +54,8 @@ importers:
       typescript: 4.7.4
       yaml: ^2.3.1
     dependencies:
-      '@alephium/web3': link:../web3
-      '@alephium/web3-wallet': link:../web3-wallet
+      '@oxygenium/web3': link:../web3
+      '@oxygenium/web3-wallet': link:../web3-wallet
       commander: 9.5.0
       cross-fetch: 3.1.5
       crypto-js: 4.1.1
@@ -75,7 +75,7 @@ importers:
 
   packages/get-extension-wallet:
     specifiers:
-      '@alephium/web3': workspace:^
+      '@oxygenium/web3': workspace:^
       '@commitlint/cli': ^17.5.1
       '@commitlint/config-conventional': ^17.4.4
       '@rollup/plugin-commonjs': ^24.0.1
@@ -101,7 +101,7 @@ importers:
       tslib: ^2.5.0
       typescript: ^4.9.5
     dependencies:
-      '@alephium/web3': link:../web3
+      '@oxygenium/web3': link:../web3
       bowser: 2.11.0
     devDependencies:
       '@commitlint/cli': 17.6.1
@@ -130,8 +130,8 @@ importers:
 
   packages/walletconnect:
     specifiers:
-      '@alephium/web3': workspace:^
-      '@alephium/web3-wallet': workspace:^
+      '@oxygenium/web3': workspace:^
+      '@oxygenium/web3-wallet': workspace:^
       '@babel/cli': ^7.21.0
       '@babel/core': ^7.21.4
       '@babel/node': ^7.20.7
@@ -173,8 +173,8 @@ importers:
       webpack: 5.77.0
       webpack-cli: 4.10.0
     dependencies:
-      '@alephium/web3': link:../web3
-      '@alephium/web3-wallet': link:../web3-wallet
+      '@oxygenium/web3': link:../web3
+      '@oxygenium/web3-wallet': link:../web3-wallet
       '@walletconnect/sign-client': 2.5.2_2gaqmcmkkpkvvik6rhpepuk5t4
       '@walletconnect/types': 2.5.2_2gaqmcmkkpkvvik6rhpepuk5t4
       '@walletconnect/utils': 2.5.2_2gaqmcmkkpkvvik6rhpepuk5t4
@@ -316,8 +316,8 @@ importers:
 
   packages/web3-react:
     specifiers:
-      '@alephium/get-extension-wallet': workspace:^
-      '@alephium/walletconnect-provider': workspace:^
+      '@oxygenium/get-extension-wallet': workspace:^
+      '@oxygenium/walletconnect-provider': workspace:^
       '@rollup/plugin-node-resolve': ^15.0.1
       '@types/node': ^16.18.23
       '@types/qrcode': ^1.5.0
@@ -342,8 +342,8 @@ importers:
       styled-components: ^5.3.9
       typescript: ^4.9.5
     dependencies:
-      '@alephium/get-extension-wallet': link:../get-extension-wallet
-      '@alephium/walletconnect-provider': link:../walletconnect
+      '@oxygenium/get-extension-wallet': link:../get-extension-wallet
+      '@oxygenium/walletconnect-provider': link:../walletconnect
       '@walletconnect/qrcode-modal': 1.8.0
       buffer: 6.0.3
       detect-browser: 5.3.0
@@ -371,8 +371,8 @@ importers:
 
   packages/web3-test:
     specifiers:
-      '@alephium/web3': workspace:^
-      '@alephium/web3-wallet': workspace:^
+      '@oxygenium/web3': workspace:^
+      '@oxygenium/web3-wallet': workspace:^
       '@types/find-up': ^2.1.1
       '@types/fs-extra': ^9.0.13
       '@types/jest': ^27.5.2
@@ -382,8 +382,8 @@ importers:
       '@typescript-eslint/parser': ^5.57.0
       crypto-browserify: ^3.12.0
     dependencies:
-      '@alephium/web3': link:../web3
-      '@alephium/web3-wallet': link:../web3-wallet
+      '@oxygenium/web3': link:../web3
+      '@oxygenium/web3-wallet': link:../web3-wallet
     devDependencies:
       '@types/find-up': 2.1.1
       '@types/fs-extra': 9.0.13
@@ -396,7 +396,7 @@ importers:
 
   packages/web3-wallet:
     specifiers:
-      '@alephium/web3': workspace:^
+      '@oxygenium/web3': workspace:^
       '@noble/secp256k1': 1.7.1
       '@types/find-up': ^2.1.1
       '@types/fs-extra': ^9.0.13
@@ -413,7 +413,7 @@ importers:
       elliptic: 6.5.4
       fs-extra: 10.0.1
     dependencies:
-      '@alephium/web3': link:../web3
+      '@oxygenium/web3': link:../web3
       '@noble/secp256k1': 1.7.1
       '@types/node': 16.18.24
       bip32: 3.1.0

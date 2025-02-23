@@ -10,7 +10,7 @@ import {
   Script,
   SignerProvider,
   HexString,
-} from "@alephium/web3";
+} from "@oxygenium/web3";
 import { default as MainScriptJson } from "../add/Main.ral.json";
 import { default as DestroyAddScriptJson } from "../add/DestroyAdd.ral.json";
 import { default as GreeterMainScriptJson } from "../greeter/GreeterMain.ral.json";

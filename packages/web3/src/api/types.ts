@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -17,7 +17,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
 import { assertType, bs58, Eq, isBase58, isHexString } from '../utils'
-import * as node from './api-alephium'
+import * as node from './api-oxygenium'
 
 export type Number256 = bigint | string
 export type Val = Number256 | boolean | string | Val[]

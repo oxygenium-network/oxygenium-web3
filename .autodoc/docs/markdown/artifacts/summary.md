@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/artifacts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/artifacts)
 
-The `.autodoc/docs/json/artifacts` folder contains JSON files that provide metadata about smart contracts in the `alephium-web3` project. These files include information about the contract's bytecode, fields, functions, and events, which can be used by developers to interact with the contracts and build applications on top of them.
+The `.autodoc/docs/json/artifacts` folder contains JSON files that provide metadata about smart contracts in the `oxygenium-web3` project. These files include information about the contract's bytecode, fields, functions, and events, which can be used by developers to interact with the contracts and build applications on top of them.
 
 For example, the `greeter_main.ral.json` file contains metadata about a contract called "GreeterMain". The contract's bytecode template can be used to deploy the contract to a blockchain network, and the function metadata can be used to call the "main" function with the correct parameters:
 
@@ -52,4 +52,4 @@ contract MyContract {
 }
 ```
 
-In summary, the code in the `.autodoc/docs/json/artifacts` folder provides metadata about various smart contracts in the `alephium-web3` project, which can be used by developers to interact with the contracts and build applications on top of them. The JSON files include information about the contract's bytecode, fields, functions, and events, allowing developers to deploy the contracts, call their functions, and emit events as needed.
+In summary, the code in the `.autodoc/docs/json/artifacts` folder provides metadata about various smart contracts in the `oxygenium-web3` project, which can be used by developers to interact with the contracts and build applications on top of them. The JSON files include information about the contract's bytecode, fields, functions, and events, allowing developers to deploy the contracts, call their functions, and emit events as needed.

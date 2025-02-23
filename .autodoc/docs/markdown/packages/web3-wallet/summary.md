@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-wallet)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-wallet)
 
-The `alephium-web3` project provides a library for developers to interact with the Alephium blockchain. The code in the `web3-wallet` folder focuses on managing Alephium wallets and performing cryptographic operations.
+The `oxygenium-web3` project provides a library for developers to interact with the Alephium blockchain. The code in the `web3-wallet` folder focuses on managing Alephium wallets and performing cryptographic operations.
 
 The `hd-wallet.ts` module offers functions and classes related to HD wallets and private key derivation. For example, developers can use the `HDWallet` class to create an in-memory HD wallet, derive new accounts, and sign raw transactions:
 

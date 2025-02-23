@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -21,10 +21,10 @@ import defaultTheme from '../styles/defaultTheme'
 
 import AlephiumConnectModal from '../components/ConnectModal'
 import { ThemeProvider } from 'styled-components'
-import { Account, KeyType, NetworkId, SignerProvider } from '@alephium/web3'
+import { Account, KeyType, NetworkId, SignerProvider } from '@oxygenium/web3'
 import { Theme, Mode, CustomTheme } from '../types'
 import { routes } from './Common/Modal'
-import { AlephiumConnectContext, ConnectSettingContext, ConnectSettingValue } from '../contexts/alephiumConnect'
+import { AlephiumConnectContext, ConnectSettingContext, ConnectSettingValue } from '../contexts/oxygeniumConnect'
 
 type ConnectSettingProviderProps = {
   useTheme?: Theme

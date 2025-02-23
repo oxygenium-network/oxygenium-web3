@@ -1,17 +1,17 @@
 {
-  "name": "@alephium/cli",
+  "name": "@oxygenium/cli",
   "version": "0.16.1",
   "description": "Alephium command line tool",
   "license": "GPL",
   "repository": {
     "type": "git",
-    "url": "git@github.com:alephium/alephium-web3.git"
+    "url": "git@github.com:oxygenium/oxygenium-web3.git"
   },
-  "homepage": "https://github.com/alephium/alephium-web3",
+  "homepage": "https://github.com/oxygenium/oxygenium-web3",
   "bugs": {
-    "url": "https://github.com/alephium/alephium-web3/issues"
+    "url": "https://github.com/oxygenium/oxygenium-web3/issues"
   },
-  "author": "Alephium dev <dev@alephium.org>",
+  "author": "Alephium dev <dev@oxygenium.org>",
   "main": "dist/index.js",
   "exports": {
     ".": "./dist/index.js"
@@ -22,8 +22,8 @@
   "bin": "cli.js",
   "type": "commonjs",
   "dependencies": {
-    "@alephium/web3": "workspace:^",
-    "@alephium/web3-wallet": "workspace:^",
+    "@oxygenium/web3": "workspace:^",
+    "@oxygenium/web3-wallet": "workspace:^",
     "commander": "^9.5.0",
     "cross-fetch": "^3.1.5",
     "crypto-js": "^4.1.1",

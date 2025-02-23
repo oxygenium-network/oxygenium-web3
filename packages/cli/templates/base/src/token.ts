@@ -1,7 +1,7 @@
-import { Deployments } from '@alephium/cli'
-import { web3, Project, DUST_AMOUNT } from '@alephium/web3'
-import { testNodeWallet } from '@alephium/web3-test'
-import configuration from '../alephium.config'
+import { Deployments } from '@oxygenium/cli'
+import { web3, Project, DUST_AMOUNT } from '@oxygenium/web3'
+import { testNodeWallet } from '@oxygenium/web3-test'
+import configuration from '../oxygenium.config'
 import { TokenFaucet, Withdraw } from '../artifacts/ts'
 
 async function withdraw() {

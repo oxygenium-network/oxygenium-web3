@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -28,7 +28,7 @@ import {
   NetworkId,
   networkIds,
   fromApiVal
-} from '@alephium/web3'
+} from '@oxygenium/web3'
 import * as prettier from 'prettier'
 import path from 'path'
 import fs from 'fs'
@@ -360,7 +360,7 @@ function genContract(contract: Contract, artifactRelativePath: string): string {
       TestContractParams, ContractEvent, subscribeContractEvent, subscribeContractEvents,
       testMethod, callMethod, multicallMethods, fetchContractState,
       ContractInstance, getContractEventsCurrentCount
-    } from '@alephium/web3'
+    } from '@oxygenium/web3'
     import { default as ${contract.name}ContractJson } from '../${toUnixPath(artifactRelativePath)}'
     import { getContractByCodeHash } from './contracts'
 
@@ -430,7 +430,7 @@ function genScripts(outDir: string, artifactDir: string, exports: string[]) {
       Script,
       SignerProvider,
       HexString
-    } from '@alephium/web3'
+    } from '@oxygenium/web3'
     ${importArtifacts}
 
     ${scriptsSource}
@@ -449,7 +449,7 @@ function genContractByCodeHash(outDir: string, contractNames: string[]) {
   const source = `
     ${header}
 
-    import { Contract, ContractFactory } from '@alephium/web3'
+    import { Contract, ContractFactory } from '@oxygenium/web3'
     ${contracts.length === 0 ? '' : `import { ${contracts} } from '.'`}
 
     let contracts: ContractFactory<any>[] | undefined = undefined
@@ -627,8 +627,8 @@ export async function genLoadDeployments(config: Configuration) {
   const source = `
     ${header}
 
-    import { RunScriptResult, DeployContractExecutionResult } from '@alephium/cli'
-    import { NetworkId } from '@alephium/web3'
+    import { RunScriptResult, DeployContractExecutionResult } from '@oxygenium/cli'
+    import { NetworkId } from '@oxygenium/web3'
     import { ${contractInstanceTypes} } from '.'
     ${imports}
 

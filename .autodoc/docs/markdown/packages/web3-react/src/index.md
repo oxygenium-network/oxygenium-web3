@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/index.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/index.ts)
 
 This file is a module that exports various components, contexts, constants, and hooks related to the AlephiumConnectProvider. The AlephiumConnectProvider is a web3 provider that allows users to interact with the Alephium blockchain. 
 
@@ -13,7 +13,7 @@ Finally, the exported hooks include useAccount, useConnect, useTxStatus, and use
 Overall, this module provides a convenient way for developers to integrate the AlephiumConnectProvider into their web3 applications and access various related information. Here is an example of how to use the AlephiumConnectProvider and AlephiumConnectButton components:
 
 ```
-import { AlephiumConnectProvider, AlephiumConnectButton } from 'alephium-web3'
+import { AlephiumConnectProvider, AlephiumConnectButton } from 'oxygenium-web3'
 
 function App() {
   return (

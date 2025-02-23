@@ -23,7 +23,7 @@ import {
   fetchContractState,
   ContractInstance,
   getContractEventsCurrentCount,
-} from "@alephium/web3";
+} from "@oxygenium/web3";
 import { default as AddContractJson } from "../add/Add.ral.json";
 import { getContractByCodeHash } from "./contracts";
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3/scripts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/scripts)
 
 The `.autodoc/docs/json/packages/web3/scripts` folder contains two important files for the Alephium blockchain explorer backend: `check-versions.js` and `header.js`.
 
@@ -16,13 +16,13 @@ Please, check that the configured node and explorer-backend versions in the pack
 Here is an example of how the license file might be used in the larger Alephium project:
 
 ```javascript
-const Alephium = require('alephium-web3');
+const Alephium = require('oxygenium-web3');
 
 // Use the Alephium library to interact with the Alephium blockchain
-const alephium = new Alephium();
+const oxygenium = new Alephium();
 
 // Display the license for the Alephium library
-console.log(alephium.license);
+console.log(oxygenium.license);
 ```
 
 In summary, the `.autodoc/docs/json/packages/web3/scripts` folder contains two important files for the Alephium project. `check-versions.js` ensures that the user has the correct version of Node.js installed, while `header.js` provides the license information for the Alephium library. Both files contribute to the overall functionality and legal compliance of the Alephium project.

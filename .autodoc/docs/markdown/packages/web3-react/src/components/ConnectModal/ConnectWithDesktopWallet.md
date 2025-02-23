@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/ConnectModal/ConnectWithDesktopWallet.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/ConnectModal/ConnectWithDesktopWallet.tsx)
 
-This code defines a React functional component called `ConnectWithDesktopWallet`. The purpose of this component is to connect to a desktop wallet for the Alephium blockchain. The component imports several dependencies, including `React`, `useEffect`, and `useState`. It also imports two custom hooks, `useAlephiumConnectContext` and `useConnect`, from the `alephiumConnect` and `hooks` directories, respectively.
+This code defines a React functional component called `ConnectWithDesktopWallet`. The purpose of this component is to connect to a desktop wallet for the Alephium blockchain. The component imports several dependencies, including `React`, `useEffect`, and `useState`. It also imports two custom hooks, `useAlephiumConnectContext` and `useConnect`, from the `oxygeniumConnect` and `hooks` directories, respectively.
 
 The `useAlephiumConnectContext` hook provides access to the Alephium Connect context, which contains information about the user's wallet, such as the address group, key type, and network ID. The `useConnect` hook is used to initiate the connection to the desktop wallet. It takes an object with the address group, key type, and network ID as arguments.
 
@@ -14,7 +14,7 @@ This component is likely used in a larger project that involves interacting with
    - This code is a React component that connects to a desktop wallet and displays a message indicating whether the connection was successful or not.
 
 2. What dependencies does this code rely on?
-   - This code relies on several dependencies, including React, the `PageContent` and `Container` components from other files, and the `useAlephiumConnectContext` and `useConnect` hooks from the `alephiumConnect` and `hooks` directories, respectively.
+   - This code relies on several dependencies, including React, the `PageContent` and `Container` components from other files, and the `useAlephiumConnectContext` and `useConnect` hooks from the `oxygeniumConnect` and `hooks` directories, respectively.
 
 3. What license is this code released under?
    - This code is released under the GNU Lesser General Public License, version 3 or later.

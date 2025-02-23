@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -35,7 +35,7 @@ import {
 } from '../packages/web3'
 import { Contract, Project, Script, getContractIdFromTxId } from '../packages/web3'
 import { expectAssertionError, testAddress, randomContractAddress } from '../packages/web3-test'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+import { PrivateKeyWallet } from '@oxygenium/web3-wallet'
 import { Greeter } from '../artifacts/ts/Greeter'
 import { GreeterMain, Main } from '../artifacts/ts/scripts'
 import { Sub, SubTypes } from '../artifacts/ts/Sub'
@@ -46,7 +46,7 @@ import { Debug } from '../artifacts/ts/Debug'
 import { getContractByCodeHash } from '../artifacts/ts/contracts'
 import { NFTTest, TokenTest } from '../artifacts/ts'
 import { randomBytes } from 'crypto'
-import { getSigner } from '@alephium/web3-test'
+import { getSigner } from '@oxygenium/web3-test'
 
 describe('contract', function () {
   let signer: PrivateKeyWallet

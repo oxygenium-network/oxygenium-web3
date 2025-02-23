@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/cli/scripts/create-project.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/scripts/create-project.ts)
 
-This code is a script that creates a new project based on one of three templates: base, react, or Next.js. The script is part of the alephium-web3 project and is written in TypeScript. 
+This code is a script that creates a new project based on one of three templates: base, react, or Next.js. The script is part of the oxygenium-web3 project and is written in TypeScript. 
 
 The script imports several modules, including `fs-extra`, `path`, and `child_process`. The `fs-extra` module is used to copy files and directories, while `path` is used to manipulate file paths. The `child_process` module is used to execute shell commands.
 
@@ -17,11 +17,11 @@ Overall, this script is a useful tool for quickly setting up a new project based
 Example usage:
 
 ```
-$ alephium-web3 create-project react /path/to/package /path/to/project
+$ oxygenium-web3 create-project react /path/to/package /path/to/project
 ```
 ## Questions: 
  1. What is the purpose of this code?
-- This code is used to create a new project with different templates (base, react, nextjs) by copying files from the alephium-web3 package to the project folder.
+- This code is used to create a new project with different templates (base, react, nextjs) by copying files from the oxygenium-web3 package to the project folder.
 
 2. What dependencies are required to run this code?
 - This code requires the `fs-extra`, `path`, and `child_process` modules to be imported.

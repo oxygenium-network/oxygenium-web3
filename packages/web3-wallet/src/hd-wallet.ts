@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -16,12 +16,12 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { publicKeyFromPrivateKey } from '@alephium/web3'
-import { Account, KeyType, ExplorerProvider, NodeProvider } from '@alephium/web3'
-import { addressFromPublicKey } from '@alephium/web3'
-import { Address } from '@alephium/web3'
-import { groupOfAddress } from '@alephium/web3'
-import { groupOfPrivateKey, SignerProviderWithCachedAccounts, TOTAL_NUMBER_OF_GROUPS, web3 } from '@alephium/web3'
+import { publicKeyFromPrivateKey } from '@oxygenium/web3'
+import { Account, KeyType, ExplorerProvider, NodeProvider } from '@oxygenium/web3'
+import { addressFromPublicKey } from '@oxygenium/web3'
+import { Address } from '@oxygenium/web3'
+import { groupOfAddress } from '@oxygenium/web3'
+import { groupOfPrivateKey, SignerProviderWithCachedAccounts, TOTAL_NUMBER_OF_GROUPS, web3 } from '@oxygenium/web3'
 import * as bip39 from 'bip39'
 import { bip32 } from './noble-wrapper'
 import { PrivateKeyWallet } from './privatekey-wallet'

@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 import { useEffect } from 'react'
-import { useConnectSettingContext } from '../../contexts/alephiumConnect'
+import { useConnectSettingContext } from '../../contexts/oxygeniumConnect'
 import Modal, { Page, routes } from '../Common/Modal'
 
 import Connectors from '../Pages/Connectors'
@@ -81,7 +81,7 @@ const ConnectModal: React.FC<{
 
   /* When pulling data into WalletConnect, it prioritises the og:title tag over the title tag */
   useEffect(() => {
-    const appName = 'alephium'
+    const appName = 'oxygenium'
     if (!appName || !context.open) return
 
     const title = document.createElement('meta')

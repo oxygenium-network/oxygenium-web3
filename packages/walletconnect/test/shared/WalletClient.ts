@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -28,8 +28,8 @@ import {
   addressToGroup,
   ApiRequestArguments,
   NetworkId
-} from '@alephium/web3'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+} from '@oxygenium/web3'
+import { PrivateKeyWallet } from '@oxygenium/web3-wallet'
 
 import {
   parseChain,
@@ -95,7 +95,7 @@ export class WalletClient {
   constructor(provider: WalletConnectProvider, opts: Partial<WalletClientOpts>) {
     this.provider = provider
     this.networkId = opts?.networkId ?? 'devnet'
-    this.rpcUrl = opts?.rpcUrl || 'http://alephium:22973'
+    this.rpcUrl = opts?.rpcUrl || 'http://oxygenium:22973'
     this.permittedAddressGroup = undefined
     this.nodeProvider = new NodeProvider(this.rpcUrl)
     this.signer = this.getWallet(opts.activePrivateKey)
@@ -160,7 +160,7 @@ export class WalletClient {
     await this.client.update({
       topic: this.topic,
       namespaces: {
-        alephium: {
+        oxygenium: {
           ...this.namespace,
           accounts: [formatAccount(chainId, this.account)]
         }
@@ -240,7 +240,7 @@ export class WalletClient {
         accounts: [this.chainAccount(requiredAlephiumNamespace.chains || [])]
       }
 
-      const namespaces = { alephium: this.namespace }
+      const namespaces = { oxygenium: this.namespace }
       const { acknowledged } = await this.client.approve({
         id,
         relayProtocol: relays[0].protocol,

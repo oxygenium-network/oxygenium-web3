@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -19,7 +19,7 @@ import fs, { ReadStream } from 'fs'
 import path from 'path'
 import { Configuration, CreateImageRequestSizeEnum, OpenAIApi } from 'openai'
 import { create as ipfsHttpClient } from 'ipfs-http-client'
-import { validateNFTBaseUri, NFTTokenUriMetaData, validNFTUriMetaDataAttributeTypes } from '@alephium/web3'
+import { validateNFTBaseUri, NFTTokenUriMetaData, validNFTUriMetaDataAttributeTypes } from '@oxygenium/web3'
 import { parse } from 'yaml'
 
 export interface NFTMetadataConfig {

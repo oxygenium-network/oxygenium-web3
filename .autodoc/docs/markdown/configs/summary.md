@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/configs)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/configs)
 
 The `header.js` file in the `.autodoc/docs/json/configs` folder is a crucial component of the Alephium project, as it contains the license information for the software. The Alephium project is licensed under the GNU Lesser General Public License (LGPL), which allows users to freely use, modify, and distribute the software, as long as they adhere to the terms of the license.
 
@@ -8,7 +8,7 @@ Here's an example of how to include the license information from `header.js` in 
 
 ```markdown
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by

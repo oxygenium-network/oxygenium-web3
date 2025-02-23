@@ -9,7 +9,7 @@ npm install
 ## Start a local devnet for testing and development
 
 ```
-npx @alephium/cli@latest devnet start
+npx @oxygenium/cli@latest devnet start
 ```
 
 ## Compile
@@ -17,17 +17,17 @@ npx @alephium/cli@latest devnet start
 Compile the TypeScript files into JavaScript:
 
 ```
-npx @alephium/cli@latest compile 
+npx @oxygenium/cli@latest compile 
 ```
 
 ## Stop/restart devnet
 
 ```
-npx @alephium/cli@latest devnet stop
+npx @oxygenium/cli@latest devnet stop
 ```
 
 ## Testing
 
 ```
-npx @alephium/cli@latest test
+npx @oxygenium/cli@latest test
 ```

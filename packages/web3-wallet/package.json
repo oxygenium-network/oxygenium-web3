@@ -1,34 +1,34 @@
 {
-  "name": "@alephium/web3-wallet",
+  "name": "@oxygenium/web3-wallet",
   "version": "0.16.1",
   "description": "Simple wallets for Alephium",
   "keywords": [
-    "alephium",
+    "oxygenium",
     "web3"
   ],
   "license": "GPL",
   "main": "dist/src/index.js",
-  "browser": "dist/alephium-web3.min.js",
+  "browser": "dist/oxygenium-web3.min.js",
   "types": "dist/src/index.d.ts",
   "exports": {
     ".": "./dist/src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:alephium/alephium-web3.git"
+    "url": "git@github.com:oxygenium/oxygenium-web3.git"
   },
-  "homepage": "https://github.com/alephium/alephium-web3",
+  "homepage": "https://github.com/oxygenium/oxygenium-web3",
   "bugs": {
-    "url": "https://github.com/alephium/alephium-web3/issues"
+    "url": "https://github.com/oxygenium/oxygenium-web3/issues"
   },
-  "author": "Alephium dev <dev@alephium.org>",
+  "author": "Alephium dev <dev@oxygenium.org>",
   "scripts": {
     "build": "rm -rf dist/* && npx tsc --build .",
     "test": "jest -i --config ./jest-config.json"
   },
   "type": "commonjs",
   "dependencies": {
-    "@alephium/web3": "workspace:^",
+    "@oxygenium/web3": "workspace:^",
     "@noble/secp256k1": "1.7.1",
     "@types/node": "^16.18.23",
     "bip32": "3.1.0",

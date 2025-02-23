@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/fixtures/balance.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/fixtures/balance.json)
 
 This code represents a JSON object that contains information about a user's balance and UTXOs (unspent transaction outputs) in the Alephium blockchain network. The `data` field contains several sub-fields, including `balance`, `balanceHint`, `lockedBalance`, `lockedBalanceHint`, and `utxoNum`.
 

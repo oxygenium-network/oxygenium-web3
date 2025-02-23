@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -24,7 +24,7 @@ import {
   groupOfAddress,
   ExplorerProvider,
   Address
-} from '@alephium/web3'
+} from '@oxygenium/web3'
 
 export class NodeWallet extends SignerProviderWithMultipleAccounts {
   walletName: string

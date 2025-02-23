@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -15,11 +15,11 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
-import { getDefaultAlephiumWallet } from '@alephium/get-extension-wallet'
-import { NetworkId } from '@alephium/web3'
-import { useAlephiumConnectContext, useConnectSettingContext } from '../contexts/alephiumConnect'
+import { getDefaultAlephiumWallet } from '@oxygenium/get-extension-wallet'
+import { NetworkId } from '@oxygenium/web3'
+import { useAlephiumConnectContext, useConnectSettingContext } from '../contexts/oxygeniumConnect'
 import { useCallback, useMemo } from 'react'
-import { WalletConnectProvider } from '@alephium/walletconnect-provider'
+import { WalletConnectProvider } from '@oxygenium/walletconnect-provider'
 import QRCodeModal from '@walletconnect/qrcode-modal'
 
 const WALLET_CONNECT_PROJECT_ID = '6e2562e43678dd68a9070a62b6d52207'
@@ -80,7 +80,7 @@ export function useConnect(options: ConnectOptions) {
     })
 
     wcProvider.on('displayUri', (uri) => {
-      window.open(`alephium://wc?uri=${uri}`)
+      window.open(`oxygenium://wc?uri=${uri}`)
     })
 
     try {
@@ -98,9 +98,9 @@ export function useConnect(options: ConnectOptions) {
 
   const disconnectAlephium = () => {
     getDefaultAlephiumWallet()
-      .then((alephium) => {
-        if (!!alephium) {
-          alephium.disconnect()
+      .then((oxygenium) => {
+        if (!!oxygenium) {
+          oxygenium.disconnect()
         }
       })
       .catch((error: any) => {

@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -19,7 +19,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 import path from 'path'
 import fs from 'fs'
 import { Configuration, DEFAULT_CONFIGURATION_VALUES, Network } from './types'
-import { NetworkId, node, NodeProvider } from '@alephium/web3'
+import { NetworkId, node, NodeProvider } from '@oxygenium/web3'
 import * as fetchRetry from 'fetch-retry'
 import * as readline from 'readline'
 
@@ -40,15 +40,15 @@ export function loadConfig<Settings = unknown>(filename: string): Configuration<
 
 export function getConfigFile(): string {
   const projectRootPath = path.resolve(process.cwd())
-  const tsConfig = path.join(projectRootPath, 'alephium.config.ts')
+  const tsConfig = path.join(projectRootPath, 'oxygenium.config.ts')
   if (fs.existsSync(tsConfig)) {
     return tsConfig
   }
-  const jsConfig = path.join(projectRootPath, 'alephium.config.js')
+  const jsConfig = path.join(projectRootPath, 'oxygenium.config.js')
   if (fs.existsSync(jsConfig)) {
     return jsConfig
   }
-  return path.join(__dirname, '../templates/base/alephium.config.ts')
+  return path.join(__dirname, '../templates/base/oxygenium.config.ts')
 }
 
 export async function isNetworkLive(url: string): Promise<boolean> {

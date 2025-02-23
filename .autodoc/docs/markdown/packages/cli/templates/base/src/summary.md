@@ -1,8 +1,8 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/cli/templates/base/src)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/base/src)
 
-The `token.ts` file in the `alephium-web3` project demonstrates how to interact with a smart contract deployed on the Alephium blockchain using the `@alephium/web3` library. The script specifically focuses on withdrawing tokens from a `TokenFaucet` contract and printing the latest state of the contract.
+The `token.ts` file in the `oxygenium-web3` project demonstrates how to interact with a smart contract deployed on the Alephium blockchain using the `@oxygenium/web3` library. The script specifically focuses on withdrawing tokens from a `TokenFaucet` contract and printing the latest state of the contract.
 
-To achieve this, the script imports necessary libraries and modules, such as `Deployments` from `@alephium/cli`, `web3`, `Project`, and `DUST_AMOUNT` from `@alephium/web3`, and `testNodeWallet` from `@alephium/web3-test`. It also imports `configuration` from `../alephium.config` and `TokenFaucet` and `Withdraw` from `../artifacts/ts`.
+To achieve this, the script imports necessary libraries and modules, such as `Deployments` from `@oxygenium/cli`, `web3`, `Project`, and `DUST_AMOUNT` from `@oxygenium/web3`, and `testNodeWallet` from `@oxygenium/web3-test`. It also imports `configuration` from `../oxygenium.config` and `TokenFaucet` and `Withdraw` from `../artifacts/ts`.
 
 The main function in the script is the asynchronous `withdraw()` function, which performs the following steps:
 
@@ -21,4 +21,4 @@ The main function in the script is the asynchronous `withdraw()` function, which
 
 The `withdraw()` function is called at the end of the script to execute the token withdrawal process.
 
-This code serves as a reference for developers who want to interact with smart contracts on the Alephium blockchain using the `@alephium/web3` library. Developers can modify the code to interact with other contracts and networks by changing the configuration file and the contract names. For example, to interact with a different contract, developers can import the contract artifacts and replace the `TokenFaucet` and `Withdraw` imports with the new contract and transaction script. Additionally, developers can change the node provider URL and network configuration to work with different networks.
+This code serves as a reference for developers who want to interact with smart contracts on the Alephium blockchain using the `@oxygenium/web3` library. Developers can modify the code to interact with other contracts and networks by changing the configuration file and the contract names. For example, to interact with a different contract, developers can import the contract artifacts and replace the `TokenFaucet` and `Withdraw` imports with the new contract and transaction script. Additionally, developers can change the node provider URL and network configuration to work with different networks.

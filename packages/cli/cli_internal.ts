@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { Project, web3, NetworkId, networkIds, validateNFTBaseUri } from '@alephium/web3'
+import { Project, web3, NetworkId, networkIds, validateNFTBaseUri } from '@oxygenium/web3'
 import { program } from 'commander'
 import { run as runJestTests } from 'jest'
 import path from 'path'
@@ -28,7 +28,7 @@ import { codegen, getConfigFile, isNetworkLive, loadConfig } from './src'
 
 function getConfig(options: any): Configuration {
   const configFile = options.config ? (options.config as string) : getConfigFile()
-  console.log(`Loading alephium config file: ${configFile}`)
+  console.log(`Loading oxygenium config file: ${configFile}`)
   return loadConfig(configFile)
 }
 
@@ -62,7 +62,7 @@ program
 program
   .command('compile')
   .description('compile the project')
-  .option('-c, --config <config-file>', 'project config file (default: alephium.config.{ts|js})')
+  .option('-c, --config <config-file>', 'project config file (default: oxygenium.config.{ts|js})')
   .option('-n, --network <network-type>', 'network type')
   .option('--skipGenerate', 'skip generate typescript code by contract artifacts')
   .action(async (options) => {
@@ -142,7 +142,7 @@ function tryGetScriptIndex(str: string | undefined): number | undefined {
 program
   .command('deploy')
   .description('deploy contracts')
-  .option('-c, --config <config-file>', 'project config file (default: alephium.config.{ts|js})')
+  .option('-c, --config <config-file>', 'project config file (default: oxygenium.config.{ts|js})')
   .option('-n, --network <network-type>', 'specify the network to use')
   .option(
     '-f, --from <number>',
@@ -169,7 +169,7 @@ const nftCommand = program.command('nft').description('nft subcommand')
 nftCommand
   .command('generate-images-with-openai')
   .description('generate images using OpenAI')
-  .option('-c, --config <config-file>', 'project config file (default: alephium.config.{ts|js})')
+  .option('-c, --config <config-file>', 'project config file (default: oxygenium.config.{ts|js})')
   .option('-n, --network <network-type>', 'specify the network to use', 'devnet')
   .option('-d, --dir <directory-of-stored-images>', 'directory where to store the images')
   .option('-n, --number <number-of-images>', 'number of images to generate', '1')
@@ -196,7 +196,7 @@ nftCommand
 nftCommand
   .command('upload-images-and-metadata-to-ipfs')
   .description('upload images to IPFS')
-  .option('-c, --config <config-file>', 'project config file (default: alephium.config.{ts|js})')
+  .option('-c, --config <config-file>', 'project config file (default: oxygenium.config.{ts|js})')
   .option('-n, --network <network-type>', 'specify the network to use', 'devnet')
   .option('-d, --localDir <directory-of-local-images>', 'directory of local images to be uploaded')
   .option('-i, --ipfsDir <ipfs-directory-of-uploaded-images>', 'IPFS directory to upload the images')

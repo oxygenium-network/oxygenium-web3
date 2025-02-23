@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/hooks/useFitText.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/hooks/useFitText.tsx)
 
-The `useFitText` function is a custom React hook that resizes text to fit within a container. It is imported from the `alephium-web3` project and uses the `useCallback`, `useEffect`, `useLayoutEffect`, `useRef`, and `useState` hooks from the React library. The function takes an options object as an argument, which can include the following properties:
+The `useFitText` function is a custom React hook that resizes text to fit within a container. It is imported from the `oxygenium-web3` project and uses the `useCallback`, `useEffect`, `useLayoutEffect`, `useRef`, and `useState` hooks from the React library. The function takes an options object as an argument, which can include the following properties:
 
 - `logLevel`: A string that specifies the level of logging to use. The default value is `'info'`.
 - `maxFontSize`: A number that specifies the maximum font size to use. The default value is `100`.
@@ -16,7 +16,7 @@ The `useFitText` function uses a `ResizeObserver` to monitor changes to the size
 The `useFitText` function can be used in a larger project to dynamically adjust the font size of text to fit within a container. This can be useful for responsive design, where the size of the container may change depending on the size of the screen or the device being used. An example of how to use the `useFitText` function is shown below:
 
 ```jsx
-import useFitText from 'alephium-web3'
+import useFitText from 'oxygenium-web3'
 
 function MyComponent() {
   const { fontSize, ref } = useFitText()

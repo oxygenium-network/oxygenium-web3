@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -22,10 +22,10 @@ import { node } from '../packages/web3'
 import { SubscribeOptions, sleep } from '../packages/web3'
 import { web3 } from '../packages/web3'
 import { TxStatus } from '../packages/web3'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+import { PrivateKeyWallet } from '@oxygenium/web3-wallet'
 import { ONE_ALPH } from '../packages/web3/src'
 import { Add, Sub, Main } from '../artifacts/ts'
-import { getSigner } from '@alephium/web3-test'
+import { getSigner } from '@oxygenium/web3-test'
 
 describe('transactions', function () {
   let signer: PrivateKeyWallet

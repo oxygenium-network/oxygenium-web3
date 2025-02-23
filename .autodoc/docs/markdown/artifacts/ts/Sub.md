@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/artifacts/ts/Sub.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/Sub.ts)
 
-This code is part of the Alephium-web3 project and provides a TypeScript interface for interacting with a smart contract called "Sub". The code imports various modules from the "@alephium/web3" package, which is a library for interacting with the Alephium blockchain. 
+This code is part of the Alephium-web3 project and provides a TypeScript interface for interacting with a smart contract called "Sub". The code imports various modules from the "@oxygenium/web3" package, which is a library for interacting with the Alephium blockchain. 
 
 The code defines a namespace called "SubTypes" that contains custom types for the "Sub" contract. The "Fields" type defines the fields of the contract state, which in this case is just a single field called "result" of type "bigint". The "SubEvent" type defines an event emitted by the contract that contains two fields of type "bigint" called "x" and "y". The "CallMethodTable" type defines a table of methods that can be called on the contract, in this case just one method called "sub" that takes an array of two "bigint" values and returns a single "bigint" value. The "MultiCallParams" and "MultiCallResults" types are used to define the parameters and return types of multiple method calls made in a single transaction.
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/CopyToClipboard/index.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/CopyToClipboard/index.tsx)
 
 This code defines a React component called `CopyToClipboard` that provides a way to copy a given string to the clipboard. The component can be used in two ways: as a standalone component that displays a copy icon and the given string, or as a button that displays the given string and the copy icon. 
 

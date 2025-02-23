@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/walletconnect/artifacts/ts/scripts.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/artifacts/ts/scripts.ts)
 
 The code provided is a TypeScript module that exports a namespace called `Main`. The namespace contains two functions: `execute` and `script`. The purpose of this module is to provide an interface for executing a script on the Alephium blockchain.
 

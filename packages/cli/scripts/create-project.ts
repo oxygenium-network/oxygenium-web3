@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -72,7 +72,7 @@ function prepareReact(packageRoot: string, projectRoot: string) {
 
 function prepareNextJs(_packageRoot: string, projectRoot: string) {
   console.log('Creating the Nextjs app')
-  execSync(`npx create-next-app ${projectRoot} --example https://github.com/alephium/nextjs-template --typescript`)
+  execSync(`npx create-next-app ${projectRoot} --example https://github.com/oxygenium/nextjs-template --typescript`)
   execSync('npm install && npm run prettier', { cwd: projectRoot })
   console.log()
 }

@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -15,8 +15,8 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
-import { getDefaultAlephiumWallet } from '@alephium/get-extension-wallet'
-import { node, SubscribeOptions, subscribeToTxStatus, TxStatusSubscription, web3 } from '@alephium/web3'
+import { getDefaultAlephiumWallet } from '@oxygenium/get-extension-wallet'
+import { node, SubscribeOptions, subscribeToTxStatus, TxStatusSubscription, web3 } from '@oxygenium/web3'
 import { useEffect, useState } from 'react'
 
 export function useTxStatus(
@@ -43,11 +43,11 @@ export function useTxStatus(
 
   useEffect(() => {
     getDefaultAlephiumWallet()
-      .then((alephium) => {
-        if (!alephium?.nodeProvider) {
+      .then((oxygenium) => {
+        if (!oxygenium?.nodeProvider) {
           throw Error('Alephium object is not initialized')
         }
-        web3.setCurrentNodeProvider(alephium.nodeProvider)
+        web3.setCurrentNodeProvider(oxygenium.nodeProvider)
 
         var subscription: TxStatusSubscription | undefined = undefined
         if (subscriptionOptions) {

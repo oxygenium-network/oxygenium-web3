@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/fixtures/transactions.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/fixtures/transactions.json)
 
 This code represents a JSON object containing sample transaction data for the Alephium Web3 project. The JSON object contains four different transaction scenarios: `oneInputOneOutput`, `twoInputsOneOutput`, `twoInputsZeroOutput`, and `missingInputs`, `missingOutputs`. These scenarios are useful for testing and understanding how different types of transactions are structured within the Alephium blockchain.
 

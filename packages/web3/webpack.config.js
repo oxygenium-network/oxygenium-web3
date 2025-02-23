@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -21,7 +21,7 @@ const webpack = require('webpack')
 module.exports = {
   mode: 'production',
   entry: {
-    alephium: './dist/src/index.js'
+    oxygenium: './dist/src/index.js'
   },
   plugins: [
     new webpack.SourceMapDevToolPlugin({ filename: '[file].map' }),
@@ -46,9 +46,9 @@ module.exports = {
     }
   },
   output: {
-    filename: 'alephium-web3.min.js',
+    filename: 'oxygenium-web3.min.js',
     library: {
-      name: 'alephium',
+      name: 'oxygenium',
       type: 'umd'
     }
   },

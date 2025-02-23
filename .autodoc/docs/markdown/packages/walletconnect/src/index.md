@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/walletconnect/src/index.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/src/index.ts)
 
-This code exports various modules from the alephium-web3 project. The purpose of this file is to make these modules available for use in other parts of the project. 
+This code exports various modules from the oxygenium-web3 project. The purpose of this file is to make these modules available for use in other parts of the project. 
 
 The `export *` syntax is used to export all of the contents of the specified modules. In this case, the modules being exported are `provider`, `constants`, and `types`. 
 
@@ -14,8 +14,8 @@ By exporting these modules, other parts of the project can import them and use t
 
 Overall, this file serves as a central point for exporting important modules that are used throughout the Alephium web3 project.
 ## Questions: 
- 1. What is the purpose of the `alephium-web3` project?
-- The `alephium-web3` project is not described in this code file, so a smart developer might want to know more about the overall purpose and goals of the project.
+ 1. What is the purpose of the `oxygenium-web3` project?
+- The `oxygenium-web3` project is not described in this code file, so a smart developer might want to know more about the overall purpose and goals of the project.
 
 2. What is the significance of the `provider`, `constants`, and `types` modules?
 - A smart developer might want to know more about the specific functionality provided by these modules and how they are used within the project.

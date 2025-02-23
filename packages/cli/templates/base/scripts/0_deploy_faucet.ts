@@ -1,5 +1,5 @@
-import { Deployer, DeployFunction, Network } from '@alephium/cli'
-import { Settings } from '../alephium.config'
+import { Deployer, DeployFunction, Network } from '@oxygenium/cli'
+import { Settings } from '../oxygenium.config'
 import { TokenFaucet } from '../artifacts/ts'
 
 // This deploy function will be called by cli deployment tool automatically

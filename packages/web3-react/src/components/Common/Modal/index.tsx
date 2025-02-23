@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -45,7 +45,7 @@ import FocusTrap from '../../../hooks/useFocusTrap'
 import usePrevious from '../../../hooks/usePrevious'
 import FitText from '../FitText'
 import { ResetContainer } from '../../../styles'
-import { useConnectSettingContext } from '../../../contexts/alephiumConnect'
+import { useConnectSettingContext } from '../../../contexts/oxygeniumConnect'
 
 const InfoIcon = ({ ...props }) => (
   <svg

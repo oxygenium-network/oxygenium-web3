@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -19,7 +19,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 import { Configuration } from '../src/types'
 import { deploy, Deployments } from '../src/deployment'
 import { getDeploymentFilePath } from '../src'
-import { NetworkId } from '@alephium/web3'
+import { NetworkId } from '@oxygenium/web3'
 
 export async function deployAndSaveProgress<Settings = unknown>(
   configuration: Configuration<Settings>,

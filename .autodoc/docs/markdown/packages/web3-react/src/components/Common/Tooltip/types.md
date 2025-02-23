@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/Tooltip/types.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Tooltip/types.ts)
 
 This file contains two TypeScript type definitions for a tooltip component that can be used in the Alephium project. The first type definition, `TooltipSizeProps`, is a union type that specifies the possible sizes of the tooltip. The two possible values are `'small'` and `'large'`. 
 
@@ -14,7 +14,7 @@ The second type definition, `TooltipProps`, specifies the props that can be pass
 These type definitions can be used to ensure that the tooltip component is used correctly throughout the Alephium project. For example, when defining a tooltip component, the `TooltipProps` type can be used to specify the expected props:
 
 ```typescript
-import { TooltipProps } from 'alephium-web3'
+import { TooltipProps } from 'oxygenium-web3'
 
 const MyTooltip = ({ message, children, open, xOffset, yOffset, delay }: TooltipProps) => {
   // ...

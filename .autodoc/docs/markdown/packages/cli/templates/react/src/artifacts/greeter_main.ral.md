@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/cli/templates/react/src/artifacts/greeter_main.ral.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/templates/react/src/artifacts/greeter_main.ral.json)
 
-This code represents a JSON file that contains information about a smart contract called "GreeterMain". The contract is part of the larger alephium-web3 project and is used to interact with the Alephium blockchain. 
+This code represents a JSON file that contains information about a smart contract called "GreeterMain". The contract is part of the larger oxygenium-web3 project and is used to interact with the Alephium blockchain. 
 
 The "version" field indicates the version of the contract, while the "name" field specifies the name of the contract. The "bytecodeTemplate" field contains the bytecode for the contract, which is a low-level representation of the contract's code. The "fieldsSig" field specifies the fields of the contract, including their names, types, and mutability. In this case, there is only one field called "greeterContractId" of type "ByteVec" that is not mutable.
 

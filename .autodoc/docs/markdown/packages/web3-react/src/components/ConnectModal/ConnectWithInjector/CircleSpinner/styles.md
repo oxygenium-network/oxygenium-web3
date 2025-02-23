@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/ConnectModal/ConnectWithInjector/CircleSpinner/styles.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/ConnectModal/ConnectWithInjector/CircleSpinner/styles.ts)
 
 This file contains styled components for the Alephium web3 project. The purpose of this code is to define the styles for the logo and spinner components used in the project. 
 

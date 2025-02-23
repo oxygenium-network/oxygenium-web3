@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/configs/header.js)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/configs/header.js)
 
 This code is a license file for the Alephium project, which is a library that can be used to interact with the Alephium blockchain. The license specifies that the library is free software and can be redistributed or modified under the terms of the GNU Lesser General Public License (LGPL) version 3 or any later version. 
 
@@ -9,7 +9,7 @@ In the larger context of the Alephium project, this license file is important be
 Here is an example of how this license file might be used in the Alephium project:
 
 ```javascript
-import AlephiumWeb3 from 'alephium-web3';
+import AlephiumWeb3 from 'oxygenium-web3';
 
 const web3 = new AlephiumWeb3('http://localhost:8545');
 
@@ -18,7 +18,7 @@ const web3 = new AlephiumWeb3('http://localhost:8545');
 
 In this example, the `AlephiumWeb3` library is imported and used to create a new instance of the `web3` object, which can be used to interact with the Alephium blockchain. The LGPL license ensures that developers can use this library in their own projects without any restrictions, as long as they comply with the terms of the license.
 ## Questions: 
- 1. What is the purpose of the alephium-web3 project?
+ 1. What is the purpose of the oxygenium-web3 project?
 - As a code documentation expert, I do not have enough information to answer this question. It would be best to refer to the project's documentation or consult with the project's developers.
 
 2. What is the license for this code?

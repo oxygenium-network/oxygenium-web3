@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/cli/templates/react/src/artifacts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/react/src/artifacts)
 
-The `.autodoc/docs/json/packages/cli/templates/react/src/artifacts` folder contains JSON files that provide information about smart contracts used in the alephium-web3 project. These contracts are designed to interact with the Alephium blockchain and can be used as building blocks for decentralized applications.
+The `.autodoc/docs/json/packages/cli/templates/react/src/artifacts` folder contains JSON files that provide information about smart contracts used in the oxygenium-web3 project. These contracts are designed to interact with the Alephium blockchain and can be used as building blocks for decentralized applications.
 
 ### greeter.ral.json
 
@@ -26,4 +26,4 @@ This file contains information about another smart contract called "GreeterMain"
 
 Developers can use the information in this file to interact with the GreeterMain contract and build applications on top of the Alephium blockchain. For example, they can use the bytecode to deploy the contract or call the "main" function to perform some action on the contract.
 
-In summary, the files in the `artifacts` folder provide essential information about smart contracts used in the alephium-web3 project. Developers can use this information to deploy and interact with these contracts, enabling them to build decentralized applications on the Alephium blockchain.
+In summary, the files in the `artifacts` folder provide essential information about smart contracts used in the oxygenium-web3 project. Developers can use this information to deploy and interact with these contracts, enabling them to build decentralized applications on the Alephium blockchain.

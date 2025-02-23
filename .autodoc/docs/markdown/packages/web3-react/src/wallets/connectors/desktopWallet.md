@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/wallets/connectors/desktopWallet.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/wallets/connectors/desktopWallet.tsx)
 
 This code defines a function called `desktopWallet` that returns a `WalletProps` object. The purpose of this function is to provide a connector configuration for the desktop wallet. 
 
@@ -11,7 +11,7 @@ This code is likely used in the larger project to provide a standardized way of 
 Example usage:
 
 ```
-import { desktopWallet } from 'alephium-web3'
+import { desktopWallet } from 'oxygenium-web3'
 
 const walletConfig = desktopWallet()
 console.log(walletConfig) // outputs the desktop wallet connector configuration as a WalletProps object

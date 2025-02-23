@@ -1,12 +1,12 @@
 {
-  "name": "@alephium/walletconnect-provider",
+  "name": "@oxygenium/walletconnect-provider",
   "description": "Alephium Provider for WalletConnect Protocol",
   "version": "0.16.1",
   "author": "Alephium dev",
-  "homepage": "https://github.com/alephium/walletconnect",
+  "homepage": "https://github.com/oxygenium/walletconnect",
   "repository": {
     "type": "git",
-    "url": "git@github.com:alephium/walletconnect.git"
+    "url": "git@github.com:oxygenium/walletconnect.git"
   },
   "license": "Apache-2.0",
   "main": "dist/cjs/index.js",
@@ -32,8 +32,8 @@
     "lint:fix": "eslint -c '.eslintrc' --fix './{src,test}/**/*.ts'"
   },
   "dependencies": {
-    "@alephium/web3": "workspace:^",
-    "@alephium/web3-wallet": "workspace:^",
+    "@oxygenium/web3": "workspace:^",
+    "@oxygenium/web3-wallet": "workspace:^",
     "@walletconnect/sign-client": "2.5.2",
     "@walletconnect/types": "2.5.2",
     "@walletconnect/utils": "2.5.2",

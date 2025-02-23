@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 import React, { useEffect, useState } from 'react'
-import { useConnectSettingContext } from '../../../contexts/alephiumConnect'
+import { useConnectSettingContext } from '../../../contexts/oxygeniumConnect'
 
 import { PageContent, ModalBody, ModalContent, ModalH1 } from '../../Common/Modal/styles'
 import Button from '../../Common/Button'
@@ -28,7 +28,7 @@ import { truncatedAddress } from '../../../utils'
 import { useBalance } from '../../../hooks/useBalance'
 import { AnimatePresence } from 'framer-motion'
 import { Balance, BalanceContainer, LoadingBalance } from './styles'
-import { prettifyAttoAlphAmount } from '@alephium/web3'
+import { prettifyAttoAlphAmount } from '@oxygenium/web3'
 import { useConnect } from '../../../hooks/useConnect'
 
 const Profile: React.FC<{ closeModal?: () => void }> = ({ closeModal }) => {
@@ -67,7 +67,7 @@ const Profile: React.FC<{ closeModal?: () => void }> = ({ closeModal }) => {
             <AnimatePresence exitBeforeEnter initial={false}>
               {balance && (
                 <Balance
-                  key={`alephium`}
+                  key={`oxygenium`}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}

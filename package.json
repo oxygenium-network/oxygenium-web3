@@ -2,10 +2,10 @@
   "license": "GPL",
   "type": "commonjs",
   "dependencies": {
-    "@alephium/cli": "workspace:*",
-    "@alephium/web3": "workspace:*",
-    "@alephium/web3-test": "workspace:*",
-    "@alephium/web3-wallet": "workspace:*"
+    "@oxygenium/cli": "workspace:*",
+    "@oxygenium/web3": "workspace:*",
+    "@oxygenium/web3-test": "workspace:*",
+    "@oxygenium/web3-wallet": "workspace:*"
   },
   "devDependencies": {
     "@types/jest": "^28.1.8",

@@ -1,6 +1,6 @@
-import { web3, Project, TestContractParams, addressFromContractId, AssetOutput, DUST_AMOUNT } from '@alephium/web3'
-import { expectAssertionError, randomContractId, testAddress, testNodeWallet } from '@alephium/web3-test'
-import { deployToDevnet } from '@alephium/cli'
+import { web3, Project, TestContractParams, addressFromContractId, AssetOutput, DUST_AMOUNT } from '@oxygenium/web3'
+import { expectAssertionError, randomContractId, testAddress, testNodeWallet } from '@oxygenium/web3-test'
+import { deployToDevnet } from '@oxygenium/cli'
 import { TokenFaucet, TokenFaucetTypes, Withdraw } from '../artifacts/ts'
 
 describe('unit tests', () => {

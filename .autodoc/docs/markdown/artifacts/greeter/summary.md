@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/artifacts/greeter)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/artifacts/greeter)
 
-The `greeter.ral.json` file in the `alephium-web3` project contains a simple smart contract named "Greeter" written in Solidity, a programming language for creating decentralized applications on the Ethereum blockchain. This contract has a version number of "v2.3.1" and provides a basic framework for creating a simple smart contract on the Ethereum blockchain.
+The `greeter.ral.json` file in the `oxygenium-web3` project contains a simple smart contract named "Greeter" written in Solidity, a programming language for creating decentralized applications on the Ethereum blockchain. This contract has a version number of "v2.3.1" and provides a basic framework for creating a simple smart contract on the Ethereum blockchain.
 
 The compiled code that will be executed on the Ethereum Virtual Machine (EVM) when the contract is deployed is stored in the "bytecode" field. The "codeHash" field serves as a unique identifier for the bytecode.
 

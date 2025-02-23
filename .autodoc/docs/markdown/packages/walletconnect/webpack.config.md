@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/walletconnect/webpack.config.js)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/webpack.config.js)
 
-This code is a configuration file for a webpack build process for the alephium-web3 project. Webpack is a module bundler that takes modules with dependencies and generates static assets representing those modules. This configuration file specifies the entry point for the build process, which is the `index.js` file located in the `dist/cjs` directory. 
+This code is a configuration file for a webpack build process for the oxygenium-web3 project. Webpack is a module bundler that takes modules with dependencies and generates static assets representing those modules. This configuration file specifies the entry point for the build process, which is the `index.js` file located in the `dist/cjs` directory. 
 
 The `plugins` section specifies two plugins to be used during the build process. The first is the `SourceMapDevToolPlugin`, which generates source maps for the built files. The second is the `ProvidePlugin`, which provides global variables that can be used throughout the project. In this case, it provides the `Buffer` variable, which is a built-in Node.js module that is not available in the browser environment. 
 
@@ -12,7 +12,7 @@ The `output` section specifies the output directory and filename for the built f
 
 Finally, the `optimization` section specifies that the built files should be minimized. 
 
-Overall, this configuration file sets up the build process for the alephium-web3 project, ensuring that the necessary modules are available and that the built files are in a format that can be used in various environments.
+Overall, this configuration file sets up the build process for the oxygenium-web3 project, ensuring that the necessary modules are available and that the built files are in a format that can be used in various environments.
 ## Questions: 
  1. What is the purpose of this code?
 - This code exports a webpack configuration object for building a production-ready JavaScript library called `WalletConnectAlephiumProvider`.

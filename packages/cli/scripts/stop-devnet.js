@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -22,7 +22,7 @@ const path = require('path')
 const { devDir } = require('./start-devnet')
 
 export function stopDevnet() {
-  const pidFile = path.join(devDir, 'alephium.pid')
+  const pidFile = path.join(devDir, 'oxygenium.pid')
   try {
     const pid = parseInt(fs.readFileSync(pidFile).toString())
     if (pid) {

@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3/src/signer)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/src/signer)
 
-The `signer` folder in the `alephium-web3` project contains code for signing and submitting transactions to the Alephium blockchain. It consists of several TypeScript files and a `fixtures` folder for testing purposes.
+The `signer` folder in the `oxygenium-web3` project contains code for signing and submitting transactions to the Alephium blockchain. It consists of several TypeScript files and a `fixtures` folder for testing purposes.
 
 `index.ts` exports three modules: `signer`, `types`, and `tx-builder`. The `signer` module contains functions for signing transactions or messages, while the `types` module defines custom data types used throughout the project. The `tx-builder` module likely contains functions for constructing transactions. By exporting these modules, other parts of the project can import and use their functionality.
 
@@ -51,7 +51,7 @@ const decrypted = decryptWallet(wallet.file, wallet.password);
 
 // Use the decrypted wallet data to interact with the blockchain
 const privateKey = generatePrivateKey(wallet.mnemonic);
-const web3 = new Web3('https://api.alephium.org');
+const web3 = new Web3('https://api.oxygenium.org');
 const account = web3.eth.accounts.privateKeyToAccount(privateKey);
 web3.eth.getBalance(account.address).then(console.log);
 ```

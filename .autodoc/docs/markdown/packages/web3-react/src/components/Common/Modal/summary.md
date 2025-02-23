@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/Modal)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/Modal)
 
 The `Modal` component in the Alephium-web3 project is a reusable and customizable modal dialog that can be used throughout the application for various purposes, such as displaying forms, notifications, or additional information. It provides features like transitions, animations, and focus trapping, making it a versatile and user-friendly UI element.
 

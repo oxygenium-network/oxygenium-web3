@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -20,7 +20,7 @@ const fetch = require('cross-fetch')
 const process = require('process')
 
 async function extractNodeVersionFromExplorer(explorerVersion) {
-  const url = `https://raw.githubusercontent.com/alephium/explorer-backend/v${explorerVersion}/project/Dependencies.scala`
+  const url = `https://raw.githubusercontent.com/oxygenium/explorer-backend/v${explorerVersion}/project/Dependencies.scala`
   const response = await (await fetch(url)).text()
   const regex = /val common = "[^"]+"/
   const matched = regex.exec(response)[0]

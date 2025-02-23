@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-react/src/components/ConnectModal/ConnectWithInjector)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/ConnectModal/ConnectWithInjector)
 
 The `ConnectWithInjector` component, located in the `index.tsx` file, is responsible for managing the connection between the Alephium wallet and supported browser extensions (injectors). It handles various connection states and renders different content based on the current state. For example, when connecting, it displays a spinner animation with the logo of the selected connector. If the state is `failed` or `rejected`, it shows an error message and a retry button. If the state is `unavailable`, it suggests installing the required browser extension.
 
@@ -20,7 +20,7 @@ The `CircleSpinner` component, located in the `CircleSpinner` subfolder, is a cr
 Here's an example of how the `CircleSpinner` component might be used:
 
 ```jsx
-import CircleSpinner from 'alephium-web3/components/CircleSpinner'
+import CircleSpinner from 'oxygenium-web3/components/CircleSpinner'
 
 function MyComponent() {
   return (

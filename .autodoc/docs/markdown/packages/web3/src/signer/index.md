@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/signer/index.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/signer/index.ts)
 
-This code is a license header and an export statement for three modules in the alephium-web3 project. The license header specifies that the code is part of the Alephium project and is licensed under the GNU Lesser General Public License. This license allows users to modify and redistribute the library under certain conditions.
+This code is a license header and an export statement for three modules in the oxygenium-web3 project. The license header specifies that the code is part of the Alephium project and is licensed under the GNU Lesser General Public License. This license allows users to modify and redistribute the library under certain conditions.
 
 The export statement is used to make the functionality of three modules available to other parts of the project. The `signer` module likely contains functions for signing transactions or messages. The `types` module probably defines custom data types used throughout the project. The `tx-builder` module may contain functions for constructing transactions.
 
@@ -29,10 +29,10 @@ const signedTx = signTransaction(tx, privateKey)
 
 This code imports the `signTransaction` function from the `signer` module and uses it to sign a transaction object. The signed transaction can then be sent to the network.
 
-Overall, this code is a small but important part of the alephium-web3 project. By exporting these modules, it enables other parts of the project to use their functionality and work together to achieve the project's goals.
+Overall, this code is a small but important part of the oxygenium-web3 project. By exporting these modules, it enables other parts of the project to use their functionality and work together to achieve the project's goals.
 ## Questions: 
- 1. What is the purpose of the `alephium-web3` project?
-- Unfortunately, the code provided does not give any indication of the purpose of the `alephium-web3` project. Further documentation or context would be needed to answer this question.
+ 1. What is the purpose of the `oxygenium-web3` project?
+- Unfortunately, the code provided does not give any indication of the purpose of the `oxygenium-web3` project. Further documentation or context would be needed to answer this question.
 
 2. What is the significance of the `signer`, `types`, and `tx-builder` modules?
 - These modules are being exported for use outside of this file. Without further context, it is unclear what functionality these modules provide or how they are used within the project.

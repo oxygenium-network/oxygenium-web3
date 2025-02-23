@@ -1,5 +1,5 @@
-import { Configuration } from '@alephium/cli'
-import { Number256 } from '@alephium/web3'
+import { Configuration } from '@oxygenium/cli'
+import { Number256 } from '@oxygenium/web3'
 
 // Settings are usually for configuring
 export type Settings = {
