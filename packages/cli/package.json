@@ -5,7 +5,7 @@
   "license": "GPL",
   "repository": {
     "type": "git",
-    "url": "git@github.com:oxygenium/oxygenium-web3.git"
+    "url": "git@github.com:oxygenium-network/oxygenium-web3.git"
   },
   "homepage": "https://github.com/oxygenium-network/oxygenium-web3",
   "bugs": {
