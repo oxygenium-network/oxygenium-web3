@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/BrowserIcon/types.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/Common/BrowserIcon/types.ts)
 
 This code exports a type called `BrowserIconProps` which is an object with an optional `browser` property of type string. This type is likely used in other parts of the `oxygenium-web3` project to define the props for a browser icon component.
 

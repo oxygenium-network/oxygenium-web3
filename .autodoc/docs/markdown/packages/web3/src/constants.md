@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/constants.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/constants.ts)
 
 This file contains several constants that are used throughout the oxygenium-web3 project. 
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/wallets/connectors/injected.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/wallets/connectors/injected.tsx)
 
 This code defines a function called `injected` that returns an object with properties related to a wallet. The purpose of this code is to provide information about a wallet that is injected into a web3 provider. 
 

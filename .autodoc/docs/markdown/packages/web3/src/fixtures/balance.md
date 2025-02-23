@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/fixtures/balance.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/fixtures/balance.json)
 
 This code represents a JSON object that contains information about a user's balance and UTXOs (unspent transaction outputs) in the Oxygenium blockchain network. The `data` field contains several sub-fields, including `balance`, `balanceHint`, `lockedBalance`, `lockedBalanceHint`, and `utxoNum`.
 

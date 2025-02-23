@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/docker/devnet.conf)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/docker/devnet.conf)
 
 This code sets various configuration parameters for the Oxygenium blockchain network. The `oxygenium.genesis.allocations` array specifies the initial distribution of tokens among a set of addresses. Each object in the array contains an `address` field, which is the recipient of the tokens, an `amount` field, which specifies the number of tokens to be allocated, and a `lock-duration` field, which specifies the duration for which the tokens will be locked. 
 

@@ -29,7 +29,7 @@ const os = require('os')
 export const devDir = path.join(os.homedir(), '.oxygenium-dev')
 
 async function _downloadFullNode(tag, fileName) {
-  const url = `https://github.com/oxygenium/oxygenium/releases/download/v${tag}/oxygenium-${tag}.jar`
+  const url = `https://github.com/oxygenium-network/oxygenium/releases/download/v${tag}/oxygenium-${tag}.jar`
   const res0 = await fetch(url)
   const fileUrl = res0.url
   const res1 = await fetch(fileUrl)

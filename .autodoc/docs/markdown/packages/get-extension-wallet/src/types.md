@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/get-extension-wallet/src/types.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/get-extension-wallet/src/types.ts)
 
 This file contains TypeScript code that defines several classes and functions related to interacting with the Oxygenium blockchain network using the web3 API. The code is licensed under the GNU Lesser General Public License.
 

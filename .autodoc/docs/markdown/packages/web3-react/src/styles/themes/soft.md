@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/themes/soft.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/styles/themes/soft.ts)
 
 This code exports a JavaScript object that contains a set of CSS variables. These variables define the styling for various UI elements in the Oxygenium web3 project. 
 

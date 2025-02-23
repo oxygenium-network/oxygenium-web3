@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/templates/base/src/token.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/templates/base/src/token.ts)
 
 The code is a script that demonstrates how to use the `@oxygenium/web3` library to interact with a smart contract deployed on the Oxygenium blockchain. Specifically, the script withdraws tokens from a `TokenFaucet` contract and prints the latest state of the contract.
 

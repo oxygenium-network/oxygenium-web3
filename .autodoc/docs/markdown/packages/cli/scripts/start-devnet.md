@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/scripts/start-devnet.js)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/scripts/start-devnet.js)
 
 This file contains code that is used to launch and manage a local development network (devnet) for the Oxygenium blockchain. The devnet is used for testing and development purposes, and is not part of the main Oxygenium network. 
 

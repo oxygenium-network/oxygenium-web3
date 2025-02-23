@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/cli_internal.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/cli_internal.ts)
 
 This file contains a set of commands that can be used to manage and interact with a smart contract project built on the Oxygenium blockchain. The file imports several modules from the `@oxygenium/web3` package, which provides a set of tools for interacting with the Oxygenium blockchain. 
 

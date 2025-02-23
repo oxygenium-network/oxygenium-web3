@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/signer/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/signer/index.ts)
 
 This code is a license header and an export statement for three modules in the oxygenium-web3 project. The license header specifies that the code is part of the Oxygenium project and is licensed under the GNU Lesser General Public License. This license allows users to modify and redistribute the library under certain conditions.
 

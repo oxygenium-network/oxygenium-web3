@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/get-extension-wallet/src/getOxygenium.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/get-extension-wallet/src/getOxygenium.ts)
 
 This file contains a set of functions that are used to interact with Oxygenium wallets. The functions are designed to help users interact with different wallet providers and retrieve wallet objects. 
 

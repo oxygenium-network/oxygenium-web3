@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/artifacts/ts/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/walletconnect/artifacts/ts/index.ts)
 
 This code exports two modules, "Greeter" and "scripts", from the oxygenium-web3 project. The purpose of this code is to make these modules available for use in other parts of the project or in external projects that depend on oxygenium-web3.
 

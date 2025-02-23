@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Pages/Connectors/styles.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/Pages/Connectors/styles.ts)
 
 This file contains styled components for a user interface that displays various connectors for interacting with a blockchain network. The ConnectorsContainer component is a container for ConnectorButton components, which represent individual connectors. Each ConnectorButton has a label and an icon, and can be clicked to initiate a connection to the corresponding blockchain network. The MobileConnectorsContainer component is a similar container for MobileConnectorButton components, which are designed for display on mobile devices. 
 

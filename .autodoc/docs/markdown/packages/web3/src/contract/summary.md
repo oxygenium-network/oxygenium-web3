@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/src/contract)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3/src/contract)
 
 The `oxygenium-web3` project provides a set of tools for developers to interact with the Oxygenium blockchain and smart contracts. In the `contract` folder, there are two main files: `events.ts` and `index.ts`.
 

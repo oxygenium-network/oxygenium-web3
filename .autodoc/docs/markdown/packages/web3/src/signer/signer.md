@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/signer/signer.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/signer/signer.ts)
 
 This file contains TypeScript code for the `SignerProvider` class and several related classes and functions. These classes and functions are used to interact with a blockchain network and sign transactions and messages. 
 

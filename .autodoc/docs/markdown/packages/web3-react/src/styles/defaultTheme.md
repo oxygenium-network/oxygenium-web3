@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/defaultTheme.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/styles/defaultTheme.ts)
 
 This code defines the default theme for the Oxygenium web3 project. It exports an object called `defaultTheme` which contains a `connectKit` property. The `connectKit` property is an object that contains an `options` property and a `theme` property. The `options` property is an object that contains a single property called `iconStyle` which is set to `'light'`. The `theme` property is an object that contains three properties: `preferred`, `light`, and `dark`. The `preferred` property is set to `'dark'`, indicating that the preferred theme for the project is a dark theme. The `light` and `dark` properties are both set to the same default light theme object.
 

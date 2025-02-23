@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/ConnectModal)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/ConnectModal)
 
 The `ConnectModal` folder contains components that handle connecting to the Oxygenium network using various methods, such as browser extensions (injectors), desktop wallets, and WalletConnect protocol. These components are designed to be reusable and can be easily integrated into other parts of the Oxygenium Web3 project.
 

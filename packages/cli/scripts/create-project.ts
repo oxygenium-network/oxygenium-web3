@@ -72,7 +72,7 @@ function prepareReact(packageRoot: string, projectRoot: string) {
 
 function prepareNextJs(_packageRoot: string, projectRoot: string) {
   console.log('Creating the Nextjs app')
-  execSync(`npx create-next-app ${projectRoot} --example https://github.com/oxygenium/nextjs-template --typescript`)
+  execSync(`npx create-next-app ${projectRoot} --example https://github.com/oxygenium-network/nextjs-template --typescript`)
   execSync('npm install && npm run prettier', { cwd: projectRoot })
   console.log()
 }

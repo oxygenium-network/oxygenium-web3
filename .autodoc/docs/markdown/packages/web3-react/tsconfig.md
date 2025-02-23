@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/tsconfig.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/tsconfig.json)
 
 This code is a configuration file for the TypeScript compiler used in the oxygenium-web3 project. It specifies various options for the compiler, such as enabling strict type checking, generating declaration files, and setting the target version of JavaScript to ES2019. 
 

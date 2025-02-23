@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/src/signer/fixtures)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3/src/signer/fixtures)
 
 The `fixtures` folder in the `oxygenium-web3` project contains two JSON files, `genesis.json` and `wallets.json`, which are used for testing purposes and simulating interactions with the Oxygenium blockchain.
 

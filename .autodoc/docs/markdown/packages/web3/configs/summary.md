@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/configs)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3/configs)
 
 The `header.js` file in the `.autodoc/docs/json/packages/web3/configs` folder contains the license information for the Oxygenium project. This project is a library designed to interact with the Oxygenium blockchain, and the license ensures that it remains open source and accessible to anyone who wants to use it.
 

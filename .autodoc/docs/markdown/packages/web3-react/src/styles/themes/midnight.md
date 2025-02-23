@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/themes/midnight.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/styles/themes/midnight.ts)
 
 This code exports a set of CSS variables that define the styling for various UI elements in the Oxygenium web3 project. These variables can be used throughout the project to ensure consistent styling across different components.
 

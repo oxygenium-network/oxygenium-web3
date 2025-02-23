@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/signer/fixtures/genesis.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/signer/fixtures/genesis.json)
 
 The code provided is a JSON object containing four objects, each representing a different user account. Each account has an address, public key, private key, and mnemonic phrase. 
 

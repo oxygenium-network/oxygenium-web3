@@ -21,9 +21,9 @@
     "type": "git",
     "url": "git@github.com:oxygenium/oxygenium-web3.git"
   },
-  "homepage": "https://github.com/oxygenium/oxygenium-web3",
+  "homepage": "https://github.com/oxygenium-network/oxygenium-web3",
   "bugs": {
-    "url": "https://github.com/oxygenium/oxygenium-web3/issues"
+    "url": "https://github.com/oxygenium-network/oxygenium-web3/issues"
   },
   "author": "Oxygenium dev <dev@oxygenium.org>",
   "config": {

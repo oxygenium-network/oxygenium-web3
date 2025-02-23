@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/hooks)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/hooks)
 
 The `hooks` folder in the `oxygenium-web3` project contains custom React hooks that provide various functionalities related to the Oxygenium blockchain. These hooks can be used in React components to interact with the Oxygenium wallet, retrieve account information, and subscribe to transaction status updates.
 

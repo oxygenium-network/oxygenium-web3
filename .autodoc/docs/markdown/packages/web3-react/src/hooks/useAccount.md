@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/hooks/useAccount.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/hooks/useAccount.tsx)
 
 This file contains a custom React hook called `useAccount` that is used to connect to an Oxygenium wallet and retrieve the current account. The hook is designed to be used in a React component and takes an optional callback function `onDisconnected` that is called when the wallet is disconnected.
 

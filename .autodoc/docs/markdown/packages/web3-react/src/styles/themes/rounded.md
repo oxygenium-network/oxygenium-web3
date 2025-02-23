@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/themes/rounded.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/styles/themes/rounded.ts)
 
 This file contains a set of CSS variables that define the styling for various components in the Oxygenium web3 project. These variables are exported as an object with their names as keys and their values as values. 
 

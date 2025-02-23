@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/cli)
 
 The `cli` folder in the `oxygenium-web3` project provides a command-line interface (CLI) for developers to interact with the Oxygenium blockchain network. It contains essential scripts and tools for managing and interacting with a smart contract project built on the Oxygenium blockchain.
 

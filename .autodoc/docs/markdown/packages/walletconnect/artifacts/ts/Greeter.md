@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/artifacts/ts/Greeter.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/walletconnect/artifacts/ts/Greeter.ts)
 
 This code defines a contract called `Greeter` and provides functionality to interact with it on the blockchain. The contract is defined using the `Contract` class from the `@oxygenium/web3` library, which provides a set of methods to interact with smart contracts on the Oxygenium blockchain. 
 

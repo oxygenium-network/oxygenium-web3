@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/src/utils)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3/src/utils)
 
 The `utils` folder in the `oxygenium-web3` project contains various utility functions and classes that are used throughout the project for tasks such as encoding and decoding data, hashing, signing and verifying data, and working with numbers and addresses. These utilities are essential for the proper functioning of the project and can be used in different parts of the project as needed.
 

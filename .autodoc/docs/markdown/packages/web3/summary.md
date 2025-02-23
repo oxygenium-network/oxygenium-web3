@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3)
 
 The `.autodoc/docs/json/packages/web3` folder contains essential configuration files and code modules for the `oxygenium-web3` project, which provides a convenient and flexible way to interact with the Oxygenium blockchain through its web3 API.
 

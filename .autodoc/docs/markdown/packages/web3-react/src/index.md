@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/index.ts)
 
 This file is a module that exports various components, contexts, constants, and hooks related to the OxygeniumConnectProvider. The OxygeniumConnectProvider is a web3 provider that allows users to interact with the Oxygenium blockchain. 
 

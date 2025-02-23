@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/configs/header.js)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/configs/header.js)
 
 This code is a license file for the Oxygenium project, which is a library of free software that can be redistributed and modified under the terms of the GNU Lesser General Public License. The license allows users to use, copy, and distribute the software, as well as modify it and distribute modified versions. However, the software is provided without any warranty, and the authors of the software are not liable for any damages that may arise from its use.
 

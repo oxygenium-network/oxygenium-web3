@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/tsconfig.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/walletconnect/tsconfig.json)
 
 This code is a configuration file for the TypeScript compiler. It specifies the options and settings that the compiler should use when compiling TypeScript code in the `oxygenium-web3` project. 
 

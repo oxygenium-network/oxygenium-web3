@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/hooks/useTxStatus.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/hooks/useTxStatus.tsx)
 
 The code is a custom React hook that allows a user to subscribe to the status of a transaction on the Oxygenium blockchain. The hook is designed to be used in a React component and takes two parameters: the transaction ID and a callback function that will be called whenever the transaction status changes. 
 

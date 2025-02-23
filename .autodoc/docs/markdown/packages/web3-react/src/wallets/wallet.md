@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/wallets/wallet.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/wallets/wallet.ts)
 
 This file contains TypeScript code that defines two interfaces: `WalletOptions` and `WalletProps`. These interfaces are used to define the options and properties of a wallet component in the Oxygenium web3 project.
 

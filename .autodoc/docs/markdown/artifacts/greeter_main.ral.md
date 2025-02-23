@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/greeter_main.ral.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/artifacts/greeter_main.ral.json)
 
 This code is a JSON object that contains information about a contract called "GreeterMain". The contract is likely written in a language that compiles to bytecode, as evidenced by the "bytecodeTemplate" field. The "fieldsSig" field describes the contract's fields, which in this case is a single field called "greeterContractId" of type "ByteVec". The "functions" field describes the contract's functions, which in this case is a single function called "main". 
 
