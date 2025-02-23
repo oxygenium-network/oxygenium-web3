@@ -34,8 +34,8 @@
     "build": "rm -rf dist/* && npx tsc --build . && webpack",
     "test": "jest -i --config ./jest-config.json",
     "update-schemas": "npm run update-schema:oxygenium && npm run update-schema:explorer",
-    "update-schema:oxygenium": "npx swagger-typescript-api --disable-throw-on-error -t ./configs -o ./src/api -n api-oxygenium.ts -p https://raw.githubusercontent.com/oxygenium/oxygenium/v${npm_package_config_oxygenium_version}/api/src/main/resources/openapi.json",
-    "update-schema:explorer": "npx swagger-typescript-api --disable-throw-on-error -t ./configs -o ./src/api -n api-explorer.ts -p https://raw.githubusercontent.com/oxygenium/explorer-backend/v${npm_package_config_explorer_backend_version}/app/src/main/resources/explorer-backend-openapi.json",
+    "update-schema:oxygenium": "npx swagger-typescript-api --disable-throw-on-error -t ./configs -o ./src/api -n api-oxygenium.ts -p https://raw.githubusercontent.com/oxygenium-network/oxygenium/v${npm_package_config_oxygenium_version}/api/src/main/resources/openapi.json",
+    "update-schema:explorer": "npx swagger-typescript-api --disable-throw-on-error -t ./configs -o ./src/api -n api-explorer.ts -p https://raw.githubusercontent.com/oxygenium-network/explorer-backend/v${npm_package_config_explorer_backend_version}/app/src/main/resources/explorer-backend-openapi.json",
     "check-versions": "node scripts/check-versions.js ${npm_package_config_oxygenium_version} ${npm_package_config_explorer_backend_version}"
   },
   "type": "commonjs",

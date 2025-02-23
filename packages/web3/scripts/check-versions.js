@@ -20,7 +20,7 @@ const fetch = require('cross-fetch')
 const process = require('process')
 
 async function extractNodeVersionFromExplorer(explorerVersion) {
-  const url = `https://raw.githubusercontent.com/oxygenium/explorer-backend/v${explorerVersion}/project/Dependencies.scala`
+  const url = `https://raw.githubusercontent.com/oxygenium-network/explorer-backend/v${explorerVersion}/project/Dependencies.scala`
   const response = await (await fetch(url)).text()
   const regex = /val common = "[^"]+"/
   const matched = regex.exec(response)[0]
