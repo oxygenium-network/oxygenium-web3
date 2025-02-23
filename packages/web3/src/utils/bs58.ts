@@ -19,9 +19,9 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 /** This source is under MIT License and come originally from https://github.com/cryptocoinjs/bs58 **/
 import basex from 'base-x'
 
-const ALPHABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
+const OXMABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
 
-export const bs58 = basex(ALPHABET)
+export const bs58 = basex(OXMABET)
 
 export function isBase58(s: string): boolean {
   if (s === '' || s.trim() === '') {

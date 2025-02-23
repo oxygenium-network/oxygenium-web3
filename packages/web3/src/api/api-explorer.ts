@@ -1096,7 +1096,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
       }).then(convertHttpResponse),
 
     /**
-     * @description Get the ALPH total supply
+     * @description Get the OXM total supply
      *
      * @tags Infos
      * @name GetInfosSupplyTotalAlph
@@ -1111,7 +1111,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
       }).then(convertHttpResponse),
 
     /**
-     * @description Get the ALPH circulating supply
+     * @description Get the OXM circulating supply
      *
      * @tags Infos
      * @name GetInfosSupplyCirculatingAlph
@@ -1126,7 +1126,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
       }).then(convertHttpResponse),
 
     /**
-     * @description Get the ALPH reserved supply
+     * @description Get the OXM reserved supply
      *
      * @tags Infos
      * @name GetInfosSupplyReservedAlph
@@ -1141,7 +1141,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
       }).then(convertHttpResponse),
 
     /**
-     * @description Get the ALPH locked supply
+     * @description Get the OXM locked supply
      *
      * @tags Infos
      * @name GetInfosSupplyLockedAlph

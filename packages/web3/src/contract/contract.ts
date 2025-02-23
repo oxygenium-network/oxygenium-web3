@@ -59,7 +59,7 @@ import {
 import { getCurrentNodeProvider } from '../global'
 import * as path from 'path'
 import { EventSubscribeOptions, EventSubscription, subscribeToEvents } from './events'
-import { ONE_ALPH } from '../constants'
+import { ONE_OXM } from '../constants'
 import * as blake from 'blakejs'
 
 const crypto = new WebCrypto()
@@ -1317,7 +1317,7 @@ export interface TestContractParams<F extends Fields = Fields, A extends Argumen
   blockTimeStamp?: number
   txId?: string
   initialFields: F
-  initialAsset?: Asset // default 1 ALPH
+  initialAsset?: Asset // default 1 OXM
   testArgs: A
   existingContracts?: ContractState[] // default no existing contracts
   inputAssets?: InputAsset[] // default no input asserts
@@ -1433,7 +1433,7 @@ export abstract class ContractFactory<I extends ContractInstance, F extends Fiel
   // This is used for testing contract functions
   stateForTest(initFields: F, asset?: Asset, address?: string): ContractState<F> {
     const newAsset = {
-      alphAmount: asset?.alphAmount ?? ONE_ALPH,
+      alphAmount: asset?.alphAmount ?? ONE_OXM,
       tokens: asset?.tokens
     }
     return this.contract.toState(addStdIdToFields(this.contract, initFields), newAsset, address)
@@ -1578,7 +1578,7 @@ export function addStdIdToFields<F extends Fields>(
   contract: Contract,
   fields: F
 ): F | (F & { __stdInterfaceId: HexString }) {
-  const stdInterfaceIdPrefix = '414c5048' // the hex of 'ALPH'
+  const stdInterfaceIdPrefix = '414c5048' // the hex of 'OXM'
   return contract.stdInterfaceId === undefined
     ? fields
     : { ...fields, __stdInterfaceId: stdInterfaceIdPrefix + contract.stdInterfaceId }

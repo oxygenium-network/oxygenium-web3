@@ -3,5 +3,5 @@ TxScript MintNFTTest(
     uri: ByteVec
 ) {
     let nftCollection = NFTCollectionTest(nftCollectionContractId)
-    nftCollection.mint{callerAddress!() -> ALPH: 1 alph}(uri)
+    nftCollection.mint{callerAddress!() -> OXM: 1 alph}(uri)
 }

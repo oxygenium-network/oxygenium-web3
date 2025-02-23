@@ -55,7 +55,7 @@ const ACCOUNTS = {
   }
 }
 
-const ONE_ALPH = 10n ** 18n
+const ONE_OXM = 10n ** 18n
 
 const TEST_RELAY_URL = process.env.TEST_RELAY_URL ? process.env.TEST_RELAY_URL : 'ws://localhost:5555'
 
@@ -306,7 +306,7 @@ async function verifySign(provider: WalletConnectProvider, walletClient: WalletC
 
   await provider.signAndSubmitTransferTx({
     signerAddress: signerA.address,
-    destinations: [{ address: ACCOUNTS.b.address, attoAlphAmount: ONE_ALPH }]
+    destinations: [{ address: ACCOUNTS.b.address, attoAlphAmount: ONE_OXM }]
   })
 
   await checkBalanceDecreasing()

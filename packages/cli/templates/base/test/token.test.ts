@@ -60,7 +60,7 @@ describe('unit tests', () => {
     // the caller withdrawn 1 token from the contract
     expect(tokenOutput.tokens).toEqual([{ id: testTokenId, amount: 1n }])
 
-    // the second transaction output is for the ALPH
+    // the second transaction output is for the OXM
     const alphOutput = testResult.txOutputs[1] as AssetOutput
     expect(alphOutput.type).toEqual('AssetOutput')
     expect(alphOutput.address).toEqual(testAddress)

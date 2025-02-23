@@ -23,8 +23,8 @@ import {
   isBase58,
   NodeProvider,
   web3,
-  ONE_ALPH,
-  ALPH_TOKEN_ID,
+  ONE_OXM,
+  OXM_TOKEN_ID,
   DUST_AMOUNT,
   Address,
   TOTAL_NUMBER_OF_GROUPS
@@ -93,7 +93,7 @@ function checkGroup(group: number) {
   }
 }
 
-export async function getSigner(alphAmount = ONE_ALPH * 100n, group = 0): Promise<PrivateKeyWallet> {
+export async function getSigner(alphAmount = ONE_OXM * 100n, group = 0): Promise<PrivateKeyWallet> {
   checkGroup(group)
 
   try {
@@ -115,7 +115,7 @@ export async function getSigner(alphAmount = ONE_ALPH * 100n, group = 0): Promis
 
 export async function getSigners(
   num: number,
-  alphAmountPerSigner = ONE_ALPH * 100n,
+  alphAmountPerSigner = ONE_OXM * 100n,
   group = 0
 ): Promise<PrivateKeyWallet[]> {
   checkGroup(group)
@@ -135,8 +135,8 @@ export async function getSigners(
 export async function transfer(from: PrivateKeyWallet, to: Address, tokenId: string, amount: bigint) {
   const destination = {
     address: to,
-    attoAlphAmount: tokenId === ALPH_TOKEN_ID ? amount : DUST_AMOUNT,
-    tokens: tokenId === ALPH_TOKEN_ID ? [] : [{ id: tokenId, amount }]
+    attoAlphAmount: tokenId === OXM_TOKEN_ID ? amount : DUST_AMOUNT,
+    tokens: tokenId === OXM_TOKEN_ID ? [] : [{ id: tokenId, amount }]
   }
   return await from.signAndSubmitTransferTx({ signerAddress: from.address, destinations: [destination] })
 }

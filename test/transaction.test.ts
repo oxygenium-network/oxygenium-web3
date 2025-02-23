@@ -23,7 +23,7 @@ import { SubscribeOptions, sleep } from '../packages/web3'
 import { web3 } from '../packages/web3'
 import { TxStatus } from '../packages/web3'
 import { PrivateKeyWallet } from '@oxygenium/web3-wallet'
-import { ONE_ALPH } from '../packages/web3/src'
+import { ONE_OXM } from '../packages/web3/src'
 import { Add, Sub, Main } from '../artifacts/ts'
 import { getSigner } from '@oxygenium/web3-test'
 
@@ -90,7 +90,7 @@ describe('transactions', function () {
     await signer.signAndSubmitTransferTx({
       signerAddress: genesisAccount.address,
       signerKeyType: genesisAccount.keyType,
-      destinations: [{ address: schnorrSigner.address, attoAlphAmount: 10n * ONE_ALPH }]
+      destinations: [{ address: schnorrSigner.address, attoAlphAmount: 10n * ONE_OXM }]
     })
 
     const subInstance = (await Sub.deploy(schnorrSigner, { initialFields: { result: 0n } })).contractInstance

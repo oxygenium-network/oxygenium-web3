@@ -73,7 +73,7 @@ const Profile: React.FC<{ closeModal?: () => void }> = ({ closeModal }) => {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  {prettifyAttoAlphAmount(BigInt(balance.balance))} ALPH
+                  {prettifyAttoAlphAmount(BigInt(balance.balance))} OXM
                 </Balance>
               )}
               {!balance && (

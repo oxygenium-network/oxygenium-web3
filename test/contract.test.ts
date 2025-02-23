@@ -24,7 +24,7 @@ import {
   ContractEvent,
   Fields,
   ContractCreatedEvent,
-  ONE_ALPH,
+  ONE_OXM,
   subContractId,
   contractIdFromAddress,
   binToHex,
@@ -203,7 +203,7 @@ describe('contract', function () {
       initialFields: { sub: subState.contractId, result: 0n },
       testArgs: { a: 0n, path: subContractPath, subContractId: subState.contractId, payer },
       existingContracts: [subState],
-      inputAssets: [{ address: payer, asset: { alphAmount: ONE_ALPH * 2n } }]
+      inputAssets: [{ address: payer, asset: { alphAmount: ONE_OXM * 2n } }]
     })
     expect(testResult.events.length).toEqual(1)
     const event = testResult.events[0] as ContractCreatedEvent

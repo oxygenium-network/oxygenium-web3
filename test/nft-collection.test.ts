@@ -23,7 +23,7 @@ import {
   subContractId,
   binToHex,
   encodeU256,
-  ONE_ALPH,
+  ONE_OXM,
   addressFromContractId,
   hexToString
 } from '@oxygenium/web3'
@@ -92,7 +92,7 @@ describe('nft collection', function () {
         nftCollectionContractId: nftCollectionTest.contractId,
         uri: nftUri
       },
-      attoAlphAmount: 2n * ONE_ALPH
+      attoAlphAmount: 2n * ONE_OXM
     })
     const nftContractId = subContractId(nftCollectionTest.contractId, binToHex(encodeU256(tokenIndex)), 0)
     expect((await nftCollectionTest.methods.nftByIndex({ args: { index: tokenIndex } })).returns).toEqual(nftContractId)
