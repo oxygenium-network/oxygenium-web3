@@ -15,10 +15,10 @@
     "test": "jest -i --config ./jest-config.json"
   },
   "dependencies": {
-    "@oxygenium/cli": "^0.16.1-2",
-    "@oxygenium/web3": "^0.16.1-2",
-    "@oxygenium/web3-test": "^0.16.1-2",
-    "@oxygenium/web3-wallet": "^0.16.1-2"
+    "@oxygenium/cli": "^0.16.1-3",
+    "@oxygenium/web3": "^0.16.1-3",
+    "@oxygenium/web3-test": "^0.16.1-3",
+    "@oxygenium/web3-wallet": "^0.16.1-3"
   },
   "devDependencies": {
     "@types/jest": "^27.5.1",
