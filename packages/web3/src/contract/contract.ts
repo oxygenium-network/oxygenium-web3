@@ -1030,7 +1030,7 @@ export class Contract extends Artifact {
       signerAddress: selectedAccount.address,
       signerKeyType: selectedAccount.keyType,
       bytecode: bytecode,
-      initialAttoAlphAmount: params?.initialAttoAlphAmount,
+      initialAttoOxmAmount: params?.initialAttoOxmAmount,
       issueTokenAmount: params?.issueTokenAmount,
       initialTokenAmounts: params?.initialTokenAmounts,
       gasAmount: params?.gasAmount,
@@ -1181,7 +1181,7 @@ export class Script extends Artifact {
       signerAddress: selectedAccount.address,
       signerKeyType: selectedAccount.keyType,
       bytecode: this.buildByteCodeToDeploy(params.initialFields ?? {}),
-      attoAlphAmount: params.attoAlphAmount,
+      attoOxmAmount: params.attoOxmAmount,
       tokens: params.tokens,
       gasAmount: params.gasAmount,
       gasPrice: params.gasPrice
@@ -1228,14 +1228,14 @@ export interface Asset {
 
 function toApiAsset(asset: Asset): node.AssetState {
   return {
-    attoAlphAmount: toApiNumber256(asset.alphAmount),
+    attoOxmAmount: toApiNumber256(asset.alphAmount),
     tokens: typeof asset.tokens !== 'undefined' ? asset.tokens.map(toApiToken) : []
   }
 }
 
 function fromApiAsset(asset: node.AssetState): Asset {
   return {
-    alphAmount: fromApiNumber256(asset.attoAlphAmount),
+    alphAmount: fromApiNumber256(asset.attoOxmAmount),
     tokens: fromApiTokens(asset.tokens)
   }
 }
@@ -1364,7 +1364,7 @@ function fromApiOutput(output: node.Output): Output {
     return {
       type: 'AssetOutput',
       address: asset.address,
-      alphAmount: fromApiNumber256(asset.attoAlphAmount),
+      alphAmount: fromApiNumber256(asset.attoOxmAmount),
       tokens: fromApiTokens(asset.tokens),
       lockTime: asset.lockTime,
       message: asset.message
@@ -1374,7 +1374,7 @@ function fromApiOutput(output: node.Output): Output {
     return {
       type: 'ContractOutput',
       address: asset.address,
-      alphAmount: fromApiNumber256(asset.attoAlphAmount),
+      alphAmount: fromApiNumber256(asset.attoOxmAmount),
       tokens: fromApiTokens(asset.tokens)
     }
   } else {
@@ -1390,7 +1390,7 @@ export function randomTxId(): string {
 
 export interface DeployContractParams<P extends Fields = Fields> {
   initialFields: P
-  initialAttoAlphAmount?: Number256
+  initialAttoOxmAmount?: Number256
   initialTokenAmounts?: Token[]
   issueTokenAmount?: Number256
   gasAmount?: number
@@ -1455,7 +1455,7 @@ export class ExecutableScript<P extends Fields = Fields> {
 
 export interface ExecuteScriptParams<P extends Fields = Fields> {
   initialFields: P
-  attoAlphAmount?: Number256
+  attoOxmAmount?: Number256
   tokens?: Token[]
   gasAmount?: number
   gasPrice?: Number256

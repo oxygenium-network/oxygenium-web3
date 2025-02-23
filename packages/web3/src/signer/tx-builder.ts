@@ -79,11 +79,11 @@ export abstract class TransactionBuilder {
   ): Promise<Omit<SignDeployContractTxResult, 'signature'>> {
     TransactionBuilder.validatePublicKey(params, publicKey, params.signerKeyType)
 
-    const { initialAttoAlphAmount, initialTokenAmounts, issueTokenAmount, gasPrice, ...rest } = params
+    const { initialAttoOxmAmount, initialTokenAmounts, issueTokenAmount, gasPrice, ...rest } = params
     const data: node.BuildDeployContractTx = {
       fromPublicKey: publicKey,
       fromPublicKeyType: params.signerKeyType,
-      initialAttoAlphAmount: toApiNumber256Optional(initialAttoAlphAmount),
+      initialAttoOxmAmount: toApiNumber256Optional(initialAttoOxmAmount),
       initialTokenAmounts: toApiTokens(initialTokenAmounts),
       issueTokenAmount: toApiNumber256Optional(issueTokenAmount),
       gasPrice: toApiNumber256Optional(gasPrice),
@@ -100,11 +100,11 @@ export abstract class TransactionBuilder {
   ): Promise<Omit<SignExecuteScriptTxResult, 'signature'>> {
     TransactionBuilder.validatePublicKey(params, publicKey, params.signerKeyType)
 
-    const { attoAlphAmount, tokens, gasPrice, ...rest } = params
+    const { attoOxmAmount, tokens, gasPrice, ...rest } = params
     const data: node.BuildExecuteScriptTx = {
       fromPublicKey: publicKey,
       fromPublicKeyType: params.signerKeyType,
-      attoAlphAmount: toApiNumber256Optional(attoAlphAmount),
+      attoOxmAmount: toApiNumber256Optional(attoOxmAmount),
       tokens: toApiTokens(tokens),
       gasPrice: toApiNumber256Optional(gasPrice),
       ...rest

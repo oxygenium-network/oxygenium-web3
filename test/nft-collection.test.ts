@@ -92,7 +92,7 @@ describe('nft collection', function () {
         nftCollectionContractId: nftCollectionTest.contractId,
         uri: nftUri
       },
-      attoAlphAmount: 2n * ONE_OXM
+      attoOxmAmount: 2n * ONE_OXM
     })
     const nftContractId = subContractId(nftCollectionTest.contractId, binToHex(encodeU256(tokenIndex)), 0)
     expect((await nftCollectionTest.methods.nftByIndex({ args: { index: tokenIndex } })).returns).toEqual(nftContractId)

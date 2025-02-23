@@ -90,7 +90,7 @@ describe('transactions', function () {
     await signer.signAndSubmitTransferTx({
       signerAddress: genesisAccount.address,
       signerKeyType: genesisAccount.keyType,
-      destinations: [{ address: schnorrSigner.address, attoAlphAmount: 10n * ONE_OXM }]
+      destinations: [{ address: schnorrSigner.address, attoOxmAmount: 10n * ONE_OXM }]
     })
 
     const subInstance = (await Sub.deploy(schnorrSigner, { initialFields: { result: 0n } })).contractInstance

@@ -116,7 +116,7 @@ export interface ExecutionResult {
   gasPrice: string
   blockHash: string
   codeHash: string
-  attoAlphAmount?: string
+  attoOxmAmount?: string
   tokens?: Record<string, string>
 }
 

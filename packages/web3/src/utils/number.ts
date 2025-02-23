@@ -55,7 +55,7 @@ export const prettifyNumberConfig: Record<string, IPrettifyNumberConfig> = {
   }
 }
 
-export function prettifyAttoAlphAmount(amount: Number256): string | undefined {
+export function prettifyAttoOxmAmount(amount: Number256): string | undefined {
   return prettifyNumber(amount, 18, prettifyNumberConfig.OXM)
 }
 
@@ -154,7 +154,7 @@ export function convertAmountWithDecimals(amount: string | number, decimals: num
 }
 
 // E.g. `1.23 OXM` will be converted to `1230000000000000000`
-export function convertAlphAmountWithDecimals(amount: string | number): bigint | undefined {
+export function convertOxmAmountWithDecimals(amount: string | number): bigint | undefined {
   return convertAmountWithDecimals(amount, 18)
 }
 

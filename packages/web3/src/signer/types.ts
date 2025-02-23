@@ -26,7 +26,7 @@ export type OutputRef = node.OutputRef
 
 export interface Destination {
   address: string
-  attoAlphAmount: Number256
+  attoOxmAmount: Number256
   tokens?: Token[]
   lockTime?: number
   message?: string
@@ -70,7 +70,7 @@ export interface SignDeployContractTxParams {
   signerAddress: string
   signerKeyType?: KeyType
   bytecode: string
-  initialAttoAlphAmount?: Number256
+  initialAttoOxmAmount?: Number256
   initialTokenAmounts?: Token[]
   issueTokenAmount?: Number256
   gasAmount?: number
@@ -98,7 +98,7 @@ export interface SignExecuteScriptTxParams {
   signerAddress: string
   signerKeyType?: KeyType
   bytecode: string
-  attoAlphAmount?: Number256
+  attoOxmAmount?: Number256
   tokens?: Token[]
   gasAmount?: number
   gasPrice?: Number256

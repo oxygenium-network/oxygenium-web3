@@ -105,7 +105,7 @@ export async function getSigner(alphAmount = ONE_OXM * 100n, group = 0): Promise
     }
     const rootWallet = new PrivateKeyWallet({ privateKey: testPrivateKey })
     const wallet = PrivateKeyWallet.Random(group)
-    const destinations = [{ address: wallet.address, attoAlphAmount: alphAmount }]
+    const destinations = [{ address: wallet.address, attoOxmAmount: alphAmount }]
     await rootWallet.signAndSubmitTransferTx({ signerAddress: testAddress, destinations })
     return wallet
   } catch (_) {
@@ -135,7 +135,7 @@ export async function getSigners(
 export async function transfer(from: PrivateKeyWallet, to: Address, tokenId: string, amount: bigint) {
   const destination = {
     address: to,
-    attoAlphAmount: tokenId === OXM_TOKEN_ID ? amount : DUST_AMOUNT,
+    attoOxmAmount: tokenId === OXM_TOKEN_ID ? amount : DUST_AMOUNT,
     tokens: tokenId === OXM_TOKEN_ID ? [] : [{ id: tokenId, amount }]
   }
   return await from.signAndSubmitTransferTx({ signerAddress: from.address, destinations: [destination] })

@@ -28,7 +28,7 @@ import { truncatedAddress } from '../../../utils'
 import { useBalance } from '../../../hooks/useBalance'
 import { AnimatePresence } from 'framer-motion'
 import { Balance, BalanceContainer, LoadingBalance } from './styles'
-import { prettifyAttoAlphAmount } from '@oxygenium/web3'
+import { prettifyAttoOxmAmount } from '@oxygenium/web3'
 import { useConnect } from '../../../hooks/useConnect'
 
 const Profile: React.FC<{ closeModal?: () => void }> = ({ closeModal }) => {
@@ -73,7 +73,7 @@ const Profile: React.FC<{ closeModal?: () => void }> = ({ closeModal }) => {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  {prettifyAttoAlphAmount(BigInt(balance.balance))} OXM
+                  {prettifyAttoOxmAmount(BigInt(balance.balance))} OXM
                 </Balance>
               )}
               {!balance && (

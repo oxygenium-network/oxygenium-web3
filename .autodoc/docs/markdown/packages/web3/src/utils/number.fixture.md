@@ -2,7 +2,7 @@
 
 This file contains two arrays of objects, `tests` and `tests1`, which are used for testing and formatting numerical values in the Oxygenium blockchain. 
 
-The `tests` array contains objects with various numerical values in raw format, along with their corresponding decimal places and formatted versions in both Alphium and token formats. These objects are used to test the formatting functions in the larger project, ensuring that numerical values are displayed correctly in the user interface. 
+The `tests` array contains objects with various numerical values in raw format, along with their corresponding decimal places and formatted versions in both Oxmium and token formats. These objects are used to test the formatting functions in the larger project, ensuring that numerical values are displayed correctly in the user interface. 
 
 The `tests1` array contains objects with raw numerical values in string format, along with their corresponding decimal places and converted values in BigInt format. These objects are used to convert user inputted numerical values into the appropriate format for use in the blockchain. 
 

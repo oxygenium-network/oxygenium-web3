@@ -51,7 +51,7 @@ export interface AssetOutput {
   /** @format 32-byte-hash */
   key: string
   /** @format uint256 */
-  attoAlphAmount: string
+  attoOxmAmount: string
   /** @format address */
   address: string
   tokens: Token[]
@@ -64,7 +64,7 @@ export interface AssetOutput {
 
 export interface AssetState {
   /** @format uint256 */
-  attoAlphAmount: string
+  attoOxmAmount: string
   tokens?: Token[]
 }
 
@@ -181,7 +181,7 @@ export interface BuildDeployContractTx {
   /** @format hex-string */
   bytecode: string
   /** @format uint256 */
-  initialAttoAlphAmount?: string
+  initialAttoOxmAmount?: string
   initialTokenAmounts?: Token[]
   /** @format uint256 */
   issueTokenAmount?: string
@@ -217,7 +217,7 @@ export interface BuildExecuteScriptTx {
   /** @format hex-string */
   bytecode: string
   /** @format uint256 */
-  attoAlphAmount?: string
+  attoOxmAmount?: string
   tokens?: Token[]
   /** @format gas */
   gasAmount?: number
@@ -274,7 +274,7 @@ export interface BuildSweepAddressTransactions {
   /** @format address */
   toAddress: string
   /** @format uint256 */
-  maxAttoAlphPerUTXO?: string
+  maxAttoOxmPerUTXO?: string
   /** @format int64 */
   lockTime?: number
   /** @format gas */
@@ -484,7 +484,7 @@ export interface ContractOutput {
   /** @format 32-byte-hash */
   key: string
   /** @format uint256 */
-  attoAlphAmount: string
+  attoOxmAmount: string
   /** @format address */
   address: string
   tokens: Token[]
@@ -527,7 +527,7 @@ export interface Destination {
   /** @format address */
   address: string
   /** @format uint256 */
-  attoAlphAmount: string
+  attoOxmAmount: string
   tokens?: Token[]
   /** @format int64 */
   lockTime?: number
@@ -565,7 +565,7 @@ export interface FixedAssetOutput {
   /** @format 32-byte-hash */
   key: string
   /** @format uint256 */
-  attoAlphAmount: string
+  attoOxmAmount: string
   /** @format address */
   address: string
   tokens: Token[]
