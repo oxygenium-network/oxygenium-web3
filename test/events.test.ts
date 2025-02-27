@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -30,8 +30,8 @@ import { AddMain, DestroyAdd } from '../artifacts/ts/scripts'
 import { CreateContractEventAddresses, DestroyContractEventAddresses } from '../packages/web3'
 import { ContractCreatedEvent, subscribeContractCreatedEvent } from '../packages/web3'
 import { ContractDestroyedEvent, subscribeContractDestroyedEvent } from '../packages/web3'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
-import { getSigner } from '@alephium/web3-test'
+import { PrivateKeyWallet } from '@oxygenium/web3-wallet'
+import { getSigner } from '@oxygenium/web3-test'
 
 describe('events', function () {
   let signer: PrivateKeyWallet

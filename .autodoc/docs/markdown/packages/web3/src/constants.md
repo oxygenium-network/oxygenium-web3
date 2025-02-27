@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/constants.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/constants.ts)
 
-This file contains several constants that are used throughout the alephium-web3 project. 
+This file contains several constants that are used throughout the oxygenium-web3 project. 
 
 The `TOTAL_NUMBER_OF_GROUPS` constant is set to 4, which represents the total number of groups in the Alephium network. This constant is used to calculate the total number of chains in the network, which is stored in the `TOTAL_NUMBER_OF_CHAINS` constant. 
 
@@ -12,9 +12,9 @@ The `ONE_ALPH` constant is set to 10 to the power of 18, which represents the nu
 
 The `DUST_AMOUNT` constant is set to 10 to the power of 15, which represents the minimum amount of tokens that can be sent in a transaction. This constant is used to prevent spam attacks on the network by setting a minimum transaction amount. 
 
-Overall, this file provides important constants that are used throughout the alephium-web3 project to ensure the proper functioning of the network. These constants help to prevent spam attacks, identify the Alephium token, and convert between different units of measurement.
+Overall, this file provides important constants that are used throughout the oxygenium-web3 project to ensure the proper functioning of the network. These constants help to prevent spam attacks, identify the Alephium token, and convert between different units of measurement.
 ## Questions: 
- 1. What is the purpose of this file in the alephium-web3 project?
+ 1. What is the purpose of this file in the oxygenium-web3 project?
 - This file contains constants used in the project, such as the total number of groups and chains, minimum UTXO set amount, and token ID.
 
 2. What is the significance of the ALPH_TOKEN_ID constant?

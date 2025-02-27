@@ -1,8 +1,8 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/cli/templates)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/templates)
 
-The `.autodoc/docs/json/packages/cli/templates` folder contains templates for the `alephium-web3` project, which is a JavaScript library for interacting with the Alephium blockchain. The templates provide a starting point for developers to build applications that interact with the Alephium blockchain using the `@alephium/web3` library.
+The `.autodoc/docs/json/packages/cli/templates` folder contains templates for the `oxygenium-web3` project, which is a JavaScript library for interacting with the Alephium blockchain. The templates provide a starting point for developers to build applications that interact with the Alephium blockchain using the `@oxygenium/web3` library.
 
-The `base` subfolder contains the `alephium.config.ts` file, which serves as a central configuration file for network and settings information. It defines a `Settings` type and a `defaultSettings` object, as well as network configurations for `devnet`, `testnet`, and `mainnet`. The `scripts` folder contains the `0_deploy_faucet.ts` script for deploying the `TokenFaucet` contract, while the `src` folder contains the `token.ts` file, demonstrating how to interact with a smart contract using the `@alephium/web3` library.
+The `base` subfolder contains the `oxygenium.config.ts` file, which serves as a central configuration file for network and settings information. It defines a `Settings` type and a `defaultSettings` object, as well as network configurations for `devnet`, `testnet`, and `mainnet`. The `scripts` folder contains the `0_deploy_faucet.ts` script for deploying the `TokenFaucet` contract, while the `src` folder contains the `token.ts` file, demonstrating how to interact with a smart contract using the `@oxygenium/web3` library.
 
 ```typescript
 import configuration, { Settings } from './configuration'
@@ -45,4 +45,4 @@ const example: Example = {
 console.log(example);
 ```
 
-In summary, the code in the `.autodoc/docs/json/packages/cli/templates` folder provides a foundation for building applications that interact with the Alephium blockchain using the `@alephium/web3` library. Developers can extend this code to create more complex applications that leverage the power of the Alephium blockchain and its smart contracts.
+In summary, the code in the `.autodoc/docs/json/packages/cli/templates` folder provides a foundation for building applications that interact with the Alephium blockchain using the `@oxygenium/web3` library. Developers can extend this code to create more complex applications that leverage the power of the Alephium blockchain and its smart contracts.

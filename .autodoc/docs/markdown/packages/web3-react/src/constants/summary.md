@@ -1,8 +1,8 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-react/src/constants)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/constants)
 
-The code in the `constants` folder of the `alephium-web3` project provides essential constant values and configurations that are used throughout the project. These constants ensure consistency and maintainability in the codebase.
+The code in the `constants` folder of the `oxygenium-web3` project provides essential constant values and configurations that are used throughout the project. These constants ensure consistency and maintainability in the codebase.
 
-In `defaultTheme.ts`, a constant value for the minimum width of a mobile device screen is exported. This value, called `mobileWidth`, can be used by developers working on responsive designs for websites using the alephium-web3 library. By utilizing this constant, developers can ensure that the website will look and function properly on mobile devices without having to hardcode a specific pixel value for the mobile breakpoint. For example:
+In `defaultTheme.ts`, a constant value for the minimum width of a mobile device screen is exported. This value, called `mobileWidth`, can be used by developers working on responsive designs for websites using the oxygenium-web3 library. By utilizing this constant, developers can ensure that the website will look and function properly on mobile devices without having to hardcode a specific pixel value for the mobile breakpoint. For example:
 
 ```css
 @media (max-width: ${mobileWidth}px) {
@@ -25,4 +25,4 @@ supportedConnectors.forEach((connector) => {
 });
 ```
 
-In summary, the code in the `constants` folder provides essential constant values and configurations for the alephium-web3 project. These constants ensure consistency and maintainability in the codebase, allowing developers to create responsive designs and interact with supported wallet connectors seamlessly.
+In summary, the code in the `constants` folder provides essential constant values and configurations for the oxygenium-web3 project. These constants ensure consistency and maintainability in the codebase, allowing developers to create responsive designs and interact with supported wallet connectors seamlessly.

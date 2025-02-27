@@ -1,8 +1,8 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Pages/Connectors/index.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Pages/Connectors/index.tsx)
 
 This code defines a React component called `Connectors` that renders a list of supported wallet connectors. The component is part of the Alephium Web3 project and is used to allow users to connect their wallets to the Alephium network.
 
-The component imports the `useAlephiumConnectContext` hook from the `alephiumConnect` context, which provides access to the current connector and route. It also imports the `supportedConnectors` constant, which is an array of objects that define the various wallet connectors that are supported by the Alephium network.
+The component imports the `useAlephiumConnectContext` hook from the `oxygeniumConnect` context, which provides access to the current connector and route. It also imports the `supportedConnectors` constant, which is an array of objects that define the various wallet connectors that are supported by the Alephium network.
 
 The `Connectors` component renders a list of wallet connectors based on the user's device type (mobile or desktop). For mobile devices, the list is rendered as a series of buttons, while for desktop devices, the list is rendered as a series of icons with labels.
 

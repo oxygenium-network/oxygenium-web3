@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/cli/src/codegen.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/src/codegen.ts)
 
 This code is responsible for generating TypeScript code for the Alephium blockchain project. It focuses on creating code for contracts, scripts, and deployment files. The generated code allows developers to interact with the Alephium blockchain using TypeScript, making it easier to build and test applications.
 
@@ -12,7 +12,7 @@ The main functions in this code are:
 Here's an example of how the generated code might be used in a larger project:
 
 ```typescript
-import { MyContract, MyScript } from '@alephium/web3';
+import { MyContract, MyScript } from '@oxygenium/web3';
 
 // Deploy a contract
 const contractInstance = await MyContract.deploy(params);

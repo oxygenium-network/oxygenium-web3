@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/walletconnect/artifacts/ts/index.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/artifacts/ts/index.ts)
 
-This code exports two modules, "Greeter" and "scripts", from the alephium-web3 project. The purpose of this code is to make these modules available for use in other parts of the project or in external projects that depend on alephium-web3.
+This code exports two modules, "Greeter" and "scripts", from the oxygenium-web3 project. The purpose of this code is to make these modules available for use in other parts of the project or in external projects that depend on oxygenium-web3.
 
 The "Greeter" module likely contains code related to greeting users or providing some sort of welcome message. It may be used in the user interface or in other parts of the project that require user interaction.
 
@@ -11,7 +11,7 @@ By exporting these modules, other parts of the project can import them and use t
 Here is an example of how the "Greeter" module might be used:
 
 ```
-import { greetUser } from "alephium-web3/Greeter";
+import { greetUser } from "oxygenium-web3/Greeter";
 
 const username = "Alice";
 const greeting = greetUser(username);
@@ -19,10 +19,10 @@ const greeting = greetUser(username);
 console.log(greeting); // "Hello, Alice!"
 ```
 
-Overall, this code serves as a way to organize and share functionality within the alephium-web3 project. By exporting modules, other parts of the project can easily use their functionality without having to duplicate code or reinvent the wheel.
+Overall, this code serves as a way to organize and share functionality within the oxygenium-web3 project. By exporting modules, other parts of the project can easily use their functionality without having to duplicate code or reinvent the wheel.
 ## Questions: 
  1. What is the purpose of the `Greeter` module?
-- The `Greeter` module is exported from this file, indicating that it is likely a key component of the `alephium-web3` project. However, without further information, it is unclear what functionality it provides.
+- The `Greeter` module is exported from this file, indicating that it is likely a key component of the `oxygenium-web3` project. However, without further information, it is unclear what functionality it provides.
 
 2. What is the purpose of the `scripts` module?
 - The `scripts` module is also exported from this file, suggesting that it is another important component of the project. However, it is unclear what specific scripts are included in this module and what their purpose is.

@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -28,8 +28,8 @@ import {
   StoreLocal,
   CallExternalBySelector
 } from './instr-codec'
-import { Script, bs58, web3, Fields, FieldsSig, buildScriptByteCode, hexToBinUnsafe, binToHex } from '@alephium/web3'
-import { randomContractId, testAddress } from '@alephium/web3-test'
+import { Script, bs58, web3, Fields, FieldsSig, buildScriptByteCode, hexToBinUnsafe, binToHex } from '@oxygenium/web3'
+import { randomContractId, testAddress } from '@oxygenium/web3-test'
 import { scriptCodec } from './script-codec'
 import { Method } from './method-codec'
 import { LockupScript } from './lockup-script-codec'

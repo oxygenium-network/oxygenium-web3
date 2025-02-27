@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -16,8 +16,8 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { PrivateKeyWallet, deriveHDWalletPrivateKey } from '@alephium/web3-wallet'
-import { getSigners, transfer } from '@alephium/web3-test'
+import { PrivateKeyWallet, deriveHDWalletPrivateKey } from '@oxygenium/web3-wallet'
+import { getSigners, transfer } from '@oxygenium/web3-test'
 import {
   Address,
   web3,
@@ -32,9 +32,9 @@ import {
   groupOfAddress,
   BlockSubscription,
   waitForTxConfirmation
-} from '@alephium/web3'
+} from '@oxygenium/web3'
 import * as bip39 from 'bip39'
-import { testPrivateKey } from '@alephium/web3-test'
+import { testPrivateKey } from '@oxygenium/web3-test'
 
 const WithdrawFee = ONE_ALPH
 

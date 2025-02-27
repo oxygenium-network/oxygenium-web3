@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/fixtures/address.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/fixtures/address.json)
 
 The code above represents a JSON object that contains information about a specific block on the Alephium blockchain. The "hash" field represents the unique identifier of the block. The "details" field contains information about the balance of the block and the number of transactions it contains. The "transactions" field is an array of objects that represent each transaction within the block.
 

@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3/src/signer/fixtures)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/src/signer/fixtures)
 
-The `fixtures` folder in the `alephium-web3` project contains two JSON files, `genesis.json` and `wallets.json`, which are used for testing purposes and simulating interactions with the Alephium blockchain.
+The `fixtures` folder in the `oxygenium-web3` project contains two JSON files, `genesis.json` and `wallets.json`, which are used for testing purposes and simulating interactions with the Alephium blockchain.
 
 `genesis.json` contains an array of four user accounts, each with an address, public key, private key, and mnemonic phrase. Developers can use these test accounts to simulate transactions and interactions with the blockchain without using real funds or accounts. For instance, a developer may use this code to create test accounts for a smart contract they are developing and test the functionality of the contract, such as sending and receiving tokens.
 
@@ -26,7 +26,7 @@ const decrypted = decryptWallet(wallet.file, wallet.password);
 
 // Use the decrypted wallet data to interact with the blockchain
 const privateKey = generatePrivateKey(wallet.mnemonic);
-const web3 = new Web3('https://api.alephium.org');
+const web3 = new Web3('https://api.oxygenium.org');
 const account = web3.eth.accounts.privateKeyToAccount(privateKey);
 web3.eth.getBalance(account.address).then(console.log);
 ```

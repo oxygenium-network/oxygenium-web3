@@ -3,7 +3,7 @@
 ## Getting started
 
 ```
-npm i @alephium/walletconnect-provider@0.3.0
+npm i @oxygenium/walletconnect-provider@0.3.0
 ```
 
 ## Test

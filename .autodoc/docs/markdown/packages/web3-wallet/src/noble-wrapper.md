@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-wallet/src/noble-wrapper.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-wallet/src/noble-wrapper.ts)
 
 This file contains a set of utility functions for working with elliptic curve cryptography (ECC) using the secp256k1 curve. The code is licensed under the GNU Lesser General Public License. 
 

@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -39,7 +39,7 @@ import {
 import { unsignedTxCodec } from '../codec'
 import { groupIndexOfTransaction } from '../transaction'
 import { blakeHash } from '../codec/hash'
-import { BuildDeployContractTxResult, BuildChainedTx, BuildExecuteScriptTxResult } from '../api/api-alephium'
+import { BuildDeployContractTxResult, BuildChainedTx, BuildExecuteScriptTxResult } from '../api/api-oxygenium'
 
 export abstract class TransactionBuilder {
   abstract get nodeProvider(): NodeProvider

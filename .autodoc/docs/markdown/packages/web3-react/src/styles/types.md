@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/styles/types.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/types.ts)
 
 This file defines types and interfaces related to theming and styling for the Alephium project. It exports two main types: `Theme` and `ThemeMode`, as well as a `CustomTheme` type. 
 
@@ -13,7 +13,7 @@ Overall, this file provides a way to define and manage the visual styles of the 
 Example usage:
 
 ```typescript
-import { Theme, ThemeMode } from 'alephium-web3'
+import { Theme, ThemeMode } from 'oxygenium-web3'
 
 const lightTheme: Theme = {
   font: {

@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/cli/templates/shared)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/shared)
 
-The `tsconfig.json` file in the `.autodoc/docs/json/packages/cli/templates/shared` folder is a crucial configuration file for the TypeScript compiler in the alephium-web3 project. It contains various settings that dictate how the TypeScript code should be compiled and ensures that the code is compiled correctly with the desired settings.
+The `tsconfig.json` file in the `.autodoc/docs/json/packages/cli/templates/shared` folder is a crucial configuration file for the TypeScript compiler in the oxygenium-web3 project. It contains various settings that dictate how the TypeScript code should be compiled and ensures that the code is compiled correctly with the desired settings.
 
 The `compilerOptions` object in the `tsconfig.json` file contains several important settings:
 
@@ -19,7 +19,7 @@ The `compilerOptions` object in the `tsconfig.json` file contains several import
 
 The `exclude` array in the `tsconfig.json` file specifies files and directories that should be excluded from compilation, while the `include` array specifies files and directories that should be included in compilation.
 
-This configuration file plays a vital role in the alephium-web3 project, as it allows for the use of advanced TypeScript features such as decorators and strict type-checking. It also ensures that the TypeScript code is compiled into JavaScript with the correct settings, making it compatible with the desired ECMAScript version and module system.
+This configuration file plays a vital role in the oxygenium-web3 project, as it allows for the use of advanced TypeScript features such as decorators and strict type-checking. It also ensures that the TypeScript code is compiled into JavaScript with the correct settings, making it compatible with the desired ECMAScript version and module system.
 
 An example of how this configuration file is used in the project is by running the `tsc` command in the terminal. This command compiles the TypeScript code into JavaScript using the settings specified in the `tsconfig.json` file. For instance, if the project contains a TypeScript file `example.ts` with the following code:
 

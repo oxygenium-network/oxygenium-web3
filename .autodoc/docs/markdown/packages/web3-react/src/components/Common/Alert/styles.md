@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/Alert/styles.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Alert/styles.ts)
 
 This code defines two styled components, `AlertContainer` and `IconContainer`, which are used to create alert messages with icons in the Alephium web3 project. 
 
@@ -9,7 +9,7 @@ The `IconContainer` component is a container for the icon that appears in the al
 These components are used to create alert messages throughout the Alephium web3 project. For example, an alert message could be created with the following code:
 
 ```
-import { AlertContainer, IconContainer } from 'alephium-web3'
+import { AlertContainer, IconContainer } from 'oxygenium-web3'
 
 const MyAlert = () => {
   return (

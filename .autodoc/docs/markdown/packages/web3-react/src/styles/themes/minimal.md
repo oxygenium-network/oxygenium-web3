@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/styles/themes/minimal.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/themes/minimal.ts)
 
 This file contains a set of CSS variables that define the styling for various components in the Alephium web3 project. These variables are exported as an object with their names as keys and their values as the corresponding CSS property values. 
 

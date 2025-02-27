@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/artifacts/add/add.ral.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/add/add.ral.json)
 
 This code represents a smart contract written in Solidity, a programming language used to create decentralized applications on the Ethereum blockchain. The contract is called "Add" and its bytecode is provided in the code snippet. The contract has four functions: "add", "addPrivate", "createSubContract", and "destroy". 
 

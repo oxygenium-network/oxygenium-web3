@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/artifacts/ts/FakeTokenTest.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/FakeTokenTest.ts)
 
-The code is a TypeScript module that provides a contract factory and instance for a smart contract called `FakeTokenTest`. The contract is defined in a JSON file that is imported at the top of the module. The module also imports various types and functions from the `@alephium/web3` library, which is used to interact with the Alephium blockchain.
+The code is a TypeScript module that provides a contract factory and instance for a smart contract called `FakeTokenTest`. The contract is defined in a JSON file that is imported at the top of the module. The module also imports various types and functions from the `@oxygenium/web3` library, which is used to interact with the Alephium blockchain.
 
 The `FakeTokenTest` contract has four methods that can be called: `getSymbol`, `getName`, `getDecimals`, and `getTotalSupply`. These methods are defined in the `FakeTokenTestTypes.CallMethodTable` interface, which also specifies the parameters and return types for each method. The `FakeTokenTestInstance` class provides implementations of these methods that can be used to interact with the contract on the blockchain.
 

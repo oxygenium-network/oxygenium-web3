@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -16,9 +16,9 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { NodeProvider, convertAlphAmountWithDecimals, number256ToNumber, DEFAULT_GAS_ALPH_AMOUNT } from '@alephium/web3'
-import { testNodeWallet } from '@alephium/web3-test'
-import { PrivateKeyWallet, deriveHDWalletPrivateKey } from '@alephium/web3-wallet'
+import { NodeProvider, convertAlphAmountWithDecimals, number256ToNumber, DEFAULT_GAS_ALPH_AMOUNT } from '@oxygenium/web3'
+import { testNodeWallet } from '@oxygenium/web3-test'
+import { PrivateKeyWallet, deriveHDWalletPrivateKey } from '@oxygenium/web3-wallet'
 import * as bip39 from 'bip39'
 
 class TippingBot {

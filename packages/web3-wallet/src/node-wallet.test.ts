@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -16,10 +16,10 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { web3 } from '@alephium/web3'
+import { web3 } from '@oxygenium/web3'
 import { randomBytes } from 'crypto'
 import { NodeWallet } from './node-wallet'
-import { testNodeWallet } from '@alephium/web3-test'
+import { testNodeWallet } from '@oxygenium/web3-test'
 
 describe('node wallet', () => {
   beforeAll(async () => {
@@ -28,7 +28,7 @@ describe('node wallet', () => {
   })
 
   it('should transfer (1)', async () => {
-    const wallet = new NodeWallet('alephium-web3-test-only-wallet')
+    const wallet = new NodeWallet('oxygenium-web3-test-only-wallet')
     const accounts = await wallet.getAccounts()
     const toAccount = accounts[0]
     for (const fromAccount of accounts) {
@@ -41,7 +41,7 @@ describe('node wallet', () => {
   })
 
   it('should transfer (2)', async () => {
-    const wallet = new NodeWallet('alephium-web3-test-only-wallet')
+    const wallet = new NodeWallet('oxygenium-web3-test-only-wallet')
     const accounts = await wallet.getAccounts()
     const toAccount = accounts[0]
     for (const fromAccount of accounts) {

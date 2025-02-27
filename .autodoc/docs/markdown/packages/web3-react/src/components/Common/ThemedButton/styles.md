@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/ThemedButton/styles.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/ThemedButton/styles.ts)
 
 This file contains two styled components, `Container` and `ThemeContainer`, which are used to style buttons in the Alephium Web3 project. 
 

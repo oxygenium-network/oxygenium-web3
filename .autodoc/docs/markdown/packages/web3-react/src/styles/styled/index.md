@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/styles/styled/index.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/styled/index.ts)
 
 This code exports a styled component from the `styled-components` library. The purpose of this code is to provide a way to create custom styled components that can be used throughout the larger project. 
 
@@ -9,7 +9,7 @@ The code checks if the `styled.div` function is available, and if it is, exports
 Here is an example of how this code might be used in the larger project:
 
 ```jsx
-import styled from 'alephium-web3'
+import styled from 'oxygenium-web3'
 
 const Button = styled.button`
   background-color: blue;

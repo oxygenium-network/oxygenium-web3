@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -19,7 +19,7 @@ import { u256Codec } from './compact-int-codec'
 import { P2C, p2cCodec } from './lockup-script-codec'
 import { ObjectCodec } from './codec'
 import { Token, tokensCodec } from './token-codec'
-import { ContractOutput as ApiContractOutput } from '../api/api-alephium'
+import { ContractOutput as ApiContractOutput } from '../api/api-oxygenium'
 import { blakeHash, createHint } from './hash'
 import { binToHex, bs58, concatBytes, hexToBinUnsafe } from '../utils'
 import { intAs4BytesCodec } from './int-as-4bytes-codec'

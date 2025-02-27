@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/cli/templates/react/src)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/react/src)
 
-The `App.tsx` file in the `.autodoc/docs/json/packages/cli/templates/react/src` folder serves as the entry point for a React application that interacts with the Alephium blockchain using the `@alephium/web3` library. The application provides a simple dashboard that displays the total number of blocks on the blockchain and information about smart contracts and scripts.
+The `App.tsx` file in the `.autodoc/docs/json/packages/cli/templates/react/src` folder serves as the entry point for a React application that interacts with the Alephium blockchain using the `@oxygenium/web3` library. The application provides a simple dashboard that displays the total number of blocks on the blockchain and information about smart contracts and scripts.
 
 The `Dashboard` component is responsible for fetching and displaying the total number of blocks on the Alephium blockchain. It uses the `api.blocks.getBlocks` method to fetch the data and stores it in the component's state using the `useState` hook. The `useEffect` hook ensures that the data is fetched when the component mounts.
 
@@ -59,4 +59,4 @@ const contractInstance = new Contract(contractJson.abi, contractJson.bytecode, c
 const result = await contractInstance.methods.myMethod().call();
 ```
 
-In summary, the code in the `App.tsx` file and its subfolders provides a foundation for building web applications that interact with the Alephium blockchain using the `@alephium/web3` library. Developers can extend this code to create more complex applications that leverage the power of the Alephium blockchain and its smart contracts.
+In summary, the code in the `App.tsx` file and its subfolders provides a foundation for building web applications that interact with the Alephium blockchain using the `@oxygenium/web3` library. Developers can extend this code to create more complex applications that leverage the power of the Alephium blockchain and its smart contracts.

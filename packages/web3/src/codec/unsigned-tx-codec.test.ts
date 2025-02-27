@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -16,12 +16,12 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { web3, ONE_ALPH, buildScriptByteCode, buildContractByteCode, binToHex, hexToBinUnsafe } from '@alephium/web3'
-import { getSigners } from '@alephium/web3-test'
+import { web3, ONE_ALPH, buildScriptByteCode, buildContractByteCode, binToHex, hexToBinUnsafe } from '@oxygenium/web3'
+import { getSigners } from '@oxygenium/web3-test'
 import { unsignedTxCodec } from './index'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+import { PrivateKeyWallet } from '@oxygenium/web3-wallet'
 import { DUST_AMOUNT } from '../constants'
-import { UnsignedTx } from '../api/api-alephium'
+import { UnsignedTx } from '../api/api-oxygenium'
 
 describe('Encode & decode unsigned transactions', function () {
   beforeAll(() => {

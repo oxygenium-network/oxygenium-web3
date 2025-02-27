@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -28,8 +28,8 @@ import {
   getContractIdFromUnsignedTx,
   groupOfAddress,
   stringToHex
-} from '@alephium/web3'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+} from '@oxygenium/web3'
+import { PrivateKeyWallet } from '@oxygenium/web3-wallet'
 import { testPrivateKeys, tryGetDevnetNodeProvider } from './const'
 
 function createTokenContract(symbol: string, name: string): string {

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/wallets/index.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/wallets/index.ts)
 
 This code defines a function called `getWallets` that returns an array of three different wallet connectors. These connectors are used to interact with different types of cryptocurrency wallets in the Alephium project.
 
@@ -13,7 +13,7 @@ The `getWallets` function takes an optional object as an argument with two prope
 Example usage:
 
 ```
-import { getWallets } from 'alephium-web3'
+import { getWallets } from 'oxygenium-web3'
 
 const wallets = getWallets({})
 console.log(wallets) // [injected({}), walletConnect({}), desktopWallet()]

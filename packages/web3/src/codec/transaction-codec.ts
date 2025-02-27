@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -22,9 +22,9 @@ import { ContractOutputRef, contractOutputRefsCodec } from './contract-output-re
 import { Either } from './either-codec'
 import { AssetOutput, AssetOutputCodec } from './asset-output-codec'
 import { ContractOutput, ContractOutputCodec } from './contract-output-codec'
-import { FixedAssetOutput, Transaction as ApiTransaction } from '../api/api-alephium'
+import { FixedAssetOutput, Transaction as ApiTransaction } from '../api/api-oxygenium'
 import { binToHex, hexToBinUnsafe } from '../utils'
-import { ContractOutput as ApiContractOutput } from '../api/api-alephium'
+import { ContractOutput as ApiContractOutput } from '../api/api-oxygenium'
 import { byteCodec, ObjectCodec } from './codec'
 import { Output, outputsCodec } from './output-codec'
 

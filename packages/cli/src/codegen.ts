@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -30,7 +30,7 @@ import {
   Val,
   parseMapType,
   FunctionSig
-} from '@alephium/web3'
+} from '@oxygenium/web3'
 import * as prettier from 'prettier'
 import path from 'path'
 import fs from 'fs'
@@ -167,7 +167,7 @@ function contractFieldType(contractName: string, fieldsSig: node.FieldsSig): str
 
 function importRalphMap(contract: Contract): string {
   if (contract.mapsSig === undefined) return ''
-  return `import { RalphMap } from '@alephium/web3'`
+  return `import { RalphMap } from '@oxygenium/web3'`
 }
 
 function genMaps(contract: Contract): string {
@@ -519,7 +519,7 @@ function genContract(contract: Contract, artifactRelativePath: string): string {
       ContractInstance, getContractEventsCurrentCount,
       TestContractParamsWithoutMaps, TestContractResultWithoutMaps, SignExecuteContractMethodParams,
       SignExecuteScriptTxResult, signExecuteMethod, addStdIdToFields, encodeContractFields, Narrow
-    } from '@alephium/web3'
+    } from '@oxygenium/web3'
     import { default as ${contract.name}ContractJson } from '../${toUnixPath(artifactRelativePath)}'
     import { getContractByCodeHash, registerContract } from './contracts'
     ${importStructs()}
@@ -619,7 +619,7 @@ function genScripts(outDir: string, artifactDir: string, exports: string[]) {
       Script,
       SignerProvider,
       HexString
-    } from '@alephium/web3'
+    } from '@oxygenium/web3'
     import { getContractByCodeHash } from './contracts'
     ${importArtifacts}
     ${importStructs()}
@@ -639,7 +639,7 @@ function genContractByCodeHash(outDir: string, exports: string[]) {
   const source = `
     ${header}
 
-    import { Contract, ContractFactory } from '@alephium/web3'
+    import { Contract, ContractFactory } from '@oxygenium/web3'
 
     let contracts: ContractFactory<any>[] | undefined = undefined
 
@@ -820,7 +820,7 @@ export async function genLoadDeployments(config: Configuration) {
   const source = `
     ${header}
 
-    import { RunScriptResult, DeployContractExecutionResult, NetworkId } from '@alephium/web3'
+    import { RunScriptResult, DeployContractExecutionResult, NetworkId } from '@oxygenium/web3'
     import { ${contractInstanceTypes} } from '.'
     ${imports}
 
@@ -882,7 +882,7 @@ function genStructTypes(outDir: string) {
   })
   const sourceCode = `
     ${header}
-    import { Address, HexString, Val, Struct } from '@alephium/web3'
+    import { Address, HexString, Val, Struct } from '@oxygenium/web3'
     import { default as allStructsJson } from '../structs.ral.json'
     export const AllStructs = allStructsJson.map((json) => Struct.fromJson(json))
     ${interfaces.join('\n')}

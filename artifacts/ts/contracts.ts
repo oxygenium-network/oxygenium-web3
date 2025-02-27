@@ -2,7 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 
-import { Contract, ContractFactory } from "@alephium/web3";
+import { Contract, ContractFactory } from "@oxygenium/web3";
 
 let contracts: ContractFactory<any>[] | undefined = undefined;
 

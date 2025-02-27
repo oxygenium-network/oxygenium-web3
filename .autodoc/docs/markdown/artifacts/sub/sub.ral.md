@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/artifacts/sub/sub.ral.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/sub/sub.ral.json)
 
 This code represents a smart contract written in Solidity, a programming language used for creating decentralized applications on the Ethereum blockchain. The contract is named "Sub" and has a version number of "v2.3.1". 
 
@@ -29,11 +29,11 @@ const result = await deployedContract.methods.sub([10, 5]).call();
 console.log(result); // Output: 5
 ```
 ## Questions: 
- 1. What is the purpose of this code and how is it used in the alephium-web3 project?
-   - This code represents a smart contract called "Sub" with a function called "sub" that takes in an array of two U256 values and returns a U256 value. A smart developer might want to know how this contract is used within the alephium-web3 project and what other components it interacts with.
+ 1. What is the purpose of this code and how is it used in the oxygenium-web3 project?
+   - This code represents a smart contract called "Sub" with a function called "sub" that takes in an array of two U256 values and returns a U256 value. A smart developer might want to know how this contract is used within the oxygenium-web3 project and what other components it interacts with.
    
 2. What is the significance of the "codeHash" field?
-   - The "codeHash" field represents the hash of the contract's bytecode. A smart developer might want to know why this field is important and how it is used in the context of the alephium-web3 project.
+   - The "codeHash" field represents the hash of the contract's bytecode. A smart developer might want to know why this field is important and how it is used in the context of the oxygenium-web3 project.
    
 3. What is the purpose of the "eventsSig" field and how is it used?
-   - The "eventsSig" field represents the signature of an event emitted by the contract. In this case, the event is called "Sub" and has two U256 parameters. A smart developer might want to know how this event is used within the alephium-web3 project and what other components it interacts with.
+   - The "eventsSig" field represents the signature of an event emitted by the contract. In this case, the event is called "Sub" and has two U256 parameters. A smart developer might want to know how this event is used within the oxygenium-web3 project and what other components it interacts with.

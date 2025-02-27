@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-wallet/configs/header.js)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-wallet/configs/header.js)
 
 This code is a license file for the Alephium project, which is a library that can be used to interact with the Alephium blockchain. The license specifies that the library is free software and can be redistributed or modified under the terms of the GNU Lesser General Public License (LGPL) version 3 or later.
 
@@ -9,7 +9,7 @@ This license file is important for the Alephium project because it ensures that 
 Here is an example of how this license file might be used in the larger Alephium project:
 
 ```javascript
-const AlephiumWeb3 = require('alephium-web3');
+const AlephiumWeb3 = require('oxygenium-web3');
 const web3 = new AlephiumWeb3('http://localhost:8545');
 
 // Use the web3 library to interact with the Alephium blockchain
@@ -22,10 +22,10 @@ web3.eth.getBlockNumber((err, blockNumber) => {
 });
 ```
 
-In this example, the `alephium-web3` library is used to create a new instance of the `web3` object, which can be used to interact with the Alephium blockchain. The `getBlockNumber` method is called to retrieve the latest block number on the blockchain. This code is made possible by the LGPL license, which allows developers to use and modify the `alephium-web3` library without any legal issues.
+In this example, the `oxygenium-web3` library is used to create a new instance of the `web3` object, which can be used to interact with the Alephium blockchain. The `getBlockNumber` method is called to retrieve the latest block number on the blockchain. This code is made possible by the LGPL license, which allows developers to use and modify the `oxygenium-web3` library without any legal issues.
 ## Questions: 
- 1. What is the purpose of this file in the alephium-web3 project?
-- The code in this file is related to the licensing of the alephium project and the use of the GNU Lesser General Public License.
+ 1. What is the purpose of this file in the oxygenium-web3 project?
+- The code in this file is related to the licensing of the oxygenium project and the use of the GNU Lesser General Public License.
 
 2. What are the terms of the GNU Lesser General Public License?
 - The GNU Lesser General Public License allows for the redistribution and modification of the library, but without any warranty or implied warranty of merchantability or fitness for a particular purpose.

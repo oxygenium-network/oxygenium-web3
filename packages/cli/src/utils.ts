@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -19,7 +19,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 import path from 'path'
 import fs from 'fs'
 import { Configuration, DEFAULT_CONFIGURATION_VALUES, Network } from './types'
-import { NetworkId } from '@alephium/web3'
+import { NetworkId } from '@oxygenium/web3'
 import * as fetchRetry from 'fetch-retry'
 import * as readline from 'readline'
 
@@ -40,15 +40,15 @@ export function loadConfig<Settings = unknown>(filename: string): Configuration<
 
 export function getConfigFile(): string {
   const projectRootPath = path.resolve(process.cwd())
-  const tsConfig = path.join(projectRootPath, 'alephium.config.ts')
+  const tsConfig = path.join(projectRootPath, 'oxygenium.config.ts')
   if (fs.existsSync(tsConfig)) {
     return tsConfig
   }
-  const jsConfig = path.join(projectRootPath, 'alephium.config.js')
+  const jsConfig = path.join(projectRootPath, 'oxygenium.config.js')
   if (fs.existsSync(jsConfig)) {
     return jsConfig
   }
-  throw new Error('No config file `alephium.config.ts` or `alephium.config.js` found')
+  throw new Error('No config file `oxygenium.config.ts` or `oxygenium.config.js` found')
 }
 
 export async function isNetworkLive(url: string): Promise<boolean> {
@@ -63,9 +63,9 @@ export async function isNetworkLive(url: string): Promise<boolean> {
 
 export function getSdkFullNodeVersion() {
   /* eslint-disable @typescript-eslint/no-var-requires */
-  const web3Path = require.resolve('@alephium/web3')
+  const web3Path = require.resolve('@oxygenium/web3')
   const packageJsonPath = path.join(web3Path, '..', '..', '..', 'package.json')
-  return require(packageJsonPath).config.alephium_version
+  return require(packageJsonPath).config.oxygenium_version
   /* eslint-enable @typescript-eslint/no-var-requires */
 }
 

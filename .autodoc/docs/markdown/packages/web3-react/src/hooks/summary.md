@@ -1,11 +1,11 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-react/src/hooks)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/hooks)
 
-The `hooks` folder in the `alephium-web3` project contains custom React hooks that provide various functionalities related to the Alephium blockchain. These hooks can be used in React components to interact with the Alephium wallet, retrieve account information, and subscribe to transaction status updates.
+The `hooks` folder in the `oxygenium-web3` project contains custom React hooks that provide various functionalities related to the Alephium blockchain. These hooks can be used in React components to interact with the Alephium wallet, retrieve account information, and subscribe to transaction status updates.
 
 For instance, the `useAccount` hook connects to an Alephium wallet and retrieves the current account. It can be used in a React component to display the connected account:
 
 ```jsx
-import { useAccount } from 'alephium-web3'
+import { useAccount } from 'oxygenium-web3'
 
 function MyComponent() {
   const { account, isConnected } = useAccount()
@@ -25,7 +25,7 @@ function MyComponent() {
 The `useBalance` hook retrieves the user's balance for the Alephium cryptocurrency and can be used to display the balance in a component:
 
 ```jsx
-import { useBalance } from 'alephium-web3'
+import { useBalance } from 'oxygenium-web3'
 
 function Balance() {
   const { balance } = useBalance()
@@ -41,7 +41,7 @@ function Balance() {
 The `useConnect` hook provides functionality for connecting to different wallet providers and can be used to establish a connection with a specific provider:
 
 ```jsx
-import { useConnect } from 'alephium-web3'
+import { useConnect } from 'oxygenium-web3'
 
 function ConnectButton() {
   const { connect } = useConnect()

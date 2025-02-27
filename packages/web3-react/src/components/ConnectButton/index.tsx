@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -19,12 +19,12 @@ import React from 'react'
 import useIsMounted from '../../hooks/useIsMounted'
 
 import { TextContainer } from './styles'
-import { useAlephiumConnectContext, useConnectSettingContext } from '../../contexts/alephiumConnect'
+import { useAlephiumConnectContext, useConnectSettingContext } from '../../contexts/oxygeniumConnect'
 import { AnimatePresence, Variants } from 'framer-motion'
 import ThemedButton, { ThemeContainer } from '../Common/ThemedButton'
 import { ResetContainer } from '../../styles'
 import { truncatedAddress } from '../../utils'
-import { Account } from '@alephium/web3'
+import { Account } from '@oxygenium/web3'
 import { routes } from '../Common/Modal'
 import { useConnect } from '../../hooks/useConnect'
 

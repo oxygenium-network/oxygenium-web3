@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -17,13 +17,13 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
 import {
-  alephiumProvider,
+  oxygeniumProvider,
   AlephiumWindowObject,
   getDefaultAlephiumWallet,
   getWalletObject,
   isWalletObj,
   providerInitializedEvent
-} from '@alephium/get-extension-wallet'
+} from '@oxygenium/get-extension-wallet'
 import { InjectedProviderId } from '../types'
 
 export type InjectedProviderListener = (providers: AlephiumWindowObject[]) => void
@@ -40,23 +40,23 @@ function createProviderStore() {
   }
 
   const detectOneKeyProvider = () => {
-    const oneKeyProvider = window['alephium']
+    const oneKeyProvider = window['oxygenium']
     if (!!oneKeyProvider && isWalletObj(oneKeyProvider)) {
       addNewProvider(oneKeyProvider)
     }
   }
 
   const detectDefaultProvider = () => {
-    const defaultProvider = getWalletObject(alephiumProvider.id)
+    const defaultProvider = getWalletObject(oxygeniumProvider.id)
     if (defaultProvider !== undefined) {
       addNewProvider(defaultProvider)
       return
     }
 
     window.addEventListener(
-      providerInitializedEvent(alephiumProvider.id),
+      providerInitializedEvent(oxygeniumProvider.id),
       () => {
-        const defaultProvider = getWalletObject(alephiumProvider.id)
+        const defaultProvider = getWalletObject(oxygeniumProvider.id)
         if (defaultProvider !== undefined) {
           addNewProvider(defaultProvider)
         }
@@ -106,7 +106,7 @@ export function getInjectedProviderId(provider: AlephiumWindowObject): InjectedP
   if (provider.icon.includes('onekey')) {
     return 'OneKey'
   }
-  if (provider.id === 'alephium' && provider.name === 'Alephium') {
+  if (provider.id === 'oxygenium' && provider.name === 'Alephium') {
     return 'Alephium'
   }
   return provider.name

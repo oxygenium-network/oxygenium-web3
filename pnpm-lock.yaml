@@ -22,16 +22,16 @@ importers:
 
   .:
     dependencies:
-      '@alephium/cli':
+      '@oxygenium/cli':
         specifier: workspace:*
         version: link:packages/cli
-      '@alephium/web3':
+      '@oxygenium/web3':
         specifier: workspace:*
         version: link:packages/web3
-      '@alephium/web3-test':
+      '@oxygenium/web3-test':
         specifier: workspace:*
         version: link:packages/web3-test
-      '@alephium/web3-wallet':
+      '@oxygenium/web3-wallet':
         specifier: workspace:*
         version: link:packages/web3-wallet
     devDependencies:
@@ -65,10 +65,10 @@ importers:
 
   packages/cli:
     dependencies:
-      '@alephium/web3':
+      '@oxygenium/web3':
         specifier: workspace:^
         version: link:../web3
-      '@alephium/web3-wallet':
+      '@oxygenium/web3-wallet':
         specifier: workspace:^
         version: link:../web3-wallet
       '@swc/core':
@@ -114,7 +114,7 @@ importers:
 
   packages/get-extension-wallet:
     dependencies:
-      '@alephium/web3':
+      '@oxygenium/web3':
         specifier: workspace:^
         version: link:../web3
       bowser:
@@ -193,10 +193,10 @@ importers:
 
   packages/walletconnect:
     dependencies:
-      '@alephium/web3':
+      '@oxygenium/web3':
         specifier: workspace:^
         version: link:../web3
-      '@alephium/web3-wallet':
+      '@oxygenium/web3-wallet':
         specifier: workspace:^
         version: link:../web3-wallet
       '@walletconnect/core':
@@ -471,13 +471,13 @@ importers:
 
   packages/web3-react:
     dependencies:
-      '@alephium/get-extension-wallet':
+      '@oxygenium/get-extension-wallet':
         specifier: workspace:^
         version: link:../get-extension-wallet
-      '@alephium/walletconnect-provider':
+      '@oxygenium/walletconnect-provider':
         specifier: workspace:^
         version: link:../walletconnect
-      '@alephium/walletconnect-qrcode-modal':
+      '@oxygenium/walletconnect-qrcode-modal':
         specifier: ^0.1.0
         version: 0.1.0
       buffer:
@@ -559,10 +559,10 @@ importers:
 
   packages/web3-test:
     dependencies:
-      '@alephium/web3':
+      '@oxygenium/web3':
         specifier: workspace:^
         version: link:../web3
-      '@alephium/web3-wallet':
+      '@oxygenium/web3-wallet':
         specifier: workspace:^
         version: link:../web3-wallet
     devDependencies:
@@ -593,7 +593,7 @@ importers:
 
   packages/web3-wallet:
     dependencies:
-      '@alephium/web3':
+      '@oxygenium/web3':
         specifier: workspace:^
         version: link:../web3
       '@noble/secp256k1':
@@ -648,7 +648,7 @@ importers:
 
 packages:
 
-  '@alephium/walletconnect-qrcode-modal@0.1.0':
+  '@oxygenium/walletconnect-qrcode-modal@0.1.0':
     resolution: {integrity: sha512-gJrDirpgElmgpf3EELsJdp1HCa3J9pCc+2Nw/OLrlwumhAVwnpoQLCsF06gIbnzhu952E1qtgi4hWDBN3mzTlg==}
 
   '@ampproject/remapping@2.2.1':
@@ -6193,7 +6193,7 @@ packages:
 
 snapshots:
 
-  '@alephium/walletconnect-qrcode-modal@0.1.0':
+  '@oxygenium/walletconnect-qrcode-modal@0.1.0':
     dependencies:
       '@walletconnect/browser-utils': 1.8.0
       '@walletconnect/mobile-registry': 1.4.0

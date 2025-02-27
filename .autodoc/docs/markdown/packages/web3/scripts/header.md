@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/scripts/header.js)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/scripts/header.js)
 
 This code is a license file for the Alephium project, which is a library that is free software. The license allows users to redistribute and modify the library under the terms of the GNU Lesser General Public License. The license also states that the library is distributed without any warranty and that the user should have received a copy of the license along with the library.
 
@@ -9,18 +9,18 @@ In order to use the Alephium library, developers must first agree to the terms o
 Here is an example of how this license file might be used in the larger Alephium project:
 
 ```javascript
-const Alephium = require('alephium-web3');
+const Alephium = require('oxygenium-web3');
 
 // Use the Alephium library to interact with the Alephium blockchain
-const alephium = new Alephium();
+const oxygenium = new Alephium();
 
 // Display the license for the Alephium library
-console.log(alephium.license);
+console.log(oxygenium.license);
 ```
 
 This code imports the Alephium library using the `require` function and creates a new instance of the library. The `console.log` statement then displays the license for the Alephium library, which is stored in the `license` property of the library. This example demonstrates how the license file is an important component of the Alephium project and how it can be used to inform users of the terms and conditions under which they can use the Alephium library.
 ## Questions: 
- 1. What is the purpose of the alephium-web3 project?
+ 1. What is the purpose of the oxygenium-web3 project?
 - As a code documentation expert, I do not have enough information to answer this question. It would be best to refer to the project's documentation or consult with the project's developers.
 
 2. What is the license for this code?

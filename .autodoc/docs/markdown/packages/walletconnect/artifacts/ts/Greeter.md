@@ -1,15 +1,15 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/walletconnect/artifacts/ts/Greeter.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/artifacts/ts/Greeter.ts)
 
-This code defines a contract called `Greeter` and provides functionality to interact with it on the blockchain. The contract is defined using the `Contract` class from the `@alephium/web3` library, which provides a set of methods to interact with smart contracts on the Alephium blockchain. 
+This code defines a contract called `Greeter` and provides functionality to interact with it on the blockchain. The contract is defined using the `Contract` class from the `@oxygenium/web3` library, which provides a set of methods to interact with smart contracts on the Alephium blockchain. 
 
 The `Greeter` contract has a single method called `greet`, which returns a `bigint`. The `Factory` class is used to create instances of the `GreeterInstance` class, which can be used to interact with the contract on the blockchain. The `GreeterInstance` class provides a method called `fetchState` which returns the current state of the contract, and a method called `multicall` which allows multiple contract methods to be called in a single transaction.
 
-The `GreeterTypes` namespace defines custom types for the contract, including the `Fields` type which defines the fields of the contract state, and the `CallMethodTable` type which defines the parameters and return types of the contract methods. The `tests` property of the `Factory` class provides a way to test the contract methods using the `testMethod` function from the `@alephium/web3` library.
+The `GreeterTypes` namespace defines custom types for the contract, including the `Fields` type which defines the fields of the contract state, and the `CallMethodTable` type which defines the parameters and return types of the contract methods. The `tests` property of the `Factory` class provides a way to test the contract methods using the `testMethod` function from the `@oxygenium/web3` library.
 
 Overall, this code provides a convenient way to define and interact with smart contracts on the Alephium blockchain using TypeScript. It abstracts away many of the low-level details of interacting with the blockchain, making it easier for developers to build decentralized applications. Here is an example of how to use this code to interact with the `Greeter` contract:
 
 ```
-import { Greeter } from 'alephium-web3';
+import { Greeter } from 'oxygenium-web3';
 
 // Create an instance of the contract
 const greeter = Greeter.at('0x123456789abcdef');

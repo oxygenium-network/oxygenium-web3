@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -17,7 +17,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
 import { BlockSubscribeOptions, BlockSubscriptionBase, ReorgCallback } from './block'
-import * as node from '../api/api-alephium'
+import * as node from '../api/api-oxygenium'
 import { TOTAL_NUMBER_OF_GROUPS } from '../constants'
 
 describe('block subscription', function () {

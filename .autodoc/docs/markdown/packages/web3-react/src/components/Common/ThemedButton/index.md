@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/ThemedButton/index.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/ThemedButton/index.tsx)
 
 The `ThemedButton` component is a React functional component that renders a button with a customizable theme. It takes in several props, including `children`, which is the content of the button, `variant`, which determines the color scheme of the button, `autoSize`, which determines whether the button should automatically adjust its width to fit its content, `duration`, which determines the duration of the animation when the button is clicked, and `style`, which allows for additional custom styling.
 

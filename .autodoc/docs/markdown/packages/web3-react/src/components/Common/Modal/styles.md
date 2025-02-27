@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/Modal/styles.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Modal/styles.ts)
 
 This code is part of the Alephium-web3 project and defines the styling and animations for a modal component. The modal component is a user interface element that displays content on top of the main application, often used for forms, notifications, or additional information.
 
@@ -33,8 +33,8 @@ function App() {
 
 This code provides a flexible and customizable modal component that can be used throughout the Alephium-web3 project for various purposes, such as displaying forms, notifications, or additional information.
 ## Questions: 
- 1. **Question**: What is the purpose of the `alephium-web3` project, and what are its main functionalities?
-   **Answer**: The code provided does not give a clear indication of the purpose and main functionalities of the `alephium-web3` project. It appears to be a styled-components implementation for a modal, but more context or documentation is needed to understand the project's overall purpose and features.
+ 1. **Question**: What is the purpose of the `oxygenium-web3` project, and what are its main functionalities?
+   **Answer**: The code provided does not give a clear indication of the purpose and main functionalities of the `oxygenium-web3` project. It appears to be a styled-components implementation for a modal, but more context or documentation is needed to understand the project's overall purpose and features.
 
 2. **Question**: What are the different animations being used in this code, and what are their purposes?
    **Answer**: There are several animations defined using keyframes, such as `FadeIn`, `FadeOut`, `FadeInScaleUp`, `FadeInScaleDown`, `FadeOutScaleUp`, `FadeOutScaleDown`, `BoxIn`, `BoxOut`, `MobileBoxIn`, and `MobileBoxOut`. These animations are used to create smooth transitions and effects when elements appear, disappear, or change their state in the modal.

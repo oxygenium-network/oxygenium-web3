@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -18,7 +18,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 
 export * from './node-provider'
 export * from './explorer-provider'
-export * as node from './api-alephium'
+export * as node from './api-oxygenium'
 export * as explorer from './api-explorer'
 export * from './types'
 export * from './utils'

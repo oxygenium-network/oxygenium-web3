@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/walletconnect/src/constants.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/src/constants.ts)
 
 This file contains several constants that are used in the Alephium project. 
 
@@ -12,7 +12,7 @@ The `RELAY_URL` constant is a string that represents the URL for the Alephium re
 
 Overall, this file contains important constants that are used throughout the Alephium project. These constants help to identify the Alephium provider, define the methods that can be called on the relay, set the logging level, and specify the URL for the relay. These constants are used in various parts of the project to ensure that everything is working together properly. For example, the `PROVIDER_NAMESPACE` constant is used to identify the Alephium provider in the browser, while the `RELAY_METHODS` constant is used to define the methods that can be called on the relay.
 ## Questions: 
- 1. What is the purpose of this file in the alephium-web3 project?
+ 1. What is the purpose of this file in the oxygenium-web3 project?
 - This file contains constants related to the Alephium project, such as the provider namespace, relay methods, logger, and relay URL.
 
 2. What are the available relay methods and what are they used for?

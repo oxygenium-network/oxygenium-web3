@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/wallets/useDefaultWallets.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/wallets/useDefaultWallets.tsx)
 
 This code defines a function called `useDefaultWallets` that returns an array of `WalletProps` objects. The purpose of this function is to provide a default set of wallets for the Alephium project. 
 
@@ -12,7 +12,7 @@ Here is an example of how the `useDefaultWallets` function might be used in a Re
 
 ```
 import React from 'react'
-import useDefaultWallets from 'alephium-web3'
+import useDefaultWallets from 'oxygenium-web3'
 
 function WalletList() {
   const wallets = useDefaultWallets()

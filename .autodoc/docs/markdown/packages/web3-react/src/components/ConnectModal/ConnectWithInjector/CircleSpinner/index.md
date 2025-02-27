@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/ConnectModal/ConnectWithInjector/CircleSpinner/index.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/ConnectModal/ConnectWithInjector/CircleSpinner/index.tsx)
 
 The `CircleSpinner` component is a React component that renders a circular spinner animation with an optional logo. It is used to indicate that a process is running or loading, such as when connecting to a server or fetching data. 
 
@@ -11,7 +11,7 @@ The `CircleSpinner` component is used throughout the Alephium Web3 project to in
 Example usage:
 
 ```jsx
-import CircleSpinner from 'alephium-web3/components/CircleSpinner'
+import CircleSpinner from 'oxygenium-web3/components/CircleSpinner'
 
 function MyComponent() {
   return (

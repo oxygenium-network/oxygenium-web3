@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-react/src/components/Pages)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Pages)
 
 The `Pages` folder in the Alephium web3 project contains components related to the main user interface, such as connecting wallets and displaying account information. It consists of two subfolders: `Connectors` and `Profile`.
 
@@ -9,7 +9,7 @@ The `styles.ts` file contains styled components for the user interface, includin
 Here's an example of how these components might be used:
 
 ```javascript
-import { ConnectorsContainer, ConnectorButton } from 'alephium-web3'
+import { ConnectorsContainer, ConnectorButton } from 'oxygenium-web3'
 
 function ConnectorList() {
   return (
@@ -42,7 +42,7 @@ The `Profile` folder in the Alephium web3 project contains code related to displ
 Here's an example of how these components might be used in the larger Alephium web application:
 
 ```javascript
-import { BalanceContainer, Balance, LoadingBalance } from 'alephium-web3'
+import { BalanceContainer, Balance, LoadingBalance } from 'oxygenium-web3'
 
 function AccountBalance() {
   const [balance, setBalance] = useState(null)

@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -16,10 +16,10 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { Account, NetworkId, SignerProvider, KeyType } from '@alephium/web3'
-import { WalletConnectProvider, SignClientOptions } from '@alephium/walletconnect-provider'
-import QRCodeModal from '@alephium/walletconnect-qrcode-modal'
-import { AlephiumWindowObject, getDefaultAlephiumWallet } from '@alephium/get-extension-wallet'
+import { Account, NetworkId, SignerProvider, KeyType } from '@oxygenium/web3'
+import { WalletConnectProvider, SignClientOptions } from '@oxygenium/walletconnect-provider'
+import QRCodeModal from '@oxygenium/walletconnect-qrcode-modal'
+import { AlephiumWindowObject, getDefaultAlephiumWallet } from '@oxygenium/get-extension-wallet'
 import { setLastConnectedAccount } from './storage'
 import { ConnectorId, InjectedProviderId } from '../types'
 import { getInjectedProvider } from './injectedProviders'
@@ -79,7 +79,7 @@ export function createDesktopWalletConnector(signClientOptions?: SignClientOptio
   return {
     connect: async (options: ConnectOptions): Promise<Account | undefined> => {
       return await _wcConnect(
-        (uri) => window.open(`alephium://wc?uri=${uri}`),
+        (uri) => window.open(`oxygenium://wc?uri=${uri}`),
         { ...options, signClientOptions },
         connectorId
       )

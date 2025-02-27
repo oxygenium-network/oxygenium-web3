@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -263,7 +263,7 @@ export function extendMessage(message: string): string {
 
 export function hashMessage(message: string, hasher: MessageHasher): string {
   switch (hasher) {
-    case 'alephium':
+    case 'oxygenium':
       return utils.binToHex(blake.blake2b(extendMessage(message), undefined, 32))
     case 'sha256':
       const sha256 = createHash('sha256')

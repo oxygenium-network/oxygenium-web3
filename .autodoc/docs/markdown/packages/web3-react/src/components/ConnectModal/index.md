@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/ConnectModal/index.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/ConnectModal/index.tsx)
 
-The `ConnectModal` component is a React functional component that renders a modal window for connecting to the Alephium network. It imports several other components and hooks from the `alephium-web3` project, including `useEffect`, `useAlephiumConnectContext`, `Modal`, `Connectors`, `ConnectUsing`, `Profile`, and `useAccount`.
+The `ConnectModal` component is a React functional component that renders a modal window for connecting to the Alephium network. It imports several other components and hooks from the `oxygenium-web3` project, including `useEffect`, `useAlephiumConnectContext`, `Modal`, `Connectors`, `ConnectUsing`, `Profile`, and `useAccount`.
 
 The `ConnectModal` component takes three optional props: `mode`, `theme`, and `customTheme`. These props are used to set the mode and theme of the modal window, as well as any custom theme properties that may be passed in.
 
@@ -12,7 +12,7 @@ The `ConnectModal` component defines several `useEffect` hooks that are used to 
 
 Finally, the `ConnectModal` component returns a `Modal` component that renders the modal window. The `Modal` component takes several props, including the `open` prop that determines whether the modal window is visible, the `pages` prop that contains the array of `Page` objects, the `pageId` prop that determines which page to show, the `onClose` prop that is called when the modal window is closed, the `onInfo` prop that is called when the info button is clicked, and the `onBack` prop that is called when the back button is clicked.
 
-Overall, the `ConnectModal` component provides a simple and flexible way to connect to the Alephium network and manage the connection state. It can be used in conjunction with other components and hooks from the `alephium-web3` project to build more complex applications that interact with the Alephium network.
+Overall, the `ConnectModal` component provides a simple and flexible way to connect to the Alephium network and manage the connection state. It can be used in conjunction with other components and hooks from the `oxygenium-web3` project to build more complex applications that interact with the Alephium network.
 ## Questions: 
  1. What is the purpose of this code and what does it do?
 - This code defines a React component called `ConnectModal` that renders a modal for connecting to the Alephium network using various connectors.

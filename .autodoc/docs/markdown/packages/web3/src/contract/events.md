@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/contract/events.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/contract/events.ts)
 
 This file contains code for an event subscription class and a function to subscribe to events. The purpose of this code is to allow users to subscribe to events emitted by a smart contract on the Alephium blockchain. 
 
@@ -9,7 +9,7 @@ The `subscribeToEvents` function takes in the same parameters as the `EventSubsc
 Here is an example of how this code can be used:
 
 ```
-import { subscribeToEvents } from 'alephium-web3'
+import { subscribeToEvents } from 'oxygenium-web3'
 
 const contractAddress = '0x1234567890abcdef'
 const options = {
@@ -21,7 +21,7 @@ const options = {
 const subscription = subscribeToEvents(options, contractAddress)
 ```
 
-In this example, we import the `subscribeToEvents` function from the `alephium-web3` library and pass in the contract address and subscription options. The `messageCallback` function logs the event to the console, the `errorCallback` function logs any errors to the console, and the `pollingInterval` is set to 5 seconds. The `subscribeToEvents` function returns a new instance of the `EventSubscription` class, which can be used to start listening for events emitted by the specified contract.
+In this example, we import the `subscribeToEvents` function from the `oxygenium-web3` library and pass in the contract address and subscription options. The `messageCallback` function logs the event to the console, the `errorCallback` function logs any errors to the console, and the `pollingInterval` is set to 5 seconds. The `subscribeToEvents` function returns a new instance of the `EventSubscription` class, which can be used to start listening for events emitted by the specified contract.
 ## Questions: 
  1. What is the purpose of this code and what does it do?
    

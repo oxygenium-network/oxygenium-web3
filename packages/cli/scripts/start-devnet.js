@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -26,10 +26,10 @@ const fetch = require('cross-fetch')
 const spawn = require('child_process').spawn
 const os = require('os')
 
-export const devDir = path.join(os.homedir(), '.alephium-dev')
+export const devDir = path.join(os.homedir(), '.oxygenium-dev')
 
 async function _downloadFullNode(tag, fileName) {
-  const url = `https://github.com/alephium/alephium/releases/download/v${tag}/alephium-${tag}.jar`
+  const url = `https://github.com/oxygenium/oxygenium/releases/download/v${tag}/oxygenium-${tag}.jar`
   const res0 = await fetch(url)
   const fileUrl = res0.url
   const res1 = await fetch(fileUrl)
@@ -54,7 +54,7 @@ async function downloadFullNode(tag, devDir, jarFile) {
 }
 
 function launchDevnet(devDir, jarFile) {
-  const pidFile = devDir + path.sep + 'alephium.pid'
+  const pidFile = devDir + path.sep + 'oxygenium.pid'
   try {
     const pid = parseInt(fs.readFileSync(pidFile).toString())
     if (pid) {
@@ -64,7 +64,7 @@ function launchDevnet(devDir, jarFile) {
   } catch (e) {}
   fs.rmSync(devDir + path.sep + 'logs', { recursive: true, force: true })
   fs.rmSync(devDir + path.sep + 'network-4', { recursive: true, force: true })
-  fs.rmSync(devDir + path.sep + '.alephium-wallets', { recursive: true, force: true })
+  fs.rmSync(devDir + path.sep + '.oxygenium-wallets', { recursive: true, force: true })
 
   const p = spawn('java', ['-jar', jarFile], {
     detached: true,
@@ -73,10 +73,10 @@ function launchDevnet(devDir, jarFile) {
   })
   p.unref()
   console.log(`Launching Devnet (PID: ${p.pid})`)
-  fs.writeFileSync(devDir + path.sep + 'alephium.pid', p.pid.toString(), { falg: 'w' })
+  fs.writeFileSync(devDir + path.sep + 'oxygenium.pid', p.pid.toString(), { falg: 'w' })
 }
 
-const testWallet = 'alephium-web3-test-only-wallet'
+const testWallet = 'oxygenium-web3-test-only-wallet'
 const testWalletPwd = 'alph'
 const mnemonic =
   'vault alarm sad mass witness property virus style good flower rice alpha viable evidence run glare pretty scout evil judge enroll refuse another lava'
@@ -96,7 +96,7 @@ async function createWallet() {
     method: 'Put',
     body: `{"password":"${testWalletPwd}","mnemonic":"${mnemonic}","walletName":"${testWallet}","isMiner": true}`
   })
-  await fetch('http://127.0.0.1:22973/wallets/alephium-web3-test-only-wallet/change-active-address', {
+  await fetch('http://127.0.0.1:22973/wallets/oxygenium-web3-test-only-wallet/change-active-address', {
     method: 'Post',
     body: `{"address": "1DrDyTr9RpRsQnDnXo2YRiPzPW4ooHX5LLoqXrqfMrpQH"}`
   })
@@ -104,7 +104,7 @@ async function createWallet() {
 
 async function unlockWallet() {
   console.log('Unlocking the test wallet')
-  await fetch('http://127.0.0.1:22973/wallets/alephium-web3-test-only-wallet/unlock', {
+  await fetch('http://127.0.0.1:22973/wallets/oxygenium-web3-test-only-wallet/unlock', {
     method: 'POST',
     body: '{ "password": "alph" }'
   })
@@ -134,7 +134,7 @@ async function wait() {
 
 export async function startDevnet(tag, configPath) {
   console.log(`Full node version: ${tag}`)
-  const jarFile = `${devDir}${path.sep}alephium-${tag}.jar`
+  const jarFile = `${devDir}${path.sep}oxygenium-${tag}.jar`
 
   await downloadFullNode(tag, devDir, jarFile)
   await fsExtra.copy(configPath, path.join(devDir, 'user.conf'))

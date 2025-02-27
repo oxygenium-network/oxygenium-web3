@@ -1,9 +1,9 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/Button)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/Button)
 
 The `Button` component in the `index.tsx` file is a reusable and customizable UI element that can be used throughout the Alephium web3 project to create clickable buttons with various styles and features. It accepts a wide range of props, allowing developers to easily configure the appearance and behavior of the button. For example, a developer can create a primary button with an icon and a click handler like this:
 
 ```tsx
-import Button from 'alephium-web3/components/Common/Button'
+import Button from 'oxygenium-web3/components/Common/Button'
 
 <Button variant="primary" icon="plus" onClick={() => console.log('Button clicked')}>
   Add Item

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/contracts/sub)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/contracts/sub)
 
 The `sub.ral` file in the `.autodoc/docs/json/contracts/sub` folder defines a smart contract function named `sub` that performs subtraction of two `U256` values and returns the result. This function is part of the Alephium Web3 project, a library for interacting with the Alephium blockchain.
 

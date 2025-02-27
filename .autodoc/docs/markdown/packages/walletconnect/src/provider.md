@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/walletconnect/src/provider.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/src/provider.ts)
 
 The `WalletConnectProvider` class in this code is part of the Alephium-web3 project and serves as a bridge between Alephium blockchain and WalletConnect, a protocol for connecting decentralized applications (dApps) with mobile wallets. It extends the `SignerProvider` class and provides methods for signing and submitting transactions, as well as handling events and managing the connection with WalletConnect.
 

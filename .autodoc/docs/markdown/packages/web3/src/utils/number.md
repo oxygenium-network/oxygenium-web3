@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/utils/number.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/utils/number.ts)
 
 This file contains a set of utility functions for formatting and converting numbers used in the Alephium project. The functions are exported and can be used in other parts of the project.
 

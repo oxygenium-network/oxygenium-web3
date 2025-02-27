@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/Portal)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/Portal)
 
-The `Portal` component in the `alephium-web3` project is a useful utility for rendering child components outside of their parent component's DOM hierarchy. This is particularly helpful when you need to render components like modals or tooltips at specific locations in the DOM.
+The `Portal` component in the `oxygenium-web3` project is a useful utility for rendering child components outside of their parent component's DOM hierarchy. This is particularly helpful when you need to render components like modals or tooltips at specific locations in the DOM.
 
 The component utilizes the `useEffect` hook to check if the specified selector exists in the DOM. If it does, the component is mounted to the existing element. If it does not exist, a new element is created and mounted to the document body. The `useState` hook is used to keep track of the component's mounted state.
 
