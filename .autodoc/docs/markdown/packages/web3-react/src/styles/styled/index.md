@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/styled/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/styles/styled/index.ts)
 
 This code exports a styled component from the `styled-components` library. The purpose of this code is to provide a way to create custom styled components that can be used throughout the larger project. 
 

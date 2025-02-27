@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/OxygeniumConnect.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/OxygeniumConnect.tsx)
 
 The `OxygeniumConnectProvider` component is a React functional component that provides a context for the Oxygenium Connect modal. This component is part of the Oxygenium Web3 project and is used to connect to the Oxygenium blockchain network.
 

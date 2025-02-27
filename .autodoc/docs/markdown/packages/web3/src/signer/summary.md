@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/src/signer)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3/src/signer)
 
 The `signer` folder in the `oxygenium-web3` project contains code for signing and submitting transactions to the Oxygenium blockchain. It consists of several TypeScript files and a `fixtures` folder for testing purposes.
 

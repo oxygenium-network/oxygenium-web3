@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/get-extension-wallet/src)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/get-extension-wallet/src)
 
 The code in the `get-extension-wallet/src` folder provides essential functionality for interacting with Oxygenium wallets using the Oxygenium Web3 library. It contains several functions and data structures that enable users to connect their wallets to the Oxygenium blockchain and ensure that only supported wallet providers are used.
 

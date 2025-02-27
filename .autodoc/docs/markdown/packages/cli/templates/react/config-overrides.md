@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/templates/react/config-overrides.js)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/templates/react/config-overrides.js)
 
 This code exports a function that overrides the default configuration of a webpack build. The purpose of this code is to provide fallback options for certain modules that may not be available in the browser environment. 
 

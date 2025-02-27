@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/utils/address.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/utils/address.ts)
 
 This file contains a function called `addressToGroup` and two helper functions called `xorByte` and `toPosInt`. The purpose of this code is to take an Ethereum address and map it to a specific group number based on the total number of groups specified. This is useful for partitioning a large set of addresses into smaller groups for more efficient processing.
 

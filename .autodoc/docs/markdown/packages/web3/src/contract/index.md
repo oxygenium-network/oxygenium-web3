@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/contract/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/contract/index.ts)
 
 This code exports three modules from the oxygenium-web3 project: `ralph`, `contract`, and `events`. 
 

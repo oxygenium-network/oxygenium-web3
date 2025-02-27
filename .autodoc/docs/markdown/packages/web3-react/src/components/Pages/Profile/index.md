@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Pages/Profile/index.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/Pages/Profile/index.tsx)
 
 This code defines a React functional component called `Profile` that displays the user's account information and balance. It imports several hooks and components from other files in the project, including `useOxygeniumConnectContext`, `useAccount`, `useBalance`, `AnimatePresence`, `prettifyAttoOxmAmount`, and `useConnect`. 
 

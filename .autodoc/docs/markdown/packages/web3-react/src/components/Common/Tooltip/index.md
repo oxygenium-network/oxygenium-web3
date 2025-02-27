@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Tooltip/index.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/Common/Tooltip/index.tsx)
 
 This code defines a React component called `Tooltip` that renders a tooltip window with a message when the user hovers over or clicks on a target element. The tooltip is positioned relative to the target element and can be customized with an offset and a delay. The component uses the `useOxygeniumConnectContext` hook to access the current route, theme, and mode of the Oxygenium Connect app.
 

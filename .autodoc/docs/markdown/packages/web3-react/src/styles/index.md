@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/styles/index.ts)
 
 This file contains code that defines theme variables for a modal component used in the Oxygenium project. The code defines a set of global CSS variables that can be used to style the modal component. The variables are defined in the `themeGlobals` object, which contains several sub-objects that define different color schemes for the modal. The `createCssVars` and `createCssColors` functions are used to generate CSS rules based on the values in the `themeGlobals` object. 
 

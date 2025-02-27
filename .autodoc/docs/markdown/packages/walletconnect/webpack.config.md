@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/webpack.config.js)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/walletconnect/webpack.config.js)
 
 This code is a configuration file for a webpack build process for the oxygenium-web3 project. Webpack is a module bundler that takes modules with dependencies and generates static assets representing those modules. This configuration file specifies the entry point for the build process, which is the `index.js` file located in the `dist/cjs` directory. 
 

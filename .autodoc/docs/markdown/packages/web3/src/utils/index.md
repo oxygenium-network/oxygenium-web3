@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/utils/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/utils/index.ts)
 
 This file is a license file and does not contain any code that directly contributes to the functionality of the oxygenium-web3 project. Instead, it exports various modules that are used throughout the project. 
 

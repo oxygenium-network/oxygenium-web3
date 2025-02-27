@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/docker/docker-compose.yml)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/docker/docker-compose.yml)
 
 This code is a Docker Compose file that defines three services: redis, relay, and oxygenium. Docker Compose is a tool for defining and running multi-container Docker applications. 
 

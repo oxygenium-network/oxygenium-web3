@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Modal/styles.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/Common/Modal/styles.ts)
 
 This code is part of the Oxygenium-web3 project and defines the styling and animations for a modal component. The modal component is a user interface element that displays content on top of the main application, often used for forms, notifications, or additional information.
 

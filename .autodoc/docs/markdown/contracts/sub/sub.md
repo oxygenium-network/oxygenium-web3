@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/contracts/sub/sub.ral)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/contracts/sub/sub.ral)
 
 The code above defines a smart contract function called `sub` that subtracts two `U256` values and returns the result. The function takes an array of two `U256` values as input and emits an event with the two values before performing the subtraction. The result of the subtraction is stored in a mutable variable called `result`, which is declared as an argument to the contract. 
 

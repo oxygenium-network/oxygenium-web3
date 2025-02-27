@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/api/types.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/api/types.ts)
 
 This file contains utility functions and type definitions for interacting with the Oxygenium blockchain through its web3 API. The file defines several functions for converting between different data types used in the API and the corresponding JavaScript types. It also defines functions for parsing API responses and converting them into JavaScript objects.
 

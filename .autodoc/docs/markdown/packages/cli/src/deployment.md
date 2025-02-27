@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/src/deployment.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/src/deployment.ts)
 
 The code in this file is part of the deployment process for Oxygenium smart contracts and scripts. It provides functionality to deploy contracts and execute scripts on the Oxygenium blockchain, as well as manage deployment results and configurations.
 

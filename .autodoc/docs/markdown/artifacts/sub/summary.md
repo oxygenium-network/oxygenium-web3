@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/artifacts/sub)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/artifacts/sub)
 
 The `sub.ral.json` file in the `oxygenium-web3` project contains a Solidity smart contract named "Sub" (version v2.3.1) that performs a simple subtraction operation on two unsigned 256-bit integers. This contract can be used as a building block for more complex decentralized applications that require arithmetic operations on the Ethereum blockchain.
 

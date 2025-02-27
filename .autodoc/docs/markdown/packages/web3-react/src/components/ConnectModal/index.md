@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/ConnectModal/index.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/ConnectModal/index.tsx)
 
 The `ConnectModal` component is a React functional component that renders a modal window for connecting to the Oxygenium network. It imports several other components and hooks from the `oxygenium-web3` project, including `useEffect`, `useOxygeniumConnectContext`, `Modal`, `Connectors`, `ConnectUsing`, `Profile`, and `useAccount`.
 

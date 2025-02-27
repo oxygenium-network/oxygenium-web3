@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/templates/react/src/artifacts/greeter_main.ral.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/templates/react/src/artifacts/greeter_main.ral.json)
 
 This code represents a JSON file that contains information about a smart contract called "GreeterMain". The contract is part of the larger oxygenium-web3 project and is used to interact with the Oxygenium blockchain. 
 

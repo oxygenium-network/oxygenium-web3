@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/base/src)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/base/src)
 
 The `token.ts` file in the `oxygenium-web3` project demonstrates how to interact with a smart contract deployed on the Oxygenium blockchain using the `@oxygenium/web3` library. The script specifically focuses on withdrawing tokens from a `TokenFaucet` contract and printing the latest state of the contract.
 

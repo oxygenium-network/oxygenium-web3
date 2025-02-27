@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/docker)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/docker)
 
 The `.autodoc/docs/json/docker` folder contains two important files for the Oxygenium blockchain network: `devnet.conf` and `docker-compose.yml`. These files are essential for configuring the network and deploying it using Docker Compose.
 

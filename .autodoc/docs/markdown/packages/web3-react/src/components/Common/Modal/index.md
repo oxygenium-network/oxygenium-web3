@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Modal/index.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/Common/Modal/index.tsx)
 
 The `Modal` component in this code is a part of the Oxygenium-web3 project and serves as a reusable, customizable modal dialog with various features such as transitions, animations, and focus trapping. It is designed to be used in different parts of the project with different content and actions.
 

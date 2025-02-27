@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/transaction/status.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/transaction/status.ts)
 
 This file contains TypeScript code that defines a class and a function related to subscribing to transaction status updates in the Oxygenium blockchain network. The code imports the `web3` and `node` modules from other parts of the `oxygenium-web3` project, as well as a `Subscription` class and `SubscribeOptions` type from a `utils` module.
 

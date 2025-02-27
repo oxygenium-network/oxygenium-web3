@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/Greeter.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/artifacts/ts/Greeter.ts)
 
 This code is part of the Oxygenium-web3 project and provides a contract factory and instance for the Greeter smart contract. The Greeter smart contract is a simple contract that allows users to set and get a greeting message. 
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/artifacts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/artifacts)
 
 The `.autodoc/docs/json/artifacts` folder contains JSON files that provide metadata about smart contracts in the `oxygenium-web3` project. These files include information about the contract's bytecode, fields, functions, and events, which can be used by developers to interact with the contracts and build applications on top of them.
 

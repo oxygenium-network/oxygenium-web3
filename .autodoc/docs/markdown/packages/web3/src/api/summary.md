@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/src/api)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3/src/api)
 
 The `.autodoc/docs/json/packages/web3/src/api` folder contains the core implementation of the `oxygenium-web3` project, which provides a convenient and flexible way to interact with the Oxygenium blockchain through its web3 API. The folder consists of several TypeScript files that define classes, utility functions, and types for interacting with the Oxygenium blockchain explorer API and the Oxygenium node API.
 

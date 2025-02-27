@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/index.ts)
 
 This code is a file that is part of the Oxygenium project and contains various exports related to web3 functionality. The purpose of this file is to provide a centralized location for importing all the necessary modules related to web3 functionality in the Oxygenium project.
 

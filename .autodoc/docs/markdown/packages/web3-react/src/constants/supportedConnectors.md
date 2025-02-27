@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/constants/supportedConnectors.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/constants/supportedConnectors.tsx)
 
 This code defines an array of supported blockchain wallet connectors for the Oxygenium project. The `supportedConnectors` array is initialized with three objects, each representing a different wallet connector. 
 

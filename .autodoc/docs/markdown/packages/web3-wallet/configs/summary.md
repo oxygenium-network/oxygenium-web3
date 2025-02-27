@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-wallet/configs)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3-wallet/configs)
 
 The `header.js` file in the `.autodoc/docs/json/packages/web3-wallet/configs` folder contains the license information for the Oxygenium project. This project is a library that enables developers to interact with the Oxygenium blockchain. The license specified in this file is the GNU Lesser General Public License (LGPL) version 3 or later, which is a permissive open-source license.
 

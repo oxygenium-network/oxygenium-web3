@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/src)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/cli/src)
 
 The `cli/src` folder in the `oxygenium-web3` project contains code for generating TypeScript interfaces, deploying smart contracts and scripts, and managing configurations and networks. It is an essential part of the project, providing developers with tools to interact with the Oxygenium blockchain.
 

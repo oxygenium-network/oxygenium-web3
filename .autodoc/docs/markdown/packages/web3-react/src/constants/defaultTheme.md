@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/constants/defaultTheme.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/constants/defaultTheme.ts)
 
 This code exports a single object with a property called `mobileWidth` set to the value of 560. The purpose of this code is to provide a constant value for the minimum width of a mobile device screen. This value can be used throughout the larger project to ensure that certain UI elements are properly displayed on mobile devices.
 

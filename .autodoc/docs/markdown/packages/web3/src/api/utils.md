@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/api/utils.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/api/utils.ts)
 
 This file contains utility functions for making HTTP requests to an API and handling rate limiting and retries. The functions are designed to be used in the larger Oxygenium project, which likely involves interacting with an external API.
 
