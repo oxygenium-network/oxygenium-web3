@@ -35,7 +35,7 @@ describe('node wallet', () => {
       await wallet.setSelectedAccount(fromAccount.address)
       await wallet.signTransferTx({
         signerAddress: fromAccount.address,
-        destinations: [{ address: toAccount.address, attoAlphAmount: BigInt(1e18) }]
+        destinations: [{ address: toAccount.address, attoOxmAmount: BigInt(1e18) }]
       })
     }
   })
@@ -48,7 +48,7 @@ describe('node wallet', () => {
       await wallet.setSelectedAccount(fromAccount.address)
       const tx = await wallet.buildTransferTx({
         signerAddress: fromAccount.address,
-        destinations: [{ address: toAccount.address, attoAlphAmount: BigInt(1e18) }]
+        destinations: [{ address: toAccount.address, attoOxmAmount: BigInt(1e18) }]
       })
       await wallet.signAndSubmitUnsignedTx({ unsignedTx: tx.unsignedTx, signerAddress: fromAccount.address })
     }

@@ -43,10 +43,10 @@ export function isBalanceEqual(b0: node.Balance, b1: node.Balance): boolean {
     })
   }
 
-  const isAlphBalanceEqual = b0.balance === b1.balance && b0.lockedBalance === b1.lockedBalance
+  const isOxmBalanceEqual = b0.balance === b1.balance && b0.lockedBalance === b1.lockedBalance
   return (
     b0.utxoNum === b1.utxoNum &&
-    isAlphBalanceEqual &&
+    isOxmBalanceEqual &&
     isTokenBalanceEqual(b0.tokenBalances, b1.tokenBalances) &&
     isTokenBalanceEqual(b0.lockedTokenBalances, b1.lockedTokenBalances)
   )

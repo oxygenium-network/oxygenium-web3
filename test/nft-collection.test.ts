@@ -151,7 +151,7 @@ describe('nft collection', function () {
             royaltyRate,
             totalSupply: 0n
           },
-          initialAttoAlphAmount: 2n * ONE_ALPH
+          initialAttoOxmAmount: 2n * ONE_ALPH
         })
       ).contractInstance
 
@@ -232,7 +232,7 @@ describe('nft collection', function () {
         uri: nftUri,
         royalty
       },
-      attoAlphAmount: 2n * ONE_ALPH
+      attoOxmAmount: 2n * ONE_ALPH
     })
 
     const nftContractId = subContractId(nftCollectionTest.contractId, binToHex(codec.u256Codec.encode(tokenIndex)), 0)

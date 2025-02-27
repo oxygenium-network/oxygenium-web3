@@ -28,7 +28,7 @@ import { binToHex, HexString, hexToBinUnsafe } from '../utils'
 /**
  * Contract call extracted from a script
  * @param contractAddress the address of the contract
- * @param approvedAttoAlphAmount the amount of ALPH approved to the contract
+ * @param approvedAttoOxmAmount the amount of ALPH approved to the contract
  *   - undefined if no ALPH is approved
  *   - 'unknown' if the amount cannot be determined
  *   - a number if the amount is known
@@ -39,7 +39,7 @@ import { binToHex, HexString, hexToBinUnsafe } from '../utils'
  */
 export interface ContractCall {
   contractAddress: string
-  approvedAttoAlphAmount?: bigint | 'unknown'
+  approvedAttoOxmAmount?: bigint | 'unknown'
   approvedTokens?: Token[] | 'unknown'
 }
 
@@ -483,7 +483,7 @@ export class ScriptSimulator {
           if (contractId.kind !== 'Symbol-ByteVec') {
             contractCalls.push({
               contractAddress: addressFromContractId(binToHex(contractId.value)),
-              approvedAttoAlphAmount: approved.getApprovedAttoAlph(),
+              approvedAttoOxmAmount: approved.getApprovedAttoOxm(),
               approvedTokens: approved.getApprovedTokens()
             })
           }
@@ -527,13 +527,13 @@ export class ScriptSimulator {
           operandStack.push(callerAddress)
           break
         }
-        case 'ApproveAlph': {
+        case 'ApproveOxm': {
           const amount = operandStack.popU256() // amount
           const spender = operandStack.popAddress() // spender
           if (spender.kind.startsWith('Symbol')) {
             approved.setUnknown() // The spender might be the caller
           } else if (spender === callerAddress) {
-            approved.addApprovedAttoAlph(amount)
+            approved.addApprovedAttoOxm(amount)
           }
           break
         }
@@ -561,7 +561,7 @@ export class ScriptSimulator {
           operandStack.push({ kind: 'Symbol-ByteVec', value: undefined }) // new contract id
           break
         }
-        case 'TransferAlph': {
+        case 'TransferOxm': {
           operandStack.popU256() // amount
           operandStack.popAddress() // recipient
           operandStack.popAddress() // sender
@@ -784,13 +784,13 @@ class ApprovedAccumulator {
     this.approvedTokens = 'unknown'
   }
 
-  getApprovedAttoAlph(): bigint | 'unknown' | undefined {
+  getApprovedAttoOxm(): bigint | 'unknown' | undefined {
     if (this.approvedTokens === 'unknown') {
       return 'unknown'
     }
 
-    const approvedAttoAlph = this.approvedTokens[0].amount
-    return approvedAttoAlph === 'unknown' ? 'unknown' : approvedAttoAlph === 0n ? undefined : approvedAttoAlph
+    const approvedAttoOxm = this.approvedTokens[0].amount
+    return approvedAttoOxm === 'unknown' ? 'unknown' : approvedAttoOxm === 0n ? undefined : approvedAttoOxm
   }
 
   getApprovedTokens(): { id: string; amount: bigint | 'unknown' }[] | 'unknown' | undefined {
@@ -802,7 +802,7 @@ class ApprovedAccumulator {
     return allTokens.length === 0 ? undefined : allTokens
   }
 
-  addApprovedAttoAlph(amount: ValU256 | SymbolU256): void {
+  addApprovedAttoOxm(amount: ValU256 | SymbolU256): void {
     this.addApprovedToken({ kind: 'ByteVec', value: hexToBinUnsafe(ALPH_TOKEN_ID) }, amount)
   }
 

@@ -120,25 +120,25 @@ const Chrome = (
         <feFlood floodOpacity={0} result="BackgroundImageFix" />
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
         <feColorMatrix
-          in="SourceAlpha"
+          in="SourceOxma"
           type="matrix"
           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          result="hardAlpha"
+          result="hardOxma"
         />
         <feOffset dy="0.235294" />
         <feGaussianBlur stdDeviation="0.235294" />
-        <feComposite in2="hardAlpha" operator="arithmetic" k2={-1} k3={1} />
+        <feComposite in2="hardOxma" operator="arithmetic" k2={-1} k3={1} />
         <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
         <feBlend mode="normal" in2="shape" result="effect1_innerShadow_927_5781" />
         <feColorMatrix
-          in="SourceAlpha"
+          in="SourceOxma"
           type="matrix"
           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          result="hardAlpha"
+          result="hardOxma"
         />
         <feOffset dy="-0.235294" />
         <feGaussianBlur stdDeviation="0.235294" />
-        <feComposite in2="hardAlpha" operator="arithmetic" k2={-1} k3={1} />
+        <feComposite in2="hardOxma" operator="arithmetic" k2={-1} k3={1} />
         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" />
         <feBlend mode="normal" in2="effect1_innerShadow_927_5781" result="effect2_innerShadow_927_5781" />
       </filter>

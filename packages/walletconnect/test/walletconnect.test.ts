@@ -315,7 +315,7 @@ async function verifySign(provider: WalletConnectProvider, walletClient: WalletC
 
   await provider.signAndSubmitTransferTx({
     signerAddress: signerA.address,
-    destinations: [{ address: ACCOUNTS.b.address, attoAlphAmount: ONE_ALPH }]
+    destinations: [{ address: ACCOUNTS.b.address, attoOxmAmount: ONE_ALPH }]
   })
 
   await checkBalanceDecreasing()

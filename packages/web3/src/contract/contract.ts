@@ -82,7 +82,7 @@ import {
   U256Const,
   Instr,
   ApproveToken,
-  ApproveAlph,
+  ApproveOxm,
   CallExternal,
   Dup,
   CallerAddress,
@@ -604,7 +604,7 @@ export class Contract extends Artifact {
       signerAddress: selectedAccount.address,
       signerKeyType: selectedAccount.keyType,
       bytecode: bytecode,
-      initialAttoAlphAmount: params?.initialAttoAlphAmount,
+      initialAttoOxmAmount: params?.initialAttoOxmAmount,
       issueTokenAmount: params?.issueTokenAmount,
       issueTokenTo: params?.issueTokenTo,
       initialTokenAmounts: params?.initialTokenAmounts,
@@ -784,7 +784,7 @@ export class Script extends Artifact {
       signerAddress: selectedAccount.address,
       signerKeyType: selectedAccount.keyType,
       bytecode: this.buildByteCodeToDeploy(params.initialFields ?? {}),
-      attoAlphAmount: params.attoAlphAmount,
+      attoOxmAmount: params.attoOxmAmount,
       tokens: params.tokens,
       gasAmount: params.gasAmount,
       gasPrice: params.gasPrice
@@ -883,14 +883,14 @@ export interface Asset {
 
 function toApiAsset(asset: Asset): node.AssetState {
   return {
-    attoAlphAmount: toApiNumber256(asset.alphAmount),
+    attoOxmAmount: toApiNumber256(asset.alphAmount),
     tokens: typeof asset.tokens !== 'undefined' ? asset.tokens.map(toApiToken) : []
   }
 }
 
 function fromApiAsset(asset: node.AssetState): Asset {
   return {
-    alphAmount: fromApiNumber256(asset.attoAlphAmount),
+    alphAmount: fromApiNumber256(asset.attoOxmAmount),
     tokens: fromApiTokens(asset.tokens)
   }
 }
@@ -1023,7 +1023,7 @@ function fromApiOutput(output: node.Output): Output {
     return {
       type: 'AssetOutput',
       address: asset.address,
-      alphAmount: fromApiNumber256(asset.attoAlphAmount),
+      alphAmount: fromApiNumber256(asset.attoOxmAmount),
       tokens: fromApiTokens(asset.tokens),
       lockTime: asset.lockTime,
       message: asset.message
@@ -1033,7 +1033,7 @@ function fromApiOutput(output: node.Output): Output {
     return {
       type: 'ContractOutput',
       address: asset.address,
-      alphAmount: fromApiNumber256(asset.attoAlphAmount),
+      alphAmount: fromApiNumber256(asset.attoOxmAmount),
       tokens: fromApiTokens(asset.tokens)
     }
   } else {
@@ -1049,7 +1049,7 @@ export function randomTxId(): string {
 
 export interface DeployContractParams<P extends Fields = Fields> {
   initialFields: P
-  initialAttoAlphAmount?: Number256
+  initialAttoOxmAmount?: Number256
   initialTokenAmounts?: Token[]
   issueTokenAmount?: Number256
   issueTokenTo?: string
@@ -1154,7 +1154,7 @@ export class ExecutableScript<P extends Fields = Fields, R extends Val | null = 
 
 export interface ExecuteScriptParams<P extends Fields = Fields> {
   initialFields: P
-  attoAlphAmount?: Number256
+  attoOxmAmount?: Number256
   tokens?: Token[]
   gasAmount?: number
   gasPrice?: Number256
@@ -1202,7 +1202,7 @@ export interface CallContractResult<R> {
 export interface SignExecuteContractMethodParams<T extends Arguments = Arguments> {
   args: T
   signer: SignerProvider
-  attoAlphAmount?: Number256
+  attoOxmAmount?: Number256
   tokens?: Token[]
   gasAmount?: number
   gasPrice?: Number256
@@ -1908,7 +1908,7 @@ export async function signExecuteMethod<I extends ContractInstance, F extends Fi
     methodUsePreapprovedAssets,
     functionSig,
     contract.contract.structs,
-    params.attoAlphAmount,
+    params.attoOxmAmount,
     params.tokens
   )
 
@@ -1926,7 +1926,7 @@ export async function signExecuteMethod<I extends ContractInstance, F extends Fi
     signerAddress: selectedAccount.address,
     signerKeyType: selectedAccount.keyType,
     bytecode: bytecode,
-    attoAlphAmount: params.attoAlphAmount,
+    attoOxmAmount: params.attoOxmAmount,
     tokens: params.tokens,
     gasAmount: params.gasAmount,
     gasPrice: params.gasPrice
@@ -1944,13 +1944,13 @@ function getBytecodeTemplate(
   methodUsePreapprovedAssets: boolean,
   functionSig: FunctionSig,
   structs: Struct[],
-  attoAlphAmount?: Number256,
+  attoOxmAmount?: Number256,
   tokens?: Token[]
 ): string {
   // For the default TxScript main function
   const numberOfMethods = '01'
   const isPublic = '01'
-  const scriptUseApprovedAssets = attoAlphAmount !== undefined || tokens !== undefined
+  const scriptUseApprovedAssets = attoOxmAmount !== undefined || tokens !== undefined
   const modifier = scriptUseApprovedAssets ? '03' : '00'
   const argsLength = '00'
   const returnsLength = '00'
@@ -1961,9 +1961,9 @@ function getBytecodeTemplate(
 
   const [templateVarStoreLocalInstrs, templateVarsLength] = getTemplateVarStoreLocalInstrs(functionSig, structs)
 
-  const approveAlphInstrs: string[] = getApproveAlphInstrs(methodUsePreapprovedAssets ? attoAlphAmount : undefined)
+  const approveOxmInstrs: string[] = getApproveOxmInstrs(methodUsePreapprovedAssets ? attoOxmAmount : undefined)
   const approveTokensInstrs: string[] = getApproveTokensInstrs(methodUsePreapprovedAssets ? tokens : undefined)
-  const callerInstrs: string[] = getCallAddressInstrs(approveAlphInstrs.length / 2 + approveTokensInstrs.length / 3)
+  const callerInstrs: string[] = getCallAddressInstrs(approveOxmInstrs.length / 2 + approveTokensInstrs.length / 3)
 
   // First template var is the contract
   const functionArgsNum = encodeU256Const(BigInt(templateVarsLength - 1))
@@ -1982,7 +1982,7 @@ function getBytecodeTemplate(
   const externalCallInstr = encodeInstr(CallExternal(methodIndex))
   const numberOfInstrs = encodeI32(
     callerInstrs.length +
-      approveAlphInstrs.length +
+      approveOxmInstrs.length +
       approveTokensInstrs.length +
       templateVarStoreLocalInstrs.length +
       templateVarLoadLocalInstrs.length +
@@ -1999,7 +1999,7 @@ function getBytecodeTemplate(
     returnsLength +
     numberOfInstrs +
     callerInstrs.join('') +
-    approveAlphInstrs.join('') +
+    approveOxmInstrs.join('') +
     approveTokensInstrs.join('') +
     templateVarStoreLocalInstrs.join('') +
     templateVarLoadLocalInstrs.join('') +
@@ -2011,15 +2011,15 @@ function getBytecodeTemplate(
   )
 }
 
-function getApproveAlphInstrs(attoAlphAmount?: Number256): string[] {
-  const approveAlphInstrs: string[] = []
-  if (attoAlphAmount) {
-    const approvedAttoAlphAmount = encodeU256Const(BigInt(attoAlphAmount))
-    approveAlphInstrs.push(approvedAttoAlphAmount)
-    approveAlphInstrs.push(encodeInstr(ApproveAlph))
+function getApproveOxmInstrs(attoOxmAmount?: Number256): string[] {
+  const approveOxmInstrs: string[] = []
+  if (attoOxmAmount) {
+    const approvedAttoOxmAmount = encodeU256Const(BigInt(attoOxmAmount))
+    approveOxmInstrs.push(approvedAttoOxmAmount)
+    approveOxmInstrs.push(encodeInstr(ApproveOxm))
   }
 
-  return approveAlphInstrs
+  return approveOxmInstrs
 }
 
 function getApproveTokensInstrs(tokens?: Token[]): string[] {

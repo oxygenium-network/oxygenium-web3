@@ -290,7 +290,7 @@ export function verifySignedMessage(
 }
 
 export function toApiDestination(data: Destination): node.Destination {
-  return { ...data, attoAlphAmount: toApiNumber256(data.attoAlphAmount), tokens: toApiTokens(data.tokens) }
+  return { ...data, attoOxmAmount: toApiNumber256(data.attoOxmAmount), tokens: toApiTokens(data.tokens) }
 }
 
 export function toApiDestinations(data: Destination[]): node.Destination[] {
@@ -298,5 +298,5 @@ export function toApiDestinations(data: Destination[]): node.Destination[] {
 }
 
 export function fromApiDestination(data: node.Destination): Destination {
-  return { ...data, attoAlphAmount: fromApiNumber256(data.attoAlphAmount), tokens: fromApiTokens(data.tokens) }
+  return { ...data, attoOxmAmount: fromApiNumber256(data.attoOxmAmount), tokens: fromApiTokens(data.tokens) }
 }

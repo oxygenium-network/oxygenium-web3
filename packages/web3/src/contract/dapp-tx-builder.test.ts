@@ -111,7 +111,7 @@ describe('dapp-tx-builder', function () {
     ).toThrow('Invalid token amount')
 
     const result0 = builder.callContract({ ...commonParams }).getResult()
-    expect(result0.attoAlphAmount).toEqual(undefined)
+    expect(result0.attoOxmAmount).toEqual(undefined)
     expect(result0.tokens).toEqual([])
 
     const tokenId0 = randomContractId()
@@ -119,7 +119,7 @@ describe('dapp-tx-builder', function () {
     const result1 = builder
       .callContract({
         ...commonParams,
-        attoAlphAmount: ONE_ALPH,
+        attoOxmAmount: ONE_ALPH,
         tokens: [
           { id: ALPH_TOKEN_ID, amount: ONE_ALPH },
           { id: tokenId0, amount: ONE_ALPH },
@@ -127,13 +127,13 @@ describe('dapp-tx-builder', function () {
         ]
       })
       .getResult()
-    expect(result1.attoAlphAmount).toEqual(ONE_ALPH * 2n)
+    expect(result1.attoOxmAmount).toEqual(ONE_ALPH * 2n)
     expect(result1.tokens).toEqual([{ id: tokenId0, amount: ONE_ALPH }])
 
     const result2 = builder
       .callContract({
         ...commonParams,
-        attoAlphAmount: 0n,
+        attoOxmAmount: 0n,
         tokens: [
           { id: tokenId0, amount: 0n },
           { id: tokenId1, amount: ONE_ALPH }
@@ -141,14 +141,14 @@ describe('dapp-tx-builder', function () {
       })
       .callContract({
         ...commonParams,
-        attoAlphAmount: ONE_ALPH,
+        attoOxmAmount: ONE_ALPH,
         tokens: [
           { id: tokenId0, amount: ONE_ALPH },
           { id: tokenId1, amount: ONE_ALPH }
         ]
       })
       .getResult()
-    expect(result2.attoAlphAmount).toEqual(ONE_ALPH)
+    expect(result2.attoOxmAmount).toEqual(ONE_ALPH)
     expect(result2.tokens).toEqual([
       { id: tokenId1, amount: ONE_ALPH * 2n },
       { id: tokenId0, amount: ONE_ALPH }

@@ -35,7 +35,7 @@ describe('Encode & decode unsigned transactions', function () {
 
     const tx = await signer1.buildTransferTx({
       signerAddress: fromAccount.address,
-      destinations: [{ address: toAccount.address, attoAlphAmount: ONE_ALPH }]
+      destinations: [{ address: toAccount.address, attoOxmAmount: ONE_ALPH }]
     })
 
     await checkUnsignedTxCodec(tx.unsignedTx)
@@ -56,7 +56,7 @@ describe('Encode & decode unsigned transactions', function () {
     // Transfer to multisig address
     const toMultiSig = await signer1.buildTransferTx({
       signerAddress: fromAccount.address,
-      destinations: [{ address: multisigAddress, attoAlphAmount: ONE_ALPH * 10n }]
+      destinations: [{ address: multisigAddress, attoOxmAmount: ONE_ALPH * 10n }]
     })
 
     await checkUnsignedTxCodec(toMultiSig.unsignedTx)
@@ -64,14 +64,14 @@ describe('Encode & decode unsigned transactions', function () {
     // Finish the transfer so multisig address has some balance
     await signer1.signAndSubmitTransferTx({
       signerAddress: fromAccount.address,
-      destinations: [{ address: multisigAddress, attoAlphAmount: ONE_ALPH * 10n }]
+      destinations: [{ address: multisigAddress, attoOxmAmount: ONE_ALPH * 10n }]
     })
 
     // Transfer from multisig address
     const fromMultiSig = await nodeProvider.multisig.postMultisigBuild({
       fromAddress: multisigAddress,
       fromPublicKeys: [signer1.publicKey, signer2.publicKey],
-      destinations: [{ address: signer1.address, attoAlphAmount: ONE_ALPH.toString() }]
+      destinations: [{ address: signer1.address, attoOxmAmount: ONE_ALPH.toString() }]
     })
 
     await checkUnsignedTxCodec(fromMultiSig.unsignedTx)
@@ -131,7 +131,7 @@ describe('Encode & decode unsigned transactions', function () {
 
     const toSchnorrAddressResult = await signer1.signAndSubmitTransferTx({
       signerAddress: fromAccount.address,
-      destinations: [{ address: schnorrSigner.address, attoAlphAmount: ONE_ALPH }]
+      destinations: [{ address: schnorrSigner.address, attoOxmAmount: ONE_ALPH }]
     })
 
     await checkUnsignedTxCodec(toSchnorrAddressResult.unsignedTx)
@@ -139,7 +139,7 @@ describe('Encode & decode unsigned transactions', function () {
     const fromSchnorrAddressResult = await schnorrSigner.signAndSubmitTransferTx({
       signerAddress: schnorrSigner.address,
       signerKeyType: 'bip340-schnorr',
-      destinations: [{ address: signer1.address, attoAlphAmount: ONE_ALPH / 2n }]
+      destinations: [{ address: signer1.address, attoOxmAmount: ONE_ALPH / 2n }]
     })
 
     await checkUnsignedTxCodec(fromSchnorrAddressResult.unsignedTx)
@@ -168,7 +168,7 @@ describe('Encode & decode unsigned transactions', function () {
       signerAddress: signer1.address,
       bytecode: contractByteCode,
       issueTokenAmount: 10000n,
-      initialAttoAlphAmount: ONE_ALPH * 10n
+      initialAttoOxmAmount: ONE_ALPH * 10n
     })
 
     const scriptCode = `
@@ -198,7 +198,7 @@ describe('Encode & decode unsigned transactions', function () {
       destinations: [
         {
           address: signer2.address,
-          attoAlphAmount: DUST_AMOUNT,
+          attoOxmAmount: DUST_AMOUNT,
           tokens: [{ id: deployContractResult.contractId, amount: 1n }]
         }
       ]

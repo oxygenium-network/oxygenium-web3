@@ -73,7 +73,7 @@ export interface AssetOutput {
   /** @format 32-byte-hash */
   key: string
   /** @format uint256 */
-  attoAlphAmount: string
+  attoOxmAmount: string
   /** @format address */
   address: string
   tokens?: Token[]
@@ -169,7 +169,7 @@ export interface ContractOutput {
   /** @format 32-byte-hash */
   key: string
   /** @format uint256 */
-  attoAlphAmount: string
+  attoOxmAmount: string
   /** @format address */
   address: string
   tokens?: Token[]
@@ -262,7 +262,7 @@ export interface Input {
   /** @format address */
   address?: string
   /** @format uint256 */
-  attoAlphAmount?: string
+  attoOxmAmount?: string
   tokens?: Token[]
   contractInput: boolean
 }
@@ -1468,10 +1468,10 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
      * @description Get the ALPH total supply
      *
      * @tags Infos
-     * @name GetInfosSupplyTotalAlph
+     * @name GetInfosSupplyTotalOxm
      * @request GET:/infos/supply/total-alph
      */
-    getInfosSupplyTotalAlph: (params: RequestParams = {}) =>
+    getInfosSupplyTotalOxm: (params: RequestParams = {}) =>
       this.request<number, BadRequest | Unauthorized | NotFound | InternalServerError | ServiceUnavailable>({
         path: `/infos/supply/total-alph`,
         method: 'GET',
@@ -1483,10 +1483,10 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
      * @description Get the ALPH circulating supply
      *
      * @tags Infos
-     * @name GetInfosSupplyCirculatingAlph
+     * @name GetInfosSupplyCirculatingOxm
      * @request GET:/infos/supply/circulating-alph
      */
-    getInfosSupplyCirculatingAlph: (params: RequestParams = {}) =>
+    getInfosSupplyCirculatingOxm: (params: RequestParams = {}) =>
       this.request<number, BadRequest | Unauthorized | NotFound | InternalServerError | ServiceUnavailable>({
         path: `/infos/supply/circulating-alph`,
         method: 'GET',
@@ -1498,10 +1498,10 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
      * @description Get the ALPH reserved supply
      *
      * @tags Infos
-     * @name GetInfosSupplyReservedAlph
+     * @name GetInfosSupplyReservedOxm
      * @request GET:/infos/supply/reserved-alph
      */
-    getInfosSupplyReservedAlph: (params: RequestParams = {}) =>
+    getInfosSupplyReservedOxm: (params: RequestParams = {}) =>
       this.request<number, BadRequest | Unauthorized | NotFound | InternalServerError | ServiceUnavailable>({
         path: `/infos/supply/reserved-alph`,
         method: 'GET',
@@ -1513,10 +1513,10 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
      * @description Get the ALPH locked supply
      *
      * @tags Infos
-     * @name GetInfosSupplyLockedAlph
+     * @name GetInfosSupplyLockedOxm
      * @request GET:/infos/supply/locked-alph
      */
-    getInfosSupplyLockedAlph: (params: RequestParams = {}) =>
+    getInfosSupplyLockedOxm: (params: RequestParams = {}) =>
       this.request<number, BadRequest | Unauthorized | NotFound | InternalServerError | ServiceUnavailable>({
         path: `/infos/supply/locked-alph`,
         method: 'GET',
@@ -1778,10 +1778,10 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
      * @description Get a sorted list of top addresses by ALPH balance. Updates once per day.
      *
      * @tags Tokens
-     * @name GetTokensHoldersAlph
+     * @name GetTokensHoldersOxm
      * @request GET:/tokens/holders/alph
      */
-    getTokensHoldersAlph: (
+    getTokensHoldersOxm: (
       query?: {
         /**
          * Page number

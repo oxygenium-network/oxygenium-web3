@@ -97,7 +97,7 @@ export async function getSigner(alphAmount = ONE_ALPH * 100n, group = 0): Promis
     }
     const wallet = PrivateKeyWallet.Random(group)
     if (alphAmount > 0n) {
-      const destinations = [{ address: wallet.address, attoAlphAmount: alphAmount }]
+      const destinations = [{ address: wallet.address, attoOxmAmount: alphAmount }]
       await testPrivateKeyWallet.signAndSubmitTransferTx({ signerAddress: testAddress, destinations })
     }
     return wallet
@@ -128,7 +128,7 @@ export async function getSigners(
 export async function transfer(from: PrivateKeyWallet, to: Address, tokenId: string, amount: bigint) {
   const destination = {
     address: to,
-    attoAlphAmount: tokenId === ALPH_TOKEN_ID ? amount : DUST_AMOUNT,
+    attoOxmAmount: tokenId === ALPH_TOKEN_ID ? amount : DUST_AMOUNT,
     tokens: tokenId === ALPH_TOKEN_ID ? [] : [{ id: tokenId, amount }]
   }
   return await from.signAndSubmitTransferTx({ signerAddress: from.address, destinations: [destination] })

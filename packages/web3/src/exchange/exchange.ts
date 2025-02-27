@@ -54,9 +54,9 @@ export function getALPHDepositInfo(tx: Transaction): BaseDepositInfo[] {
     if (!inputAddresses.includes(o.address)) {
       const amount = result.get(o.address)
       if (amount === undefined) {
-        result.set(o.address, BigInt(o.attoAlphAmount))
+        result.set(o.address, BigInt(o.attoOxmAmount))
       } else {
-        result.set(o.address, BigInt(o.attoAlphAmount) + amount)
+        result.set(o.address, BigInt(o.attoOxmAmount) + amount)
       }
     }
   })
@@ -97,7 +97,7 @@ export function getDepositInfo(tx: Transaction): DepositInfo {
   tx.unsigned.fixedOutputs.forEach((o) => {
     if (!inputAddresses.includes(o.address)) {
       const alphAmount = alphDepositInfos.get(o.address) ?? 0n
-      alphDepositInfos.set(o.address, alphAmount + BigInt(o.attoAlphAmount))
+      alphDepositInfos.set(o.address, alphAmount + BigInt(o.attoOxmAmount))
 
       o.tokens.forEach((token) => {
         const depositPerToken = tokenDepositInfos.get(token.id) ?? new Map<Address, bigint>()

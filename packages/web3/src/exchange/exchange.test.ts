@@ -105,7 +105,7 @@ describe('exchange', function () {
     key: '',
     lockTime: 0,
     message: '',
-    attoAlphAmount: '10',
+    attoOxmAmount: '10',
     address: '',
     tokens: []
   }
@@ -293,7 +293,7 @@ describe('exchange', function () {
     })
 
     const newAddress = '1GKWggDapVjTdU2vyna3YjVgdpnwHkKzx8FHA9gU7uoeY'
-    const depositAlphAndTokenTx: Transaction = {
+    const depositOxmAndTokenTx: Transaction = {
       ...tokenTxTemplate,
       unsigned: {
         ...unsignedTokenTxTemplate,
@@ -308,7 +308,7 @@ describe('exchange', function () {
       }
     }
 
-    expect(getDepositInfo(depositAlphAndTokenTx)).toEqual({
+    expect(getDepositInfo(depositOxmAndTokenTx)).toEqual({
       alph: [
         {
           targetAddress: exchangeAddress,

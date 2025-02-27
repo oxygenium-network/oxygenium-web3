@@ -105,7 +105,7 @@ async function createAndTransferToken(
   const script = await getScriptArtifact(nodeProvider)
   const params = await script.txParamsForExecution(deployer, {
     initialFields: { recipient, totalSupply: amount },
-    attoAlphAmount: ONE_ALPH + DUST_AMOUNT
+    attoOxmAmount: ONE_ALPH + DUST_AMOUNT
   })
   return await deployer.signAndSubmitExecuteScriptTx(params)
 }

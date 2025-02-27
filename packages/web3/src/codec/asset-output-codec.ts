@@ -41,7 +41,7 @@ export class AssetOutputCodec extends ObjectCodec<AssetOutput> {
   }
 
   static toFixedAssetOutput(txIdBytes: Uint8Array, output: AssetOutput, index: number): FixedAssetOutput {
-    const attoAlphAmount = output.amount.toString()
+    const attoOxmAmount = output.amount.toString()
     const lockTime = Number(output.lockTime)
     const tokens = output.tokens.map((token) => {
       return {
@@ -68,7 +68,7 @@ export class AssetOutputCodec extends ObjectCodec<AssetOutput> {
       throw new Error(`Unexpected output script type: ${scriptType}`)
     }
 
-    return { hint, key, attoAlphAmount, lockTime, tokens, address, message }
+    return { hint, key, attoOxmAmount, lockTime, tokens, address, message }
   }
 
   static fromFixedAssetOutputs(fixedOutputs: FixedAssetOutput[]): AssetOutput[] {
@@ -78,7 +78,7 @@ export class AssetOutputCodec extends ObjectCodec<AssetOutput> {
   }
 
   static fromFixedAssetOutput(fixedOutput: FixedAssetOutput): AssetOutput {
-    const amount = BigInt(fixedOutput.attoAlphAmount)
+    const amount = BigInt(fixedOutput.attoOxmAmount)
     const lockTime = BigInt(fixedOutput.lockTime)
     const lockupScript: LockupScript = lockupScriptCodec.decode(bs58.decode(fixedOutput.address))
     const tokens = fixedOutput.tokens.map((token) => {

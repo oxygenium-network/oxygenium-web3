@@ -36,10 +36,10 @@ console.log(`Hash value: ${hash}`);
 The `number.ts` file provides utility functions for formatting and converting numbers used in the Oxygenium project. These functions can be used to ensure consistent formatting and conversion of numbers. Example usage:
 
 ```javascript
-import { prettifyAttoAlphAmount } from 'oxygenium-web3/utils/number';
+import { prettifyAttoOxmAmount } from 'oxygenium-web3/utils/number';
 
 const rawAmount = '1000000000000000000';
-const formattedAmount = prettifyAttoAlphAmount(rawAmount);
+const formattedAmount = prettifyAttoOxmAmount(rawAmount);
 console.log(`Formatted amount: ${formattedAmount}`);
 ```
 

@@ -258,7 +258,7 @@ export function recordEqual(left: Record<string, string>, right: Record<string, 
 async function needToRetry(
   provider: NodeProvider,
   previous: ExecutionResult | undefined,
-  attoAlphAmount: string | undefined,
+  attoOxmAmount: string | undefined,
   tokens: Record<string, string> | undefined,
   codeHash: string
 ): Promise<boolean> {
@@ -271,19 +271,19 @@ async function needToRetry(
   }
   const currentTokens = tokens ? tokens : {}
   const previousTokens = previous.tokens ? previous.tokens : {}
-  const sameWithPrevious = attoAlphAmount === previous.attoAlphAmount && recordEqual(currentTokens, previousTokens)
+  const sameWithPrevious = attoOxmAmount === previous.attoOxmAmount && recordEqual(currentTokens, previousTokens)
   return !sameWithPrevious
 }
 
 async function needToDeployContract(
   provider: NodeProvider,
   previous: DeployContractExecutionResult | undefined,
-  attoAlphAmount: string | undefined,
+  attoOxmAmount: string | undefined,
   tokens: Record<string, string> | undefined,
   issueTokenAmount: string | undefined,
   codeHash: string
 ): Promise<boolean> {
-  const retry = await needToRetry(provider, previous, attoAlphAmount, tokens, codeHash)
+  const retry = await needToRetry(provider, previous, attoOxmAmount, tokens, codeHash)
   if (retry) {
     return true
   }
@@ -294,11 +294,11 @@ async function needToDeployContract(
 async function needToRunScript(
   provider: NodeProvider,
   previous: RunScriptResult | undefined,
-  attoAlphAmount: string | undefined,
+  attoOxmAmount: string | undefined,
   tokens: Record<string, string> | undefined,
   codeHash: string
 ): Promise<boolean> {
-  return needToRetry(provider, previous, attoAlphAmount, tokens, codeHash)
+  return needToRetry(provider, previous, attoOxmAmount, tokens, codeHash)
 }
 
 function getTokenRecord(tokens: Token[]): Record<string, string> {
@@ -374,7 +374,7 @@ function createDeployer<Settings = unknown>(
     const needToDeploy = await needToDeployContract(
       web3.getCurrentNodeProvider(),
       previous,
-      tryBigIntToString(params.initialAttoAlphAmount),
+      tryBigIntToString(params.initialAttoOxmAmount),
       tokens,
       tryBigIntToString(params.issueTokenAmount),
       codeHash
@@ -401,7 +401,7 @@ function createDeployer<Settings = unknown>(
       gasAmount: deployResult.gasAmount,
       blockHash: confirmed.blockHash,
       codeHash: codeHash,
-      attoAlphAmount: tryBigIntToString(params.initialAttoAlphAmount),
+      attoOxmAmount: tryBigIntToString(params.initialAttoOxmAmount),
       tokens: tokens,
       contractInstance: deployResult.contractInstance,
       issueTokenAmount: tryBigIntToString(params.issueTokenAmount)
@@ -445,7 +445,7 @@ function createDeployer<Settings = unknown>(
     const needToRun = await needToRunScript(
       web3.getCurrentNodeProvider(),
       previous,
-      tryBigIntToString(params.attoAlphAmount),
+      tryBigIntToString(params.attoOxmAmount),
       tokens,
       codeHash
     )
@@ -463,7 +463,7 @@ function createDeployer<Settings = unknown>(
       gasPrice: executeResult.gasPrice.toString(),
       blockHash: confirmed.blockHash,
       codeHash: codeHash,
-      attoAlphAmount: tryBigIntToString(params.attoAlphAmount),
+      attoOxmAmount: tryBigIntToString(params.attoOxmAmount),
       tokens: tokens
     }
     runScriptResults.set(taskId, runScriptResult)
