@@ -1,6 +1,6 @@
 <!-- logo -->
 
-![Oxygenium Logo](https://raw.githubusercontent.com/oxygenium/oxygenium-brand-guide/master/logos/light/Logo-Horizontal-Light.png#gh-dark-mode-only) ![Oxygenium Logo](https://raw.githubusercontent.com/oxygenium/oxygenium-brand-guide/master/logos/dark/Logo-Horizontal-Dark.png#gh-light-mode-only)
+![Oxygenium Logo](https://raw.githubusercontent.com/oxygenium-network/oxygenium-brand-guide/master/logos/light/Logo-Horizontal-Light.png#gh-dark-mode-only) ![Oxygenium Logo](https://raw.githubusercontent.com/oxygenium-network/oxygenium-brand-guide/master/logos/dark/Logo-Horizontal-Dark.png#gh-light-mode-only)
 
 ---
 
