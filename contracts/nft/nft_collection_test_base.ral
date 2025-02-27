@@ -33,7 +33,7 @@ Abstract Contract NFTCollectionTestBase(
 
      let (initialImmState, initialMutState) = NFTTest.encodeFields!(selfContractId!(), totalSupply, nftUri)
 
-     let contractId = copyCreateSubContractWithToken!{minter -> ALPH: 1 alph}(
+     let contractId = copyCreateSubContractWithToken!{minter -> OXM: 1 alph}(
          toByteVec!(totalSupply),
          nftTemplateId,
          initialImmState,

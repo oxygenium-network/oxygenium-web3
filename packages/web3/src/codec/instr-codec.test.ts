@@ -217,7 +217,7 @@ describe('Encode & decode instrs', function () {
       [instr.NullContractAddress, 'ca'],
       [instr.SubContractId, 'cb'],
       [instr.SubContractIdOf, 'cc'],
-      [instr.ALPHTokenId, 'cd'],
+      [instr.OXMTokenId, 'cd'],
       [instr.LoadImmField(0), 'ce00'],
       [instr.LoadImmFieldByIndex, 'cf'],
       [instr.PayGasFee, 'd0'],

@@ -48,7 +48,7 @@ import {
 export namespace TransactTypes {
   export type Fields = {
     tokenId: HexString;
-    totalALPH: bigint;
+    totalOXM: bigint;
     totalTokens: bigint;
   };
 
@@ -71,7 +71,7 @@ export namespace TransactTypes {
       params: CallContractParams<{ amount: bigint }>;
       result: CallContractResult<null>;
     };
-    getTotalALPH: {
+    getTotalOXM: {
       params: Omit<CallContractParams<{}>, "args">;
       result: CallContractResult<bigint>;
     };
@@ -113,7 +113,7 @@ export namespace TransactTypes {
       params: SignExecuteContractMethodParams<{ amount: bigint }>;
       result: SignExecuteScriptTxResult;
     };
-    getTotalALPH: {
+    getTotalOXM: {
       params: Omit<SignExecuteContractMethodParams<{}>, "args">;
       result: SignExecuteScriptTxResult;
     };
@@ -174,13 +174,13 @@ class Factory extends ContractFactory<TransactInstance, TransactTypes.Fields> {
     ): Promise<TestContractResultWithoutMaps<null>> => {
       return testMethod(this, "withdrawToken", params, getContractByCodeHash);
     },
-    getTotalALPH: async (
+    getTotalOXM: async (
       params: Omit<
         TestContractParamsWithoutMaps<TransactTypes.Fields, never>,
         "testArgs"
       >
     ): Promise<TestContractResultWithoutMaps<bigint>> => {
-      return testMethod(this, "getTotalALPH", params, getContractByCodeHash);
+      return testMethod(this, "getTotalOXM", params, getContractByCodeHash);
     },
     getTotalTokens: async (
       params: Omit<
@@ -267,13 +267,13 @@ export class TransactInstance extends ContractInstance {
         getContractByCodeHash
       );
     },
-    getTotalALPH: async (
-      params?: TransactTypes.CallMethodParams<"getTotalALPH">
-    ): Promise<TransactTypes.CallMethodResult<"getTotalALPH">> => {
+    getTotalOXM: async (
+      params?: TransactTypes.CallMethodParams<"getTotalOXM">
+    ): Promise<TransactTypes.CallMethodResult<"getTotalOXM">> => {
       return callMethod(
         Transact,
         this,
-        "getTotalALPH",
+        "getTotalOXM",
         params === undefined ? {} : params,
         getContractByCodeHash
       );
@@ -312,10 +312,10 @@ export class TransactInstance extends ContractInstance {
     ): Promise<TransactTypes.SignExecuteMethodResult<"withdrawToken">> => {
       return signExecuteMethod(Transact, this, "withdrawToken", params);
     },
-    getTotalALPH: async (
-      params: TransactTypes.SignExecuteMethodParams<"getTotalALPH">
-    ): Promise<TransactTypes.SignExecuteMethodResult<"getTotalALPH">> => {
-      return signExecuteMethod(Transact, this, "getTotalALPH", params);
+    getTotalOXM: async (
+      params: TransactTypes.SignExecuteMethodParams<"getTotalOXM">
+    ): Promise<TransactTypes.SignExecuteMethodResult<"getTotalOXM">> => {
+      return signExecuteMethod(Transact, this, "getTotalOXM", params);
     },
     getTotalTokens: async (
       params: TransactTypes.SignExecuteMethodParams<"getTotalTokens">

@@ -1,7 +1,7 @@
 Contract InlineTest(mut count: U256) {
   @using(updateFields = true, assetsInContract = true, preapprovedAssets = true)
   @inline fn nextCountWithPay() -> U256 {
-    transferTokenToSelf!(callerAddress!(), ALPH, 0.01 alph)
+    transferTokenToSelf!(callerAddress!(), OXM, 0.01 alph)
     count = count + 1
     return count
   }
@@ -14,7 +14,7 @@ Contract InlineTest(mut count: U256) {
 
   @using(checkExternalCaller = false, preapprovedAssets = true)
   pub fn nextCount() -> U256 {
-    let _ = nextCountWithPay{callerAddress!() -> ALPH: 0.01 alph}()
+    let _ = nextCountWithPay{callerAddress!() -> OXM: 0.01 alph}()
     let _ = nextCountWithoutPay()
     return count
   }

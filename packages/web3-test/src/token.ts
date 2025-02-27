@@ -21,7 +21,7 @@ import {
   Contract,
   DUST_AMOUNT,
   NodeProvider,
-  ONE_ALPH,
+  ONE_OXM,
   Script,
   SignerProvider,
   addressFromContractId,
@@ -81,8 +81,8 @@ async function getScriptArtifact(nodeProvider: NodeProvider): Promise<Script> {
   const scriptCode = `
     TxScript Main(recipient: Address, totalSupply: U256) {
       let (encodedImmFields, encodedMutFields) = Token.encodeFields!(totalSupply)
-      transferToken!(callerAddress!(), recipient, ALPH, dustAmount!())
-      createContractWithToken!{callerAddress!() -> ALPH: 1 alph}(
+      transferToken!(callerAddress!(), recipient, OXM, dustAmount!())
+      createContractWithToken!{callerAddress!() -> OXM: 1 alph}(
         #${contract.bytecode},
         encodedImmFields,
         encodedMutFields,
@@ -105,7 +105,7 @@ async function createAndTransferToken(
   const script = await getScriptArtifact(nodeProvider)
   const params = await script.txParamsForExecution(deployer, {
     initialFields: { recipient, totalSupply: amount },
-    attoOxmAmount: ONE_ALPH + DUST_AMOUNT
+    attoOxmAmount: ONE_OXM + DUST_AMOUNT
   })
   return await deployer.signAndSubmitExecuteScriptTx(params)
 }

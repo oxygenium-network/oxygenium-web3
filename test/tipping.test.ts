@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { NodeProvider, convertOxmAmountWithDecimals, number256ToNumber, DEFAULT_GAS_ALPH_AMOUNT } from '@oxygenium/web3'
+import { NodeProvider, convertOxmAmountWithDecimals, number256ToNumber, DEFAULT_GAS_OXM_AMOUNT } from '@oxygenium/web3'
 import { testNodeWallet } from '@oxygenium/web3-test'
 import { PrivateKeyWallet, deriveHDWalletPrivateKey } from '@oxygenium/web3-wallet'
 import * as bip39 from 'bip39'
@@ -90,7 +90,7 @@ describe('tippingbot', function () {
       tippingBot.addUser(user)
     }
 
-    // deposit 1 ALPH for each user
+    // deposit 1 OXM for each user
     const testWallet = await testNodeWallet()
     for (const user of users) {
       await testWallet.signAndSubmitTransferTx({
@@ -107,19 +107,19 @@ describe('tippingbot', function () {
       expect(balance).toEqual(1.0)
     }
 
-    // tip 0.1 ALPH from user0 to user1
+    // tip 0.1 OXM from user0 to user1
     await tippingBot.sendTip('user0', 'user1', 0.1)
-    // tip 0.2 ALPH from user0 to user2
+    // tip 0.2 OXM from user0 to user2
     await tippingBot.sendTip('user0', 'user2', 0.2)
-    // tip 0.3 ALPH from user1 to user2
+    // tip 0.3 OXM from user1 to user2
     await tippingBot.sendTip('user1', 'user2', 0.3)
 
     // check user balance
     const balance0 = await tippingBot.getUserBalance('user0')
     const balance1 = await tippingBot.getUserBalance('user1')
     const balance2 = await tippingBot.getUserBalance('user2')
-    expect(balance0).toEqual(1.0 - 0.1 - 0.2 - DEFAULT_GAS_ALPH_AMOUNT * 2)
-    expect(balance1).toEqual(1.0 - 0.2 - DEFAULT_GAS_ALPH_AMOUNT)
+    expect(balance0).toEqual(1.0 - 0.1 - 0.2 - DEFAULT_GAS_OXM_AMOUNT * 2)
+    expect(balance1).toEqual(1.0 - 0.2 - DEFAULT_GAS_OXM_AMOUNT)
     expect(balance2).toEqual(1.0 + 0.2 + 0.3)
   })
 })

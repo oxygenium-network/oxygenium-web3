@@ -216,7 +216,7 @@ export class NodeProvider implements NodeProviderApis {
     const address = addressFromTokenId(tokenId)
     const rawState = await this.contracts.getContractsAddressState(address)
     const lastImmField = rawState.immFields.slice(-1).pop()?.value
-    const interfaceIdPrefix = '414c5048' // the hex of 'ALPH'
+    const interfaceIdPrefix = '414c5048' // the hex of 'OXM'
     if (typeof lastImmField === 'string' && lastImmField.startsWith(interfaceIdPrefix)) {
       return lastImmField.slice(8)
     } else {

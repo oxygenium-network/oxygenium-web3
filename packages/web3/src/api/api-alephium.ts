@@ -15,11 +15,11 @@ export interface AddressBalance {
   address: string
   /** @format uint256 */
   balance: string
-  /** @format x.x ALPH */
+  /** @format x.x OXM */
   balanceHint: string
   /** @format uint256 */
   lockedBalance: string
-  /** @format x.x ALPH */
+  /** @format x.x OXM */
   lockedBalanceHint: string
 }
 
@@ -82,11 +82,11 @@ export interface BadRequest {
 export interface Balance {
   /** @format uint256 */
   balance: string
-  /** @format x.x ALPH */
+  /** @format x.x OXM */
   balanceHint: string
   /** @format uint256 */
   lockedBalance: string
-  /** @format x.x ALPH */
+  /** @format x.x OXM */
   lockedBalanceHint: string
   tokenBalances?: Token[]
   lockedTokenBalances?: Token[]
@@ -98,7 +98,7 @@ export interface Balance {
 export interface Balances {
   /** @format uint256 */
   totalBalance: string
-  /** @format x.x ALPH */
+  /** @format x.x OXM */
   totalBalanceHint: string
   balances: AddressBalance[]
 }
@@ -1824,7 +1824,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
      *
      * @tags Wallets
      * @name PostWalletsWalletNameTransfer
-     * @summary Transfer ALPH from the active address
+     * @summary Transfer OXM from the active address
      * @request POST:/wallets/{wallet_name}/transfer
      */
     postWalletsWalletNameTransfer: (walletName: string, data: Transfer, params: RequestParams = {}) =>
@@ -1842,7 +1842,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
      *
      * @tags Wallets
      * @name PostWalletsWalletNameSweepActiveAddress
-     * @summary Transfer all unlocked ALPH from the active address to another address
+     * @summary Transfer all unlocked OXM from the active address to another address
      * @request POST:/wallets/{wallet_name}/sweep-active-address
      */
     postWalletsWalletNameSweepActiveAddress: (walletName: string, data: Sweep, params: RequestParams = {}) =>
@@ -1860,7 +1860,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
      *
      * @tags Wallets
      * @name PostWalletsWalletNameSweepAllAddresses
-     * @summary Transfer unlocked ALPH from all addresses (including all mining addresses if applicable) to another address
+     * @summary Transfer unlocked OXM from all addresses (including all mining addresses if applicable) to another address
      * @request POST:/wallets/{wallet_name}/sweep-all-addresses
      */
     postWalletsWalletNameSweepAllAddresses: (walletName: string, data: Sweep, params: RequestParams = {}) =>
@@ -2643,7 +2643,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
      *
      * @tags Transactions
      * @name PostTransactionsSweepAddressBuild
-     * @summary Build unsigned transactions to send all unlocked ALPH and token balances of one address to another address
+     * @summary Build unsigned transactions to send all unlocked OXM and token balances of one address to another address
      * @request POST:/transactions/sweep-address/build
      */
     postTransactionsSweepAddressBuild: (data: BuildSweepAddressTransactions, params: RequestParams = {}) =>
@@ -3246,7 +3246,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
      *
      * @tags Multi-signature
      * @name PostMultisigSweep
-     * @summary Sweep all unlocked ALPH and token balances of a multisig address to another address
+     * @summary Sweep all unlocked OXM and token balances of a multisig address to another address
      * @request POST:/multisig/sweep
      */
     postMultisigSweep: (data: BuildSweepMultisig, params: RequestParams = {}) =>

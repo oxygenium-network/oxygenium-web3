@@ -6,7 +6,7 @@
   "fieldsSig": {
     "names": [
       "tokenId",
-      "totalALPH",
+      "totalOXM",
       "totalTokens"
     ],
     "types": [
@@ -63,7 +63,7 @@
       "returnTypes": []
     },
     {
-      "name": "getTotalALPH",
+      "name": "getTotalOXM",
       "paramNames": [],
       "paramTypes": [],
       "paramIsMutable": [],

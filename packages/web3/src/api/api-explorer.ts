@@ -1465,7 +1465,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
       }).then(convertHttpResponse),
 
     /**
-     * @description Get the ALPH total supply
+     * @description Get the OXM total supply
      *
      * @tags Infos
      * @name GetInfosSupplyTotalOxm
@@ -1480,7 +1480,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
       }).then(convertHttpResponse),
 
     /**
-     * @description Get the ALPH circulating supply
+     * @description Get the OXM circulating supply
      *
      * @tags Infos
      * @name GetInfosSupplyCirculatingOxm
@@ -1495,7 +1495,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
       }).then(convertHttpResponse),
 
     /**
-     * @description Get the ALPH reserved supply
+     * @description Get the OXM reserved supply
      *
      * @tags Infos
      * @name GetInfosSupplyReservedOxm
@@ -1510,7 +1510,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
       }).then(convertHttpResponse),
 
     /**
-     * @description Get the ALPH locked supply
+     * @description Get the OXM locked supply
      *
      * @tags Infos
      * @name GetInfosSupplyLockedOxm
@@ -1775,7 +1775,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
       }).then(convertHttpResponse),
 
     /**
-     * @description Get a sorted list of top addresses by ALPH balance. Updates once per day.
+     * @description Get a sorted list of top addresses by OXM balance. Updates once per day.
      *
      * @tags Tokens
      * @name GetTokensHoldersOxm
