@@ -1,4 +1,4 @@
-# Alephium Walletconnect
+# Oxygenium Walletconnect
 
 ## Getting started
 

@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 import { useCallback, useEffect, useRef } from 'react'
-import { useAlephiumConnectContext, useConnectSettingContext } from '../../contexts/oxygeniumConnect'
+import { useOxygeniumConnectContext, useConnectSettingContext } from '../../contexts/oxygeniumConnect'
 import Modal, { Page, routes } from '../Common/Modal'
 
 import Connectors from '../Pages/Connectors'
@@ -33,7 +33,7 @@ const ConnectModal: React.FC<{
   customTheme?: CustomTheme
 }> = ({ mode = 'auto', theme = 'auto', customTheme = customThemeDefault }) => {
   const { route, setRoute, open, setOpen, connectorId, setMode, setTheme, setCustomTheme } = useConnectSettingContext()
-  const { account, network, addressGroup, keyType } = useAlephiumConnectContext()
+  const { account, network, addressGroup, keyType } = useOxygeniumConnectContext()
   const networkRef = useRef(network)
   const addressGroupRef = useRef(addressGroup)
   const keyTypeRef = useRef(keyType)

@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/Warnings.ts)
 
-This code is part of the oxygenium-web3 project and provides functionality for interacting with a smart contract called Warnings. The code imports various functions and classes from the "@oxygenium/web3" library, which is a TypeScript library for interacting with the Alephium blockchain. 
+This code is part of the oxygenium-web3 project and provides functionality for interacting with a smart contract called Warnings. The code imports various functions and classes from the "@oxygenium/web3" library, which is a TypeScript library for interacting with the Oxygenium blockchain. 
 
 The Warnings smart contract has two custom types defined in the WarningsTypes namespace: Fields and State. Fields is an object with two properties, a and b, both of which are of type bigint. State is a ContractState object that represents the current state of the Warnings contract.
 
@@ -10,7 +10,7 @@ The Warnings object is an instance of the Factory class that is used to test and
 
 The WarningsInstance class is a subclass of ContractInstance that is used to interact with the Warnings contract on the blockchain. It has a constructor that takes an address string and calls the super() method with that address. The fetchState() method of the WarningsInstance class returns a Promise that resolves to the current state of the Warnings contract.
 
-Overall, this code provides a way to interact with the Warnings smart contract on the Alephium blockchain. The Factory class is used to create instances of the WarningsInstance class, which can be used to fetch the current state of the contract or call its methods. The Warnings object is used to test and deploy the contract.
+Overall, this code provides a way to interact with the Warnings smart contract on the Oxygenium blockchain. The Factory class is used to create instances of the WarningsInstance class, which can be used to fetch the current state of the contract or call its methods. The Warnings object is used to test and deploy the contract.
 ## Questions: 
  1. What is the purpose of this code and what does it do?
 - This code is a TypeScript module that provides a ContractFactory and ContractInstance for interacting with a smart contract called Warnings. It also defines custom types for the contract's fields and state.

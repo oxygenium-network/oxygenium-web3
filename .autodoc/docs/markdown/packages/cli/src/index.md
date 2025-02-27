@@ -8,11 +8,11 @@ The `types` module likely contains type definitions for various objects used thr
 
 The `utils` module likely contains utility functions that can be used throughout the project. These functions may include things like encoding and decoding data, or formatting output. 
 
-The `deployment` module likely contains functions related to deploying and interacting with smart contracts on the Alephium blockchain. 
+The `deployment` module likely contains functions related to deploying and interacting with smart contracts on the Oxygenium blockchain. 
 
 The `codegen` module likely contains functions related to generating code for smart contracts. This may include generating Solidity code from higher-level languages, or generating TypeScript interfaces from Solidity contracts. 
 
-By exporting these modules, other parts of the project can import them and use their functions and types. For example, a module that interacts with the Alephium blockchain may import the `deployment` module to deploy a new smart contract. 
+By exporting these modules, other parts of the project can import them and use their functions and types. For example, a module that interacts with the Oxygenium blockchain may import the `deployment` module to deploy a new smart contract. 
 
 Overall, this file serves as a central location for exporting various modules from the oxygenium-web3 project, making them available for use throughout the project.
 ## Questions: 

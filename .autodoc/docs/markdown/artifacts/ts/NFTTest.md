@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/NFTTest.ts)
 
-This code defines a contract factory and a contract instance for a smart contract called NFTTest. The contract is defined using the Alephium Web3 library, which provides a set of functions and types for interacting with the Alephium blockchain.
+This code defines a contract factory and a contract instance for a smart contract called NFTTest. The contract is defined using the Oxygenium Web3 library, which provides a set of functions and types for interacting with the Oxygenium blockchain.
 
 The NFTTest contract has two methods: getTokenUri and getCollectionId. The getTokenUri method returns the URI of a token, while the getCollectionId method returns the ID of the collection that the token belongs to. Both methods take no arguments.
 
@@ -10,7 +10,7 @@ The code also defines custom types for the contract, which are used to specify t
 
 The code provides a set of functions for testing and interacting with the contract. The tests object in the contract factory provides functions for testing the getTokenUri and getCollectionId methods. The NFTTestInstance class provides functions for calling the getTokenUri and getCollectionId methods on a deployed contract instance. The multicall function allows multiple contract method calls to be made in a single transaction.
 
-Overall, this code provides a set of functions and types for interacting with the NFTTest contract on the Alephium blockchain. It can be used as a building block for more complex applications that require interaction with smart contracts on the Alephium blockchain.
+Overall, this code provides a set of functions and types for interacting with the NFTTest contract on the Oxygenium blockchain. It can be used as a building block for more complex applications that require interaction with smart contracts on the Oxygenium blockchain.
 ## Questions: 
  1. What is the purpose of this code?
 - This code is a TypeScript module that provides a ContractFactory and ContractInstance for interacting with a smart contract called NFTTest. It also defines custom types for the contract.

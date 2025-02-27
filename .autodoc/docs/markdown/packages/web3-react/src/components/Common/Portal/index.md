@@ -30,8 +30,8 @@ const App = () => {
 
 In this example, the `Portal` component is used to render a modal outside of the parent component's DOM hierarchy. The `selector` prop is set to `#modal`, which specifies that the child components should be rendered into an element with an ID of `modal`. If no such element exists, a new element with an ID of `modal` is created and mounted to the body of the document. The `children` prop specifies the child components to be rendered into the `modal` element.
 ## Questions: 
- 1. What is the purpose of this code and how is it used in the Alephium project?
-- This code defines a React component called `Portal` that creates a portal to render React components into a DOM element specified by a selector. It is used in the Alephium project to render certain components outside of the normal React component tree.
+ 1. What is the purpose of this code and how is it used in the Oxygenium project?
+- This code defines a React component called `Portal` that creates a portal to render React components into a DOM element specified by a selector. It is used in the Oxygenium project to render certain components outside of the normal React component tree.
 
 2. What are the props that can be passed to the `Portal` component?
 - The `Portal` component accepts an object of props, which can include a `selector` string specifying the DOM element to render the portal into, and any other props that can be passed to a React component.

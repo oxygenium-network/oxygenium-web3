@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/token/index.ts)
 
-This code is a license and an export statement for a module called `nft` in the Alephium project's `oxygenium-web3` library. The license specifies that the library is free software and can be redistributed or modified under the terms of the GNU Lesser General Public License. The license also disclaims any warranty for the library.
+This code is a license and an export statement for a module called `nft` in the Oxygenium project's `oxygenium-web3` library. The license specifies that the library is free software and can be redistributed or modified under the terms of the GNU Lesser General Public License. The license also disclaims any warranty for the library.
 
 The `export *` statement at the end of the file exports all the named exports from the `nft` module. This means that any other module that imports from this file will have access to all the functions, classes, and variables exported from the `nft` module.
 
@@ -17,7 +17,7 @@ transferNFT(myNFT, '0x1234567890abcdef', '0x0987654321fedcba');
 
 In this example, the `createNFT` function from the `nft` module is used to create a new NFT with a name and an image URL. The resulting NFT object is then passed to the `transferNFT` function, which transfers the NFT from one Ethereum address to another.
 
-Overall, this code provides an important piece of functionality for the Alephium project's `oxygenium-web3` library and makes it easier for other modules to interact with NFTs.
+Overall, this code provides an important piece of functionality for the Oxygenium project's `oxygenium-web3` library and makes it easier for other modules to interact with NFTs.
 ## Questions: 
  1. What is the purpose of the `oxygenium-web3` project?
 - Unfortunately, the provided code does not give any indication of the purpose of the `oxygenium-web3` project. Further documentation or context would be needed to answer this question.

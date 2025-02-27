@@ -1,6 +1,6 @@
 <!-- logo -->
 
-![Alephium Logo](https://raw.githubusercontent.com/oxygenium/oxygenium-brand-guide/master/logos/light/Logo-Horizontal-Light.png#gh-dark-mode-only) ![Alephium Logo](https://raw.githubusercontent.com/oxygenium/oxygenium-brand-guide/master/logos/dark/Logo-Horizontal-Dark.png#gh-light-mode-only)
+![Oxygenium Logo](https://raw.githubusercontent.com/oxygenium/oxygenium-brand-guide/master/logos/light/Logo-Horizontal-Light.png#gh-dark-mode-only) ![Oxygenium Logo](https://raw.githubusercontent.com/oxygenium/oxygenium-brand-guide/master/logos/dark/Logo-Horizontal-Dark.png#gh-light-mode-only)
 
 ---
 
@@ -32,16 +32,16 @@ npm run dev
 ## Example
 
 To add a auth button to your react/nextjs app, simply wrap your app
-with `AlephiumWalletProvider` component and add the
-`AlephiumWalletProvider` component.
+with `OxygeniumWalletProvider` component and add the
+`OxygeniumWalletProvider` component.
 
 ```typescript
 const App = () => {
   return (
-    <AlephiumWalletProvider useTheme="win95">
+    <OxygeniumWalletProvider useTheme="win95">
       /* Your App */
-      <AlephiumConnectButton />
-    </AlephiumWalletProvider>
+      <OxygeniumConnectButton />
+    </OxygeniumWalletProvider>
   );
 ```
 

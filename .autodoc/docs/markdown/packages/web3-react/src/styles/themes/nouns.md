@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/themes/nouns.ts)
 
-This code exports a set of CSS variables that define the styling for various elements in the Alephium web3 project. These variables can be used throughout the project to ensure consistent styling across different components.
+This code exports a set of CSS variables that define the styling for various elements in the Oxygenium web3 project. These variables can be used throughout the project to ensure consistent styling across different components.
 
 For example, the `--ck-connectbutton-background` variable defines the background color for the connect button, while `--ck-primary-button-background` and `--ck-secondary-button-background` define the background colors for primary and secondary buttons, respectively. Other variables define font sizes, font weights, border radii, box shadows, and colors for various elements such as tooltips, alerts, and QR codes.
 
@@ -33,10 +33,10 @@ Here is an example of how these variables might be used in a component's CSS:
 }
 ```
 
-Overall, this code provides a convenient way to manage the styling of the Alephium web3 project and ensure consistency across different components.
+Overall, this code provides a convenient way to manage the styling of the Oxygenium web3 project and ensure consistency across different components.
 ## Questions: 
  1. What is the purpose of this code file?
-- This code file exports a set of CSS variables used for styling a web3 interface for the Alephium project.
+- This code file exports a set of CSS variables used for styling a web3 interface for the Oxygenium project.
 
 2. What license is this code file released under?
 - This code file is released under the GNU Lesser General Public License.

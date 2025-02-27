@@ -1,8 +1,8 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/ConnectModal/ConnectUsing.tsx)
 
-The `ConnectUsing` component is a React functional component that provides a way for users to connect to the Alephium network using various methods. It imports `AnimatePresence` and `motion` from the `framer-motion` library, which are used to animate the transition between different connection methods. It also imports `useState` from React, which is used to manage the state of the component.
+The `ConnectUsing` component is a React functional component that provides a way for users to connect to the Oxygenium network using various methods. It imports `AnimatePresence` and `motion` from the `framer-motion` library, which are used to animate the transition between different connection methods. It also imports `useState` from React, which is used to manage the state of the component.
 
-The component takes a single prop, `connectorId`, which is a string that represents the ID of the connector to use for the connection. The `supportedConnectors` constant is imported from `./../../constants/supportedConnectors`, which is an array of objects that represent the different connectors that are supported by the Alephium network. The `connector` constant is set to the first object in the `supportedConnectors` array that has an `id` property that matches the `connectorId` prop.
+The component takes a single prop, `connectorId`, which is a string that represents the ID of the connector to use for the connection. The `supportedConnectors` constant is imported from `./../../constants/supportedConnectors`, which is an array of objects that represent the different connectors that are supported by the Oxygenium network. The `connector` constant is set to the first object in the `supportedConnectors` array that has an `id` property that matches the `connectorId` prop.
 
 The `hasExtensionInstalled` constant is set to the result of calling the `extensionIsInstalled` function on the `connector` object, if it exists. This function is used to check if the browser extension required for the connection method is installed.
 
@@ -14,7 +14,7 @@ If the `connector` constant is falsy, an `Alert` component is rendered with the 
 
 The `AnimatePresence` component is used to animate the transition between the QR code flow and the injector flow. If the injector flow is used, the `ConnectWithInjector` component is wrapped in a `motion.div` component that is animated using the `contentVariants` object.
 
-The `ConnectUsing` component is used in other components throughout the Alephium Web3 project to provide a consistent way for users to connect to the Alephium network using different methods. For example, it is used in the `ConnectWalletModal` component to allow users to connect their wallets to the Alephium network.
+The `ConnectUsing` component is used in other components throughout the Oxygenium Web3 project to provide a consistent way for users to connect to the Oxygenium network using different methods. For example, it is used in the `ConnectWalletModal` component to allow users to connect their wallets to the Oxygenium network.
 ## Questions: 
  1. What is the purpose of this code file?
 - This code file exports a React component called `ConnectUsing` that renders different connection methods based on the `connectorId` prop passed to it.

@@ -10,11 +10,11 @@ In `defaultTheme.ts`, a constant value for the minimum width of a mobile device 
 }
 ```
 
-In `supportedConnectors.tsx`, an array of supported blockchain wallet connectors for the Alephium project is defined. The `supportedConnectors` array contains three objects, each representing a different wallet connector: `injected`, `desktopWallet`, and `walletConnect`. These connectors have properties such as `name`, `shortName`, `logos`, `scannable`, and `extensionIsInstalled` (for the `injected` connector) that provide information about the wallet and its capabilities.
+In `supportedConnectors.tsx`, an array of supported blockchain wallet connectors for the Oxygenium project is defined. The `supportedConnectors` array contains three objects, each representing a different wallet connector: `injected`, `desktopWallet`, and `walletConnect`. These connectors have properties such as `name`, `shortName`, `logos`, `scannable`, and `extensionIsInstalled` (for the `injected` connector) that provide information about the wallet and its capabilities.
 
 The code checks if the `window` object is defined, indicating that it is running in a browser environment. If so, the `supportedConnectors` array is initialized with the three connectors described above. Otherwise, the array remains empty.
 
-The `supportedConnectors` array can be imported and used in other parts of the Alephium project, such as the user interface, to display a list of available wallets to the user. This allows users to choose which wallet to use for their transactions. For example:
+The `supportedConnectors` array can be imported and used in other parts of the Oxygenium project, such as the user interface, to display a list of available wallets to the user. This allows users to choose which wallet to use for their transactions. For example:
 
 ```javascript
 import { supportedConnectors } from './constants/supportedConnectors';

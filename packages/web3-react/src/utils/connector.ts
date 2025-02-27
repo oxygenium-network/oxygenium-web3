@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -19,7 +19,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 import { Account, NetworkId, SignerProvider, KeyType } from '@oxygenium/web3'
 import { WalletConnectProvider, SignClientOptions } from '@oxygenium/walletconnect-provider'
 import QRCodeModal from '@oxygenium/walletconnect-qrcode-modal'
-import { AlephiumWindowObject, getDefaultAlephiumWallet } from '@oxygenium/get-extension-wallet'
+import { OxygeniumWindowObject, getDefaultOxygeniumWallet } from '@oxygenium/get-extension-wallet'
 import { setLastConnectedAccount } from './storage'
 import { ConnectorId, InjectedProviderId } from '../types'
 import { getInjectedProvider } from './injectedProviders'
@@ -91,21 +91,21 @@ export function createDesktopWalletConnector(signClientOptions?: SignClientOptio
   }
 }
 
-export function createInjectedConnector(providers: AlephiumWindowObject[]): Connector {
+export function createInjectedConnector(providers: OxygeniumWindowObject[]): Connector {
   return {
     connect: async (options: InjectedConnectOptions): Promise<Account | undefined> => {
       try {
-        const windowAlephium = await getInjectedProvider(providers, options.injectedProviderId)
+        const windowOxygenium = await getInjectedProvider(providers, options.injectedProviderId)
         const enableOptions = {
           addressGroup: options.addressGroup,
           keyType: options.keyType,
           networkId: options.network,
           onDisconnected: options.onDisconnected
         }
-        const enabledAccount = await windowAlephium?.enable(enableOptions)
+        const enabledAccount = await windowOxygenium?.enable(enableOptions)
 
-        if (windowAlephium && enabledAccount) {
-          await options.onConnected({ account: enabledAccount, signerProvider: windowAlephium })
+        if (windowOxygenium && enabledAccount) {
+          await options.onConnected({ account: enabledAccount, signerProvider: windowOxygenium })
           setLastConnectedAccount('injected', enabledAccount, options.network)
           return enabledAccount
         }
@@ -116,15 +116,15 @@ export function createInjectedConnector(providers: AlephiumWindowObject[]): Conn
       return undefined
     },
     disconnect: async (signerProvider: SignerProvider): Promise<void> => {
-      return await (signerProvider as AlephiumWindowObject).disconnect()
+      return await (signerProvider as OxygeniumWindowObject).disconnect()
     },
     autoConnect: async (options: ConnectOptions): Promise<Account | undefined> => {
       try {
         const allProviders = [...providers]
         if (allProviders.length === 0) {
-          const windowAlephium = await getDefaultAlephiumWallet()
-          if (windowAlephium !== undefined) {
-            allProviders.push(windowAlephium)
+          const windowOxygenium = await getDefaultOxygeniumWallet()
+          if (windowOxygenium !== undefined) {
+            allProviders.push(windowOxygenium)
           }
         }
         const enableOptions = {
@@ -153,7 +153,7 @@ export function createInjectedConnector(providers: AlephiumWindowObject[]): Conn
   }
 }
 
-export function createDefaultConnectors(injectedProviders: AlephiumWindowObject[]): Connectors {
+export function createDefaultConnectors(injectedProviders: OxygeniumWindowObject[]): Connectors {
   return {
     injected: createInjectedConnector(injectedProviders),
     walletConnect: createWalletConnectConnector(undefined),

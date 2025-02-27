@@ -15,10 +15,10 @@ Finally, the `optimization` section specifies that the built files should be min
 Overall, this configuration file sets up the build process for the oxygenium-web3 project, ensuring that the necessary modules are available and that the built files are in a format that can be used in various environments.
 ## Questions: 
  1. What is the purpose of this code?
-- This code exports a webpack configuration object for building a production-ready JavaScript library called `WalletConnectAlephiumProvider`.
+- This code exports a webpack configuration object for building a production-ready JavaScript library called `WalletConnectOxygeniumProvider`.
 
 2. What loaders and plugins are being used in this configuration?
 - This configuration uses `ts-loader` to transpile TypeScript files, and `webpack.SourceMapDevToolPlugin` and `webpack.ProvidePlugin` plugins to generate source maps and provide global variables respectively.
 
 3. What is the output of this configuration?
-- The output of this configuration is a minified UMD bundle of the `WalletConnectAlephiumProvider` library, which can be used in both browser and Node.js environments.
+- The output of this configuration is a minified UMD bundle of the `WalletConnectOxygeniumProvider` library, which can be used in both browser and Node.js environments.

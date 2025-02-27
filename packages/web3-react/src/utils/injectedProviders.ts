@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -18,21 +18,21 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 
 import {
   oxygeniumProvider,
-  AlephiumWindowObject,
-  getDefaultAlephiumWallet,
+  OxygeniumWindowObject,
+  getDefaultOxygeniumWallet,
   getWalletObject,
   isWalletObj,
   providerInitializedEvent
 } from '@oxygenium/get-extension-wallet'
 import { InjectedProviderId } from '../types'
 
-export type InjectedProviderListener = (providers: AlephiumWindowObject[]) => void
+export type InjectedProviderListener = (providers: OxygeniumWindowObject[]) => void
 
 function createProviderStore() {
   const listeners: Set<InjectedProviderListener> = new Set()
-  let allProviders: AlephiumWindowObject[] = []
+  let allProviders: OxygeniumWindowObject[] = []
 
-  const addNewProvider = (provider: AlephiumWindowObject) => {
+  const addNewProvider = (provider: OxygeniumWindowObject) => {
     if (allProviders.find((p) => p.icon === provider.icon) === undefined) {
       allProviders.push(provider)
       listeners.forEach((listener) => listener([...allProviders]))
@@ -75,9 +75,9 @@ function createProviderStore() {
           addNewProvider(event.detail.provider)
         }
       }
-      window.addEventListener('announceAlephiumProvider', handler)
-      window.dispatchEvent(new Event('requestAlephiumProvider'))
-      return () => window.removeEventListener('announceAlephiumProvider', handler)
+      window.addEventListener('announceOxygeniumProvider', handler)
+      window.dispatchEvent(new Event('requestOxygeniumProvider'))
+      return () => window.removeEventListener('announceOxygeniumProvider', handler)
     }
     return undefined
   }
@@ -102,20 +102,20 @@ function createProviderStore() {
 
 export const injectedProviderStore = createProviderStore()
 
-export function getInjectedProviderId(provider: AlephiumWindowObject): InjectedProviderId {
+export function getInjectedProviderId(provider: OxygeniumWindowObject): InjectedProviderId {
   if (provider.icon.includes('onekey')) {
     return 'OneKey'
   }
-  if (provider.id === 'oxygenium' && provider.name === 'Alephium') {
-    return 'Alephium'
+  if (provider.id === 'oxygenium' && provider.name === 'Oxygenium') {
+    return 'Oxygenium'
   }
   return provider.name
 }
 
 export async function getInjectedProvider(
-  providers: AlephiumWindowObject[],
+  providers: OxygeniumWindowObject[],
   id?: InjectedProviderId
-): Promise<AlephiumWindowObject | undefined> {
-  if (id === undefined) return getDefaultAlephiumWallet()
+): Promise<OxygeniumWindowObject | undefined> {
+  if (id === undefined) return getDefaultOxygeniumWallet()
   return providers.find((p) => getInjectedProviderId(p) === id)
 }

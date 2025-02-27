@@ -1,10 +1,10 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/transaction/index.ts)
 
-This code is a license and an export statement for two modules in the Alephium project's web3 library. The license specifies that the library is free software and can be redistributed or modified under the terms of the GNU Lesser General Public License. The license also disclaims any warranty and provides a link to the full license text.
+This code is a license and an export statement for two modules in the Oxygenium project's web3 library. The license specifies that the library is free software and can be redistributed or modified under the terms of the GNU Lesser General Public License. The license also disclaims any warranty and provides a link to the full license text.
 
-The export statement is used to make the contents of two modules available to other parts of the project. The first module, `status`, likely contains functions or classes related to the status of the Alephium network or nodes. The second module, `sign-verify`, likely contains functions or classes related to signing and verifying transactions or messages on the Alephium network.
+The export statement is used to make the contents of two modules available to other parts of the project. The first module, `status`, likely contains functions or classes related to the status of the Oxygenium network or nodes. The second module, `sign-verify`, likely contains functions or classes related to signing and verifying transactions or messages on the Oxygenium network.
 
-This code is important for the Alephium project because it ensures that the web3 library is licensed appropriately and that the necessary modules are available for use in other parts of the project. Developers working on the project can import these modules and use their functions or classes to interact with the Alephium network. For example, a developer might use the `sign-verify` module to sign a transaction before sending it to the network or use the `status` module to check the current status of a node. 
+This code is important for the Oxygenium project because it ensures that the web3 library is licensed appropriately and that the necessary modules are available for use in other parts of the project. Developers working on the project can import these modules and use their functions or classes to interact with the Oxygenium network. For example, a developer might use the `sign-verify` module to sign a transaction before sending it to the network or use the `status` module to check the current status of a node. 
 
 Here is an example of how a developer might use the `sign-verify` module:
 
@@ -23,7 +23,7 @@ const transaction = {
 const signedTransaction = signTransaction(privateKey, transaction)
 ```
 
-In this example, the developer imports the `signTransaction` function from the `sign-verify` module. They then provide a private key and a transaction object, and use the `signTransaction` function to sign the transaction. The resulting signed transaction can then be sent to the Alephium network.
+In this example, the developer imports the `signTransaction` function from the `sign-verify` module. They then provide a private key and a transaction object, and use the `signTransaction` function to sign the transaction. The resulting signed transaction can then be sent to the Oxygenium network.
 ## Questions: 
  1. What is the purpose of the `oxygenium-web3` project?
 - As a code documentation expert, I do not have enough information to answer this question. It is not provided in the given code snippet.

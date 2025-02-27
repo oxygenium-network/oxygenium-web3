@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/contracts)
 
-The `.autodoc/docs/json/contracts` folder contains the `sub.ral` file, which defines a smart contract function named `sub` that performs subtraction of two `U256` values and returns the result. This function is part of the Alephium Web3 project, a library for interacting with the Alephium blockchain.
+The `.autodoc/docs/json/contracts` folder contains the `sub.ral` file, which defines a smart contract function named `sub` that performs subtraction of two `U256` values and returns the result. This function is part of the Oxygenium Web3 project, a library for interacting with the Oxygenium blockchain.
 
 The `sub` function takes an array of two `U256` values as input and emits an event with the two values before performing the subtraction. The result of the subtraction is stored in a mutable variable called `result`, which is declared as an argument to the contract.
 
@@ -25,4 +25,4 @@ contract MyContract {
 
 In this example, the `myFunction` function in the `MyContract` contract calls the `sub` function in the `Sub` contract with an array of two `U256` values. The result of the subtraction is stored in a variable called `result` and returned to the caller.
 
-In summary, the `sub.ral` file defines a smart contract function that performs subtraction of two `U256` values on the Alephium blockchain. This function can be called by other contracts or external accounts, and the emitted event can be used to track the history of subtraction operations, providing transparency to users of the blockchain.
+In summary, the `sub.ral` file defines a smart contract function that performs subtraction of two `U256` values on the Oxygenium blockchain. This function can be called by other contracts or external accounts, and the emitted event can be used to track the history of subtraction operations, providing transparency to users of the blockchain.

@@ -4,11 +4,11 @@ This code represents a smart contract called "Greeter" in the oxygenium-web3 pro
 
 The contract has one function called "greet" that is public and returns a U256 type. This function does not take any parameters. 
 
-This code is important for the oxygenium-web3 project because it defines the structure and behavior of the Greeter smart contract. Developers can use this code to deploy the Greeter contract on the Alephium blockchain and interact with it using the oxygenium-web3 library. 
+This code is important for the oxygenium-web3 project because it defines the structure and behavior of the Greeter smart contract. Developers can use this code to deploy the Greeter contract on the Oxygenium blockchain and interact with it using the oxygenium-web3 library. 
 
 For example, a developer could use the oxygenium-web3 library to deploy the Greeter contract and then call the "greet" function to retrieve the U256 value that it returns. The developer could also modify the contract's fields and functions to create a custom version of the Greeter contract. 
 
-Overall, this code is a crucial part of the oxygenium-web3 project because it defines the behavior of a smart contract that can be deployed on the Alephium blockchain.
+Overall, this code is a crucial part of the oxygenium-web3 project because it defines the behavior of a smart contract that can be deployed on the Oxygenium blockchain.
 ## Questions: 
  1. What is the purpose of this code and what does it do?
    - This code represents a smart contract called "Greeter" with a single function called "greet" that returns a U256 value.

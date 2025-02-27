@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/src/types.ts)
 
-This file defines several types and interfaces that are used in the Alephium Web3 project. It also imports various modules and constants that are used throughout the project. 
+This file defines several types and interfaces that are used in the Oxygenium Web3 project. It also imports various modules and constants that are used throughout the project. 
 
 The `RelayMethodsTable` type defines a table of methods that can be called by a relay. Each method has a set of parameters and a result type. The `RelayMethodParams` and `RelayMethodResult` types are used to extract the parameter and result types for a specific method. 
 
@@ -10,10 +10,10 @@ The `AddressGroup` type is used to specify a specific address group or all addre
 
 The `ProjectMetaData` type is used to store metadata about a project. 
 
-Overall, this file provides a set of types and interfaces that are used throughout the Alephium Web3 project to ensure type safety and consistency.
+Overall, this file provides a set of types and interfaces that are used throughout the Oxygenium Web3 project to ensure type safety and consistency.
 ## Questions: 
  1. What is the purpose of this file?
-- This file contains type definitions for various methods and events related to the Alephium web3 library and wallet connectivity.
+- This file contains type definitions for various methods and events related to the Oxygenium web3 library and wallet connectivity.
 
 2. What is the license for this library?
 - The library is licensed under the GNU Lesser General Public License, version 3 or later.

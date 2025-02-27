@@ -1,17 +1,17 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/ConnectButton)
 
-The `ConnectButton` folder in the `oxygenium-web3` project contains code for a React component that allows users to connect their Alephium wallet to a web application. The main component, `AlephiumConnectButton`, renders a button that opens a modal for wallet connection or profile viewing. It takes several optional props, such as a label, an `onClick` function, and a `displayAccount` function.
+The `ConnectButton` folder in the `oxygenium-web3` project contains code for a React component that allows users to connect their Oxygenium wallet to a web application. The main component, `OxygeniumConnectButton`, renders a button that opens a modal for wallet connection or profile viewing. It takes several optional props, such as a label, an `onClick` function, and a `displayAccount` function.
 
-For example, to use the `AlephiumConnectButton` in a web application, you would import it and include it in your JSX:
+For example, to use the `OxygeniumConnectButton` in a web application, you would import it and include it in your JSX:
 
 ```javascript
-import { AlephiumConnectButton } from 'oxygenium-web3';
+import { OxygeniumConnectButton } from 'oxygenium-web3';
 
 const MyApp = () => {
   return (
     <div>
       <h1>Welcome to MyApp</h1>
-      <AlephiumConnectButton />
+      <OxygeniumConnectButton />
     </div>
   );
 };
@@ -19,7 +19,7 @@ const MyApp = () => {
 
 The `ConnectButtonRenderer` component is a helper component that renders the content of the modal. It takes a `displayAccount` prop to display the user's account information in the modal. This component can be used externally if a custom modal is desired.
 
-The `useAlephiumConnectContext` hook provides access to the Alephium Connect context, which contains information about the user's wallet connection status and theme. The `useAccount` hook is used to access the user's account information, including their address.
+The `useOxygeniumConnectContext` hook provides access to the Oxygenium Connect context, which contains information about the user's wallet connection status and theme. The `useAccount` hook is used to access the user's account information, including their address.
 
 The `styles.ts` file defines a styled component called `TextContainer` using the `styled-components` library. This component is a `motion.div` element imported from the `framer-motion` library, which provides animation capabilities. The `TextContainer` component is designed to be used as a container for text elements, with properties that center and align the text within the container.
 
@@ -39,4 +39,4 @@ const MyText = () => {
 
 In this example, the `TextContainer` component is used to wrap an `h1` element that says "Hello World!". The `animate` and `transition` props are passed to the `TextContainer` component to provide animation effects.
 
-In summary, the `ConnectButton` folder contains code for a customizable button component that allows users to connect their Alephium wallet to a web application. It demonstrates the use of React hooks, styled components, and the `framer-motion` library to create dynamic and visually appealing user interfaces.
+In summary, the `ConnectButton` folder contains code for a customizable button component that allows users to connect their Oxygenium wallet to a web application. It demonstrates the use of React hooks, styled components, and the `framer-motion` library to create dynamic and visually appealing user interfaces.

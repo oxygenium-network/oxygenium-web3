@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -52,7 +52,7 @@ export const useConnectSettingContext = () => {
 
 export type ConnectionStatus = 'connected' | 'connecting' | 'disconnected'
 
-export type AlephiumConnectContextValue = {
+export type OxygeniumConnectContextValue = {
   addressGroup?: number
   setAddressGroup: (addressGroup: number | undefined) => void
   keyType: KeyType
@@ -68,26 +68,26 @@ export type AlephiumConnectContextValue = {
   connectors: Connectors
 }
 
-export const AlephiumConnectContext = createContext<AlephiumConnectContextValue | null>(null)
+export const OxygeniumConnectContext = createContext<OxygeniumConnectContextValue | null>(null)
 
 // Use hooks `useWallet` and `useWalletConfig` instead
-export const useAlephiumConnectContext = () => {
-  const context = useContext(AlephiumConnectContext)
-  if (!context) throw Error('AlephiumConnect Hook must be inside a Provider.')
+export const useOxygeniumConnectContext = () => {
+  const context = useContext(OxygeniumConnectContext)
+  if (!context) throw Error('OxygeniumConnect Hook must be inside a Provider.')
   return context
 }
 
-export type AlephiumBalanceContextValue = {
+export type OxygeniumBalanceContextValue = {
   balance?: node.Balance
   updateBalance: () => void
   updateBalanceForTx: (txId: string, confirmations?: number) => void
 }
 
-export const AlephiumBalanceContext = createContext<AlephiumBalanceContextValue | null>(null)
+export const OxygeniumBalanceContext = createContext<OxygeniumBalanceContextValue | null>(null)
 
 // Use hook `useBalance` instead
-export const useAlephiumBalanceContext = () => {
-  const context = useContext(AlephiumBalanceContext)
-  if (!context) throw Error('AlephiumBalance Hook must be inside a Provider.')
+export const useOxygeniumBalanceContext = () => {
+  const context = useContext(OxygeniumBalanceContext)
+  if (!context) throw Error('OxygeniumBalance Hook must be inside a Provider.')
   return context
 }

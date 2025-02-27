@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/signer/types.ts)
 
-This file contains TypeScript interfaces and types that are used throughout the Alephium Web3 project. The code defines several interfaces for different types of transactions and parameters that can be used to sign and submit transactions to the Alephium blockchain.
+This file contains TypeScript interfaces and types that are used throughout the Oxygenium Web3 project. The code defines several interfaces for different types of transactions and parameters that can be used to sign and submit transactions to the Oxygenium blockchain.
 
 The `Address` type is defined as a string, and `OutputRef` is defined as a type from the `node` module. The `Destination` interface defines the destination address, amount of Alphium to send, and optional tokens, lock time, and message. The `Account` interface defines the key type, address, group, and public key of an account. The `SignerAddress` type is used to specify the signer's address and key type.
 
@@ -8,13 +8,13 @@ The `TxBuildParams` type is used to build a transaction, and `SignResult` is use
 
 The `MessageHasher` type is used to specify the hashing algorithm to use when signing a message, and the `SignMessageParams` interface is used to sign a message. The `SubmitTransactionParams` interface is used to submit a transaction, and `SubmissionResult` is used to return the result of the submitted transaction.
 
-Overall, this file provides a set of interfaces and types that are used throughout the Alephium Web3 project to sign and submit transactions to the Alephium blockchain. These interfaces and types are used to ensure that transactions are properly formatted and signed before being submitted to the blockchain.
+Overall, this file provides a set of interfaces and types that are used throughout the Oxygenium Web3 project to sign and submit transactions to the Oxygenium blockchain. These interfaces and types are used to ensure that transactions are properly formatted and signed before being submitted to the blockchain.
 ## Questions: 
  1. What is the purpose of this code file?
-- This code file defines interfaces and types related to building and signing transactions and messages for the Alephium blockchain.
+- This code file defines interfaces and types related to building and signing transactions and messages for the Oxygenium blockchain.
 
 2. What is the significance of the `KeyType` type and its usage in this code?
 - The `KeyType` type is used to specify which type of signing algorithm to use when building and signing transactions and messages. It can be either 'default' or 'bip340-schnorr'.
 
 3. What is the purpose of the `SubmitTransactionParams` interface and its usage in this code?
-- The `SubmitTransactionParams` interface is used to specify the unsigned transaction and its signature when submitting a transaction to the Alephium blockchain. The `SubmissionResult` interface is used to represent the result of the submission.
+- The `SubmitTransactionParams` interface is used to specify the unsigned transaction and its signature when submitting a transaction to the Oxygenium blockchain. The `SubmissionResult` interface is used to represent the result of the submission.

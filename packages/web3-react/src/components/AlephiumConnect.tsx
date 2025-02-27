@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -19,7 +19,7 @@ import React, { useCallback, useContext, useEffect, useMemo, useState } from 're
 
 import defaultTheme from '../styles/defaultTheme'
 
-import AlephiumConnectModal from '../components/ConnectModal'
+import OxygeniumConnectModal from '../components/ConnectModal'
 import { ThemeProvider } from 'styled-components'
 import {
   Account,
@@ -37,12 +37,12 @@ import {
 import { Theme, Mode, CustomTheme, connectorIds, ProviderTheme } from '../types'
 import { routes } from './Common/Modal'
 import {
-  AlephiumBalanceContext,
-  AlephiumConnectContext,
+  OxygeniumBalanceContext,
+  OxygeniumConnectContext,
   ConnectSettingContext,
   ConnectSettingValue,
   ConnectionStatus,
-  useAlephiumConnectContext,
+  useOxygeniumConnectContext,
   useConnectSettingContext
 } from '../contexts/oxygeniumConnect'
 import { getLastConnectedAccount, removeLastConnectedAccount } from '../utils/storage'
@@ -104,7 +104,7 @@ const DefaultThemeProvider: React.FC<{ children?: React.ReactNode }> = ({ childr
   return (
     <ThemeProvider theme={defaultTheme}>
       {children}
-      <AlephiumConnectModal theme={context.theme} mode={context.mode} customTheme={context.customTheme} />
+      <OxygeniumConnectModal theme={context.theme} mode={context.mode} customTheme={context.customTheme} />
     </ThemeProvider>
   )
 }
@@ -117,18 +117,18 @@ function tryGetNodeProvider(): NodeProvider | undefined {
   }
 }
 
-export const AlephiumConnectProvider: React.FC<{
+export const OxygeniumConnectProvider: React.FC<{
   network: NetworkId
   addressGroup?: number
   keyType?: KeyType
   connectors?: Partial<Connectors>
   children?: React.ReactNode
 }> = ({ network, addressGroup, keyType, children, connectors }) => {
-  // Only allow for mounting AlephiumConnectProvider once, so we avoid weird global
+  // Only allow for mounting OxygeniumConnectProvider once, so we avoid weird global
   // state collisions.
-  const context = useContext(AlephiumConnectContext)
+  const context = useContext(OxygeniumConnectContext)
   if (context) {
-    throw new Error('Multiple, nested usages of AlephiumConnectProvider detected. Please use only one.')
+    throw new Error('Multiple, nested usages of OxygeniumConnectProvider detected. Please use only one.')
   }
 
   const [_network, setNetwork] = useState<NetworkId>(network)
@@ -246,16 +246,16 @@ export const AlephiumConnectProvider: React.FC<{
     connectors: allConnectors
   }
 
-  return <AlephiumConnectContext.Provider value={value}>{children}</AlephiumConnectContext.Provider>
+  return <OxygeniumConnectContext.Provider value={value}>{children}</OxygeniumConnectContext.Provider>
 }
 
-export const AlephiumBalanceProvider: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
-  const context = useContext(AlephiumBalanceContext)
+export const OxygeniumBalanceProvider: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
+  const context = useContext(OxygeniumBalanceContext)
   if (context) {
-    throw new Error('Multiple, nested usages of AlephiumBalanceProvider detected. Please use only one.')
+    throw new Error('Multiple, nested usages of OxygeniumBalanceProvider detected. Please use only one.')
   }
 
-  const { account, signerProvider, network } = useAlephiumConnectContext()
+  const { account, signerProvider, network } = useOxygeniumConnectContext()
   const [balance, setBalance] = useState<node.Balance | undefined>()
 
   const updateBalance = useCallback(async () => {
@@ -313,10 +313,10 @@ export const AlephiumBalanceProvider: React.FC<{ children?: React.ReactNode }> =
     updateBalanceForTx
   }
 
-  return <AlephiumBalanceContext.Provider value={value}>{children}</AlephiumBalanceContext.Provider>
+  return <OxygeniumBalanceContext.Provider value={value}>{children}</OxygeniumBalanceContext.Provider>
 }
 
-type AlephiumWalletProviderProps = {
+type OxygeniumWalletProviderProps = {
   theme?: ProviderTheme
   customTheme?: CustomTheme
   network: NetworkId
@@ -327,7 +327,7 @@ type AlephiumWalletProviderProps = {
   children?: React.ReactNode
 }
 
-export const AlephiumWalletProvider = ({
+export const OxygeniumWalletProvider = ({
   theme,
   customTheme,
   network,
@@ -336,9 +336,9 @@ export const AlephiumWalletProvider = ({
   connectors,
   csrModeOnly,
   children
-}: AlephiumWalletProviderProps) => {
+}: OxygeniumWalletProviderProps) => {
   return (
-    <AlephiumConnectProvider network={network} addressGroup={addressGroup} keyType={keyType} connectors={connectors}>
+    <OxygeniumConnectProvider network={network} addressGroup={addressGroup} keyType={keyType} connectors={connectors}>
       <ConnectSettingProvider
         theme={theme === 'simple-light' || theme === 'simple-dark' ? 'auto' : theme}
         mode={theme === 'simple-light' ? 'light' : theme === 'simple-dark' ? 'dark' : 'auto'}
@@ -346,9 +346,9 @@ export const AlephiumWalletProvider = ({
         csrModeOnly={csrModeOnly}
       >
         <DefaultThemeProvider>
-          <AlephiumBalanceProvider>{children}</AlephiumBalanceProvider>
+          <OxygeniumBalanceProvider>{children}</OxygeniumBalanceProvider>
         </DefaultThemeProvider>
       </ConnectSettingProvider>
-    </AlephiumConnectProvider>
+    </OxygeniumConnectProvider>
   )
 }

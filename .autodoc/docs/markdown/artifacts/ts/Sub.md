@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/Sub.ts)
 
-This code is part of the Alephium-web3 project and provides a TypeScript interface for interacting with a smart contract called "Sub". The code imports various modules from the "@oxygenium/web3" package, which is a library for interacting with the Alephium blockchain. 
+This code is part of the Oxygenium-web3 project and provides a TypeScript interface for interacting with a smart contract called "Sub". The code imports various modules from the "@oxygenium/web3" package, which is a library for interacting with the Oxygenium blockchain. 
 
 The code defines a namespace called "SubTypes" that contains custom types for the "Sub" contract. The "Fields" type defines the fields of the contract state, which in this case is just a single field called "result" of type "bigint". The "SubEvent" type defines an event emitted by the contract that contains two fields of type "bigint" called "x" and "y". The "CallMethodTable" type defines a table of methods that can be called on the contract, in this case just one method called "sub" that takes an array of two "bigint" values and returns a single "bigint" value. The "MultiCallParams" and "MultiCallResults" types are used to define the parameters and return types of multiple method calls made in a single transaction.
 
@@ -8,7 +8,7 @@ The "Factory" class is a subclass of "ContractFactory" that is used to create in
 
 The "Sub" object is an instance of the "Factory" class that is used to test and deploy the "Sub" contract. The "SubInstance" class is a subclass of "ContractInstance" that is used to interact with the "Sub" contract on the blockchain. The constructor of the "SubInstance" class takes an address of a deployed "Sub" contract. The "fetchState" method of the "SubInstance" class is used to fetch the current state of the contract. The "getContractEventsCurrentCount" method is used to get the current number of events emitted by the contract. The "subscribeSubEvent" method is used to subscribe to events emitted by the contract. The "methods" property of the "SubInstance" class is an object that contains methods that can be called on the contract. In this case, there is only one method called "sub" that takes an array of two "bigint" values and returns a single "bigint" value. The "multicall" method of the "SubInstance" class is used to make multiple method calls in a single transaction.
 
-Overall, this code provides a high-level interface for interacting with the "Sub" contract on the Alephium blockchain. It defines custom types for the contract, provides methods for testing and deploying the contract, and provides methods for interacting with the contract on the blockchain.
+Overall, this code provides a high-level interface for interacting with the "Sub" contract on the Oxygenium blockchain. It defines custom types for the contract, provides methods for testing and deploying the contract, and provides methods for interacting with the contract on the blockchain.
 ## Questions: 
  1. What is the purpose of the `Sub` object and how is it used?
 - The `Sub` object is used to test and deploy the contract. It is a `Factory` instance that creates `SubInstance` instances for interacting with the blockchain.

@@ -24,11 +24,11 @@ const hash = djb2(data)
 console.log(hash) // Output: 1437863053
 ```
 ## Questions: 
- 1. What is the purpose of this code and how is it used in the Alephium project?
-   - This code exports a function called `djb2` which takes in a Uint8Array and returns a hash value. A smart developer might want to know how this function is used in the Alephium project and what data types are typically passed in as arguments.
+ 1. What is the purpose of this code and how is it used in the Oxygenium project?
+   - This code exports a function called `djb2` which takes in a Uint8Array and returns a hash value. A smart developer might want to know how this function is used in the Oxygenium project and what data types are typically passed in as arguments.
    
 2. What is the algorithm used to generate the hash value and why was it chosen?
-   - The algorithm used to generate the hash value is called djb2. A smart developer might want to know why this algorithm was chosen over other hashing algorithms and what benefits it provides for the Alephium project.
+   - The algorithm used to generate the hash value is called djb2. A smart developer might want to know why this algorithm was chosen over other hashing algorithms and what benefits it provides for the Oxygenium project.
    
 3. What are the licensing terms for this code and how can it be used by other developers?
    - This code is licensed under the GNU Lesser General Public License. A smart developer might want to know what this license entails and how it affects their ability to use and modify this code for their own projects.

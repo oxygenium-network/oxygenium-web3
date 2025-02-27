@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/signer/index.ts)
 
-This code is a license header and an export statement for three modules in the oxygenium-web3 project. The license header specifies that the code is part of the Alephium project and is licensed under the GNU Lesser General Public License. This license allows users to modify and redistribute the library under certain conditions.
+This code is a license header and an export statement for three modules in the oxygenium-web3 project. The license header specifies that the code is part of the Oxygenium project and is licensed under the GNU Lesser General Public License. This license allows users to modify and redistribute the library under certain conditions.
 
 The export statement is used to make the functionality of three modules available to other parts of the project. The `signer` module likely contains functions for signing transactions or messages. The `types` module probably defines custom data types used throughout the project. The `tx-builder` module may contain functions for constructing transactions.
 

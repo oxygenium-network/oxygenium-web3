@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -20,7 +20,7 @@ import { byteStringCodec } from './bytestring-codec'
 describe('Encode & decode bytestring', function () {
   it('should encode & decode bytestring', function () {
     success(new Uint8Array([]))
-    success(new TextEncoder().encode('Alephium is great!'))
+    success(new TextEncoder().encode('Oxygenium is great!'))
   })
 
   function success(value: Uint8Array) {

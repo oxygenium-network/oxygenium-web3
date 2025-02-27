@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -76,7 +76,7 @@ const Ledger = ({ ...props }) => (
   </svg>
 )
 
-const AlephiumIcon = ({ ...props }) => {
+const OxygeniumIcon = ({ ...props }) => {
   return (
     <svg
       {...props}
@@ -111,7 +111,7 @@ export const PlaceHolder = () => {
 }
 
 export default {
-  AlephiumIcon,
+  OxygeniumIcon,
   WalletConnect,
   Ledger
 }

@@ -30,14 +30,14 @@ jobs:
           do
             if (( SECONDS > 60 ))
             then
-               echo "Alephium full node not working after 1 min..."
+               echo "Oxygenium full node not working after 1 min..."
                exit 1
             fi
             echo "Waiting..."
             sleep 5
           done
           echo ""
-          echo "Alephium full node is up"
+          echo "Oxygenium full node is up"
           sleep 5
       - run: pnpm install
       - run: npm run build

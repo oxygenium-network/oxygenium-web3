@@ -24,8 +24,8 @@ function MyComponent() {
 }
 ```
 ## Questions: 
- 1. What is the purpose of this code and how is it used within the Alephium project?
-- This code defines a React component called `FitText` that resizes its content to fit within a container. It is likely used within the Alephium project to display text that needs to fit within a specific space.
+ 1. What is the purpose of this code and how is it used within the Oxygenium project?
+- This code defines a React component called `FitText` that resizes its content to fit within a container. It is likely used within the Oxygenium project to display text that needs to fit within a specific space.
 
 2. What is the `useFitText` hook and what options can be passed to it?
 - The `useFitText` hook is used to calculate the optimal font size for the text content based on the size of the container. It accepts options such as `maxFontSize`, `minFontSize`, `onStart`, and `onFinish` to customize its behavior.

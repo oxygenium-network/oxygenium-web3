@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -81,7 +81,7 @@ import { Sema } from 'async-sema'
 const REQUESTS_PER_SECOND_LIMIT = 5
 
 export interface ProviderOptions extends EnableOptionsBase, SignClientOptions {
-  // Alephium options
+  // Oxygenium options
   networkId: NetworkId // the id of the network, e.g. mainnet, testnet or devnet.
   addressGroup?: number // either a specific group or undefined to support all groups
   methods?: RelayMethod[] // all of the methods to be used in relay; no need to configure in most cases
@@ -397,7 +397,7 @@ export class WalletConnectProvider extends SignerProvider {
     return this.request({ method, params })
   }
 
-  // The provider only supports signer methods. The other requests should use Alephium Rest API.
+  // The provider only supports signer methods. The other requests should use Oxygenium Rest API.
   private async request<T = unknown>(args: { method: string; params: any }): Promise<T> {
     await this.rateLimit()
     if (!this.session) {

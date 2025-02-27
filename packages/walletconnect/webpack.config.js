@@ -31,7 +31,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist", "umd"),
     filename: "[name].min.js",
     libraryTarget: "umd",
-    library: "WalletConnectAlephiumProvider",
+    library: "WalletConnectOxygeniumProvider",
     umdNamedDefine: true,
     globalObject: "this",
   },

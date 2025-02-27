@@ -2,9 +2,9 @@
 
 This code exports three modules from the oxygenium-web3 project: `ralph`, `contract`, and `events`. 
 
-The `ralph` module likely contains functions and classes related to interacting with the Alephium blockchain, such as sending transactions or querying for information about the blockchain. The `contract` module likely contains functions and classes related to interacting with smart contracts on the Alephium blockchain. The `events` module likely contains functions and classes related to subscribing to and handling events emitted by the Alephium blockchain.
+The `ralph` module likely contains functions and classes related to interacting with the Oxygenium blockchain, such as sending transactions or querying for information about the blockchain. The `contract` module likely contains functions and classes related to interacting with smart contracts on the Oxygenium blockchain. The `events` module likely contains functions and classes related to subscribing to and handling events emitted by the Oxygenium blockchain.
 
-By exporting these modules, other parts of the oxygenium-web3 project can import and use them as needed. For example, a developer building a decentralized application on the Alephium blockchain could import the `contract` module to interact with their smart contracts.
+By exporting these modules, other parts of the oxygenium-web3 project can import and use them as needed. For example, a developer building a decentralized application on the Oxygenium blockchain could import the `contract` module to interact with their smart contracts.
 
 Here is an example of how the `contract` module might be used:
 

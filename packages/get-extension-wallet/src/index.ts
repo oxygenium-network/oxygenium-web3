@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -17,4 +17,4 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 export * from './types'
 export * from './knownProviders'
-export * from './getAlephium'
+export * from './getOxygenium'

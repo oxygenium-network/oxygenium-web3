@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 import { useMemo } from 'react'
-import { useAlephiumConnectContext } from '../contexts/oxygeniumConnect'
+import { useOxygeniumConnectContext } from '../contexts/oxygeniumConnect'
 import { NodeProvider, SignerProvider, Account, NetworkId, ExplorerProvider } from '@oxygenium/web3'
 import { KeyType } from '@oxygenium/web3'
 
@@ -44,7 +44,7 @@ export type Wallet =
     }
 
 export function useWallet() {
-  const { account, signerProvider, connectionStatus, network } = useAlephiumConnectContext()
+  const { account, signerProvider, connectionStatus, network } = useOxygeniumConnectContext()
 
   return useMemo<Wallet>(() => {
     return connectionStatus === 'connected'
@@ -83,7 +83,7 @@ export type WalletConfig = {
 }
 
 export function useWalletConfig() {
-  const { network, setNetwork, addressGroup, setAddressGroup, keyType, setKeyType } = useAlephiumConnectContext()
+  const { network, setNetwork, addressGroup, setAddressGroup, keyType, setKeyType } = useOxygeniumConnectContext()
   return useMemo<WalletConfig>(
     () => ({
       network,

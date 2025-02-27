@@ -9,10 +9,10 @@ The function then returns an object with the following properties:
 - `name`: a string that describes the name of the wallet as "Extension Wallet"
 - `shortName`: a string that provides a shorter name for the wallet as "browser"
 - `scannable`: a boolean that indicates whether the wallet can be scanned (presumably by a QR code)
-- `logos`: an object that contains a default logo for the wallet, which is an Alephium icon
+- `logos`: an object that contains a default logo for the wallet, which is an Oxygenium icon
 - `installed`: a boolean that indicates whether the wallet is installed. If the `shouldUseWalletConnect` flag is true, this property is set to false, otherwise it is set to true if the `window` object is defined. 
 
-This code is likely used in a larger project that interacts with a web3 provider and needs to detect the presence of a wallet. The `injected` function provides information about the wallet that can be used to display wallet options to the user or to determine which wallet to use for a particular transaction. For example, the `logos` property could be used to display the Alephium icon next to the wallet name. The `installed` property could be used to determine whether to display a message to the user to install the wallet. Overall, this code provides a simple way to detect the presence of a wallet and provide information about it to the user.
+This code is likely used in a larger project that interacts with a web3 provider and needs to detect the presence of a wallet. The `injected` function provides information about the wallet that can be used to display wallet options to the user or to determine which wallet to use for a particular transaction. For example, the `logos` property could be used to display the Oxygenium icon next to the wallet name. The `installed` property could be used to determine whether to display a message to the user to install the wallet. Overall, this code provides a simple way to detect the presence of a wallet and provide information about it to the user.
 ## Questions: 
  1. What is the purpose of this code?
    - This code defines a function called `injected` that returns an object with properties related to a wallet.

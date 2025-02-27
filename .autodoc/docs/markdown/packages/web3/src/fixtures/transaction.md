@@ -1,12 +1,12 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/fixtures/transaction.json)
 
-The code provided is a JSON object that contains information about a transaction in the Alephium network. The transaction has two main stages: "created" and "submitted". 
+The code provided is a JSON object that contains information about a transaction in the Oxygenium network. The transaction has two main stages: "created" and "submitted". 
 
-In the "created" stage, the transaction is unsigned and has a unique identifier represented by the "unsignedTx" field. Additionally, the transaction has a "fromGroup" and a "toGroup" field, which represent the source and destination groups of the transaction, respectively. These groups are used in the Alephium network to facilitate parallel processing of transactions and increase throughput.
+In the "created" stage, the transaction is unsigned and has a unique identifier represented by the "unsignedTx" field. Additionally, the transaction has a "fromGroup" and a "toGroup" field, which represent the source and destination groups of the transaction, respectively. These groups are used in the Oxygenium network to facilitate parallel processing of transactions and increase throughput.
 
 In the "submitted" stage, the transaction has been signed and broadcasted to the network. The "txId" field represents the unique identifier of the transaction in this stage. Similar to the "created" stage, the transaction also has "fromGroup" and "toGroup" fields.
 
-This code can be used in the larger Alephium project to track the status of transactions. For example, a user interface could display the "created" stage information to the user while waiting for the transaction to be signed and submitted. Once the transaction is submitted, the user interface could update to display the "submitted" stage information. Additionally, this code could be used in backend systems to monitor the progress of transactions and ensure they are being processed correctly.
+This code can be used in the larger Oxygenium project to track the status of transactions. For example, a user interface could display the "created" stage information to the user while waiting for the transaction to be signed and submitted. Once the transaction is submitted, the user interface could update to display the "submitted" stage information. Additionally, this code could be used in backend systems to monitor the progress of transactions and ensure they are being processed correctly.
 
 Here is an example of how this code could be used in JavaScript:
 

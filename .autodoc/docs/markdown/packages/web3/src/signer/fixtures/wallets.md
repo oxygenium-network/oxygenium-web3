@@ -47,7 +47,7 @@ const account = web3.eth.accounts.privateKeyToAccount(privateKey);
 web3.eth.getBalance(account.address).then(console.log);
 ```
 
-In this example, the first wallet in the array is selected and its file is decrypted using the password. The mnemonic is then used to generate the private key, which is used to create a new account on the Alephium blockchain. Finally, the balance of the account is retrieved and logged to the console.
+In this example, the first wallet in the array is selected and its file is decrypted using the password. The mnemonic is then used to generate the private key, which is used to create a new account on the Oxygenium blockchain. Finally, the balance of the account is retrieved and logged to the console.
 ## Questions: 
  1. What is the purpose of this code?
 - This code contains a JSON object with information about wallets, including their mnemonic, seed, password, and encrypted file.
@@ -55,5 +55,5 @@ In this example, the first wallet in the array is selected and its file is decry
 2. What encryption algorithm is being used to encrypt the wallet files?
 - The code does not specify the encryption algorithm being used to encrypt the wallet files.
 
-3. Can this code be used to interact with the Alephium blockchain?
-- It is unclear from this code alone whether it can be used to interact with the Alephium blockchain. Additional code or documentation would be needed to determine this.
+3. Can this code be used to interact with the Oxygenium blockchain?
+- It is unclear from this code alone whether it can be used to interact with the Oxygenium blockchain. Additional code or documentation would be needed to determine this.

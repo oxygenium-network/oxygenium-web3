@@ -24,7 +24,7 @@ contract MyContract {
 ```
 ## Questions: 
  1. What is the purpose of this code and what does it do?
-- This code represents the bytecode, function signatures, and events signatures for a smart contract called "Add" in the Alephium blockchain.
+- This code represents the bytecode, function signatures, and events signatures for a smart contract called "Add" in the Oxygenium blockchain.
 
 2. What are the input and output types for the "add" function?
 - The "add" function takes in an array of two U256 values and returns an array of two U256 values.

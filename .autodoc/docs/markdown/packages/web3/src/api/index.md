@@ -21,7 +21,7 @@ This will give the file access to all the exported modules and functions, which 
 Overall, this file serves as a central point for exporting all the important modules and functions from the oxygenium-web3 project, making them easily accessible for use in other parts of the project or in external projects that depend on oxygenium-web3.
 ## Questions: 
  1. What is the purpose of this code file?
-- This code file exports various modules related to Alephium web3, including node and explorer providers, APIs, types, and utilities.
+- This code file exports various modules related to Oxygenium web3, including node and explorer providers, APIs, types, and utilities.
 
 2. What license is this code file released under?
 - This code file is released under the GNU Lesser General Public License, version 3 or later.

@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -218,8 +218,8 @@ export class WalletClient {
       if (typeof this.client === 'undefined') throw new Error('Sign Client not inititialized')
       const { id, requiredNamespaces, relays } = proposal.params
 
-      const requiredAlephiumNamespace = requiredNamespaces[PROVIDER_NAMESPACE]
-      if (requiredAlephiumNamespace === undefined) {
+      const requiredOxygeniumNamespace = requiredNamespaces[PROVIDER_NAMESPACE]
+      if (requiredOxygeniumNamespace === undefined) {
         throw new Error(`${PROVIDER_NAMESPACE} namespace is required for session proposal`)
       }
 
@@ -236,9 +236,9 @@ export class WalletClient {
       this.permittedAddressGroup = addressGroup
 
       this.namespace = {
-        methods: requiredAlephiumNamespace.methods,
-        events: requiredAlephiumNamespace.events,
-        accounts: [this.chainAccount(requiredAlephiumNamespace.chains || [])]
+        methods: requiredOxygeniumNamespace.methods,
+        events: requiredOxygeniumNamespace.events,
+        accounts: [this.chainAccount(requiredOxygeniumNamespace.chains || [])]
       }
 
       const namespaces = { oxygenium: this.namespace }

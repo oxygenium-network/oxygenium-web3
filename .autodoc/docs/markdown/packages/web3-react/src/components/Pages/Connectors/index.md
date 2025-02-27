@@ -1,8 +1,8 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Pages/Connectors/index.tsx)
 
-This code defines a React component called `Connectors` that renders a list of supported wallet connectors. The component is part of the Alephium Web3 project and is used to allow users to connect their wallets to the Alephium network.
+This code defines a React component called `Connectors` that renders a list of supported wallet connectors. The component is part of the Oxygenium Web3 project and is used to allow users to connect their wallets to the Oxygenium network.
 
-The component imports the `useAlephiumConnectContext` hook from the `oxygeniumConnect` context, which provides access to the current connector and route. It also imports the `supportedConnectors` constant, which is an array of objects that define the various wallet connectors that are supported by the Alephium network.
+The component imports the `useOxygeniumConnectContext` hook from the `oxygeniumConnect` context, which provides access to the current connector and route. It also imports the `supportedConnectors` constant, which is an array of objects that define the various wallet connectors that are supported by the Oxygenium network.
 
 The `Connectors` component renders a list of wallet connectors based on the user's device type (mobile or desktop). For mobile devices, the list is rendered as a series of buttons, while for desktop devices, the list is rendered as a series of icons with labels.
 
@@ -10,10 +10,10 @@ Each wallet connector is represented by a `ConnectorButton` or `MobileConnectorB
 
 The `findInjectedConnectorInfo` function is a helper function that is used to find information about injected wallet connectors. It takes a wallet name and an array of wallet objects as arguments and returns the first wallet object that matches the name.
 
-Overall, this code provides a simple and intuitive way for users to connect their wallets to the Alephium network. By rendering a list of supported wallet connectors and allowing users to select the one they want to use, the `Connectors` component makes it easy for users to get started with the Alephium network.
+Overall, this code provides a simple and intuitive way for users to connect their wallets to the Oxygenium network. By rendering a list of supported wallet connectors and allowing users to select the one they want to use, the `Connectors` component makes it easy for users to get started with the Oxygenium network.
 ## Questions: 
  1. What is the purpose of this code?
-- This code defines a React component called `Connectors` that renders a list of supported wallet connectors for the Alephium project, with different styles for mobile and desktop views.
+- This code defines a React component called `Connectors` that renders a list of supported wallet connectors for the Oxygenium project, with different styles for mobile and desktop views.
 
 2. What is the license for this code?
 - This code is licensed under the GNU Lesser General Public License, version 3 or later.

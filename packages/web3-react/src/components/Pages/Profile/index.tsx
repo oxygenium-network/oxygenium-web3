@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 import React, { useEffect, useState } from 'react'
-import { useAlephiumConnectContext, useConnectSettingContext } from '../../../contexts/oxygeniumConnect'
+import { useOxygeniumConnectContext, useConnectSettingContext } from '../../../contexts/oxygeniumConnect'
 
 import { PageContent, ModalContent, ModalH1 } from '../../Common/Modal/styles'
 import Button from '../../Common/Button'
@@ -28,7 +28,7 @@ import { useConnect } from '../../../hooks/useConnect'
 
 const Profile: React.FC<{ closeModal?: () => void }> = ({ closeModal }) => {
   const { displayAccount, setOpen } = useConnectSettingContext()
-  const { account } = useAlephiumConnectContext()
+  const { account } = useOxygeniumConnectContext()
   const { disconnect } = useConnect()
   const [shouldDisconnect, setShouldDisconnect] = useState(false)
   const address = account ? (displayAccount ? displayAccount(account) : account.address) : undefined

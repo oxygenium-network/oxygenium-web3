@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Modal/index.tsx)
 
-The `Modal` component in this code is a part of the Alephium-web3 project and serves as a reusable, customizable modal dialog with various features such as transitions, animations, and focus trapping. It is designed to be used in different parts of the project with different content and actions.
+The `Modal` component in this code is a part of the Oxygenium-web3 project and serves as a reusable, customizable modal dialog with various features such as transitions, animations, and focus trapping. It is designed to be used in different parts of the project with different content and actions.
 
 The `Modal` component accepts several props, including `open`, `pages`, `pageId`, `positionInside`, `inline`, `onClose`, `onBack`, and `onInfo`. These props control the modal's visibility, content, positioning, and event handlers for closing, going back, and showing more information.
 

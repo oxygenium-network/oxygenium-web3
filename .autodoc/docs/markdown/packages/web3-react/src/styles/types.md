@@ -1,14 +1,14 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/types.ts)
 
-This file defines types and interfaces related to theming and styling for the Alephium project. It exports two main types: `Theme` and `ThemeMode`, as well as a `CustomTheme` type. 
+This file defines types and interfaces related to theming and styling for the Oxygenium project. It exports two main types: `Theme` and `ThemeMode`, as well as a `CustomTheme` type. 
 
-The `Theme` type defines a set of properties that can be used to style various parts of the Alephium application, such as fonts, colors, buttons, modals, and tooltips. Each property is optional and can be further nested to define more specific styles. For example, the `text` property can have sub-properties for `primary`, `secondary`, `error`, and `valid` text styles. The `buttons` property can have sub-properties for `primary` and `secondary` button styles. 
+The `Theme` type defines a set of properties that can be used to style various parts of the Oxygenium application, such as fonts, colors, buttons, modals, and tooltips. Each property is optional and can be further nested to define more specific styles. For example, the `text` property can have sub-properties for `primary`, `secondary`, `error`, and `valid` text styles. The `buttons` property can have sub-properties for `primary` and `secondary` button styles. 
 
 The `ThemeMode` type defines a set of themes for both light and dark modes, as well as a preferred mode. This allows the application to switch between light and dark modes based on user preference or system settings. 
 
-The `CustomTheme` type defines a set of options for a specific part of the Alephium application, called `connectKit`. This includes an optional `iconStyle` property and a `theme` property that can be either a `Theme` or `ThemeMode` object. 
+The `CustomTheme` type defines a set of options for a specific part of the Oxygenium application, called `connectKit`. This includes an optional `iconStyle` property and a `theme` property that can be either a `Theme` or `ThemeMode` object. 
 
-Overall, this file provides a way to define and manage the visual styles of the Alephium application in a centralized and flexible way. Developers can use these types and interfaces to create and customize themes for different parts of the application, and users can switch between light and dark modes based on their preferences. 
+Overall, this file provides a way to define and manage the visual styles of the Oxygenium application in a centralized and flexible way. Developers can use these types and interfaces to create and customize themes for different parts of the application, and users can switch between light and dark modes based on their preferences. 
 
 Example usage:
 
@@ -110,10 +110,10 @@ const themeMode: ThemeMode = {
 ```
 ## Questions: 
  1. What is the purpose of this code file?
-- This code file defines types and interfaces related to theming and styling for the Alephium project.
+- This code file defines types and interfaces related to theming and styling for the Oxygenium project.
 
 2. What types of colors are supported in the `Color` type?
 - The `Color` type supports RGB, RGBA, and HEX color formats.
 
 3. What is the purpose of the `CustomTheme` type?
-- The `CustomTheme` type is used to define custom themes for the Alephium ConnectKit, which includes options for icon style and a theme or theme mode.
+- The `CustomTheme` type is used to define custom themes for the Oxygenium ConnectKit, which includes options for icon style and a theme or theme mode.
