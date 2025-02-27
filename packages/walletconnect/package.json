@@ -6,7 +6,7 @@
   "homepage": "https://github.com/oxygenium-network/walletconnect",
   "repository": {
     "type": "git",
-    "url": "git@github.com:oxygenium/walletconnect.git"
+    "url": "git@github.com:oxygenium-network/walletconnect.git"
   },
   "license": "Apache-2.0",
   "main": "dist/cjs/index.js",
