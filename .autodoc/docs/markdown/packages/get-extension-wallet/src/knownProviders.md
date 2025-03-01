@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/get-extension-wallet/src/knownProviders.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/get-extension-wallet/src/knownProviders.ts)
 
-This code defines a wallet provider for the Alephium blockchain and exports it for use in the larger project. The `alephiumProvider` object contains metadata about the provider, including an ID, name, icon, and download links for the Chrome and Firefox extensions. This object is then added to the `knownProviders` array, which is used to keep track of all available wallet providers.
+This code defines a wallet provider for the Alephium blockchain and exports it for use in the larger project. The `oxygeniumProvider` object contains metadata about the provider, including an ID, name, icon, and download links for the Chrome and Firefox extensions. This object is then added to the `knownProviders` array, which is used to keep track of all available wallet providers.
 
 The `checkProviderMetadata` function takes in a `wallet` object and a `provider` object and returns a boolean indicating whether the `wallet` object matches the `provider` object based on their ID and name. This function is used to verify that the user's selected wallet provider is valid and supported by the Alephium-web3 library.
 
@@ -9,14 +9,14 @@ Overall, this code provides a standardized way for users to connect their wallet
 Example usage:
 
 ```
-import { alephiumProvider, knownProviders, checkProviderMetadata } from 'alephium-web3'
+import { oxygeniumProvider, knownProviders, checkProviderMetadata } from 'oxygenium-web3'
 
 // Check if a wallet matches the Alephium provider
-const wallet = { id: 'alephium', name: 'Alephium', version: '1.0.0' }
-const isAlephiumProvider = checkProviderMetadata(wallet, alephiumProvider) // true
+const wallet = { id: 'oxygenium', name: 'Alephium', version: '1.0.0' }
+const isAlephiumProvider = checkProviderMetadata(wallet, oxygeniumProvider) // true
 
 // Get all known wallet providers
-const providers = knownProviders // [alephiumProvider]
+const providers = knownProviders // [oxygeniumProvider]
 ```
 ## Questions: 
  1. What is the purpose of this code file?
@@ -26,4 +26,4 @@ const providers = knownProviders // [alephiumProvider]
 - This code is licensed under the GNU Lesser General Public License version 3 or later.
 
 3. Where can I find the Alephium extension wallet for Chrome and Firefox?
-- The Chrome extension can be found at https://chrome.google.com/webstore/detail/alephium-extension-wallet and the Firefox extension can be found at https://addons.mozilla.org/en-US/firefox/addon/alephium-extension-wallet.
+- The Chrome extension can be found at https://chrome.google.com/webstore/detail/oxygenium-extension-wallet and the Firefox extension can be found at https://addons.mozilla.org/en-US/firefox/addon/oxygenium-extension-wallet.

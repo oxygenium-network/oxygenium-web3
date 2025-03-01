@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/utils/number.fixture.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/utils/number.fixture.ts)
 
 This file contains two arrays of objects, `tests` and `tests1`, which are used for testing and formatting numerical values in the Alephium blockchain. 
 
@@ -11,7 +11,7 @@ Overall, this file serves as a reference for the expected formatting and convers
 Example usage of these arrays in the larger project:
 
 ```
-import { tests, tests1 } from 'alephium-web3/numericalValues';
+import { tests, tests1 } from 'oxygenium-web3/numericalValues';
 
 // Use tests array to test formatting functions
 tests.forEach((test) => {

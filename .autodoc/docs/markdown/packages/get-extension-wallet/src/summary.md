@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/get-extension-wallet/src)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/get-extension-wallet/src)
 
 The code in the `get-extension-wallet/src` folder provides essential functionality for interacting with Alephium wallets using the Alephium Web3 library. It contains several functions and data structures that enable users to connect their wallets to the Alephium blockchain and ensure that only supported wallet providers are used.
 
@@ -12,13 +12,13 @@ const defaultWallet = await getDefaultAlephiumWallet()
 
 The `index.ts` file exports various modules, such as `types`, `knownProviders`, and `getAlephium`, which are used throughout the Alephium Web3 project. These modules provide functionality for working with the Alephium network and can be used by other modules in the project to build more complex functionality.
 
-The `knownProviders.ts` file defines a wallet provider for the Alephium blockchain and exports it for use in the larger project. The `alephiumProvider` object contains metadata about the provider, and the `checkProviderMetadata` function is used to verify that the user's selected wallet provider is valid and supported by the Alephium-web3 library. Example usage:
+The `knownProviders.ts` file defines a wallet provider for the Alephium blockchain and exports it for use in the larger project. The `oxygeniumProvider` object contains metadata about the provider, and the `checkProviderMetadata` function is used to verify that the user's selected wallet provider is valid and supported by the Alephium-web3 library. Example usage:
 
 ```typescript
-import { alephiumProvider, knownProviders, checkProviderMetadata } from 'get-extension-wallet/src/knownProviders'
+import { oxygeniumProvider, knownProviders, checkProviderMetadata } from 'get-extension-wallet/src/knownProviders'
 
-const wallet = { id: 'alephium', name: 'Alephium', version: '1.0.0' }
-const isAlephiumProvider = checkProviderMetadata(wallet, alephiumProvider) // true
+const wallet = { id: 'oxygenium', name: 'Alephium', version: '1.0.0' }
+const isAlephiumProvider = checkProviderMetadata(wallet, oxygeniumProvider) // true
 ```
 
 The `types.ts` file defines several classes and functions related to interacting with the Alephium blockchain network using the web3 API. The `AlephiumWindowObject` class is intended to be subclassed by concrete wallet provider implementations, which can then be used to enable users to interact with the Alephium network using their preferred wallet provider. The `WalletProvider` type is used to define the properties of a wallet provider, and the `providerInitializedEvent` function is used to emit an event when a wallet provider is initialized.

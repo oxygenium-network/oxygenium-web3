@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -16,8 +16,8 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { stringToHex } from '@alephium/web3'
-import { getSigner, testAddress, testNodeWallet, testWalletName } from '@alephium/web3-test'
+import { stringToHex } from '@oxygenium/web3'
+import { getSigner, testAddress, testNodeWallet, testWalletName } from '@oxygenium/web3-test'
 import { MapTest, NFTTest, NFTTestStd, TokenTest, TokenTestStd } from '../artifacts/ts'
 import { web3, NodeProvider } from '../packages/web3/src'
 

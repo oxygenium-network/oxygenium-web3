@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/Portal/index.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Portal/index.tsx)
 
-The `Portal` component in the `alephium-web3` project is a React component that allows rendering of child components outside of the parent component's DOM hierarchy. This is useful when a component needs to be rendered at a specific location in the DOM, such as a modal or a tooltip.
+The `Portal` component in the `oxygenium-web3` project is a React component that allows rendering of child components outside of the parent component's DOM hierarchy. This is useful when a component needs to be rendered at a specific location in the DOM, such as a modal or a tooltip.
 
 The `Portal` component uses the `useEffect` hook to check if the specified selector exists in the DOM. If it does, the component is mounted to the existing element. If it does not exist, a new element is created and mounted to the body of the document. The `useState` hook is used to keep track of whether the component is mounted or not.
 

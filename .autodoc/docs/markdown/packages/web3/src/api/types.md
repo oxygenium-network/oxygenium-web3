@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/api/types.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/api/types.ts)
 
 This file contains utility functions and type definitions for interacting with the Alephium blockchain through its web3 API. The file defines several functions for converting between different data types used in the API and the corresponding JavaScript types. It also defines functions for parsing API responses and converting them into JavaScript objects.
 
@@ -16,7 +16,7 @@ The file also defines utility functions for forwarding API requests to a handler
 
 Finally, the file defines the `TokenMetaData` interface, which represents metadata for a token on the Alephium blockchain, including its name, symbol, decimals, and total supply.
 ## Questions: 
- 1. What is the purpose of this file in the alephium-web3 project?
+ 1. What is the purpose of this file in the oxygenium-web3 project?
 - This file contains utility functions for converting between different data types used in the project and the corresponding types used in the Alephium API.
 
 2. What is the license for this library?

@@ -9,7 +9,7 @@ import {
   Script,
   SignerProvider,
   HexString,
-} from "@alephium/web3";
+} from "@oxygenium/web3";
 import { default as MainScriptJson } from "../Main.ral.json";
 
 export namespace Main {

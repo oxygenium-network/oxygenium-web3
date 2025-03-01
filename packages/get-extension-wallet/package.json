@@ -1,5 +1,5 @@
 {
-  "name": "@alephium/get-extension-wallet",
+  "name": "@oxygenium/get-extension-wallet",
   "version": "1.11.3",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alephium/extension-wallet.git"
+    "url": "git+https://github.com/oxygenium/extension-wallet.git"
   },
   "files": [
     "dist/"
@@ -47,7 +47,7 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "@alephium/web3": "workspace:^",
+    "@oxygenium/web3": "workspace:^",
     "bowser": "^2.11.0"
   }
 }

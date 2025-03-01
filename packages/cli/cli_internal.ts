@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { web3, NetworkId, networkIds, enableDebugMode, isDebugModeEnabled } from '@alephium/web3'
+import { web3, NetworkId, networkIds, enableDebugMode, isDebugModeEnabled } from '@oxygenium/web3'
 import { program } from 'commander'
 import { run as runJestTests } from 'jest'
 import path from 'path'
@@ -29,7 +29,7 @@ import { genInterfaces } from './src/gen-interfaces'
 
 function getConfig(options: any): Configuration {
   const configFile = options.config ? (options.config as string) : getConfigFile()
-  console.log(`Loading alephium config file: ${configFile}`)
+  console.log(`Loading oxygenium config file: ${configFile}`)
   const config = loadConfig(configFile)
   if (config.forceRecompile && config.skipRecompileIfDeployedOnMainnet) {
     throw new Error(`The forceRecompile and skipRecompileIfDeployedOnMainnet flags cannot be enabled at the same time`)
@@ -92,7 +92,7 @@ program
 program
   .command('compile')
   .description('compile the project')
-  .option('-c, --config <config-file>', 'project config file (default: alephium.config.{ts|js})')
+  .option('-c, --config <config-file>', 'project config file (default: oxygenium.config.{ts|js})')
   .option('-n, --network <network-type>', 'network type')
   .option('--skipGenerate', 'skip generate typescript code by contract artifacts')
   .option('--debug', 'show detailed debug information such as error stack traces')
@@ -185,7 +185,7 @@ function tryGetScriptIndex(str: string | undefined): number | undefined {
 program
   .command('deploy')
   .description('deploy contracts')
-  .option('-c, --config <config-file>', 'project config file (default: alephium.config.{ts|js})')
+  .option('-c, --config <config-file>', 'project config file (default: oxygenium.config.{ts|js})')
   .option('-n, --network <network-type>', 'specify the network to use')
   .option(
     '-f, --from <number>',

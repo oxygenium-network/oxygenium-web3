@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/Tooltip/styles.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Tooltip/styles.ts)
 
 This file contains styled components for a tooltip window that can be used in the Alephium web3 project. The tooltip window is a UI element that displays additional information when the user hovers over a specific element on the page. 
 
@@ -13,7 +13,7 @@ These components are styled using CSS variables that are defined elsewhere in th
 Overall, these components provide a customizable and visually appealing tooltip window that can be used throughout the Alephium web3 project to enhance the user experience. Here is an example of how the `TooltipContainer` component can be used:
 
 ```
-import { TooltipContainer } from 'alephium-web3'
+import { TooltipContainer } from 'oxygenium-web3'
 
 function MyComponent() {
   return (

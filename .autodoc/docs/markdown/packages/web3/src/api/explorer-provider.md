@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/api/explorer-provider.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/api/explorer-provider.ts)
 
 This code defines a class called `ExplorerProvider` that acts as a wrapper around an instance of the `ExplorerApi` class. The `ExplorerApi` class is imported from another file in the same directory, along with some utility functions. The `ExplorerProvider` class provides a simplified interface for interacting with the Alephium blockchain explorer API.
 

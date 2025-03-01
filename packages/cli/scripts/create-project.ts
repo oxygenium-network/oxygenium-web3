@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -30,7 +30,7 @@ function prepareNextJs(templateType: string, _packageRoot: string, projectRoot: 
       'create-next-app',
       projectRoot,
       '--example',
-      `https://github.com/alephium/${prefix}-dapp-template`,
+      `https://github.com/oxygenium/${prefix}-dapp-template`,
       '--typescript'
     ],
     { stdio: 'inherit' }
@@ -52,13 +52,13 @@ export function createProject(templateType: string, packageRoot: string, project
   }
   switch (templateType) {
     case 'base':
-      gitClone('https://github.com/alephium/nodejs-dapp-template.git', projectRoot)
+      gitClone('https://github.com/oxygenium/nodejs-dapp-template.git', projectRoot)
       break
     case 'react':
-      gitClone('https://github.com/alephium/react-dapp-template.git', projectRoot)
+      gitClone('https://github.com/oxygenium/react-dapp-template.git', projectRoot)
       break
     case 'remix':
-      gitClone('https://github.com/alephium/remix-dapp-template.git', projectRoot)
+      gitClone('https://github.com/oxygenium/remix-dapp-template.git', projectRoot)
       break
     case 'nextjs':
     case 'nextjs-app':
@@ -80,17 +80,17 @@ export function createProject(templateType: string, packageRoot: string, project
 
 export function genRalph(packageRoot: string, projectRoot: string) {
   console.log('Creating the Ralph Template for the existing project')
-  for (const dir of ['contracts', 'scripts', 'test', 'alephium.config.ts']) {
+  for (const dir of ['contracts', 'scripts', 'test', 'oxygenium.config.ts']) {
     fsExtra.copySync(path.join(packageRoot, 'templates/base', dir), path.join(projectRoot, dir))
   }
   console.log('✅ Done.')
   console.log(`
 Please install the dependencies:
-    @alephium/web3
-    @alephium/web3-wallet
+    @oxygenium/web3
+    @oxygenium/web3-wallet
 
 Dev dependencies:
-    @alephium/web3-test
+    @oxygenium/web3-test
 
 And add the following to your package.json scripts:
     "compile": "npx cli compile",

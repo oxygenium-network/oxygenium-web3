@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/ThemedButton)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Common/ThemedButton)
 
 The `ThemedButton` component in the `index.tsx` file is a customizable button component that can be used throughout the Alephium Web3 project. It accepts several props, such as `variant`, `autoSize`, `duration`, and `style`, allowing developers to create buttons with different color schemes, animations, and custom styling.
 

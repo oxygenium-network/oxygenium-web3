@@ -32,7 +32,7 @@ import {
   addStdIdToFields,
   encodeContractFields,
   Narrow,
-} from "@alephium/web3";
+} from "@oxygenium/web3";
 import { default as WrongNFTTestContractJson } from "../nft/WrongNFTTest.ral.json";
 import { getContractByCodeHash, registerContract } from "./contracts";
 import {

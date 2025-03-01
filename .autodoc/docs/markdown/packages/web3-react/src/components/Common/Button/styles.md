@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/Button/styles.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Button/styles.ts)
 
 This file contains styled components for buttons and icons used in the Alephium web3 project. The `SpinnerContainer` component is used to display a spinning animation, while the `ButtonContainer` component is used to create buttons with different styles based on the `$variant` prop. The `InnerContainer` component is used to wrap text and icons within a button, while the `IconContainer` component is used to display icons with optional rounded borders.
 

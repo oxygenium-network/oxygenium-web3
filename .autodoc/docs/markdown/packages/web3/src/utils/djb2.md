@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/utils/djb2.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/utils/djb2.ts)
 
 The code provided is a JavaScript function called `djb2` that exports a hash function. The purpose of this function is to generate a hash value for a given input `Uint8Array` of bytes. The hash function uses the djb2 algorithm, which is a simple non-cryptographic hash function that is commonly used in hash tables.
 
@@ -17,7 +17,7 @@ This function can be used in the larger project to generate hash values for vari
 Example usage:
 
 ```
-import djb2 from 'alephium-web3'
+import djb2 from 'oxygenium-web3'
 
 const data = new Uint8Array([0x01, 0x02, 0x03, 0x04])
 const hash = djb2(data)

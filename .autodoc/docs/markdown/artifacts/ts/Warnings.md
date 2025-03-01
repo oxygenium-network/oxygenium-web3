@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/artifacts/ts/Warnings.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/Warnings.ts)
 
-This code is part of the alephium-web3 project and provides functionality for interacting with a smart contract called Warnings. The code imports various functions and classes from the "@alephium/web3" library, which is a TypeScript library for interacting with the Alephium blockchain. 
+This code is part of the oxygenium-web3 project and provides functionality for interacting with a smart contract called Warnings. The code imports various functions and classes from the "@oxygenium/web3" library, which is a TypeScript library for interacting with the Alephium blockchain. 
 
 The Warnings smart contract has two custom types defined in the WarningsTypes namespace: Fields and State. Fields is an object with two properties, a and b, both of which are of type bigint. State is a ContractState object that represents the current state of the Warnings contract.
 

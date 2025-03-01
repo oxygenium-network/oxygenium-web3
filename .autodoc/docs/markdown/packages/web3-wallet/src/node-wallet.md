@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-wallet/src/node-wallet.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-wallet/src/node-wallet.ts)
 
-This file contains the implementation of a NodeWallet class that extends the SignerProviderWithMultipleAccounts class from the `@alephium/web3` library. The NodeWallet class is used to interact with a wallet on the Alephium blockchain network. 
+This file contains the implementation of a NodeWallet class that extends the SignerProviderWithMultipleAccounts class from the `@oxygenium/web3` library. The NodeWallet class is used to interact with a wallet on the Alephium blockchain network. 
 
 The NodeWallet class has a constructor that takes in a wallet name, a node provider, and an explorer provider. The wallet name is a string that identifies the wallet on the network. The node provider is an instance of the NodeProvider class that is used to interact with the Alephium node. The explorer provider is an instance of the ExplorerProvider class that is used to interact with the Alephium explorer. If no node provider or explorer provider is provided, the constructor uses the default providers from the web3 library.
 
@@ -22,7 +22,7 @@ Overall, the NodeWallet class provides a convenient way to interact with a walle
 - This code defines a class called `NodeWallet` which extends `SignerProviderWithMultipleAccounts` and provides methods for managing accounts, signing transactions, and locking/unlocking a wallet.
 
 2. What dependencies does this code have?
-- This code imports several modules from the `@alephium/web3` package, including `web3`, `Account`, `SignerProviderWithMultipleAccounts`, `NodeProvider`, `groupOfAddress`, `ExplorerProvider`, and `Address`.
+- This code imports several modules from the `@oxygenium/web3` package, including `web3`, `Account`, `SignerProviderWithMultipleAccounts`, `NodeProvider`, `groupOfAddress`, `ExplorerProvider`, and `Address`.
 
 3. What license is this code released under?
 - This code is released under the GNU Lesser General Public License, version 3 or later.

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/artifacts/add/destroy_add.ral.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/add/destroy_add.ral.json)
 
 This code represents a smart contract template called "DestroyAdd" that can be used in the Alephium blockchain network. The purpose of this contract is to allow a user to destroy a specified asset by adding it to a blacklist. The contract is written in bytecode and includes a version number, a name, and a template for the bytecode. 
 

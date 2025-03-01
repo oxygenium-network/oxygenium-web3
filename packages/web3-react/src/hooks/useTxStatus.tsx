@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -15,7 +15,7 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
-import { node, SubscribeOptions, subscribeToTxStatus } from '@alephium/web3'
+import { node, SubscribeOptions, subscribeToTxStatus } from '@oxygenium/web3'
 import { useEffect, useMemo, useState } from 'react'
 
 export function useTxStatus(txId: string, txStatusCallback?: (status: node.TxStatus) => Promise<any>) {

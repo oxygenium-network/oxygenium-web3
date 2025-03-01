@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -33,7 +33,7 @@ import {
   node,
   subscribeToTxStatus,
   web3
-} from '@alephium/web3'
+} from '@oxygenium/web3'
 import { Theme, Mode, CustomTheme, connectorIds, ProviderTheme } from '../types'
 import { routes } from './Common/Modal'
 import {
@@ -44,7 +44,7 @@ import {
   ConnectionStatus,
   useAlephiumConnectContext,
   useConnectSettingContext
-} from '../contexts/alephiumConnect'
+} from '../contexts/oxygeniumConnect'
 import { getLastConnectedAccount, removeLastConnectedAccount } from '../utils/storage'
 import { Connectors, ConnectResult, createDefaultConnectors } from '../utils/connector'
 import { useInjectedProviders } from '../hooks/useInjectedProviders'

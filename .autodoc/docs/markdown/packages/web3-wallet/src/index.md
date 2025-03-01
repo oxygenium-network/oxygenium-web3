@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-wallet/src/index.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-wallet/src/index.ts)
 
-This code exports four modules from the alephium-web3 project: `hd-wallet`, `node-wallet`, `privatekey-wallet`, and `password-crypto`. 
+This code exports four modules from the oxygenium-web3 project: `hd-wallet`, `node-wallet`, `privatekey-wallet`, and `password-crypto`. 
 
 The `hd-wallet` module provides functionality for generating hierarchical deterministic wallets, which are wallets that can generate an unlimited number of addresses from a single seed phrase. This module may be used in the larger project to allow users to easily generate and manage multiple addresses for their Alephium wallet.
 
@@ -12,8 +12,8 @@ The `password-crypto` module provides functionality for encrypting and decryptin
 
 Overall, this code exports modules that provide key functionality for managing Alephium wallets and interacting with the Alephium network. These modules may be used in the larger project to provide a user-friendly interface for managing Alephium addresses and transactions.
 ## Questions: 
- 1. What is the purpose of the `alephium-web3` project?
-- Unfortunately, the provided code does not give any indication of the purpose of the `alephium-web3` project. Further documentation or context would be needed to answer this question.
+ 1. What is the purpose of the `oxygenium-web3` project?
+- Unfortunately, the provided code does not give any indication of the purpose of the `oxygenium-web3` project. Further documentation or context would be needed to answer this question.
 
 2. What is the difference between the exported modules `hd-wallet`, `node-wallet`, `privatekey-wallet`, and `password-crypto`?
 - Without further documentation or context, it is unclear what the differences are between these exported modules. A smart developer may need to review the code within each module or consult additional documentation to understand their distinctions.

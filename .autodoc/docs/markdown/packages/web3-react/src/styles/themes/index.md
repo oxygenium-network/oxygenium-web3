@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/styles/themes/index.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/themes/index.ts)
 
 This code exports an object containing various themes for a web3 interface library called Alephium. The themes are defined in separate files and imported into this file using ES6 module syntax. The exported object contains properties for each theme, with the property name being the name of the theme and the value being an object containing the theme's styles.
 
@@ -7,7 +7,7 @@ This code is important for the larger project because it allows users of the Ale
 For example, if a user wants to use the "web95" theme, they can import it from this file like so:
 
 ```
-import { web95 } from 'alephium-web3/themes'
+import { web95 } from 'oxygenium-web3/themes'
 ```
 
 And then pass it to the appropriate component in the library like so:

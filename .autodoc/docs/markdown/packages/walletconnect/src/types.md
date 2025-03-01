@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/walletconnect/src/types.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/src/types.ts)
 
 This file defines several types and interfaces that are used in the Alephium Web3 project. It also imports various modules and constants that are used throughout the project. 
 

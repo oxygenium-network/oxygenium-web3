@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-react/src/components/Pages/Connectors)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Pages/Connectors)
 
 The `Connectors` component in `index.tsx` is a crucial part of the Alephium Web3 project, as it enables users to connect their wallets to the Alephium network. It renders a list of supported wallet connectors based on the user's device type (mobile or desktop) and allows users to select the desired connector. The component imports the `useAlephiumConnectContext` hook, which provides access to the current connector and route, and the `supportedConnectors` constant, which defines the various wallet connectors supported by the Alephium network.
 
@@ -7,7 +7,7 @@ The `styles.ts` file contains styled components for the user interface, includin
 Here's an example of how these components might be used:
 
 ```javascript
-import { ConnectorsContainer, ConnectorButton } from 'alephium-web3'
+import { ConnectorsContainer, ConnectorButton } from 'oxygenium-web3'
 
 function ConnectorList() {
   return (

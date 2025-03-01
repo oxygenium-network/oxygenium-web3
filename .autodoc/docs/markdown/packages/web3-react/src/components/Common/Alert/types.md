@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/Alert/types.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Alert/types.ts)
 
 This code defines a TypeScript type called `AlertProps` that is exported for use in other parts of the Alephium project. The `AlertProps` type is an object that can have two properties: `children` and `icon`. The `children` property is of type `React.ReactNode`, which means it can accept any valid React node as its value. The `icon` property is also of type `React.ReactNode`, which means it can accept any valid React node as its value.
 
@@ -8,7 +8,7 @@ Here is an example of how this type might be used in a React component:
 
 ```jsx
 import React from 'react';
-import { AlertProps } from 'alephium-web3';
+import { AlertProps } from 'oxygenium-web3';
 
 const Alert: React.FC<AlertProps> = ({ children, icon }) => {
   return (
@@ -24,7 +24,7 @@ export default Alert;
 
 In this example, the `Alert` component accepts `AlertProps` as its props and uses the `children` and `icon` properties to render an alert. The `icon` property is optional, so it only renders if it is provided. This component can be used throughout the Alephium project to display alerts and notifications with consistent props.
 ## Questions: 
- 1. What is the purpose of this file in the alephium-web3 project?
+ 1. What is the purpose of this file in the oxygenium-web3 project?
 - This file contains a type definition for AlertProps, which is likely used in other parts of the project to define the props for an alert component.
 
 2. What license is this project using?

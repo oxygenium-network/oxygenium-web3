@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -18,7 +18,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 
 import { AddressType, addressFromPublicKey, addressFromScript } from '../address'
 import { base58ToBytes, binToHex, HexString, hexToBinUnsafe, isHexString } from '../utils'
-import { Transaction } from '../api/api-alephium'
+import { Transaction } from '../api/api-oxygenium'
 import { Address } from '../signer'
 import { encodedSameAsPrevious, P2SH, unlockScriptCodec } from '../codec/unlock-script-codec'
 import { scriptCodec } from '../codec/script-codec'

@@ -1,12 +1,12 @@
 {
-  "name": "@alephium/web3-react",
+  "name": "@oxygenium/web3-react",
   "version": "1.11.3",
-  "homepage": "https://github.com/alephium/alephium-web3-react",
+  "homepage": "https://github.com/oxygenium/oxygenium-web3-react",
   "license": "GPL",
   "description": "React components for Alephium Web3.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alephium/alephium-web3-react"
+    "url": "git+https://github.com/oxygenium/oxygenium-web3-react"
   },
   "type": "module",
   "exports": {
@@ -34,13 +34,13 @@
     "react-hook",
     "blockchain",
     "hooks",
-    "alephium",
+    "oxygenium",
     "react"
   ],
   "dependencies": {
-    "@alephium/get-extension-wallet": "workspace:^",
-    "@alephium/walletconnect-provider": "workspace:^",
-    "@alephium/walletconnect-qrcode-modal": "^0.1.0",
+    "@oxygenium/get-extension-wallet": "workspace:^",
+    "@oxygenium/walletconnect-provider": "workspace:^",
+    "@oxygenium/walletconnect-qrcode-modal": "^0.1.0",
     "use-sync-external-store": "^1.2.2",
     "buffer": "^6.0.3",
     "detect-browser": "^5.3.0",

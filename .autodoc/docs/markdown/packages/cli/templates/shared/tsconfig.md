@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/cli/templates/shared/tsconfig.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/templates/shared/tsconfig.json)
 
-This code is a configuration file for the TypeScript compiler used in the alephium-web3 project. The file is named `tsconfig.json` and is located in the root directory of the project. 
+This code is a configuration file for the TypeScript compiler used in the oxygenium-web3 project. The file is named `tsconfig.json` and is located in the root directory of the project. 
 
 The `compilerOptions` object contains various settings that configure how the TypeScript compiler should behave. Some of the notable options include:
 - `outDir`: specifies the output directory for compiled JavaScript files.
@@ -23,10 +23,10 @@ This configuration file is important because it ensures that the TypeScript code
 An example of how this configuration file is used in the project is by running the `tsc` command in the terminal, which compiles the TypeScript code into JavaScript using the settings specified in `tsconfig.json`.
 ## Questions: 
  1. What is the purpose of this code file?
-- This code file contains the compiler options for the alephium-web3 project.
+- This code file contains the compiler options for the oxygenium-web3 project.
 
 2. What version of ECMAScript is being targeted?
 - The code is targeting ECMAScript 2020.
 
 3. What files are included and excluded in the compilation process?
-- The "src", "test", "scripts", "alephium.config.ts", and "artifacts" directories are included, while the "node_modules" directory is excluded.
+- The "src", "test", "scripts", "oxygenium.config.ts", and "artifacts" directories are included, while the "node_modules" directory is excluded.

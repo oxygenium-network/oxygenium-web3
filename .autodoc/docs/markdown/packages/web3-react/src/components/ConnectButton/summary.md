@@ -1,11 +1,11 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-react/src/components/ConnectButton)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/ConnectButton)
 
-The `ConnectButton` folder in the `alephium-web3` project contains code for a React component that allows users to connect their Alephium wallet to a web application. The main component, `AlephiumConnectButton`, renders a button that opens a modal for wallet connection or profile viewing. It takes several optional props, such as a label, an `onClick` function, and a `displayAccount` function.
+The `ConnectButton` folder in the `oxygenium-web3` project contains code for a React component that allows users to connect their Alephium wallet to a web application. The main component, `AlephiumConnectButton`, renders a button that opens a modal for wallet connection or profile viewing. It takes several optional props, such as a label, an `onClick` function, and a `displayAccount` function.
 
 For example, to use the `AlephiumConnectButton` in a web application, you would import it and include it in your JSX:
 
 ```javascript
-import { AlephiumConnectButton } from 'alephium-web3';
+import { AlephiumConnectButton } from 'oxygenium-web3';
 
 const MyApp = () => {
   return (
@@ -26,7 +26,7 @@ The `styles.ts` file defines a styled component called `TextContainer` using the
 For example, to use the `TextContainer` component in a web application, you would import it and include it in your JSX:
 
 ```javascript
-import { TextContainer } from 'alephium-web3';
+import { TextContainer } from 'oxygenium-web3';
 
 const MyText = () => {
   return (

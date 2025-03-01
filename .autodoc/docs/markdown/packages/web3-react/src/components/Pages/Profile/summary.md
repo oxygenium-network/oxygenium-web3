@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-react/src/components/Pages/Profile)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/components/Pages/Profile)
 
 The `Profile` folder in the Alephium web3 project contains code related to displaying the user's account information and balance, as well as providing a way to disconnect from the Alephium network. The folder consists of two files: `index.tsx` and `styles.ts`.
 
@@ -9,7 +9,7 @@ The `Profile` folder in the Alephium web3 project contains code related to displ
 Here's an example of how these components might be used in the larger Alephium web application:
 
 ```javascript
-import { BalanceContainer, Balance, LoadingBalance } from 'alephium-web3'
+import { BalanceContainer, Balance, LoadingBalance } from 'oxygenium-web3'
 
 function AccountBalance() {
   const [balance, setBalance] = useState(null)

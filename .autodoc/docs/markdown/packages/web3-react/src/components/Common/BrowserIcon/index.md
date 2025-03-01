@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/BrowserIcon/index.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/BrowserIcon/index.tsx)
 
 This code defines a React component called `BrowserIcon` that renders an icon for a web browser. The component takes a `browser` prop that specifies which browser to render an icon for. If the `browser` prop is not provided, the component will attempt to detect the current browser using the `detectBrowser` utility function from the `utils` module.
 

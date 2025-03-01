@@ -10,7 +10,7 @@ import {
   Script,
   SignerProvider,
   HexString,
-} from "@alephium/web3";
+} from "@oxygenium/web3";
 import { getContractByCodeHash } from "./contracts";
 import { default as AddMainScriptJson } from "../add/AddMain.ral.json";
 import { default as CallScript0ScriptJson } from "../test/CallScript0.ral.json";

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/artifacts/ts/NFTTest.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/NFTTest.ts)
 
 This code defines a contract factory and a contract instance for a smart contract called NFTTest. The contract is defined using the Alephium Web3 library, which provides a set of functions and types for interacting with the Alephium blockchain.
 
@@ -16,7 +16,7 @@ Overall, this code provides a set of functions and types for interacting with th
 - This code is a TypeScript module that provides a ContractFactory and ContractInstance for interacting with a smart contract called NFTTest. It also defines custom types for the contract.
 
 2. What dependencies does this code have?
-- This code imports several functions and types from the "@alephium/web3" library, as well as a JSON file containing the ABI of the NFTTest contract.
+- This code imports several functions and types from the "@oxygenium/web3" library, as well as a JSON file containing the ABI of the NFTTest contract.
 
 3. What functionality does this code provide?
 - This code provides a ContractFactory for deploying and testing instances of the NFTTest contract, as well as a ContractInstance for interacting with deployed instances. It also defines custom types for the contract's fields, state, and methods.

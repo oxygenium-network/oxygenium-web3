@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/styles/themes/nouns.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/themes/nouns.ts)
 
 This code exports a set of CSS variables that define the styling for various elements in the Alephium web3 project. These variables can be used throughout the project to ensure consistent styling across different components.
 

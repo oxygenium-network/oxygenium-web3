@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -51,7 +51,7 @@ import {
   SignChainedTxParams,
   SignChainedTxResult,
   TraceableError
-} from '@alephium/web3'
+} from '@oxygenium/web3'
 
 import { ALEPHIUM_DEEP_LINK, LOGGER, PROVIDER_NAMESPACE, RELAY_METHODS, RELAY_URL } from './constants'
 import {
@@ -139,7 +139,7 @@ export class WalletConnectProvider extends SignerProvider {
     if (!this.session) {
       const { uri, approval } = await this.client.connect({
         requiredNamespaces: {
-          alephium: {
+          oxygenium: {
             chains: [this.permittedChain],
             methods: this.methods,
             events: ['accountChanged']
@@ -236,7 +236,7 @@ export class WalletConnectProvider extends SignerProvider {
   // ---------- Private ----------------------------------------------- //
 
   private getCustomStoragePrefix(): string {
-    return this.providerOpts.customStoragePrefix ?? 'alephium'
+    return this.providerOpts.customStoragePrefix ?? 'oxygenium'
   }
 
   private getWCStorageKey(prefix: string, version: string, name: string): string {

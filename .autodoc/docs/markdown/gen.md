@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/gen.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/gen.ts)
 
 This code is responsible for generating code artifacts for the Alephium project using the Alephium Web3 library. The Alephium project is a blockchain platform that aims to provide a scalable and secure infrastructure for decentralized applications. The Alephium Web3 library is a JavaScript library that provides a set of APIs for interacting with the Alephium blockchain.
 
@@ -11,7 +11,7 @@ This code can be used to generate code artifacts for the Alephium project. Code 
 Here is an example of how this code can be used in a larger project:
 
 ```javascript
-const { gen } = require('@alephium/web3-gen')
+const { gen } = require('@oxygenium/web3-gen')
 
 async function build() {
   await gen()
@@ -21,10 +21,10 @@ async function build() {
 build()
 ```
 
-In this example, the `gen` function is imported from the `@alephium/web3-gen` module, which is a wrapper around the code in this file. The `build` function is an asynchronous function that calls the `gen` function to generate the code artifacts and then performs other build steps. The `build` function is then called to start the build process.
+In this example, the `gen` function is imported from the `@oxygenium/web3-gen` module, which is a wrapper around the code in this file. The `build` function is an asynchronous function that calls the `gen` function to generate the code artifacts and then performs other build steps. The `build` function is then called to start the build process.
 ## Questions: 
  1. What is the purpose of this code file?
-   - This code file is used to generate code artifacts for the Alephium project using the `@alephium/web3` and `@alephium/cli` libraries.
+   - This code file is used to generate code artifacts for the Alephium project using the `@oxygenium/web3` and `@oxygenium/cli` libraries.
 
 2. What license is this code file released under?
    - This code file is released under the GNU Lesser General Public License, version 3 or later.

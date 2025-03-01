@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/ConnectButton/index.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/ConnectButton/index.tsx)
 
 This file contains code for the Alephium Connect Button component, which is a button that allows users to connect their Alephium wallet to a web application. The component is written in React and uses several other components and hooks from the Alephium-web3 project.
 

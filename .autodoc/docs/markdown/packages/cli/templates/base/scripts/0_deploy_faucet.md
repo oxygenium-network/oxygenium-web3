@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/cli/templates/base/scripts/0_deploy_faucet.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/templates/base/scripts/0_deploy_faucet.ts)
 
 This code is a deployment script for a token faucet contract in the Alephium blockchain network. The purpose of this script is to deploy the TokenFaucet contract and set its initial state. The TokenFaucet contract is responsible for distributing tokens to users who request them. 
 
@@ -24,7 +24,7 @@ This code imports the deployFaucet function from the current directory and calls
    - This code is a deployment script for a token faucet contract in the Alephium blockchain network.
 
 2. What dependencies are required for this code to run?
-   - This code requires the `@alephium/cli` package and a custom `Settings` object defined in `alephium.config`. It also imports the `TokenFaucet` contract from an artifacts directory.
+   - This code requires the `@oxygenium/cli` package and a custom `Settings` object defined in `oxygenium.config`. It also imports the `TokenFaucet` contract from an artifacts directory.
 
 3. What is the expected output of running this code?
    - Running this code will deploy a token faucet contract with initial state values specified in the `initialFields` object. The contract ID and address will be logged to the console.

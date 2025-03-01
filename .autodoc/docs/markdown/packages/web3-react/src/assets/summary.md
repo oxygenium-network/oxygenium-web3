@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-react/src/assets)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/assets)
 
-The `assets` folder in the `alephium-web3` project contains two files, `icons.tsx` and `logos.tsx`, which define various SVG icons and logos as React components. These components can be easily imported and used in other parts of the project to provide visual cues and branding.
+The `assets` folder in the `oxygenium-web3` project contains two files, `icons.tsx` and `logos.tsx`, which define various SVG icons and logos as React components. These components can be easily imported and used in other parts of the project to provide visual cues and branding.
 
 ### icons.tsx
 
@@ -42,7 +42,7 @@ This file contains several React components that render SVG icons for the Alephi
 These components are used throughout the Alephium project to provide visual cues and branding. They can be imported into other React components and used like any other React component. For example, to use the `WalletConnect` icon in a component, you would import it like this:
 
 ```javascript
-import { WalletConnect } from 'alephium-web3'
+import { WalletConnect } from 'oxygenium-web3'
 
 function MyComponent() {
   return (

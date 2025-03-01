@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Pages/Profile/styles.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Pages/Profile/styles.ts)
 
 This file contains code related to the balance display of the Alephium web application. It imports the necessary dependencies and exports three styled components: `BalanceContainer`, `Balance`, and `LoadingBalance`.
 
@@ -15,7 +15,7 @@ This code is part of the larger Alephium web application and is responsible for 
 Here is an example of how these components might be used in the larger Alephium web application:
 
 ```
-import { BalanceContainer, Balance, LoadingBalance } from 'alephium-web3'
+import { BalanceContainer, Balance, LoadingBalance } from 'oxygenium-web3'
 
 function AccountBalance() {
   const [balance, setBalance] = useState(null)

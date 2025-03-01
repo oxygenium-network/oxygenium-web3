@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/cli/cli.js)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/cli.js)
 
 This code is a Node.js script that serves as an entry point for the Alephium command-line interface (CLI). The CLI is a tool that allows users to interact with the Alephium blockchain network through a terminal interface. 
 
@@ -12,7 +12,7 @@ Overall, this script serves as a bridge between the user's command-line input an
 
 Example usage:
 ```
-npx @alephium/cli@latest version
+npx @oxygenium/cli@latest version
 ```
 This command will print the version of the Alephium CLI.
 ## Questions: 

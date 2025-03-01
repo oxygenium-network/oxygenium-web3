@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/artifacts/add)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/artifacts/add)
 
 The `.autodoc/docs/json/artifacts/add` folder contains two JSON files that represent smart contracts for the Alephium blockchain network. These contracts are written in bytecode and provide basic functionality for adding two 256-bit unsigned integers and creating and destroying sub-contracts.
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/wallets/wallet.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/wallets/wallet.ts)
 
 This file contains TypeScript code that defines two interfaces: `WalletOptions` and `WalletProps`. These interfaces are used to define the options and properties of a wallet component in the Alephium web3 project.
 
@@ -9,7 +9,7 @@ The `WalletProps` interface defines several required properties: `id`, `name`, a
 These interfaces are used throughout the Alephium web3 project to define the options and properties of wallet components. For example, a developer might use these interfaces to create a new wallet component and pass in the appropriate options and properties. Here is an example of how these interfaces might be used:
 
 ```
-import { WalletOptions, WalletProps } from 'alephium-web3'
+import { WalletOptions, WalletProps } from 'oxygenium-web3'
 
 const walletOptions: WalletOptions = {
   appName: 'My App',

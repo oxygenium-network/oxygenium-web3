@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -26,13 +26,13 @@ import {
   addressFromContractId,
   hexToString,
   ContractFactory
-} from '@alephium/web3'
+} from '@oxygenium/web3'
 import { NFTTest } from '../artifacts/ts/NFTTest'
 import { WrongNFTTest } from '../artifacts/ts/WrongNFTTest'
 import { NFTCollectionTest, NFTCollectionTestInstance } from '../artifacts/ts/NFTCollectionTest'
 import { MintNFTTest, WithdrawNFTCollectionTest } from '../artifacts/ts/scripts'
-import { getSigner, randomContractId } from '@alephium/web3-test'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+import { getSigner, randomContractId } from '@oxygenium/web3-test'
+import { PrivateKeyWallet } from '@oxygenium/web3-wallet'
 import {
   DeprecatedNFTTest1,
   DeprecatedNFTTest1Instance,

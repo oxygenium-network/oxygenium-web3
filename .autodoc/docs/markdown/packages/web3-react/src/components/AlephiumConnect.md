@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/AlephiumConnect.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/AlephiumConnect.tsx)
 
 The `AlephiumConnectProvider` component is a React functional component that provides a context for the Alephium Connect modal. This component is part of the Alephium Web3 project and is used to connect to the Alephium blockchain network.
 

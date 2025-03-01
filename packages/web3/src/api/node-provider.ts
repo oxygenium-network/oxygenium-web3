@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -27,10 +27,10 @@ import {
   StdInterfaceIds,
   requestWithLog
 } from './types'
-import { Api as NodeApi, CallContractFailed, CallContractSucceeded } from './api-alephium'
+import { Api as NodeApi, CallContractFailed, CallContractSucceeded } from './api-oxygenium'
 import { HexString, hexToString, isHexString, toNonNegativeBigInt } from '../utils'
 import { addressFromContractId, addressFromTokenId, groupOfAddress } from '../address'
-import * as node from '../api/api-alephium'
+import * as node from '../api/api-oxygenium'
 
 function initializeNodeApi(baseUrl: string, apiKey?: string, customFetch?: typeof fetch): NodeApi<string> {
   const nodeApi = new NodeApi<string>({

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/global.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/global.ts)
 
 This file contains code that sets and gets the current node and explorer providers for the Alephium project. The `NodeProvider` and `ExplorerProvider` classes are imported from the `api` module. 
 
@@ -15,7 +15,7 @@ These functions are used to manage the current node and explorer providers for t
 Here is an example of how these functions might be used in a larger project:
 
 ```
-import { setCurrentNodeProvider, getCurrentNodeProvider } from 'alephium-web3'
+import { setCurrentNodeProvider, getCurrentNodeProvider } from 'oxygenium-web3'
 
 // Set the current node provider
 setCurrentNodeProvider('https://my-node.com', 'my-api-key')

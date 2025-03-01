@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/walletconnect/tsconfig.json)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/tsconfig.json)
 
-This code is a configuration file for the TypeScript compiler. It specifies the options and settings that the compiler should use when compiling TypeScript code in the `alephium-web3` project. 
+This code is a configuration file for the TypeScript compiler. It specifies the options and settings that the compiler should use when compiling TypeScript code in the `oxygenium-web3` project. 
 
 The `compilerOptions` object contains a variety of settings that control how the compiler behaves. Some notable options include:
 - `allowJs`: whether to allow JavaScript files to be compiled alongside TypeScript files
@@ -14,7 +14,7 @@ The `include` property specifies which files should be included in the compilati
 
 This configuration file is an important part of the TypeScript development process, as it ensures that the compiler is using the correct settings and options for the project. Developers can modify this file to customize the compilation process to their needs. For example, they could change the `target` option to `es5` if they need to support older browsers, or add additional library files to the `lib` array if they need to use specific APIs or features.
 
-Here is an example of how this configuration file might be used in the `alephium-web3` project:
+Here is an example of how this configuration file might be used in the `oxygenium-web3` project:
 
 ```
 // tsconfig.json
@@ -39,7 +39,7 @@ tsc
 This would compile all `.ts` files in the `src` directory and its subdirectories, using the settings specified in the `tsconfig.json` file. The resulting JavaScript files would be placed in the `dist` directory.
 ## Questions: 
  1. What is the purpose of this code?
-- This code is a TypeScript configuration file for the alephium-web3 project.
+- This code is a TypeScript configuration file for the oxygenium-web3 project.
 
 2. What are some notable compiler options being used?
 - Some notable compiler options being used include "declaration" and "declarationMap" which generate corresponding .d.ts files and source maps respectively, and "strict" which enables strict type checking.

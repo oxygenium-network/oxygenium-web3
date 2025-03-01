@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/wallets/connectors/walletConnect.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/wallets/connectors/walletConnect.tsx)
 
 This code defines a function called `walletConnect` that returns an object with properties representing a wallet connector. The purpose of this code is to provide a way for users to connect their wallets to the Alephium network. 
 
@@ -13,7 +13,7 @@ The function takes in an object called `_walletOptions` as an argument, but this
 This code is used in the larger Alephium project to provide a standardized way for users to connect their wallets to the network. By defining a set of properties for each wallet connector, the project can ensure that each connector has a consistent look and feel. Other files in the project can import this function and use it to display a list of available wallet connectors to the user. For example:
 
 ```
-import { walletConnect } from 'alephium-web3'
+import { walletConnect } from 'oxygenium-web3'
 
 const walletConnectProps = walletConnect()
 // Display walletConnectProps in a list of available wallet connectors

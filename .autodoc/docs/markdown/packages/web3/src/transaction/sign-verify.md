@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3/src/transaction/sign-verify.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/transaction/sign-verify.ts)
 
 This file contains two functions that are used for transaction signing and signature verification in the Alephium project. The functions are exported and can be used by other modules in the project.
 
@@ -7,7 +7,7 @@ The `transactionSign` function takes in a transaction ID and a private key and r
 Here is an example usage of the `transactionSign` function:
 
 ```
-import { transactionSign } from 'alephium-web3'
+import { transactionSign } from 'oxygenium-web3'
 
 const txId = '0x1234567890abcdef'
 const privateKey = '0x0123456789abcdef'
@@ -22,7 +22,7 @@ The `transactionVerifySignature` function takes in a transaction ID, a public ke
 Here is an example usage of the `transactionVerifySignature` function:
 
 ```
-import { transactionVerifySignature } from 'alephium-web3'
+import { transactionVerifySignature } from 'oxygenium-web3'
 
 const txId = '0x1234567890abcdef'
 const publicKey = '0x0123456789abcdef'
@@ -35,8 +35,8 @@ console.log(isValid)
 
 Overall, these functions provide a convenient way to sign and verify transaction signatures in the Alephium project. They can be used by other modules to handle transaction signing and verification without having to implement the logic themselves.
 ## Questions: 
- 1. What is the purpose of this file in the alephium-web3 project?
-- This file contains functions for signing and verifying transaction signatures using the alephium project's library.
+ 1. What is the purpose of this file in the oxygenium-web3 project?
+- This file contains functions for signing and verifying transaction signatures using the oxygenium project's library.
 
 2. What is the expected input format for the `transactionSign` and `transactionVerifySignature` functions?
 - Both functions expect a `txId` string and a `privateKey` or `publicKey` string as input. The `transactionVerifySignature` function also expects a `signature` string as input.

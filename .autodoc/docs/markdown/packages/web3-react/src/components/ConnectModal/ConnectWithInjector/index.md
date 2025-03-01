@@ -1,6 +1,6 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/ConnectModal/ConnectWithInjector/index.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/ConnectModal/ConnectWithInjector/index.tsx)
 
-The `ConnectWithInjector` component in the `alephium-web3` project is responsible for managing the connection between the Alephium wallet and supported browser extensions (also known as injectors). The component handles various connection states, such as connecting, connected, expiring, failed, rejected, not connected, and unavailable.
+The `ConnectWithInjector` component in the `oxygenium-web3` project is responsible for managing the connection between the Alephium wallet and supported browser extensions (also known as injectors). The component handles various connection states, such as connecting, connected, expiring, failed, rejected, not connected, and unavailable.
 
 The component accepts three props: `connectorId`, `switchConnectMethod`, and `forceState`. The `connectorId` is used to identify the specific browser extension to connect with. The `switchConnectMethod` function is called when the user wants to switch to a different connection method, such as scanning a QR code. The optional `forceState` prop can be used to force the component into a specific state for testing purposes.
 

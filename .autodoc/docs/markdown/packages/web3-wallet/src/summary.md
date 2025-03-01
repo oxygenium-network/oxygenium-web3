@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/web3-wallet/src)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-wallet/src)
 
 The code in this folder provides key functionality for managing Alephium wallets and interacting with the Alephium network. It contains several modules that handle different aspects of wallet management and cryptographic operations.
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/web3-react/src/components/Common/Alert/index.tsx)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Alert/index.tsx)
 
 This code defines a React component called `Alert` that can be used to display alerts on a web page. The component takes two props: `children` and `icon`. The `children` prop is used to pass in the content of the alert, while the `icon` prop is used to pass in an optional icon to be displayed alongside the content.
 
@@ -10,7 +10,7 @@ The `Alert` component is exported as the default export of the module, which mea
 
 ```jsx
 import React from 'react'
-import Alert from 'alephium-web3/Alert'
+import Alert from 'oxygenium-web3/Alert'
 
 function MyComponent() {
   const [error, setError] = React.useState(null)

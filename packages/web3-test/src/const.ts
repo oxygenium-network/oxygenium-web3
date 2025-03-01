@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -16,8 +16,8 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { NodeProvider, web3 } from '@alephium/web3'
-import { PrivateKeyWallet } from '@alephium/web3-wallet'
+import { NodeProvider, web3 } from '@oxygenium/web3'
+import { PrivateKeyWallet } from '@oxygenium/web3-wallet'
 
 export const testPrivateKeys = [
   'a642942e67258589cd2b1822c631506632db5a12aabcf413604e785300d762a5',
@@ -28,7 +28,7 @@ export const testPrivateKeys = [
 
 export const testMnemonic =
   'vault alarm sad mass witness property virus style good flower rice alpha viable evidence run glare pretty scout evil judge enroll refuse another lava'
-export const testWalletName = 'alephium-web3-test-only-wallet'
+export const testWalletName = 'oxygenium-web3-test-only-wallet'
 export const testAddress = '1DrDyTr9RpRsQnDnXo2YRiPzPW4ooHX5LLoqXrqfMrpQH'
 export const testPrivateKey = testPrivateKeys[0]
 export const testPassword = 'alph'

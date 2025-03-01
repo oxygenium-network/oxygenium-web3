@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/packages/cli/src/deployment.ts)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/src/deployment.ts)
 
 The code in this file is part of the deployment process for Alephium smart contracts and scripts. It provides functionality to deploy contracts and execute scripts on the Alephium blockchain, as well as manage deployment results and configurations.
 
@@ -12,8 +12,8 @@ The `deployToDevnet` function is a convenience function for deploying to the Ale
 
 In summary, this code provides a comprehensive deployment process for Alephium smart contracts and scripts, managing deployment results and configurations, and allowing users to deploy and execute their code on the Alephium blockchain.
 ## Questions: 
- 1. **Question**: What is the purpose of the `alephium-web3` project?
-   **Answer**: The `alephium-web3` project is a library that provides functionalities for interacting with the Alephium blockchain, such as deploying and executing smart contracts, managing accounts, and handling transactions.
+ 1. **Question**: What is the purpose of the `oxygenium-web3` project?
+   **Answer**: The `oxygenium-web3` project is a library that provides functionalities for interacting with the Alephium blockchain, such as deploying and executing smart contracts, managing accounts, and handling transactions.
 
 2. **Question**: How does the `Deployments` class handle saving and loading deployment information?
    **Answer**: The `Deployments` class provides methods like `saveToFile`, `from`, and `load` to handle saving and loading deployment information. It saves the deployment information to a JSON file and reads from it when loading the data.

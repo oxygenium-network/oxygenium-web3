@@ -1,6 +1,6 @@
 /*
 Copyright 2018 - 2022 The Alephium Authors
-This file is part of the alephium project.
+This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -32,7 +32,7 @@ import {
   Enum,
   TraceableError,
   getContractCodeByCodeHash
-} from '@alephium/web3'
+} from '@oxygenium/web3'
 import * as path from 'path'
 import fs from 'fs'
 import { promises as fsPromises } from 'fs'
@@ -40,7 +40,7 @@ import { parseError } from './error'
 import * as fetchRetry from 'fetch-retry'
 
 const crypto = new WebCrypto()
-const defaultMainnetNodeUrl = 'https://node.mainnet.alephium.org'
+const defaultMainnetNodeUrl = 'https://node.mainnet.oxygenium.org'
 
 class TypedMatcher<T extends SourceKind> {
   matcher: RegExp

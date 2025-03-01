@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/alephium/alephium-web3/.autodoc/docs/json/packages/walletconnect/src)
+[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/walletconnect/src)
 
 The code in this folder is responsible for providing a bridge between the Alephium blockchain and WalletConnect, a protocol for connecting decentralized applications (dApps) with mobile wallets. It contains several files that define constants, types, and a provider class for interacting with the Alephium blockchain through WalletConnect.
 
@@ -11,7 +11,7 @@ The code in this folder is responsible for providing a bridge between the Alephi
 For example, a dApp might use the `WalletConnectProvider` class to enable users to sign and submit transactions securely from their mobile devices:
 
 ```javascript
-import { WalletConnectProvider } from 'alephium-web3';
+import { WalletConnectProvider } from 'oxygenium-web3';
 
 const providerOptions = { /* ... */ };
 const provider = new WalletConnectProvider(providerOptions);
