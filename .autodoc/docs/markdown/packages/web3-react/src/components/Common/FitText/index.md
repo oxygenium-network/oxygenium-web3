@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/FitText/index.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/Common/FitText/index.tsx)
 
 This code exports a React component called `FitText`. The purpose of this component is to automatically adjust the font size of its child elements to fit within the available space. This is useful for cases where the size of the text may vary depending on the user's device or screen size.
 

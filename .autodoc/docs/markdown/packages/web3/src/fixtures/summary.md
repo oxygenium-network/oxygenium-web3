@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/src/fixtures)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3/src/fixtures)
 
 The `.autodoc/docs/json/packages/web3/src/fixtures` folder contains JSON objects representing various data structures and scenarios related to the Oxygenium blockchain. These objects can be used for testing, validation, and understanding the structure of different components within the Oxygenium Web3 project.
 

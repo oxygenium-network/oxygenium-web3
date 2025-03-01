@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/hooks/useFitText.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/hooks/useFitText.tsx)
 
 The `useFitText` function is a custom React hook that resizes text to fit within a container. It is imported from the `oxygenium-web3` project and uses the `useCallback`, `useEffect`, `useLayoutEffect`, `useRef`, and `useState` hooks from the React library. The function takes an options object as an argument, which can include the following properties:
 

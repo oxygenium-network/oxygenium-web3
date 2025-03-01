@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/rollup.config.dev.js)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/rollup.config.dev.js)
 
 This code is a configuration file for the rollup bundler for a library called oxygenium-web3. The purpose of this configuration file is to specify how the library should be bundled and what dependencies should be excluded from the bundle. 
 

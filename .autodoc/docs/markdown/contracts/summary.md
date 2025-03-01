@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/contracts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/contracts)
 
 The `.autodoc/docs/json/contracts` folder contains the `sub.ral` file, which defines a smart contract function named `sub` that performs subtraction of two `U256` values and returns the result. This function is part of the Oxygenium Web3 project, a library for interacting with the Oxygenium blockchain.
 

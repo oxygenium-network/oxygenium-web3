@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/templates/base/oxygenium.config.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/templates/base/oxygenium.config.ts)
 
 The code above is a configuration file for the oxygenium-web3 project. It imports the Configuration class from the '@oxygenium/cli' package and the Number256 class from the '@oxygenium/web3' package. It also defines a type called Settings, which is an object with a single property called issueTokenAmount of type Number256. Additionally, it defines a defaultSettings object with a default value of 100n for the issueTokenAmount property.
 

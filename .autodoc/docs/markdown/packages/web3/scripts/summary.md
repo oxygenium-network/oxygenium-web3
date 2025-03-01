@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/scripts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3/scripts)
 
 The `.autodoc/docs/json/packages/web3/scripts` folder contains two important files for the Oxygenium blockchain explorer backend: `check-versions.js` and `header.js`.
 

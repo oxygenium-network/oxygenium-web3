@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/contract/events.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/contract/events.ts)
 
 This file contains code for an event subscription class and a function to subscribe to events. The purpose of this code is to allow users to subscribe to events emitted by a smart contract on the Oxygenium blockchain. 
 

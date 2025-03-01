@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/NFTTest.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/artifacts/ts/NFTTest.ts)
 
 This code defines a contract factory and a contract instance for a smart contract called NFTTest. The contract is defined using the Oxygenium Web3 library, which provides a set of functions and types for interacting with the Oxygenium blockchain.
 

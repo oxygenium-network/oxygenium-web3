@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/utils/subscription.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/utils/subscription.ts)
 
 This file contains TypeScript code that defines a Subscription class and related interfaces. The Subscription class is an abstract class that provides a framework for creating objects that can subscribe to and receive messages from a remote server. The class is designed to be extended by other classes that implement the specific details of the subscription.
 

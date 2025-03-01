@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Pages/Connectors/index.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/Pages/Connectors/index.tsx)
 
 This code defines a React component called `Connectors` that renders a list of supported wallet connectors. The component is part of the Oxygenium Web3 project and is used to allow users to connect their wallets to the Oxygenium network.
 

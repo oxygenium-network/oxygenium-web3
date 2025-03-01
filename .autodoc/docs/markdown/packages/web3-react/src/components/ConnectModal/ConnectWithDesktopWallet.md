@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/ConnectModal/ConnectWithDesktopWallet.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/ConnectModal/ConnectWithDesktopWallet.tsx)
 
 This code defines a React functional component called `ConnectWithDesktopWallet`. The purpose of this component is to connect to a desktop wallet for the Oxygenium blockchain. The component imports several dependencies, including `React`, `useEffect`, and `useState`. It also imports two custom hooks, `useOxygeniumConnectContext` and `useConnect`, from the `oxygeniumConnect` and `hooks` directories, respectively.
 

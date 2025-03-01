@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/hooks/useFocusTrap.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/hooks/useFocusTrap.tsx)
 
 This code defines a React component called `FocusTrap` that can be used to trap focus within a specific element. The purpose of this component is to ensure that when a user interacts with a specific part of a web page, such as a modal dialog or a dropdown menu, they cannot accidentally tab out of that element and move focus to another part of the page. This can be especially important for users who rely on keyboard navigation to interact with web content.
 

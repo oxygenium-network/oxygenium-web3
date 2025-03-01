@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/scripts/deploy.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/scripts/deploy.ts)
 
 This code defines a function called `deployAndSaveProgress` that deploys a smart contract and saves the deployment progress. The function takes two arguments: `configuration` and `networkId`. 
 

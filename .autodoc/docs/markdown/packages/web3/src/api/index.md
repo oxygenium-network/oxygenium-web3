@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/api/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/api/index.ts)
 
 This code exports various modules and functions from the oxygenium-web3 project. The purpose of this file is to make these modules and functions available for use in other parts of the project or in external projects that depend on oxygenium-web3.
 

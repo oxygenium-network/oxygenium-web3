@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-wallet/src/node-wallet.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-wallet/src/node-wallet.ts)
 
 This file contains the implementation of a NodeWallet class that extends the SignerProviderWithMultipleAccounts class from the `@oxygenium/web3` library. The NodeWallet class is used to interact with a wallet on the Oxygenium blockchain network. 
 

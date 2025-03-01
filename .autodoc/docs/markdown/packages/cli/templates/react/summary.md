@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/react)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/cli/templates/react)
 
 The `config-overrides.js` file in the `.autodoc/docs/json/packages/cli/templates/react` folder is responsible for customizing the webpack configuration to ensure that the oxygenium-web3 project can be built and run in a browser environment. It provides fallback options for certain modules that may not be available in the browser and supplies global variables commonly used in Node.js but not available in the browser.
 

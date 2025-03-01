@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/main.ral.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/artifacts/main.ral.json)
 
 This code is a JSON object that contains information about a smart contract called "Main" in the oxygenium-web3 project. The "version" field indicates the version of the contract, while the "name" field specifies the name of the contract. The "bytecodeTemplate" field contains the bytecode that will be deployed to the blockchain when the contract is created. The "{0}" in the bytecodeTemplate represents a placeholder for the contract ID, which will be filled in when the contract is deployed.
 

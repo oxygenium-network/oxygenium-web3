@@ -30,7 +30,7 @@ function prepareNextJs(templateType: string, _packageRoot: string, projectRoot: 
       'create-next-app',
       projectRoot,
       '--example',
-      `https://github.com/oxygenium/${prefix}-dapp-template`,
+      `https://github.com/oxygenium-network/${prefix}-dapp-template`,
       '--typescript'
     ],
     { stdio: 'inherit' }
@@ -52,13 +52,13 @@ export function createProject(templateType: string, packageRoot: string, project
   }
   switch (templateType) {
     case 'base':
-      gitClone('https://github.com/oxygenium/nodejs-dapp-template.git', projectRoot)
+      gitClone('https://github.com/oxygenium-network/nodejs-dapp-template.git', projectRoot)
       break
     case 'react':
-      gitClone('https://github.com/oxygenium/react-dapp-template.git', projectRoot)
+      gitClone('https://github.com/oxygenium-network/react-dapp-template.git', projectRoot)
       break
     case 'remix':
-      gitClone('https://github.com/oxygenium/remix-dapp-template.git', projectRoot)
+      gitClone('https://github.com/oxygenium-network/remix-dapp-template.git', projectRoot)
       break
     case 'nextjs':
     case 'nextjs-app':

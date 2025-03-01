@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-wallet/src/privatekey-wallet.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-wallet/src/privatekey-wallet.ts)
 
 This file contains a TypeScript module that exports a class called `PrivateKeyWallet`. This class is a subclass of `SignerProviderSimple`, which is a class from the `@oxygenium/web3` package. The `PrivateKeyWallet` class is an in-memory HDWallet that can be used for simple use cases. 
 

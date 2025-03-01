@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/scripts/check-versions.js)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/scripts/check-versions.js)
 
 This code is a Node.js script that checks if the version of Node.js installed on the user's machine matches the version expected by the Oxygenium blockchain explorer backend. The script takes two arguments: the first argument is the version of Node.js installed on the user's machine, and the second argument is the version of the explorer backend that the user wants to use. 
 

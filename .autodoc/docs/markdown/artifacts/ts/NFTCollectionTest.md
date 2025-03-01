@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/NFTCollectionTest.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/artifacts/ts/NFTCollectionTest.ts)
 
 The code is a TypeScript module that provides an interface for interacting with a smart contract called NFTCollectionTest. The module exports two classes: Factory and NFTCollectionTestInstance. 
 

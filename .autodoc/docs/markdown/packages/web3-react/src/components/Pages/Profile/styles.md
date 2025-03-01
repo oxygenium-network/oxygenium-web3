@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Pages/Profile/styles.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/components/Pages/Profile/styles.ts)
 
 This file contains code related to the balance display of the Oxygenium web application. It imports the necessary dependencies and exports three styled components: `BalanceContainer`, `Balance`, and `LoadingBalance`.
 

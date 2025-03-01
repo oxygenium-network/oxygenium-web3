@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/signer/types.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/signer/types.ts)
 
 This file contains TypeScript interfaces and types that are used throughout the Oxygenium Web3 project. The code defines several interfaces for different types of transactions and parameters that can be used to sign and submit transactions to the Oxygenium blockchain.
 

@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/src/types.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/src/types.ts)
 
 This file contains various interfaces, functions, and classes that are used in the Oxygenium project. The code imports several modules from the `@oxygenium/web3` package, which provides a set of tools for interacting with the Oxygenium blockchain. 
 

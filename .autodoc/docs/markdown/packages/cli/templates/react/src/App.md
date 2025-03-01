@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/templates/react/src/App.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/templates/react/src/App.tsx)
 
 The code is a React application that displays information about the Oxygenium blockchain. The application uses the `@oxygenium/web3` library to interact with the blockchain. The `ExplorerProvider` class is used to connect to the Oxygenium mainnet backend. The `Contract` and `Script` classes are used to interact with smart contracts on the blockchain.
 

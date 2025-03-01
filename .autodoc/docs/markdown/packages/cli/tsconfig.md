@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/tsconfig.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/cli/tsconfig.json)
 
 This code is a configuration file for the TypeScript compiler for the oxygenium-web3 project. It specifies various options for the compiler to use when compiling TypeScript code into JavaScript. 
 

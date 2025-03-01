@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/wallets/index.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/wallets/index.ts)
 
 This code defines a function called `getWallets` that returns an array of three different wallet connectors. These connectors are used to interact with different types of cryptocurrency wallets in the Oxygenium project.
 

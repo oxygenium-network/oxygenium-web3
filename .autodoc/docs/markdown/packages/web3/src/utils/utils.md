@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/utils/utils.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3/src/utils/utils.ts)
 
 This file contains utility functions and constants used in the Oxygenium project. 
 

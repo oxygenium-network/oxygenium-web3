@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/hooks/useBalance.tsx)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/hooks/useBalance.tsx)
 
 This code defines a custom React hook called `useBalance` that allows a user to retrieve their balance for the Oxygenium cryptocurrency. The hook is part of the Oxygenium Web3 project, which is a library for interacting with the Oxygenium blockchain.
 

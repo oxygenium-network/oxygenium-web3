@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/types.ts)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/web3-react/src/styles/types.ts)
 
 This file defines types and interfaces related to theming and styling for the Oxygenium project. It exports two main types: `Theme` and `ThemeMode`, as well as a `CustomTheme` type. 
 

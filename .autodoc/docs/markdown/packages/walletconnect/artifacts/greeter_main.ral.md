@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/walletconnect/artifacts/greeter_main.ral.json)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/packages/walletconnect/artifacts/greeter_main.ral.json)
 
 This code appears to be a configuration file for a smart contract called "Main" within the oxygenium-web3 project. The file contains information about the contract's version, bytecode template, and fields signature, as well as details about the contract's main function.
 

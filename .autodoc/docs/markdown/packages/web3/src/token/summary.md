@@ -1,4 +1,4 @@
-[View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3/src/token)
+[View code on GitHub](https://github.com/oxygenium-network/oxygenium-web3/.autodoc/docs/json/packages/web3/src/token)
 
 The code in the `token` folder of the `oxygenium-web3` project focuses on providing functionality related to non-fungible tokens (NFTs) and their metadata. The folder contains two files: `index.ts` and `nft.ts`.
 
