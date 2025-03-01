@@ -1,7 +1,7 @@
 {
   "name": "@oxygenium/walletconnect-provider",
   "description": "Oxygenium Provider for WalletConnect Protocol",
-  "version": "1.11.3-2",
+  "version": "1.11.3-3",
   "author": "Oxygenium dev",
   "homepage": "https://github.com/oxygenium-network/walletconnect",
   "repository": {
