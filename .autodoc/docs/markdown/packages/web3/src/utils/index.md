@@ -4,7 +4,7 @@ This file is a license file and does not contain any code that directly contribu
 
 The `export *` syntax is used to export all of the functions and classes from the specified modules. This allows other files in the project to import these modules and use their functionality without having to import each individual function or class separately. 
 
-For example, the `address` module likely contains functions for working with Alephium addresses, such as generating new addresses or validating existing ones. Another module, `bs58`, may contain functions for encoding and decoding data using the Base58 encoding scheme. 
+For example, the `address` module likely contains functions for working with Oxygenium addresses, such as generating new addresses or validating existing ones. Another module, `bs58`, may contain functions for encoding and decoding data using the Base58 encoding scheme. 
 
 By exporting these modules from a single file, it makes it easier for other files in the project to access and use these functions without having to search through multiple files. 
 

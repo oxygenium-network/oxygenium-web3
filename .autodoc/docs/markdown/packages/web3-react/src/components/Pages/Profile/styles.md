@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Pages/Profile/styles.ts)
 
-This file contains code related to the balance display of the Alephium web application. It imports the necessary dependencies and exports three styled components: `BalanceContainer`, `Balance`, and `LoadingBalance`.
+This file contains code related to the balance display of the Oxygenium web application. It imports the necessary dependencies and exports three styled components: `BalanceContainer`, `Balance`, and `LoadingBalance`.
 
 `BalanceContainer` is a styled component that wraps around the `Balance` component. It is used to position the balance display on the web page.
 
@@ -10,9 +10,9 @@ This file contains code related to the balance display of the Alephium web appli
 
 The `PlaceholderKeyframes` constant is a keyframe animation that is used to animate the loading animation in `LoadingBalance`. It animates the background of the component to create a loading effect.
 
-This code is part of the larger Alephium web application and is responsible for displaying the user's balance. The `Balance` component is rendered with the user's balance once it is fetched from the server. If the balance has not yet been fetched, the `LoadingBalance` component is rendered instead. This provides a visual cue to the user that the balance is being loaded.
+This code is part of the larger Oxygenium web application and is responsible for displaying the user's balance. The `Balance` component is rendered with the user's balance once it is fetched from the server. If the balance has not yet been fetched, the `LoadingBalance` component is rendered instead. This provides a visual cue to the user that the balance is being loaded.
 
-Here is an example of how these components might be used in the larger Alephium web application:
+Here is an example of how these components might be used in the larger Oxygenium web application:
 
 ```
 import { BalanceContainer, Balance, LoadingBalance } from 'oxygenium-web3'
@@ -46,7 +46,7 @@ function AccountBalance() {
 In this example, the `AccountBalance` component fetches the user's balance from the server and displays it using the `Balance` component. While the balance is being fetched, the `LoadingBalance` component is displayed instead. The `BalanceContainer` component is used to position the balance display on the web page.
 ## Questions: 
  1. What is the purpose of this code file?
-- This code file contains styled components for displaying balance information in the Alephium web3 project.
+- This code file contains styled components for displaying balance information in the Oxygenium web3 project.
 
 2. What is the purpose of the `LoadingBalance` component?
 - The `LoadingBalance` component is used to display a loading animation while balance information is being fetched.

@@ -1,7 +1,7 @@
 {
   "name": "@oxygenium/web3-test",
   "version": "1.11.3",
-  "description": "Utility functions for Alephium test",
+  "description": "Utility functions for Oxygenium test",
   "keywords": [
     "oxygenium",
     "web3"
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/oxygenium/oxygenium-web3/issues"
   },
-  "author": "Alephium dev <dev@oxygenium.org>",
+  "author": "Oxygenium dev <dev@oxygenium.org>",
   "scripts": {
     "build": "rm -rf dist/* && npx tsc --build .",
     "test": "jest -i --config ./jest-config.json"

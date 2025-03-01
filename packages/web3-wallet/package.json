@@ -1,7 +1,7 @@
 {
   "name": "@oxygenium/web3-wallet",
   "version": "1.11.3",
-  "description": "Simple wallets for Alephium",
+  "description": "Simple wallets for Oxygenium",
   "keywords": [
     "oxygenium",
     "web3"
@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/oxygenium/oxygenium-web3/issues"
   },
-  "author": "Alephium dev <dev@oxygenium.org>",
+  "author": "Oxygenium dev <dev@oxygenium.org>",
   "scripts": {
     "build": "rm -rf dist/* && npx tsc --build . && webpack",
     "test": "jest -i --config ./jest-config.json"

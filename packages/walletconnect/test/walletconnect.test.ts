@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -330,7 +330,7 @@ async function verifySign(provider: WalletConnectProvider, walletClient: WalletC
   })
   await checkBalanceDecreasing()
 
-  const message = 'Hello Alephium!'
+  const message = 'Hello Oxygenium!'
   const signedMessage = await provider.signMessage({
     message,
     messageHasher: 'oxygenium',

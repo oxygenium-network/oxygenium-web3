@@ -6,7 +6,7 @@ The component takes in several props, including `logo`, `smallLogo`, `connecting
 
 The spinner animation is created using SVG and Framer Motion. The spinner consists of a circular path that is animated to rotate around the center of the spinner. The `AnimatePresence` component is used to animate the spinner in and out of the DOM. When the `connecting` prop is true, the spinner is displayed with a fade-in animation. When the `countdown` prop is true, the spinner is displayed with a countdown animation that fades out after a short duration.
 
-The `CircleSpinner` component is used throughout the Alephium Web3 project to indicate loading or connecting states. It can be used in conjunction with other components to create a more complex loading or connecting UI. For example, it can be used in a modal or overlay to indicate that a process is running in the background. 
+The `CircleSpinner` component is used throughout the Oxygenium Web3 project to indicate loading or connecting states. It can be used in conjunction with other components to create a more complex loading or connecting UI. For example, it can be used in a modal or overlay to indicate that a process is running in the background. 
 
 Example usage:
 

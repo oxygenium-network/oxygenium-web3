@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/artifacts/add)
 
-The `.autodoc/docs/json/artifacts/add` folder contains two JSON files that represent smart contracts for the Alephium blockchain network. These contracts are written in bytecode and provide basic functionality for adding two 256-bit unsigned integers and creating and destroying sub-contracts.
+The `.autodoc/docs/json/artifacts/add` folder contains two JSON files that represent smart contracts for the Oxygenium blockchain network. These contracts are written in bytecode and provide basic functionality for adding two 256-bit unsigned integers and creating and destroying sub-contracts.
 
 ### add.ral.json
 
@@ -38,4 +38,4 @@ caller: [address of user]
 
 This would add the token to the blacklist and effectively destroy it.
 
-In summary, the code in this folder provides basic functionality for adding integers and managing assets on the Alephium blockchain network. These contracts can be used as building blocks for more complex smart contracts that require these functionalities.
+In summary, the code in this folder provides basic functionality for adding integers and managing assets on the Oxygenium blockchain network. These contracts can be used as building blocks for more complex smart contracts that require these functionalities.

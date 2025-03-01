@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3/src/transaction/sign-verify.ts)
 
-This file contains two functions that are used for transaction signing and signature verification in the Alephium project. The functions are exported and can be used by other modules in the project.
+This file contains two functions that are used for transaction signing and signature verification in the Oxygenium project. The functions are exported and can be used by other modules in the project.
 
 The `transactionSign` function takes in a transaction ID and a private key and returns a signature for the transaction. The `keyType` parameter is optional and specifies the type of key being used for signing. The function calls the `sign` function from the `utils` module and passes in the transaction ID, private key, and key type (if provided) as arguments. The `sign` function is responsible for generating the signature using the provided private key and returns it as a string.
 
@@ -33,7 +33,7 @@ const isValid = transactionVerifySignature(txId, publicKey, signature, keyType)
 console.log(isValid)
 ``` 
 
-Overall, these functions provide a convenient way to sign and verify transaction signatures in the Alephium project. They can be used by other modules to handle transaction signing and verification without having to implement the logic themselves.
+Overall, these functions provide a convenient way to sign and verify transaction signatures in the Oxygenium project. They can be used by other modules to handle transaction signing and verification without having to implement the logic themselves.
 ## Questions: 
  1. What is the purpose of this file in the oxygenium-web3 project?
 - This file contains functions for signing and verifying transaction signatures using the oxygenium project's library.

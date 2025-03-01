@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/wallets/connectors/walletConnect.tsx)
 
-This code defines a function called `walletConnect` that returns an object with properties representing a wallet connector. The purpose of this code is to provide a way for users to connect their wallets to the Alephium network. 
+This code defines a function called `walletConnect` that returns an object with properties representing a wallet connector. The purpose of this code is to provide a way for users to connect their wallets to the Oxygenium network. 
 
 The function takes in an object called `_walletOptions` as an argument, but this argument is not used in the function. Instead, the function returns an object with the following properties:
 
@@ -10,7 +10,7 @@ The function takes in an object called `_walletOptions` as an argument, but this
 - `logoBackground`: A string representing the background color of the logo. In this case, it is set to `'var(--ck-brand-walletConnect)'`.
 - `scannable`: A boolean representing whether the wallet connector can be scanned. In this case, it is set to `true`.
 
-This code is used in the larger Alephium project to provide a standardized way for users to connect their wallets to the network. By defining a set of properties for each wallet connector, the project can ensure that each connector has a consistent look and feel. Other files in the project can import this function and use it to display a list of available wallet connectors to the user. For example:
+This code is used in the larger Oxygenium project to provide a standardized way for users to connect their wallets to the network. By defining a set of properties for each wallet connector, the project can ensure that each connector has a consistent look and feel. Other files in the project can import this function and use it to display a list of available wallet connectors to the user. For example:
 
 ```
 import { walletConnect } from 'oxygenium-web3'

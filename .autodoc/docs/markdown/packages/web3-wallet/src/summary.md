@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-wallet/src)
 
-The code in this folder provides key functionality for managing Alephium wallets and interacting with the Alephium network. It contains several modules that handle different aspects of wallet management and cryptographic operations.
+The code in this folder provides key functionality for managing Oxygenium wallets and interacting with the Oxygenium network. It contains several modules that handle different aspects of wallet management and cryptographic operations.
 
 The `hd-wallet.ts` module provides functions and classes related to HD wallets and private key derivation. It exports functions for deriving private keys from a mnemonic phrase and for specific groups, as well as utility functions for constructing HD wallet paths. The `HDWallet` class provides an in-memory HD wallet implementation, allowing users to derive and add new accounts and sign raw transactions.
 
@@ -17,11 +17,11 @@ const explorerProvider = 'your explorer provider';
 const wallet = new HDWallet(mnemonic, keyType, nodeProvider, explorerProvider);
 ```
 
-The `index.ts` module exports four modules: `hd-wallet`, `node-wallet`, `privatekey-wallet`, and `password-crypto`. These modules provide functionality for generating hierarchical deterministic wallets, interacting with a remote Alephium node, managing wallets based on a single private key, and encrypting/decrypting sensitive data using a user-provided password.
+The `index.ts` module exports four modules: `hd-wallet`, `node-wallet`, `privatekey-wallet`, and `password-crypto`. These modules provide functionality for generating hierarchical deterministic wallets, interacting with a remote Oxygenium node, managing wallets based on a single private key, and encrypting/decrypting sensitive data using a user-provided password.
 
 The `noble-wrapper.ts` module provides utility functions for working with elliptic curve cryptography (ECC) using the secp256k1 curve. These functions are used throughout the project to provide secure key management and transaction signing functionality.
 
-The `node-wallet.ts` module contains the `NodeWallet` class, which is used to interact with a wallet on the Alephium blockchain network. It provides methods for getting a list of accounts associated with the wallet, setting the active account, signing transactions, and locking/unlocking the wallet.
+The `node-wallet.ts` module contains the `NodeWallet` class, which is used to interact with a wallet on the Oxygenium blockchain network. It provides methods for getting a list of accounts associated with the wallet, setting the active account, signing transactions, and locking/unlocking the wallet.
 
 Example usage of the `NodeWallet` class:
 
@@ -52,7 +52,7 @@ const decrypted = decrypt(password, encrypted);
 console.log(decrypted);
 ```
 
-The `privatekey-wallet.ts` module provides the `PrivateKeyWallet` class, which is an in-memory HDWallet for simple use cases. It can be used to generate and manage private keys and sign transactions for the Alephium blockchain.
+The `privatekey-wallet.ts` module provides the `PrivateKeyWallet` class, which is an in-memory HDWallet for simple use cases. It can be used to generate and manage private keys and sign transactions for the Oxygenium blockchain.
 
 Example usage of the `PrivateKeyWallet` class:
 
@@ -67,4 +67,4 @@ const explorerProvider = 'your explorer provider';
 const wallet = new PrivateKeyWallet(privateKey, keyType, nodeProvider, explorerProvider);
 ```
 
-Overall, the code in this folder provides essential functionality for managing Alephium wallets and interacting with the Alephium network, allowing developers to build decentralized applications on the Alephium blockchain.
+Overall, the code in this folder provides essential functionality for managing Oxygenium wallets and interacting with the Oxygenium network, allowing developers to build decentralized applications on the Oxygenium blockchain.

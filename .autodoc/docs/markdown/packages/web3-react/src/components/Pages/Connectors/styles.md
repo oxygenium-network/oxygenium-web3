@@ -32,7 +32,7 @@ function ConnectorList() {
 ```
 ## Questions: 
  1. What is the purpose of this code file?
-- This code file contains styled components for a connector container and button used in the Alephium project.
+- This code file contains styled components for a connector container and button used in the Oxygenium project.
 
 2. What is the license for this code?
 - This code is licensed under the GNU Lesser General Public License, version 3 or later.

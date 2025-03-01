@@ -31,7 +31,7 @@ interface Example {
 
 const example: Example = {
   id: 1,
-  name: "Alephium",
+  name: "Oxygenium",
 };
 
 console.log(example);

@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/ThemedButton/styles.ts)
 
-This file contains two styled components, `Container` and `ThemeContainer`, which are used to style buttons in the Alephium Web3 project. 
+This file contains two styled components, `Container` and `ThemeContainer`, which are used to style buttons in the Oxygenium Web3 project. 
 
 The `Container` component is a `motion.div` styled component that accepts a `$variant` prop. It sets the display to flex, aligns items to the center, and justifies content to the start. It also sets the position to relative, height to 40px, padding to 0, line-height to 0, letter-spacing to -0.2px, font-size to 16px, and font-weight to 500. It also sets the text-align to center and applies a transition effect to color, background, box-shadow, and border-radius. 
 
@@ -14,7 +14,7 @@ The `ThemeContainer` component has a `disabled` state that sets the pointer-even
 
 The `ThemeContainer` component also has a hover state that changes the color, background, box-shadow, and border-radius of the `Container` component when the button is hovered over. Similarly, it has an active state that changes these properties when the button is clicked. 
 
-These styled components can be used to create buttons with different styles throughout the Alephium Web3 project. For example, a button with the `primary` variant can be used for primary actions, while a button with the `secondary` variant can be used for secondary actions. The `ThemeContainer` component can be used to wrap any content that needs to be styled as a button.
+These styled components can be used to create buttons with different styles throughout the Oxygenium Web3 project. For example, a button with the `primary` variant can be used for primary actions, while a button with the `secondary` variant can be used for secondary actions. The `ThemeContainer` component can be used to wrap any content that needs to be styled as a button.
 ## Questions: 
  1. What is the purpose of this code?
 - This code exports two styled components, `Container` and `ThemeContainer`, which are used to style buttons in a web application.

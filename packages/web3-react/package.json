@@ -3,7 +3,7 @@
   "version": "1.11.3",
   "homepage": "https://github.com/oxygenium/oxygenium-web3-react",
   "license": "GPL",
-  "description": "React components for Alephium Web3.",
+  "description": "React components for Oxygenium Web3.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oxygenium/oxygenium-web3-react"

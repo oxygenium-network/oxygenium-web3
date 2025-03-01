@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -27,7 +27,7 @@ if (typeof window != 'undefined') {
       name: 'Extension Wallet',
       shortName: 'Browser',
       logos: {
-        default: <Logos.AlephiumIcon />,
+        default: <Logos.OxygeniumIcon />,
         mobile: (
           <div
             style={{
@@ -44,11 +44,11 @@ if (typeof window != 'undefined') {
                 width: '100%'
               }}
             >
-              <Logos.AlephiumIcon />
+              <Logos.OxygeniumIcon />
             </div>
           </div>
         ),
-        transparent: <Logos.AlephiumIcon />
+        transparent: <Logos.OxygeniumIcon />
       },
       scannable: false,
       extensionIsInstalled: () => {
@@ -60,7 +60,7 @@ if (typeof window != 'undefined') {
       name: 'Desktop wallet',
       shortName: 'Desktop wallet',
       logos: {
-        default: <Logos.AlephiumIcon />,
+        default: <Logos.OxygeniumIcon />,
         mobile: (
           <div
             style={{
@@ -77,11 +77,11 @@ if (typeof window != 'undefined') {
                 width: '100%'
               }}
             >
-              <Logos.AlephiumIcon />
+              <Logos.OxygeniumIcon />
             </div>
           </div>
         ),
-        transparent: <Logos.AlephiumIcon />
+        transparent: <Logos.OxygeniumIcon />
       },
       scannable: false
     },

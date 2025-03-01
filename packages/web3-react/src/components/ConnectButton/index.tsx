@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -19,7 +19,7 @@ import React from 'react'
 import useIsMounted from '../../hooks/useIsMounted'
 
 import { TextContainer } from './styles'
-import { useAlephiumConnectContext, useConnectSettingContext } from '../../contexts/oxygeniumConnect'
+import { useOxygeniumConnectContext, useConnectSettingContext } from '../../contexts/oxygeniumConnect'
 import { AnimatePresence, Variants } from 'framer-motion'
 import ThemedButton, { ThemeContainer } from '../Common/ThemedButton'
 import { ResetContainer } from '../../styles'
@@ -122,7 +122,7 @@ const ConnectButtonRenderer: React.FC<ConnectButtonRendererProps> = ({ displayAc
   const isMounted = useIsMounted()
   const context = useConnectSettingContext()
 
-  const { account } = useAlephiumConnectContext()
+  const { account } = useOxygeniumConnectContext()
   const { disconnect } = useConnect()
 
   function hide() {
@@ -154,9 +154,9 @@ const ConnectButtonRenderer: React.FC<ConnectButtonRendererProps> = ({ displayAc
   )
 }
 
-ConnectButtonRenderer.displayName = 'AlephiumConnectButton.Custom'
+ConnectButtonRenderer.displayName = 'OxygeniumConnectButton.Custom'
 
-function AlephiumConnectButtonInner({
+function OxygeniumConnectButtonInner({
   label,
   displayAccount
 }: {
@@ -164,7 +164,7 @@ function AlephiumConnectButtonInner({
   separator?: string
   displayAccount: (account: Account) => string
 }) {
-  const { account } = useAlephiumConnectContext()
+  const { account } = useOxygeniumConnectContext()
 
   return (
     <AnimatePresence initial={false}>
@@ -213,14 +213,14 @@ function AlephiumConnectButtonInner({
             //padding: '0 5px',
           }}
         >
-          {label ? label : 'Connect Alephium'}
+          {label ? label : 'Connect Oxygenium'}
         </TextContainer>
       )}
     </AnimatePresence>
   )
 }
 
-type AlephiumConnectButtonProps = {
+type OxygeniumConnectButtonProps = {
   // Options
   label?: string
 
@@ -230,11 +230,11 @@ type AlephiumConnectButtonProps = {
   displayAccount?: (account: Account) => string
 }
 
-export function AlephiumConnectButton({ label, onClick, displayAccount }: AlephiumConnectButtonProps) {
+export function OxygeniumConnectButton({ label, onClick, displayAccount }: OxygeniumConnectButtonProps) {
   const isMounted = useIsMounted()
 
   const context = useConnectSettingContext()
-  const { account } = useAlephiumConnectContext()
+  const { account } = useOxygeniumConnectContext()
   const isConnected = !!account
 
   function show() {
@@ -263,7 +263,7 @@ export function AlephiumConnectButton({ label, onClick, displayAccount }: Alephi
             overflow: 'hidden'
           }}
         >
-          <AlephiumConnectButtonInner
+          <OxygeniumConnectButtonInner
             label={label}
             displayAccount={displayAccount ?? ((account: Account) => account.address)}
           />
@@ -273,6 +273,6 @@ export function AlephiumConnectButton({ label, onClick, displayAccount }: Alephi
   )
 }
 
-AlephiumConnectButton.Custom = ConnectButtonRenderer
+OxygeniumConnectButton.Custom = ConnectButtonRenderer
 
-export const AlephiumConnectButtonCustom = ConnectButtonRenderer
+export const OxygeniumConnectButtonCustom = ConnectButtonRenderer

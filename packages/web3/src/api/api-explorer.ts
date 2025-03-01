@@ -837,7 +837,7 @@ export class HttpClient<SecurityDataType = unknown> {
 }
 
 /**
- * @title Alephium Explorer API
+ * @title Oxygenium Explorer API
  * @version 1.0
  */
 export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDataType> {

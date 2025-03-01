@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/assets/icons.tsx)
 
-This code file contains a collection of SVG icons that are used in the Alephium-web3 project. These icons are defined as React functional components, which can be easily imported and used in other parts of the project. The icons included in this file are:
+This code file contains a collection of SVG icons that are used in the Oxygenium-web3 project. These icons are defined as React functional components, which can be easily imported and used in other parts of the project. The icons included in this file are:
 
 1. `Scan`: A generic scan icon, which can be used to represent scanning or searching functionality.
 2. `AlertIcon`: An alert icon, typically used to indicate warnings or important information.

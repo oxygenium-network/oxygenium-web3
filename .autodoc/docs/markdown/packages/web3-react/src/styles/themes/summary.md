@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/web3-react/src/styles/themes)
 
-The `.autodoc/docs/json/packages/web3-react/src/styles/themes` folder contains a collection of theme files that define the styling for various UI components in the Alephium Web3 project. These theme files export JavaScript objects containing CSS variables, which are used to maintain a consistent look and feel across the application. By using these variables, developers can easily apply and customize the styling of components, ensuring a cohesive user experience.
+The `.autodoc/docs/json/packages/web3-react/src/styles/themes` folder contains a collection of theme files that define the styling for various UI components in the Oxygenium Web3 project. These theme files export JavaScript objects containing CSS variables, which are used to maintain a consistent look and feel across the application. By using these variables, developers can easily apply and customize the styling of components, ensuring a cohesive user experience.
 
 For example, the `base.ts` file exports an object containing CSS variables for both light and dark themes. These variables are used to style buttons, modals, tooltips, and the network dropdown. Developers can use these variables to create a consistent and visually appealing UI for their users.
 
@@ -36,7 +36,7 @@ For example, the `base.ts` file exports an object containing CSS variables for b
 </div>
 ```
 
-The `index.ts` file exports an object containing various themes for the Alephium Web3 interface library. Users can import the desired theme from this file and pass it to the appropriate component in the library to customize the look and feel of the interface.
+The `index.ts` file exports an object containing various themes for the Oxygenium Web3 interface library. Users can import the desired theme from this file and pass it to the appropriate component in the library to customize the look and feel of the interface.
 
 ```javascript
 import { web95 } from 'oxygenium-web3/themes';
@@ -53,4 +53,4 @@ Other theme files, such as `midnight.ts`, `minimal.ts`, `nouns.ts`, `retro.ts`, 
 }
 ```
 
-In summary, the code in the `themes` folder plays a crucial role in defining the visual style of the Alephium Web3 project and ensuring that it is consistent across different components. By using the CSS variables defined in these files, developers can create a consistent and visually appealing UI for their users.
+In summary, the code in the `themes` folder plays a crucial role in defining the visual style of the Oxygenium Web3 project and ensuring that it is consistent across different components. By using the CSS variables defined in these files, developers can create a consistent and visually appealing UI for their users.

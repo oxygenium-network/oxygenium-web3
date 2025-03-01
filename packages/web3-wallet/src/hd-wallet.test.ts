@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -61,43 +61,43 @@ describe('HD wallet', () => {
     expect(deriveSecp256K1PrivateKey(testMnemonic, 3)).toEqual(
       'ec8c4e863e4027d5217c382bfc67bd2638f21d6f956653505229f1d242123a9a'
     )
-    expect(deriveSecp256K1PrivateKey(testMnemonic, 0, 'Alephium')).toEqual(
+    expect(deriveSecp256K1PrivateKey(testMnemonic, 0, 'Oxygenium')).toEqual(
       '62814353f0fac259b448441898f294b17eff73ab1fd6a7fc4b8216f7e039bdce'
     )
-    expect(deriveSecp256K1PrivateKey(testMnemonic, 1, 'Alephium')).toEqual(
+    expect(deriveSecp256K1PrivateKey(testMnemonic, 1, 'Oxygenium')).toEqual(
       'ff8efb234d82f49ece8b34fa9a7250e16879a7a8a222463390159e2e51a1a117'
     )
-    expect(deriveSecp256K1PrivateKey(testMnemonic, 2, 'Alephium')).toEqual(
+    expect(deriveSecp256K1PrivateKey(testMnemonic, 2, 'Oxygenium')).toEqual(
       '9fce4cb835651c8d2aeed1daead8bd04ab314d586e9b8423ee0d7a264cb8608e'
     )
-    expect(deriveSecp256K1PrivateKey(testMnemonic, 3, 'Alephium')).toEqual(
+    expect(deriveSecp256K1PrivateKey(testMnemonic, 3, 'Oxygenium')).toEqual(
       'd8da830fe81dc6be8b2d0cc60dff79412f7b58445ab5463c63d1791b08ec1110'
     )
   })
 
   it('should derive private key for groups and secp256k1', () => {
-    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 0, 0, 'Alephium')[0]).toEqual(
+    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 0, 0, 'Oxygenium')[0]).toEqual(
       '62814353f0fac259b448441898f294b17eff73ab1fd6a7fc4b8216f7e039bdce'
     )
-    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 1, 0, 'Alephium')[0]).toEqual(
+    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 1, 0, 'Oxygenium')[0]).toEqual(
       'f62df0157aec61806d51480425e1f7a4950e13fa9a2de87988ae1d861e09d2ae'
     )
-    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 2, 0, 'Alephium')[0]).toEqual(
+    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 2, 0, 'Oxygenium')[0]).toEqual(
       'cae87098274ff447f785bc408a71b3416d6140bd824e623375959cbf43d2a2d5'
     )
-    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 3, 0, 'Alephium')[0]).toEqual(
+    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 3, 0, 'Oxygenium')[0]).toEqual(
       '9fce4cb835651c8d2aeed1daead8bd04ab314d586e9b8423ee0d7a264cb8608e'
     )
-    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 0, 100, 'Alephium')[0]).toEqual(
+    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 0, 100, 'Oxygenium')[0]).toEqual(
       'c047f716a03c4961d98427d3cf494fe3d5f3fd0b48fe3107699d90a453f2dce6'
     )
-    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 1, 100, 'Alephium')[0]).toEqual(
+    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 1, 100, 'Oxygenium')[0]).toEqual(
       '800fc78e24c87c04a76f23b8ab54179ef190f640d9346d3e89cbc3036ee69c9b'
     )
-    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 2, 100, 'Alephium')[0]).toEqual(
+    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 2, 100, 'Oxygenium')[0]).toEqual(
       '51df72c50e1b392805c3f530d2dece7e0c1842f827a579f7cd24907a6c4ff533'
     )
-    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 3, 100, 'Alephium')[0]).toEqual(
+    expect(deriveSecp256K1PrivateKeyForGroup(testMnemonic, 3, 100, 'Oxygenium')[0]).toEqual(
       '04528b7736eab20cbde90f0d2f0cb3a99481dfe92664757646077ae7851e4314'
     )
   })
@@ -117,7 +117,7 @@ describe('HD wallet', () => {
   })
 
   it('should derive account', async () => {
-    const wallet = new HDWallet({ mnemonic: testMnemonic, passphrase: 'Alephium' })
+    const wallet = new HDWallet({ mnemonic: testMnemonic, passphrase: 'Oxygenium' })
     const account0 = wallet.deriveAndAddNewAccount(0)
     const account1 = wallet.deriveAndAddNewAccount(1)
     const account2 = wallet.deriveAndAddNewAccount(2)

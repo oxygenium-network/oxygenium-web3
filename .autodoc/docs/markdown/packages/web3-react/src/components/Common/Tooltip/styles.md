@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/components/Common/Tooltip/styles.ts)
 
-This file contains styled components for a tooltip window that can be used in the Alephium web3 project. The tooltip window is a UI element that displays additional information when the user hovers over a specific element on the page. 
+This file contains styled components for a tooltip window that can be used in the Oxygenium web3 project. The tooltip window is a UI element that displays additional information when the user hovers over a specific element on the page. 
 
 The `TooltipWindow` component is a fixed-position element that covers the entire viewport and has a high z-index to ensure it appears above all other elements on the page. It has `pointer-events: none` to allow mouse events to pass through to the underlying elements. 
 
@@ -10,7 +10,7 @@ The `TooltipTail` component is the tail of the tooltip that points to the hovere
 
 These components are styled using CSS variables that are defined elsewhere in the project. The `styled` function is imported from the `styled-components` library, which allows for easy creation of reusable styled components. 
 
-Overall, these components provide a customizable and visually appealing tooltip window that can be used throughout the Alephium web3 project to enhance the user experience. Here is an example of how the `TooltipContainer` component can be used:
+Overall, these components provide a customizable and visually appealing tooltip window that can be used throughout the Oxygenium web3 project to enhance the user experience. Here is an example of how the `TooltipContainer` component can be used:
 
 ```
 import { TooltipContainer } from 'oxygenium-web3'

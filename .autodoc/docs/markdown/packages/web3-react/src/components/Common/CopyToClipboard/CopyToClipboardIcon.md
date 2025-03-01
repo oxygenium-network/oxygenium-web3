@@ -6,7 +6,7 @@ The `IconContainer` styled component defines the styles for the icon container. 
 
 The `CopyToClipboardIcon` component takes two optional props: `copied` and `small`. If `copied` is true, the icon is styled with the `$clipboard` prop set to true, indicating that the content has been copied to the clipboard. If `small` is true, the icon is rendered in a smaller size. 
 
-This component can be used in other components or pages of the Alephium Web3 project to provide a UI element for copying content to the clipboard. For example, it could be used in a form component to allow users to copy a generated password or API key to the clipboard. 
+This component can be used in other components or pages of the Oxygenium Web3 project to provide a UI element for copying content to the clipboard. For example, it could be used in a form component to allow users to copy a generated password or API key to the clipboard. 
 
 Example usage:
 

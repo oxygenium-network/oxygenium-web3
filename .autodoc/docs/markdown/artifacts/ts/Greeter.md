@@ -1,8 +1,8 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/artifacts/ts/Greeter.ts)
 
-This code is part of the Alephium-web3 project and provides a contract factory and instance for the Greeter smart contract. The Greeter smart contract is a simple contract that allows users to set and get a greeting message. 
+This code is part of the Oxygenium-web3 project and provides a contract factory and instance for the Greeter smart contract. The Greeter smart contract is a simple contract that allows users to set and get a greeting message. 
 
-The code imports various types and functions from the "@oxygenium/web3" library, which is used to interact with the Alephium blockchain. It also imports the GreeterContractJson file, which contains the ABI (Application Binary Interface) of the Greeter smart contract.
+The code imports various types and functions from the "@oxygenium/web3" library, which is used to interact with the Oxygenium blockchain. It also imports the GreeterContractJson file, which contains the ABI (Application Binary Interface) of the Greeter smart contract.
 
 The code defines a namespace called GreeterTypes, which contains custom types for the Greeter smart contract. The Fields type defines the fields of the contract state, which in this case is just a single field called btcPrice of type bigint. The State type is a ContractState object that contains the current state of the contract. The CallMethodTable type defines the methods that can be called on the contract, which in this case is just a single method called greet that takes no arguments and returns a bigint. The CallMethodParams and CallMethodResult types are used to define the parameters and return type of the greet method. The MultiCallParams and MultiCallResults types are used to define the parameters and return type of a batch of method calls.
 
@@ -10,7 +10,7 @@ The code defines a Factory class that extends the ContractFactory class from the
 
 The code defines a GreeterInstance class that extends the ContractInstance class from the "@oxygenium/web3" library. The GreeterInstance class is used to interact with an instance of the Greeter smart contract on the blockchain. The constructor takes an address and creates a new instance of the Greeter smart contract. The fetchState method is used to fetch the current state of the contract. The methods property is an object that contains a single method called greet, which is used to call the greet method of the contract. The multicall method is used to make a batch of method calls to the contract.
 
-Overall, this code provides a simple way to interact with the Greeter smart contract on the Alephium blockchain. It defines custom types for the contract, provides a factory to create instances of the contract, and provides an instance class to interact with the contract on the blockchain.
+Overall, this code provides a simple way to interact with the Greeter smart contract on the Oxygenium blockchain. It defines custom types for the contract, provides a factory to create instances of the contract, and provides an instance class to interact with the contract on the blockchain.
 ## Questions: 
  1. What is the purpose of this code and what does it do?
 - This code is a TypeScript module that provides a ContractFactory and ContractInstance for interacting with a smart contract called Greeter. It also defines custom types for the contract and includes methods for testing and deploying the contract.

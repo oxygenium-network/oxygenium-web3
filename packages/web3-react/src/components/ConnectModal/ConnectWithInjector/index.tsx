@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -42,7 +42,7 @@ import BrowserIcon from '../../Common/BrowserIcon'
 import { AlertIcon, TickIcon } from '../../../assets/icons'
 import { detectBrowser } from '../../../utils'
 import { useConnect } from '../../../hooks/useConnect'
-import { AlephiumWindowObject } from '@oxygenium/get-extension-wallet'
+import { OxygeniumWindowObject } from '@oxygenium/get-extension-wallet'
 import { ConnectorButton, ConnectorIcon, ConnectorLabel, ConnectorsContainer } from '../../Pages/Connectors/styles'
 import { useInjectedProviders } from '../../../hooks/useInjectedProviders'
 import { getInjectedProviderId } from '../../../utils/injectedProviders'

@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/.autodoc/docs/json/packages/cli/templates)
 
-The `.autodoc/docs/json/packages/cli/templates` folder contains templates for the `oxygenium-web3` project, which is a JavaScript library for interacting with the Alephium blockchain. The templates provide a starting point for developers to build applications that interact with the Alephium blockchain using the `@oxygenium/web3` library.
+The `.autodoc/docs/json/packages/cli/templates` folder contains templates for the `oxygenium-web3` project, which is a JavaScript library for interacting with the Oxygenium blockchain. The templates provide a starting point for developers to build applications that interact with the Oxygenium blockchain using the `@oxygenium/web3` library.
 
 The `base` subfolder contains the `oxygenium.config.ts` file, which serves as a central configuration file for network and settings information. It defines a `Settings` type and a `defaultSettings` object, as well as network configurations for `devnet`, `testnet`, and `mainnet`. The `scripts` folder contains the `0_deploy_faucet.ts` script for deploying the `TokenFaucet` contract, while the `src` folder contains the `token.ts` file, demonstrating how to interact with a smart contract using the `@oxygenium/web3` library.
 
@@ -12,7 +12,7 @@ const nodeUrl: string = configuration.networks.devnet.nodeUrl
 const privateKeys: string[] = configuration.networks.devnet.privateKeys
 ```
 
-The `react` subfolder contains the `config-overrides.js` file, which customizes the webpack configuration for building and running the project in a browser environment. The `src` folder contains the `App.tsx` file, which serves as the entry point for a React application that interacts with the Alephium blockchain.
+The `react` subfolder contains the `config-overrides.js` file, which customizes the webpack configuration for building and running the project in a browser environment. The `src` folder contains the `App.tsx` file, which serves as the entry point for a React application that interacts with the Oxygenium blockchain.
 
 ```javascript
 const webpack = require('webpack')
@@ -39,10 +39,10 @@ interface Example {
 
 const example: Example = {
   id: 1,
-  name: "Alephium",
+  name: "Oxygenium",
 };
 
 console.log(example);
 ```
 
-In summary, the code in the `.autodoc/docs/json/packages/cli/templates` folder provides a foundation for building applications that interact with the Alephium blockchain using the `@oxygenium/web3` library. Developers can extend this code to create more complex applications that leverage the power of the Alephium blockchain and its smart contracts.
+In summary, the code in the `.autodoc/docs/json/packages/cli/templates` folder provides a foundation for building applications that interact with the Oxygenium blockchain using the `@oxygenium/web3` library. Developers can extend this code to create more complex applications that leverage the power of the Oxygenium blockchain and its smart contracts.

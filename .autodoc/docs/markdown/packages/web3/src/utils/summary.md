@@ -33,7 +33,7 @@ const hash = djb2(data);
 console.log(`Hash value: ${hash}`);
 ```
 
-The `number.ts` file provides utility functions for formatting and converting numbers used in the Alephium project. These functions can be used to ensure consistent formatting and conversion of numbers. Example usage:
+The `number.ts` file provides utility functions for formatting and converting numbers used in the Oxygenium project. These functions can be used to ensure consistent formatting and conversion of numbers. Example usage:
 
 ```javascript
 import { prettifyAttoAlphAmount } from 'oxygenium-web3/utils/number';

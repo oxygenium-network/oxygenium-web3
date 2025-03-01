@@ -32,14 +32,14 @@ function MyComponent() {
 
 ### logos.tsx
 
-This file contains several React components that render SVG icons for the Alephium project. The components are `AlephiumIcon`, `WalletConnect`, `Ledger`, and `PlaceHolder`.
+This file contains several React components that render SVG icons for the Oxygenium project. The components are `OxygeniumIcon`, `WalletConnect`, `Ledger`, and `PlaceHolder`.
 
-- `AlephiumIcon`: Renders the Alephium logo, a visual identifier for the project.
+- `OxygeniumIcon`: Renders the Oxygenium logo, a visual identifier for the project.
 - `WalletConnect`: Renders an icon for the WalletConnect protocol, used to connect decentralized applications to mobile wallets. Takes an optional `background` prop.
 - `Ledger`: Renders an icon for the Ledger hardware wallet, used to store cryptocurrency securely.
 - `PlaceHolder`: Renders a gray square as a placeholder for components that have not yet been implemented.
 
-These components are used throughout the Alephium project to provide visual cues and branding. They can be imported into other React components and used like any other React component. For example, to use the `WalletConnect` icon in a component, you would import it like this:
+These components are used throughout the Oxygenium project to provide visual cues and branding. They can be imported into other React components and used like any other React component. For example, to use the `WalletConnect` icon in a component, you would import it like this:
 
 ```javascript
 import { WalletConnect } from 'oxygenium-web3'
@@ -53,4 +53,4 @@ function MyComponent() {
 }
 ```
 
-In summary, the `assets` folder contains a set of React components that render SVG icons and logos for the Alephium project. These components can be easily imported and used in other parts of the project to provide visual cues and branding.
+In summary, the `assets` folder contains a set of React components that render SVG icons and logos for the Oxygenium project. These components can be easily imported and used in other parts of the project to provide visual cues and branding.

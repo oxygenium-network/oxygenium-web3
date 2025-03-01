@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/web3-react/src/styles/themes/web95.ts)
 
-This code file is part of the Alephium-web3 project and contains a set of CSS custom properties (variables) that define the styling for various UI components. These variables are used to maintain a consistent look and feel across the application, making it easier to update the design in the future.
+This code file is part of the Oxygenium-web3 project and contains a set of CSS custom properties (variables) that define the styling for various UI components. These variables are used to maintain a consistent look and feel across the application, making it easier to update the design in the future.
 
 The variables are grouped into different categories, such as colors, backgrounds, box shadows, border radius, and more. For example, the `--ck-font-family` variable sets the font family for the entire application, while the `--ck-focus-color` variable defines the color for focused elements.
 
@@ -18,7 +18,7 @@ Here's an example of how these variables can be used in a CSS file:
 }
 ```
 
-By using these custom properties, developers can easily apply consistent styling to various elements throughout the Alephium-web3 project, ensuring a cohesive user experience.
+By using these custom properties, developers can easily apply consistent styling to various elements throughout the Oxygenium-web3 project, ensuring a cohesive user experience.
 ## Questions: 
  1. **Question:** What is the purpose of this code file in the `oxygenium-web3` project?
    **Answer:** This code file contains a set of CSS variables that define the styling and appearance of various UI components in the `oxygenium-web3` project.

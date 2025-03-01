@@ -1,6 +1,6 @@
 [View code on GitHub](https://github.com/oxygenium/oxygenium-web3/packages/cli/templates/base/src/token.ts)
 
-The code is a script that demonstrates how to use the `@oxygenium/web3` library to interact with a smart contract deployed on the Alephium blockchain. Specifically, the script withdraws tokens from a `TokenFaucet` contract and prints the latest state of the contract.
+The code is a script that demonstrates how to use the `@oxygenium/web3` library to interact with a smart contract deployed on the Oxygenium blockchain. Specifically, the script withdraws tokens from a `TokenFaucet` contract and prints the latest state of the contract.
 
 The script first imports necessary libraries such as `Deployments` from `@oxygenium/cli`, `web3`, `Project`, and `DUST_AMOUNT` from `@oxygenium/web3`, and `testNodeWallet` from `@oxygenium/web3-test`. It also imports `configuration` from `../oxygenium.config` and `TokenFaucet` and `Withdraw` from `../artifacts/ts`.
 
@@ -21,10 +21,10 @@ The `withdraw()` function is an asynchronous function that performs the followin
 
 Finally, the `withdraw()` function is called to execute the script.
 
-This code can be used as a reference for developers who want to interact with smart contracts on the Alephium blockchain using the `@oxygenium/web3` library. Developers can modify the code to interact with other contracts and networks by changing the configuration file and the contract names.
+This code can be used as a reference for developers who want to interact with smart contracts on the Oxygenium blockchain using the `@oxygenium/web3` library. Developers can modify the code to interact with other contracts and networks by changing the configuration file and the contract names.
 ## Questions: 
  1. What is the purpose of this code?
-- This code is for withdrawing tokens from a deployed contract on the Alephium network using a test wallet.
+- This code is for withdrawing tokens from a deployed contract on the Oxygenium network using a test wallet.
 
 2. What dependencies are being used in this code?
 - This code is using dependencies from '@oxygenium/cli', '@oxygenium/web3', '@oxygenium/web3-test', and '../artifacts/ts'.

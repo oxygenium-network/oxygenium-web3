@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -33,7 +33,7 @@ export declare type RequestMessage = {
   params: AddNewTokenParameters
 }
 
-export abstract class AlephiumWindowObject extends InteractiveSignerProvider<EnableOptions> {
+export abstract class OxygeniumWindowObject extends InteractiveSignerProvider<EnableOptions> {
   abstract id: string
   abstract name: string
   abstract icon: string

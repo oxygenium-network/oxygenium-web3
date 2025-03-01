@@ -1,5 +1,5 @@
 /*
-Copyright 2018 - 2022 The Alephium Authors
+Copyright 2018 - 2022 The Oxygenium Authors
 This file is part of the oxygenium project.
 
 The library is free software: you can redistribute it and/or modify
@@ -16,10 +16,10 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 import { useEffect, useMemo } from 'react'
-import { useAlephiumBalanceContext } from '../contexts/oxygeniumConnect'
+import { useOxygeniumBalanceContext } from '../contexts/oxygeniumConnect'
 
 export function useBalance() {
-  const { balance, updateBalance, updateBalanceForTx } = useAlephiumBalanceContext()
+  const { balance, updateBalance, updateBalanceForTx } = useOxygeniumBalanceContext()
 
   useEffect(() => {
     if (balance === undefined) {
