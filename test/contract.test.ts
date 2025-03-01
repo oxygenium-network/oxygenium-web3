@@ -24,7 +24,7 @@ import {
   ContractEvent,
   Fields,
   ContractCreatedEvent,
-  ONE_ALPH,
+  ONE_OXM,
   subContractId,
   contractIdFromAddress,
   binToHex,
@@ -253,7 +253,7 @@ describe('contract', function () {
       initialFields: { sub: subState.contractId, result: 0n },
       testArgs: { a: 0n, path: subContractPath, subContractId: subState.contractId, payer },
       existingContracts: [subState],
-      inputAssets: [{ address: payer, asset: { alphAmount: ONE_ALPH * 2n } }]
+      inputAssets: [{ address: payer, asset: { alphAmount: ONE_OXM * 2n } }]
     })
     expect(testResult.events.length).toEqual(1)
     const event = testResult.events[0] as ContractCreatedEvent
@@ -416,9 +416,9 @@ describe('contract', function () {
   })
 
   it('should mint token', async () => {
-    const tokenAmount = ONE_ALPH * 10n
-    const alphAmount = ONE_ALPH * 5n
-    const wallet = await getSigner(ONE_ALPH * 5n)
+    const tokenAmount = ONE_OXM * 10n
+    const alphAmount = ONE_OXM * 5n
+    const wallet = await getSigner(ONE_OXM * 5n)
     const result = await mintToken(wallet.address, tokenAmount)
     const contractId = result.contractId
     const nodeProvider = web3.getCurrentNodeProvider()
@@ -504,7 +504,7 @@ describe('contract', function () {
   it('should test map(unit test)', async () => {
     const insertResult = await MapTest.tests.insert({
       testArgs: { key: signer.address, value: { id: 1n, balance: 10n } },
-      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_ALPH * 3n } }]
+      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_OXM * 3n } }]
     })
     expect(insertResult.maps?.map0?.get(signer.address)).toEqual({ id: 1n, balance: 10n })
     expect(insertResult.maps?.map1?.get(1n)).toEqual(10n)
@@ -517,7 +517,7 @@ describe('contract', function () {
         map2: new Map([['0011', 10n]])
       },
       testArgs: { key: signer.address },
-      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_ALPH } }]
+      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_OXM } }]
     })
     expect(updateResult.maps?.map0?.get(signer.address)).toEqual({ id: 1n, balance: 11n })
     expect(updateResult.maps?.map1?.get(1n)).toEqual(11n)
@@ -530,7 +530,7 @@ describe('contract', function () {
         map2: new Map([['0011', 10n]])
       },
       testArgs: { key: signer.address },
-      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_ALPH } }]
+      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_OXM } }]
     })
     expect(removeResult.maps?.map0?.get(signer.address)).toEqual(undefined)
     expect(removeResult.maps?.map1?.get(1n)).toEqual(undefined)
@@ -542,7 +542,7 @@ describe('contract', function () {
     const mapTestAddress = addressFromContractId(mapTestId)
     const insertResult = await MapTestWrapper.tests.insert({
       testArgs: { key: signer.address, value: { id: 1n, balance: 10n } },
-      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_ALPH * 3n } }],
+      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_OXM * 3n } }],
       initialFields: { inner: mapTestId },
       existingContracts: [MapTest.stateForTest({}, undefined, mapTestAddress)]
     })
@@ -553,7 +553,7 @@ describe('contract', function () {
 
     const updateResult = await MapTestWrapper.tests.update({
       testArgs: { key: signer.address },
-      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_ALPH } }],
+      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_OXM } }],
       initialFields: { inner: mapTestId },
       existingContracts: [
         MapTest.stateForTest({}, undefined, mapTestAddress, {
@@ -570,7 +570,7 @@ describe('contract', function () {
 
     const removeResult = await MapTestWrapper.tests.remove({
       testArgs: { key: signer.address },
-      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_ALPH } }],
+      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_OXM } }],
       initialFields: { inner: mapTestId },
       existingContracts: [
         MapTest.stateForTest({}, undefined, mapTestAddress, {
@@ -591,7 +591,7 @@ describe('contract', function () {
     const mapTestAddress = addressFromContractId(mapTestId)
     const initResult = await MapTestSub.tests.init({
       testArgs: { caller: signer.address, value: { id: 1n, balance: 10n } },
-      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_ALPH * 3n } }],
+      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_OXM * 3n } }],
       initialFields: { mapTestTemplateId: mapTestId },
       existingContracts: [MapTest.stateForTest({}, undefined, mapTestAddress)]
     })
@@ -611,7 +611,7 @@ describe('contract', function () {
         from: signer.address,
         value: { id: 1n, balance: 10n }
       },
-      attoOxmAmount: ONE_ALPH * 2n
+      attoOxmAmount: ONE_OXM * 2n
     })
 
     const invalidAddress = randomContractAddress()
@@ -751,13 +751,13 @@ describe('contract', function () {
         payer: signerAddress
       },
       signer,
-      attoOxmAmount: ONE_ALPH * 2n,
+      attoOxmAmount: ONE_OXM * 2n,
       tokens: [{ id: sub.contractInstance.contractId, amount: 200n }]
     })
 
     const afterBalances = await signer.nodeProvider.addresses.getAddressesAddressBalance(signerAddress)
     const gasFee = BigInt(txResult.gasAmount) * BigInt(txResult.gasPrice)
-    expect(BigInt(beforeBalances.balance)).toEqual(BigInt(afterBalances.balance) + ONE_ALPH / 10n + gasFee)
+    expect(BigInt(beforeBalances.balance)).toEqual(BigInt(afterBalances.balance) + ONE_OXM / 10n + gasFee)
     expect(afterBalances.tokenBalances?.find((t) => t.id === sub.contractInstance.contractId)!.amount).toEqual('100')
   })
 
@@ -809,7 +809,7 @@ describe('contract', function () {
         from: signer.address,
         value: { id: 1n, balance: 10n }
       },
-      attoOxmAmount: ONE_ALPH * 2n
+      attoOxmAmount: ONE_OXM * 2n
     })
 
     const callResult0 = await CallScript0.call({ initialFields: { mapTest: mapTest.contractId, key: signer.address } })
@@ -924,53 +924,53 @@ describe('contract', function () {
     const result0 = await InlineTest.tests.nextCountWithPay({
       address: contractAddress,
       initialFields: { count: 0n },
-      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_ALPH } }],
-      initialAsset: { alphAmount: ONE_ALPH }
+      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_OXM } }],
+      initialAsset: { alphAmount: ONE_OXM }
     })
     expect(result0.returns).toEqual(1n)
     const assets0 = result0.contracts.find((c) => c.address === contractAddress)!.asset
-    expect(assets0.alphAmount).toEqual(ONE_ALPH + ONE_ALPH / 100n)
+    expect(assets0.alphAmount).toEqual(ONE_OXM + ONE_OXM / 100n)
 
     const result1 = await InlineTest.tests.nextCountWithoutPay({
       address: contractAddress,
       initialFields: { count: 0n },
-      initialAsset: { alphAmount: ONE_ALPH }
+      initialAsset: { alphAmount: ONE_OXM }
     })
     expect(result1.returns).toEqual(1n)
     const assets1 = result1.contracts.find((c) => c.address === contractAddress)!.asset
-    expect(assets1.alphAmount).toEqual(ONE_ALPH)
+    expect(assets1.alphAmount).toEqual(ONE_OXM)
 
     const result2 = await InlineTest.tests.nextCount({
       address: contractAddress,
       initialFields: { count: 0n },
-      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_ALPH } }],
-      initialAsset: { alphAmount: ONE_ALPH }
+      inputAssets: [{ address: signer.address, asset: { alphAmount: ONE_OXM } }],
+      initialAsset: { alphAmount: ONE_OXM }
     })
     expect(result2.returns).toEqual(2n)
     const assets2 = result2.contracts.find((c) => c.address === contractAddress)!.asset
-    expect(assets2.alphAmount).toEqual(ONE_ALPH + ONE_ALPH / 100n)
+    expect(assets2.alphAmount).toEqual(ONE_OXM + ONE_OXM / 100n)
   })
 
   it('should test inline functions(integration test)', async () => {
     const deployResult0 = await InlineTest.deploy(signer, {
       initialFields: { count: 0n },
-      initialAttoOxmAmount: ONE_ALPH,
+      initialAttoOxmAmount: ONE_OXM,
       exposePrivateFunctions: true
     })
     const instance = deployResult0.contractInstance
-    await instance.transact.nextCountWithPay({ signer, attoOxmAmount: ONE_ALPH })
+    await instance.transact.nextCountWithPay({ signer, attoOxmAmount: ONE_OXM })
     const state0 = await instance.fetchState()
     expect(state0.fields.count).toEqual(1n)
-    expect(state0.asset.alphAmount).toEqual(ONE_ALPH + ONE_ALPH / 100n)
+    expect(state0.asset.alphAmount).toEqual(ONE_OXM + ONE_OXM / 100n)
 
     await instance.transact.nextCountWithoutPay({ signer })
     const state1 = await instance.fetchState()
     expect(state1.fields.count).toEqual(2n)
-    expect(state1.asset.alphAmount).toEqual(ONE_ALPH + ONE_ALPH / 100n)
+    expect(state1.asset.alphAmount).toEqual(ONE_OXM + ONE_OXM / 100n)
 
-    await instance.transact.nextCount({ signer, attoOxmAmount: ONE_ALPH })
+    await instance.transact.nextCount({ signer, attoOxmAmount: ONE_OXM })
     const state2 = await instance.fetchState()
     expect(state2.fields.count).toEqual(4n)
-    expect(state2.asset.alphAmount).toEqual(ONE_ALPH + (ONE_ALPH / 100n) * 2n)
+    expect(state2.asset.alphAmount).toEqual(ONE_OXM + (ONE_OXM / 100n) * 2n)
   })
 })

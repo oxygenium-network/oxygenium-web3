@@ -22,14 +22,14 @@ import { boolCodec, Method, unsignedTxCodec } from '../codec'
 import { LockupScript, lockupScriptCodec } from '../codec/lockup-script-codec'
 import { Script } from '../codec/script-codec'
 import { Val, ValAddress, ValBool, ValByteVec, ValI256, ValU256 } from '../codec/val'
-import { ALPH_TOKEN_ID } from '../constants'
+import { OXM_TOKEN_ID } from '../constants'
 import { binToHex, HexString, hexToBinUnsafe } from '../utils'
 
 /**
  * Contract call extracted from a script
  * @param contractAddress the address of the contract
- * @param approvedAttoOxmAmount the amount of ALPH approved to the contract
- *   - undefined if no ALPH is approved
+ * @param approvedAttoOxmAmount the amount of OXM approved to the contract
+ *   - undefined if no OXM is approved
  *   - 'unknown' if the amount cannot be determined
  *   - a number if the amount is known
  * @param approvedTokens the tokens approved to the contract
@@ -777,7 +777,7 @@ class ApprovedAccumulator {
   }
 
   reset(): void {
-    this.approvedTokens = [{ id: ALPH_TOKEN_ID, amount: 0n }]
+    this.approvedTokens = [{ id: OXM_TOKEN_ID, amount: 0n }]
   }
 
   setUnknown(): void {
@@ -803,7 +803,7 @@ class ApprovedAccumulator {
   }
 
   addApprovedAttoOxm(amount: ValU256 | SymbolU256): void {
-    this.addApprovedToken({ kind: 'ByteVec', value: hexToBinUnsafe(ALPH_TOKEN_ID) }, amount)
+    this.addApprovedToken({ kind: 'ByteVec', value: hexToBinUnsafe(OXM_TOKEN_ID) }, amount)
   }
 
   addApprovedToken(tokenId: ValByteVec | SymbolByteVec, amount: ValU256 | SymbolU256): void {

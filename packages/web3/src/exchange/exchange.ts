@@ -36,8 +36,8 @@ export function validateExchangeAddress(address: string) {
   }
 }
 
-export function isALPHTransferTx(tx: Transaction): boolean {
-  return isTransferTx(tx) && checkALPHOutput(tx)
+export function isOXMTransferTx(tx: Transaction): boolean {
+  return isTransferTx(tx) && checkOXMOutput(tx)
 }
 
 export interface BaseDepositInfo {
@@ -45,8 +45,8 @@ export interface BaseDepositInfo {
   depositAmount: bigint
 }
 
-export function getALPHDepositInfo(tx: Transaction): BaseDepositInfo[] {
-  if (!isALPHTransferTx(tx)) return []
+export function getOXMDepositInfo(tx: Transaction): BaseDepositInfo[] {
+  if (!isOXMTransferTx(tx)) return []
 
   const inputAddresses = getInputAddresses(tx)
   const result = new Map<Address, bigint>()
@@ -119,7 +119,7 @@ export function getDepositInfo(tx: Transaction): DepositInfo {
   }
 }
 
-// we assume that the tx is a simple transfer tx, i.e. isALPHTransferTx(tx) || isTokenTransferTx(tx)
+// we assume that the tx is a simple transfer tx, i.e. isOXMTransferTx(tx) || isTokenTransferTx(tx)
 export function getSenderAddress(tx: Transaction): Address {
   return getAddressFromUnlockScript(tx.unsigned.inputs[0].unlockScript)
 }
@@ -162,7 +162,7 @@ export function getAddressFromUnlockScript(unlockScript: string): Address {
   throw new Error('Invalid unlock script type')
 }
 
-function checkALPHOutput(tx: Transaction): boolean {
+function checkOXMOutput(tx: Transaction): boolean {
   const outputs = tx.unsigned.fixedOutputs
   return outputs.every((o) => o.tokens.length === 0)
 }

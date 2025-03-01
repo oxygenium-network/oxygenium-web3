@@ -22,7 +22,7 @@ import {
   subContractId,
   binToHex,
   codec,
-  ONE_ALPH,
+  ONE_OXM,
   addressFromContractId,
   hexToString,
   ContractFactory
@@ -151,7 +151,7 @@ describe('nft collection', function () {
             royaltyRate,
             totalSupply: 0n
           },
-          initialAttoOxmAmount: 2n * ONE_ALPH
+          initialAttoOxmAmount: 2n * ONE_OXM
         })
       ).contractInstance
 
@@ -160,11 +160,11 @@ describe('nft collection', function () {
           await _nftCollectionInstance.view.royaltyAmount({
             args: {
               tokenId: nftTemplateId,
-              salePrice: ONE_ALPH
+              salePrice: ONE_OXM
             }
           })
         ).returns
-      ).toEqual((ONE_ALPH * royaltyRate) / 10000n)
+      ).toEqual((ONE_OXM * royaltyRate) / 10000n)
       nftCollectionInstance = _nftCollectionInstance
     } else {
       nftCollectionInstance = (
@@ -196,18 +196,18 @@ describe('nft collection', function () {
       expect(await nodeProvider.guessFollowsNFTCollectionWithRoyaltyStd(nftCollectionInstance.contractId)).toEqual(true)
 
       const balanceBefore = await nodeProvider.addresses.getAddressesAddressBalance(nftCollectionInstance.address)
-      expect(balanceBefore.balanceHint).toEqual('2 ALPH')
+      expect(balanceBefore.balanceHint).toEqual('2 OXM')
       await WithdrawNFTCollectionTest.execute(signer, {
         initialFields: {
           collection: nftCollectionInstance.contractId,
-          amount: ONE_ALPH
+          amount: ONE_OXM
         }
       })
       const balanceAfter = await nodeProvider.addresses.getAddressesAddressBalance(nftCollectionInstance.address)
-      expect(balanceAfter.balanceHint).toEqual('1 ALPH')
+      expect(balanceAfter.balanceHint).toEqual('1 OXM')
 
       for (let i = 0n; i < 10n; i++) {
-        const nftPrice = 100n * ONE_ALPH
+        const nftPrice = 100n * ONE_OXM
         const nftContractId = subContractId(nftCollectionInstance.contractId, binToHex(codec.u256Codec.encode(i)), 0)
         const royaltyAmount = await nodeProvider.fetchNFTRoyaltyAmount(
           nftCollectionInstance.contractId,
@@ -232,7 +232,7 @@ describe('nft collection', function () {
         uri: nftUri,
         royalty
       },
-      attoOxmAmount: 2n * ONE_ALPH
+      attoOxmAmount: 2n * ONE_OXM
     })
 
     const nftContractId = subContractId(nftCollectionTest.contractId, binToHex(codec.u256Codec.encode(tokenIndex)), 0)

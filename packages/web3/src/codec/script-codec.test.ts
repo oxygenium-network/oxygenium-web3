@@ -50,7 +50,7 @@ describe('Encode & decode scripts', function () {
         Contract Faucet() {
          @using(assetsInContract = true)
          pub fn withdraw() -> () {
-           transferTokenFromSelf!(callerAddress!(), ALPH, dustAmount!())
+           transferTokenFromSelf!(callerAddress!(), OXM, dustAmount!())
            transferTokenFromSelf!(callerAddress!(), selfTokenId!(), 10)
          }
        }

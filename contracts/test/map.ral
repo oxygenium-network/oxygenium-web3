@@ -38,7 +38,7 @@ Contract MapTest() {
 Contract MapTestWrapper(inner: MapTest) {
   @using(preapprovedAssets = true, checkExternalCaller = false)
   pub fn insert(key: Address, value: MapValue) -> () {
-    inner.insert{key -> ALPH: mapEntryDeposit!() * 3}(key, value)
+    inner.insert{key -> OXM: mapEntryDeposit!() * 3}(key, value)
   }
 
   @using(checkExternalCaller = false)
@@ -53,7 +53,7 @@ Contract MapTestWrapper(inner: MapTest) {
 }
 
 TxScript InsertIntoMap(mapTest: MapTest, from: Address, value: MapValue) {
-  mapTest.insert{from -> ALPH: mapEntryDeposit!() * 3}(from, value)
+  mapTest.insert{from -> OXM: mapEntryDeposit!() * 3}(from, value)
 }
 
 TxScript RemoveFromMap(mapTest: MapTest, key: Address) {
@@ -69,13 +69,13 @@ Contract MapTestSub(mapTestTemplateId: ByteVec) {
   pub fn init(caller: Address, value: MapValue) -> ByteVec {
     let path = b`map:` ++ toByteVec!(caller)
     let (encodedImmFields, encodedMutFields) = MapTest.encodeFields!()
-    let mapTestId = copyCreateSubContract!{caller -> ALPH: minimalContractDeposit!()}(
+    let mapTestId = copyCreateSubContract!{caller -> OXM: minimalContractDeposit!()}(
       path,
       mapTestTemplateId,
       encodedImmFields,
       encodedMutFields
     )
-    MapTest(mapTestId).insert{caller -> ALPH: mapEntryDeposit!() * 3}(caller, value)
+    MapTest(mapTestId).insert{caller -> OXM: mapEntryDeposit!() * 3}(caller, value)
     return mapTestId
   }
 }

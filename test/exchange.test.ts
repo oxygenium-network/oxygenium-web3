@@ -21,14 +21,14 @@ import { getSigners, transfer } from '@oxygenium/web3-test'
 import {
   Address,
   web3,
-  ONE_ALPH,
+  ONE_OXM,
   NodeProvider,
   prettifyAttoOxmAmount,
   node,
   sleep,
   TOTAL_NUMBER_OF_GROUPS,
-  ALPH_TOKEN_ID,
-  getALPHDepositInfo,
+  OXM_TOKEN_ID,
+  getOXMDepositInfo,
   groupOfAddress,
   BlockSubscription,
   waitForTxConfirmation
@@ -36,7 +36,7 @@ import {
 import * as bip39 from 'bip39'
 import { testPrivateKey } from '@oxygenium/web3-test'
 
-const WithdrawFee = ONE_ALPH
+const WithdrawFee = ONE_OXM
 
 async function getGasFee(txIds: string[]): Promise<bigint> {
   const nodeProvider = web3.getCurrentNodeProvider()
@@ -85,7 +85,7 @@ class User {
 
   async deposit(amount: bigint) {
     console.log(`deposit ${prettifyAttoOxmAmount(amount)} to ${this.depositAddress}`)
-    return transfer(this.wallet, this.depositAddress, ALPH_TOKEN_ID, amount).then((result) => {
+    return transfer(this.wallet, this.depositAddress, OXM_TOKEN_ID, amount).then((result) => {
       this.depositTxs.push(result.txId)
       return result
     })
@@ -141,7 +141,7 @@ class Exchange {
   async handleBlocks(blocks: node.BlockEntry[]) {
     for (const block of blocks) {
       for (const tx of block.transactions) {
-        const infos = getALPHDepositInfo(tx).filter((v) => this.hotAddresses.includes(v.targetAddress))
+        const infos = getOXMDepositInfo(tx).filter((v) => this.hotAddresses.includes(v.targetAddress))
         if (infos.length > 0) {
           for (const { targetAddress, depositAmount } of infos) {
             await this.handleDepositInfo(targetAddress, depositAmount)
@@ -196,7 +196,7 @@ class Exchange {
     if (balance < amount + WithdrawFee) {
       throw new Error('Not enough balance')
     }
-    const result = await transfer(this.wallet, user.address, ALPH_TOKEN_ID, amount)
+    const result = await transfer(this.wallet, user.address, OXM_TOKEN_ID, amount)
     await waitForTxConfirmation(result.txId, 1, 1000)
     this.withdrawTxs.push(result.txId)
     const remain = balance - (amount + WithdrawFee)
@@ -236,7 +236,7 @@ describe('exchange', function () {
   it('should test exchange', async () => {
     const nodeProvider = new NodeProvider('http://127.0.0.1:22973')
     web3.setCurrentNodeProvider(nodeProvider)
-    const initialBalance = ONE_ALPH * 100n
+    const initialBalance = ONE_OXM * 100n
     const userNumPerGroup = 10
     const userNum = userNumPerGroup * TOTAL_NUMBER_OF_GROUPS
 
@@ -256,7 +256,7 @@ describe('exchange', function () {
     const depositTimes = 5
     for (let i = 0; i < depositTimes; i++) {
       const promises0 = users.map((user) => {
-        const amount = randomBigInt(ONE_ALPH * 2n, ONE_ALPH * 10n)
+        const amount = randomBigInt(ONE_OXM * 2n, ONE_OXM * 10n)
         return user.deposit(amount)
       })
 
@@ -281,7 +281,7 @@ describe('exchange', function () {
     expect(depositTxs0.length).toEqual(depositTxNumber)
 
     const testWallet = new PrivateKeyWallet({ privateKey: testPrivateKey })
-    const poolReward = ONE_ALPH
+    const poolReward = ONE_OXM
     let poolRewardTxNumber = 0
     for (let i = 0; i < TOTAL_NUMBER_OF_GROUPS; i++) {
       console.log(`pool reward tx, group: ${i}`)
@@ -289,7 +289,7 @@ describe('exchange', function () {
         .filter((u) => groupOfAddress(u.depositAddress) === i)
         .map((u) => ({
           address: u.depositAddress,
-          attoOxmAmount: ONE_ALPH.toString()
+          attoOxmAmount: ONE_OXM.toString()
         }))
       if (destinations.length > 0) {
         const result = await testWallet.signAndSubmitTransferTx({
@@ -328,7 +328,7 @@ describe('exchange', function () {
     const withdrawTimes = 5
     for (let index = 0; index < withdrawTimes - 1; index++) {
       for (const user of users) {
-        await exchange.withdraw(user, ONE_ALPH)
+        await exchange.withdraw(user, ONE_OXM)
         const balanceInExchange = exchange.getBalance(user.depositAddress)
         const gasFee = await user.getDepositGasFee()
         const userBalance = await nodeProvider.addresses.getAddressesAddressBalance(user.address)

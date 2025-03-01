@@ -19,8 +19,8 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 export {
   validateExchangeAddress,
   getSenderAddress,
-  isALPHTransferTx,
-  getALPHDepositInfo,
+  isOXMTransferTx,
+  getOXMDepositInfo,
   BaseDepositInfo,
   TokenDepositInfo,
   DepositInfo,

@@ -17,7 +17,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
 import { DappTransactionBuilder, SignTransferChainedTxParams, subscribeToTxStatus } from '../packages/web3'
-import { node, ONE_ALPH, DUST_AMOUNT, MINIMAL_CONTRACT_DEPOSIT } from '../packages/web3'
+import { node, ONE_OXM, DUST_AMOUNT, MINIMAL_CONTRACT_DEPOSIT } from '../packages/web3'
 import { SubscribeOptions, sleep } from '../packages/web3'
 import { web3 } from '../packages/web3'
 import { TxStatus } from '../packages/web3'
@@ -25,7 +25,7 @@ import { HDWallet, HDWalletAccount, PrivateKeyWallet, generateMnemonic } from '@
 import { Add, Sub, AddMain, Transact, Deposit, DepositToken } from '../artifacts/ts'
 import { getSigner, mintToken, testPrivateKeyWallet } from '../packages/web3-test'
 import { TransactionBuilder } from '../packages/web3'
-import { ALPH_TOKEN_ID } from '../packages/web3'
+import { OXM_TOKEN_ID } from '../packages/web3'
 import { Balance } from '@oxygenium/web3/src/api/api-oxygenium'
 
 describe('transactions', function () {
@@ -89,7 +89,7 @@ describe('transactions', function () {
     await signer.signAndSubmitTransferTx({
       signerAddress: genesisAccount.address,
       signerKeyType: genesisAccount.keyType,
-      destinations: [{ address: schnorrSigner.address, attoOxmAmount: 10n * ONE_ALPH }]
+      destinations: [{ address: schnorrSigner.address, attoOxmAmount: 10n * ONE_OXM }]
     })
 
     const subInstance = (await Sub.deploy(schnorrSigner, { initialFields: { result: 0n } })).contractInstance
@@ -114,7 +114,7 @@ describe('transactions', function () {
 
     await testPrivateKeyWallet.signAndSubmitTransferTx({
       signerAddress: testPrivateKeyWallet.address,
-      destinations: [{ address: account1.address, attoOxmAmount: 100n * ONE_ALPH }]
+      destinations: [{ address: account1.address, attoOxmAmount: 100n * ONE_OXM }]
     })
 
     return [wallet, account1, account2, account3]
@@ -129,7 +129,7 @@ describe('transactions', function () {
     const transferFrom1To2: SignTransferChainedTxParams = {
       signerAddress: account1.address,
       destinations: [
-        { address: account2.address, attoOxmAmount: 10n * ONE_ALPH, tokens: [{ id: tokenId, amount: 10n }] }
+        { address: account2.address, attoOxmAmount: 10n * ONE_OXM, tokens: [{ id: tokenId, amount: 10n }] }
       ],
       type: 'Transfer'
     }
@@ -137,7 +137,7 @@ describe('transactions', function () {
     const transferFrom2To3: SignTransferChainedTxParams = {
       signerAddress: account2.address,
       destinations: [
-        { address: account3.address, attoOxmAmount: 5n * ONE_ALPH, tokens: [{ id: tokenId, amount: 5n }] }
+        { address: account3.address, attoOxmAmount: 5n * ONE_OXM, tokens: [{ id: tokenId, amount: 5n }] }
       ],
       type: 'Transfer'
     }
@@ -157,9 +157,9 @@ describe('transactions', function () {
 
     const gasCostTransferFrom1To2 = BigInt(signedTransferFrom1To2.gasAmount) * BigInt(signedTransferFrom1To2.gasPrice)
     const gasCostTransferFrom2To3 = BigInt(signedTransferFrom2To3.gasAmount) * BigInt(signedTransferFrom2To3.gasPrice)
-    const expectedAccount1OxmBalance = 100n * ONE_ALPH - 10n * ONE_ALPH - gasCostTransferFrom1To2 + DUST_AMOUNT
-    const expectedAccount2OxmBalance = 10n * ONE_ALPH - 5n * ONE_ALPH - gasCostTransferFrom2To3
-    const expectedAccount3OxmBalance = 5n * ONE_ALPH
+    const expectedAccount1OxmBalance = 100n * ONE_OXM - 10n * ONE_OXM - gasCostTransferFrom1To2 + DUST_AMOUNT
+    const expectedAccount2OxmBalance = 10n * ONE_OXM - 5n * ONE_OXM - gasCostTransferFrom2To3
+    const expectedAccount3OxmBalance = 5n * ONE_OXM
 
     expect(BigInt(account1Balance.balance)).toBe(expectedAccount1OxmBalance)
     expect(BigInt(account2Balance.balance)).toBe(expectedAccount2OxmBalance)
@@ -175,8 +175,8 @@ describe('transactions', function () {
 
     await wallet.setSelectedAccount(account2.address)
     const deployTxParams = await Transact.contract.txParamsForDeployment(wallet, {
-      initialAttoOxmAmount: ONE_ALPH,
-      initialFields: { tokenId: ALPH_TOKEN_ID, totalALPH: 0n, totalTokens: 0n }
+      initialAttoOxmAmount: ONE_OXM,
+      initialFields: { tokenId: OXM_TOKEN_ID, totalOXM: 0n, totalTokens: 0n }
     })
     expect(deployTxParams.signerAddress).toBe(account2.address)
 
@@ -186,7 +186,7 @@ describe('transactions', function () {
 
     const transferTxParams: SignTransferChainedTxParams = {
       signerAddress: account1.address,
-      destinations: [{ address: account2.address, attoOxmAmount: 10n * ONE_ALPH }],
+      destinations: [{ address: account2.address, attoOxmAmount: 10n * ONE_OXM }],
       type: 'Transfer'
     }
 
@@ -200,8 +200,8 @@ describe('transactions', function () {
 
     const transferTxGasCost = BigInt(transferResult.gasAmount) * BigInt(transferResult.gasPrice)
     const deployTxGasCost = BigInt(deployResult.gasAmount) * BigInt(deployResult.gasPrice)
-    const expectedAccount1Balance = 100n * ONE_ALPH - 10n * ONE_ALPH - transferTxGasCost
-    const expectedAccount2Balance = 10n * ONE_ALPH - deployTxGasCost - ONE_ALPH
+    const expectedAccount1Balance = 100n * ONE_OXM - 10n * ONE_OXM - transferTxGasCost
+    const expectedAccount2Balance = 10n * ONE_OXM - deployTxGasCost - ONE_OXM
 
     expect(BigInt(account1Balance.balance)).toBe(expectedAccount1Balance)
     expect(BigInt(account2Balance.balance)).toBe(expectedAccount2Balance)
@@ -209,7 +209,7 @@ describe('transactions', function () {
     const deployTransaction = await nodeProvider.transactions.getTransactionsDetailsTxid(deployResult.txId)
     const contractAddress = deployTransaction.generatedOutputs[0].address
     const contractBalance = await nodeProvider.addresses.getAddressesAddressBalance(contractAddress)
-    expect(BigInt(contractBalance.balance)).toBe(ONE_ALPH)
+    expect(BigInt(contractBalance.balance)).toBe(ONE_OXM)
   })
 
   it('should build chain txs that interact with dApp in another group', async () => {
@@ -217,11 +217,11 @@ describe('transactions', function () {
     const [wallet, account1, account2] = await prepareChainedTxTest()
 
     // Deploy contract in group 2
-    const deployer = await getSigner(100n * ONE_ALPH, 2)
+    const deployer = await getSigner(100n * ONE_OXM, 2)
     const { tokenId } = await mintToken(account1.address, 10n)
     const deploy = await Transact.deploy(deployer, {
-      initialAttoOxmAmount: ONE_ALPH,
-      initialFields: { tokenId, totalALPH: 0n, totalTokens: 0n }
+      initialAttoOxmAmount: ONE_OXM,
+      initialFields: { tokenId, totalOXM: 0n, totalTokens: 0n }
     })
     const transactInstance = deploy.contractInstance
     expect(transactInstance.groupIndex).toBe(2)
@@ -229,7 +229,7 @@ describe('transactions', function () {
     await wallet.setSelectedAccount(account2.address)
     const depositOxmTxParams = await Deposit.script.txParamsForExecution(wallet, {
       initialFields: { c: transactInstance.contractId },
-      attoOxmAmount: ONE_ALPH
+      attoOxmAmount: ONE_OXM
     })
     expect(depositOxmTxParams.signerAddress).toBe(account2.address)
     await expect(wallet.signAndSubmitExecuteScriptTx(depositOxmTxParams)).rejects.toThrow(
@@ -249,7 +249,7 @@ describe('transactions', function () {
     const transferTxParams: SignTransferChainedTxParams = {
       signerAddress: account1.address,
       destinations: [
-        { address: account2.address, attoOxmAmount: 10n * ONE_ALPH, tokens: [{ id: tokenId, amount: 5n }] }
+        { address: account2.address, attoOxmAmount: 10n * ONE_OXM, tokens: [{ id: tokenId, amount: 5n }] }
       ],
       type: 'Transfer'
     }
@@ -267,9 +267,9 @@ describe('transactions', function () {
     const transferTxGasCost = BigInt(transferResult.gasAmount) * BigInt(transferResult.gasPrice)
     const depositOxmTxGasCost = BigInt(depositOxmResult.gasAmount) * BigInt(depositOxmResult.gasPrice)
     const depositTokenTxGasCost = BigInt(depositTokenResult.gasAmount) * BigInt(depositTokenResult.gasPrice)
-    const expectedAccount1OxmBalance = 100n * ONE_ALPH - 10n * ONE_ALPH - transferTxGasCost + DUST_AMOUNT
-    const expectedAccount2OxmBalance = 10n * ONE_ALPH - depositOxmTxGasCost - depositTokenTxGasCost - ONE_ALPH
-    const expectedContractBalance = ONE_ALPH * 2n
+    const expectedAccount1OxmBalance = 100n * ONE_OXM - 10n * ONE_OXM - transferTxGasCost + DUST_AMOUNT
+    const expectedAccount2OxmBalance = 10n * ONE_OXM - depositOxmTxGasCost - depositTokenTxGasCost - ONE_OXM
+    const expectedContractBalance = ONE_OXM * 2n
 
     expect(BigInt(account1Balance.balance)).toBe(expectedAccount1OxmBalance)
     expect(BigInt(account2Balance.balance)).toBe(expectedAccount2OxmBalance)
@@ -278,24 +278,24 @@ describe('transactions', function () {
     expect(tokenBalance(account2Balance, tokenId)).toBeUndefined()
 
     const contractState = await transactInstance.fetchState()
-    expect(contractState.fields.totalALPH).toEqual(ONE_ALPH)
+    expect(contractState.fields.totalOXM).toEqual(ONE_OXM)
   })
 
   it('should fail when public keys do not match the build chained transactions parameters', async () => {
     const nodeProvider = web3.getCurrentNodeProvider()
-    const signer1 = await getSigner(100n * ONE_ALPH, 1)
+    const signer1 = await getSigner(100n * ONE_OXM, 1)
     const signer2 = await getSigner(0n, 2)
     const signer3 = await getSigner(0n, 3)
 
     const transferFrom1To2: SignTransferChainedTxParams = {
       signerAddress: signer1.address,
-      destinations: [{ address: signer2.address, attoOxmAmount: 10n * ONE_ALPH }],
+      destinations: [{ address: signer2.address, attoOxmAmount: 10n * ONE_OXM }],
       type: 'Transfer'
     }
 
     const transferFrom2To3: SignTransferChainedTxParams = {
       signerAddress: signer2.address,
-      destinations: [{ address: signer3.address, attoOxmAmount: 5n * ONE_ALPH }],
+      destinations: [{ address: signer3.address, attoOxmAmount: 5n * ONE_OXM }],
       type: 'Transfer'
     }
 
@@ -329,7 +329,7 @@ describe('transactions', function () {
     let alphBalance = BigInt(initBalance.balance)
     const result0 = await Transact.deploy(signer, {
       initialAttoOxmAmount: MINIMAL_CONTRACT_DEPOSIT,
-      initialFields: { tokenId, totalALPH: 0n, totalTokens: 0n }
+      initialFields: { tokenId, totalOXM: 0n, totalTokens: 0n }
     })
     const contractAddress0 = result0.contractInstance.address
     const builder = new DappTransactionBuilder(signer.address)
@@ -338,17 +338,17 @@ describe('transactions', function () {
         contractAddress: contractAddress0,
         methodIndex: 0, // Transact.depositOxm
         args: [],
-        attoOxmAmount: ONE_ALPH
+        attoOxmAmount: ONE_OXM
       })
       .getResult()
     const tx0 = await signer.signAndSubmitExecuteScriptTx(unsignedTx0)
     const balance0 = await nodeProvider.addresses.getAddressesAddressBalance(signer.address)
-    expect(BigInt(tokenBalance(balance0, tokenId)!)).toEqual(ONE_ALPH * 10n)
+    expect(BigInt(tokenBalance(balance0, tokenId)!)).toEqual(ONE_OXM * 10n)
     expect(BigInt(balance0.balance)).toEqual(
       alphBalance -
         MINIMAL_CONTRACT_DEPOSIT -
         BigInt(result0.gasAmount) * BigInt(result0.gasPrice) -
-        ONE_ALPH -
+        ONE_OXM -
         BigInt(tx0.gasAmount) * BigInt(tx0.gasPrice)
     )
     alphBalance = BigInt(balance0.balance)
@@ -363,13 +363,13 @@ describe('transactions', function () {
         contractAddress: contractAddress0,
         methodIndex: 0, // Transact.depositOxm
         args: [],
-        attoOxmAmount: ONE_ALPH
+        attoOxmAmount: ONE_OXM
       })
       .callContract({
         contractAddress: contractAddress0,
         methodIndex: 2, // Transact.depositToken
-        args: [ONE_ALPH],
-        tokens: [{ id: tokenId, amount: ONE_ALPH }]
+        args: [ONE_OXM],
+        tokens: [{ id: tokenId, amount: ONE_OXM }]
       })
       .callContract({
         contractAddress: contractAddress1,
@@ -380,12 +380,12 @@ describe('transactions', function () {
       .getResult()
     const tx1 = await signer.signAndSubmitExecuteScriptTx(unsignedTx1)
     const balance1 = await nodeProvider.addresses.getAddressesAddressBalance(signer.address)
-    expect(BigInt(tokenBalance(balance1, tokenId)!)).toEqual(ONE_ALPH * 9n)
+    expect(BigInt(tokenBalance(balance1, tokenId)!)).toEqual(ONE_OXM * 9n)
     expect(BigInt(balance1.balance)).toEqual(
       alphBalance -
         MINIMAL_CONTRACT_DEPOSIT -
         BigInt(result1.gasAmount) * BigInt(result1.gasPrice) -
-        ONE_ALPH -
+        ONE_OXM -
         BigInt(tx1.gasAmount) * BigInt(tx1.gasPrice)
     )
 

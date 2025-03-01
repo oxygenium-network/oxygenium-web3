@@ -4,8 +4,8 @@ TxScript MintNFTTest(
     royalty: Bool
 ) {
     if (royalty) {
-        NFTCollectionWithRoyaltyTest(nftCollectionContractId).mint{callerAddress!() -> ALPH: 1 alph}(uri)
+        NFTCollectionWithRoyaltyTest(nftCollectionContractId).mint{callerAddress!() -> OXM: 1 alph}(uri)
     } else {
-        NFTCollectionTest(nftCollectionContractId).mint{callerAddress!() -> ALPH: 1 alph}(uri)
+        NFTCollectionTest(nftCollectionContractId).mint{callerAddress!() -> OXM: 1 alph}(uri)
     }
 }

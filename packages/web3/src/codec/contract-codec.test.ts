@@ -194,7 +194,7 @@ describe('Encode & decode contract', function () {
             0, // price1CumulativeLast
             0  // totalSupply
           )
-          let pairId = copyCreateSubContractWithToken!{payer -> ALPH: alphAmount}(
+          let pairId = copyCreateSubContractWithToken!{payer -> OXM: alphAmount}(
             token0Id ++ token1Id,
             pairTemplateId,
             encodedImmutableFields,

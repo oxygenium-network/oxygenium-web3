@@ -14,12 +14,12 @@ Contract NFTCollectionWithRoyaltyTest(
 
     @using(assetsInContract = true, preapprovedAssets = true, checkExternalCaller = false)
     pub fn payRoyalty(payer: Address, amount: U256) -> () {
-        transferTokenToSelf!(payer, ALPH, amount)
+        transferTokenToSelf!(payer, OXM, amount)
     }
 
     @using(assetsInContract = true, checkExternalCaller = false)
     pub fn withdrawRoyalty(recipient: Address, amount: U256) -> () {
         checkCaller!(callerAddress!() == collectionOwner, ErrorCodes.CollectionOwnerAllowedOnly)
-        transferTokenFromSelf!(recipient, ALPH, amount)
+        transferTokenFromSelf!(recipient, OXM, amount)
     }
 }

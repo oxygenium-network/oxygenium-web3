@@ -30,12 +30,12 @@ export interface IPrettifyNumberConfig {
   maxDecimalPlaces: number
   /** significant digits to show in decimals while respecting decimal places */
   minDecimalSignificantDigits: number
-  /** special case for zero, e.g. we may want to display $0.00 or 0.0 ALPH */
+  /** special case for zero, e.g. we may want to display $0.00 or 0.0 OXM */
   decimalPlacesWhenZero: number
 }
 
 export const prettifyNumberConfig: Record<string, IPrettifyNumberConfig> = {
-  ALPH: {
+  OXM: {
     minDecimalPlaces: 2,
     maxDecimalPlaces: 10,
     minDecimalSignificantDigits: 2,
@@ -56,7 +56,7 @@ export const prettifyNumberConfig: Record<string, IPrettifyNumberConfig> = {
 }
 
 export function prettifyAttoOxmAmount(amount: Number256): string | undefined {
-  return prettifyNumber(amount, 18, prettifyNumberConfig.ALPH)
+  return prettifyNumber(amount, 18, prettifyNumberConfig.OXM)
 }
 
 export function prettifyTokenAmount(amount: Number256, decimals: number): string | undefined {
@@ -153,7 +153,7 @@ export function convertAmountWithDecimals(amount: string | number, decimals: num
   }
 }
 
-// E.g. `1.23` ALPH will be converted to `1230000000000000000`
+// E.g. `1.23` OXM will be converted to `1230000000000000000`
 export function convertOxmAmountWithDecimals(amount: string | number): bigint | undefined {
   return convertAmountWithDecimals(amount, 18)
 }

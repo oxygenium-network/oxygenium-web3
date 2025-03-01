@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { ONE_ALPH } from '../constants'
+import { ONE_OXM } from '../constants'
 import { TraceableError } from '../error'
 import { NodeProvider, isBalanceEqual, node } from './index'
 
@@ -35,9 +35,9 @@ describe('utils', function () {
 
   test('is balance equal', () => {
     const b0: node.Balance = {
-      balance: ONE_ALPH.toString(),
+      balance: ONE_OXM.toString(),
       balanceHint: '',
-      lockedBalance: ONE_ALPH.toString(),
+      lockedBalance: ONE_OXM.toString(),
       lockedBalanceHint: '',
       utxoNum: 1
     }

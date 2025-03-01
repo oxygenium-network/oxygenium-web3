@@ -20,9 +20,9 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 import basex from 'base-x'
 import { TraceableError } from '../error'
 
-const ALPHABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
+const OXMABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
 
-export const bs58 = basex(ALPHABET)
+export const bs58 = basex(OXMABET)
 
 export function isBase58(s: string): boolean {
   if (s === '' || s.trim() === '') {

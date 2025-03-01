@@ -31,7 +31,7 @@ import {
 } from '../codec'
 import { base58ToBytes, hexToBinUnsafe } from '../utils'
 import { lockupScriptCodec } from '../codec/lockup-script-codec'
-import { ALPH_TOKEN_ID, ONE_ALPH } from '../constants'
+import { OXM_TOKEN_ID, ONE_OXM } from '../constants'
 
 describe('dapp-tx-builder', function () {
   it('should gen code for args', () => {
@@ -106,7 +106,7 @@ describe('dapp-tx-builder', function () {
     expect(() =>
       builder.callContract({
         ...commonParams,
-        tokens: [{ id: ALPH_TOKEN_ID, amount: -1n }]
+        tokens: [{ id: OXM_TOKEN_ID, amount: -1n }]
       })
     ).toThrow('Invalid token amount')
 
@@ -119,16 +119,16 @@ describe('dapp-tx-builder', function () {
     const result1 = builder
       .callContract({
         ...commonParams,
-        attoOxmAmount: ONE_ALPH,
+        attoOxmAmount: ONE_OXM,
         tokens: [
-          { id: ALPH_TOKEN_ID, amount: ONE_ALPH },
-          { id: tokenId0, amount: ONE_ALPH },
+          { id: OXM_TOKEN_ID, amount: ONE_OXM },
+          { id: tokenId0, amount: ONE_OXM },
           { id: tokenId1, amount: 0n }
         ]
       })
       .getResult()
-    expect(result1.attoOxmAmount).toEqual(ONE_ALPH * 2n)
-    expect(result1.tokens).toEqual([{ id: tokenId0, amount: ONE_ALPH }])
+    expect(result1.attoOxmAmount).toEqual(ONE_OXM * 2n)
+    expect(result1.tokens).toEqual([{ id: tokenId0, amount: ONE_OXM }])
 
     const result2 = builder
       .callContract({
@@ -136,22 +136,22 @@ describe('dapp-tx-builder', function () {
         attoOxmAmount: 0n,
         tokens: [
           { id: tokenId0, amount: 0n },
-          { id: tokenId1, amount: ONE_ALPH }
+          { id: tokenId1, amount: ONE_OXM }
         ]
       })
       .callContract({
         ...commonParams,
-        attoOxmAmount: ONE_ALPH,
+        attoOxmAmount: ONE_OXM,
         tokens: [
-          { id: tokenId0, amount: ONE_ALPH },
-          { id: tokenId1, amount: ONE_ALPH }
+          { id: tokenId0, amount: ONE_OXM },
+          { id: tokenId1, amount: ONE_OXM }
         ]
       })
       .getResult()
-    expect(result2.attoOxmAmount).toEqual(ONE_ALPH)
+    expect(result2.attoOxmAmount).toEqual(ONE_OXM)
     expect(result2.tokens).toEqual([
-      { id: tokenId1, amount: ONE_ALPH * 2n },
-      { id: tokenId0, amount: ONE_ALPH }
+      { id: tokenId1, amount: ONE_OXM * 2n },
+      { id: tokenId0, amount: ONE_OXM }
     ])
   })
 })

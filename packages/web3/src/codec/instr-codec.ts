@@ -210,7 +210,7 @@ export type Instr =
   | { name: 'NullContractAddress'; code: 0xca }
   | { name: 'SubContractId'; code: 0xcb }
   | { name: 'SubContractIdOf'; code: 0xcc }
-  | { name: 'ALPHTokenId'; code: 0xcd }
+  | { name: 'OXMTokenId'; code: 0xcd }
   | { name: 'LoadImmField'; code: 0xce; index: number }
   | { name: 'LoadImmFieldByIndex'; code: 0xcf }
   | { name: 'PayGasFee'; code: 0xd0 }
@@ -453,7 +453,7 @@ export const CopyCreateSubContractAndTransferToken: Instr = {
 export const NullContractAddress: Instr = { name: 'NullContractAddress', code: 0xca }
 export const SubContractId: Instr = { name: 'SubContractId', code: 0xcb }
 export const SubContractIdOf: Instr = { name: 'SubContractIdOf', code: 0xcc }
-export const ALPHTokenId: Instr = { name: 'ALPHTokenId', code: 0xcd }
+export const OXMTokenId: Instr = { name: 'OXMTokenId', code: 0xcd }
 export const LoadImmField: (index: number) => Instr = (index: number) => {
   return { name: 'LoadImmField', code: 0xce, index }
 }
@@ -847,7 +847,7 @@ export class InstrCodec extends Codec<Instr> {
         return new Uint8Array([0xcb])
       case 'SubContractIdOf':
         return new Uint8Array([0xcc])
-      case 'ALPHTokenId':
+      case 'OXMTokenId':
         return new Uint8Array([0xcd])
       case 'LoadImmField':
         return new Uint8Array([0xce, ...byteCodec.encode(instr.index)])
@@ -1241,7 +1241,7 @@ export class InstrCodec extends Codec<Instr> {
       case 0xcc:
         return SubContractIdOf
       case 0xcd:
-        return ALPHTokenId
+        return OXMTokenId
       case 0xce:
         return LoadImmField(byteCodec._decode(input))
       case 0xcf:

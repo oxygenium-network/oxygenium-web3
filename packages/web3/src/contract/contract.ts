@@ -61,7 +61,7 @@ import {
 import { contractIdFromAddress, groupOfAddress, addressFromContractId, subContractId } from '../address'
 import { getCurrentNodeProvider } from '../global'
 import { EventSubscribeOptions, EventSubscription, subscribeToEvents } from './events'
-import { MINIMAL_CONTRACT_DEPOSIT, ONE_ALPH, TOTAL_NUMBER_OF_GROUPS } from '../constants'
+import { MINIMAL_CONTRACT_DEPOSIT, ONE_OXM, TOTAL_NUMBER_OF_GROUPS } from '../constants'
 import * as blake from 'blakejs'
 import { isContractDebugMessageEnabled } from '../debug'
 import {
@@ -973,7 +973,7 @@ export interface TestContractParams<
   txId?: string
   initialFields: F
   initialMaps?: M
-  initialAsset?: Asset // default 1 ALPH
+  initialAsset?: Asset // default 1 OXM
   testArgs: A
   existingContracts?: ContractStateWithMaps[] // default no existing contracts
   inputAssets?: InputAsset[] // default no input asserts
@@ -1304,7 +1304,7 @@ export function addStdIdToFields<F extends Fields>(
   contract: Contract,
   fields: F
 ): F | (F & { __stdInterfaceId: HexString }) {
-  const stdInterfaceIdPrefix = '414c5048' // the hex of 'ALPH'
+  const stdInterfaceIdPrefix = '414c5048' // the hex of 'OXM'
   return contract.stdInterfaceId === undefined
     ? fields
     : { ...fields, __stdInterfaceId: stdInterfaceIdPrefix + contract.stdInterfaceId }
@@ -1401,7 +1401,7 @@ function mapToExistingContracts(
       contractId: contractId,
       fieldsSig: getContractFieldsSig(valueType),
       fields,
-      asset: { alphAmount: ONE_ALPH }
+      asset: { alphAmount: ONE_OXM }
     }
   })
 }

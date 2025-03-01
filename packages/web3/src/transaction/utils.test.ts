@@ -18,7 +18,7 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 
 import { getSigner, getSigners } from '@oxygenium/web3-test'
 import { groupIndexOfTransaction } from './utils'
-import { ONE_ALPH, TOTAL_NUMBER_OF_GROUPS } from '../constants'
+import { ONE_OXM, TOTAL_NUMBER_OF_GROUPS } from '../constants'
 import { bs58, hexToBinUnsafe } from '../utils'
 import { unsignedTxCodec } from '../codec'
 import { groupOfAddress } from '../address'
@@ -39,7 +39,7 @@ describe('transaction utils', () => {
 
     const tx = await signer1.buildTransferTx({
       signerAddress: fromAccount.address,
-      destinations: [{ address: toAccount.address, attoOxmAmount: ONE_ALPH }]
+      destinations: [{ address: toAccount.address, attoOxmAmount: ONE_OXM }]
     })
 
     const unsignedTx = unsignedTxCodec.decode(hexToBinUnsafe(tx.unsignedTx))
@@ -62,7 +62,7 @@ describe('transaction utils', () => {
       // Transfer to multisig address
       const toMultiSig = await signer1.signAndSubmitTransferTx({
         signerAddress: fromAccount.address,
-        destinations: [{ address: multisigAddress, attoOxmAmount: ONE_ALPH * 10n }]
+        destinations: [{ address: multisigAddress, attoOxmAmount: ONE_OXM * 10n }]
       })
       const unsignedTx = unsignedTxCodec.decode(hexToBinUnsafe(toMultiSig.unsignedTx))
       const [fromGroup, toGroup] = groupIndexOfTransaction(unsignedTx)
@@ -75,7 +75,7 @@ describe('transaction utils', () => {
       const fromMultiSig = await nodeProvider.multisig.postMultisigBuild({
         fromAddress: multisigAddress,
         fromPublicKeys: [signer1.publicKey, signer2.publicKey],
-        destinations: [{ address: signer1.address, attoOxmAmount: ONE_ALPH.toString() }]
+        destinations: [{ address: signer1.address, attoOxmAmount: ONE_OXM.toString() }]
       })
       const unsignedTx = unsignedTxCodec.decode(hexToBinUnsafe(fromMultiSig.unsignedTx))
       const [fromGroup, toGroup] = groupIndexOfTransaction(unsignedTx)
@@ -95,7 +95,7 @@ describe('transaction utils', () => {
       // Transfer to schnorr address
       const toSchnorrAddressResult = await signer1.signAndSubmitTransferTx({
         signerAddress: fromAccount.address,
-        destinations: [{ address: schnorrSigner.address, attoOxmAmount: ONE_ALPH }]
+        destinations: [{ address: schnorrSigner.address, attoOxmAmount: ONE_OXM }]
       })
 
       const unsignedTx = unsignedTxCodec.decode(hexToBinUnsafe(toSchnorrAddressResult.unsignedTx))
@@ -110,7 +110,7 @@ describe('transaction utils', () => {
       const fromSchnorrAddressResult = await schnorrSigner.signAndSubmitTransferTx({
         signerAddress: schnorrSigner.address,
         signerKeyType: 'bip340-schnorr',
-        destinations: [{ address: fromAccount.address, attoOxmAmount: ONE_ALPH / 2n }]
+        destinations: [{ address: fromAccount.address, attoOxmAmount: ONE_OXM / 2n }]
       })
 
       const unsignedTx = unsignedTxCodec.decode(hexToBinUnsafe(fromSchnorrAddressResult.unsignedTx))

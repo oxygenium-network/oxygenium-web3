@@ -36,7 +36,7 @@ import {
 } from '../codec'
 import { LockupScript, lockupScriptCodec } from '../codec/lockup-script-codec'
 import { scriptCodec } from '../codec/script-codec'
-import { ALPH_TOKEN_ID } from '../constants'
+import { OXM_TOKEN_ID } from '../constants'
 import { TraceableError } from '../error'
 import { SignExecuteScriptTxParams } from '../signer'
 import { base58ToBytes, binToHex, HexString, hexToBinUnsafe, isBase58, isHexString } from '../utils'
@@ -78,7 +78,7 @@ export class DappTransactionBuilder {
       throw new Error(`Invalid method index: ${params.methodIndex}`)
     }
 
-    const allTokens = (params.tokens ?? []).concat([{ id: ALPH_TOKEN_ID, amount: params.attoOxmAmount ?? 0n }])
+    const allTokens = (params.tokens ?? []).concat([{ id: OXM_TOKEN_ID, amount: params.attoOxmAmount ?? 0n }])
     const instrs = [
       ...genApproveAssets(this.callerLockupScript, this.approveTokens(allTokens)),
       ...genContractCall(params.contractAddress, params.methodIndex, params.args, params.retLength ?? 0)
@@ -107,8 +107,8 @@ export class DappTransactionBuilder {
       signerAddress: this.callerAddress,
       signerKeyType: this.callerLockupScript.kind === 'P2PKH' ? 'default' : 'bip340-schnorr',
       bytecode: binToHex(bytecode),
-      attoOxmAmount: tokens.find((t) => t.id === ALPH_TOKEN_ID)?.amount,
-      tokens: tokens.filter((t) => t.id !== ALPH_TOKEN_ID)
+      attoOxmAmount: tokens.find((t) => t.id === OXM_TOKEN_ID)?.amount,
+      tokens: tokens.filter((t) => t.id !== OXM_TOKEN_ID)
     }
   }
 
@@ -142,7 +142,7 @@ function genApproveAssets(callerLockupScript: LockupScript, tokens: { id: HexStr
     return []
   }
   const approveInstrs = tokens.flatMap((token) => {
-    if (token.id === ALPH_TOKEN_ID) {
+    if (token.id === OXM_TOKEN_ID) {
       return [U256Const(token.amount), ApproveOxm]
     } else {
       const tokenId = BytesConst(hexToBinUnsafe(token.id))

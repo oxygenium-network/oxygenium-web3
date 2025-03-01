@@ -21,9 +21,9 @@ import { FixedAssetOutput, OutputRef, Transaction, UnsignedTx } from '../api/api
 import {
   getAddressFromUnlockScript,
   getSenderAddress,
-  getALPHDepositInfo,
+  getOXMDepositInfo,
   validateExchangeAddress,
-  isALPHTransferTx,
+  isOXMTransferTx,
   getDepositInfo,
   isTransferTx
 } from './exchange'
@@ -136,10 +136,10 @@ describe('exchange', function () {
     scriptSignatures: []
   }
 
-  it('should validate deposit ALPH transaction', () => {
-    expect(isALPHTransferTx(txTemplate)).toEqual(true)
+  it('should validate deposit OXM transaction', () => {
+    expect(isOXMTransferTx(txTemplate)).toEqual(true)
     expect(getSenderAddress(txTemplate)).toEqual(fromAddress)
-    expect(getALPHDepositInfo(txTemplate)).toEqual([{ targetAddress: exchangeAddress, depositAmount: 10n }])
+    expect(getOXMDepositInfo(txTemplate)).toEqual([{ targetAddress: exchangeAddress, depositAmount: 10n }])
 
     const tx0: Transaction = { ...txTemplate, unsigned: { ...unsignedTxTemplate, scriptOpt: '00112233' } }
     const tx1: Transaction = { ...txTemplate, contractInputs: [outputRef] }
@@ -149,7 +149,7 @@ describe('exchange', function () {
       ...txTemplate,
       unsigned: { ...unsignedTxTemplate, fixedOutputs: [{ ...outputTemplate, tokens: [{ id: '00', amount: '10' }] }] }
     }
-    ;[tx0, tx1, tx2, tx3, tx4].forEach((tx) => expect(isALPHTransferTx(tx)).toEqual(false))
+    ;[tx0, tx1, tx2, tx3, tx4].forEach((tx) => expect(isOXMTransferTx(tx)).toEqual(false))
 
     const multipleTargetAddressOutputTx: Transaction = {
       ...txTemplate,
@@ -158,7 +158,7 @@ describe('exchange', function () {
         fixedOutputs: [...unsignedTxTemplate.fixedOutputs, { ...outputTemplate, address: exchangeAddress }]
       }
     }
-    expect(getALPHDepositInfo(multipleTargetAddressOutputTx)).toEqual([
+    expect(getOXMDepositInfo(multipleTargetAddressOutputTx)).toEqual([
       {
         targetAddress: exchangeAddress,
         depositAmount: 20n
@@ -172,7 +172,7 @@ describe('exchange', function () {
         fixedOutputs: [unsignedTxTemplate.fixedOutputs[2], { ...outputTemplate, address: exchangeAddress }]
       }
     }
-    expect(getALPHDepositInfo(sweepTx)).toEqual([
+    expect(getOXMDepositInfo(sweepTx)).toEqual([
       {
         targetAddress: exchangeAddress,
         depositAmount: 20n
@@ -193,7 +193,7 @@ describe('exchange', function () {
         ]
       }
     }
-    expect(getALPHDepositInfo(poolRewardTx)).toEqual([
+    expect(getOXMDepositInfo(poolRewardTx)).toEqual([
       {
         targetAddress: exchangeAddress,
         depositAmount: 20n
@@ -213,7 +213,7 @@ describe('exchange', function () {
       fixedOutputs: unsignedTxTemplate.fixedOutputs.map((o) => ({ ...tokenOutputTemplate, address: o.address }))
     }
     const tokenTxTemplate = { ...txTemplate, unsigned: unsignedTokenTxTemplate }
-    expect(isALPHTransferTx(tokenTxTemplate)).toEqual(false)
+    expect(isOXMTransferTx(tokenTxTemplate)).toEqual(false)
     expect(isTransferTx(tokenTxTemplate)).toEqual(true)
     expect(isTransferTx(txTemplate)).toEqual(true)
     expect(getSenderAddress(tokenTxTemplate)).toEqual(fromAddress)
