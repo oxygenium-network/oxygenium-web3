@@ -5,7 +5,8 @@
     "@oxygenium/cli": "workspace:*",
     "@oxygenium/web3": "workspace:*",
     "@oxygenium/web3-test": "workspace:*",
-    "@oxygenium/web3-wallet": "workspace:*"
+    "@oxygenium/web3-wallet": "workspace:*",
+    "readable-stream": "^4.7.0"
   },
   "devDependencies": {
     "@swc/core": "^1.11.5",
