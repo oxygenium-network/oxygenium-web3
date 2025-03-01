@@ -167,14 +167,14 @@ export type Instr =
   | { name: 'GroupOfAddress'; code: 0x8c }
   | { name: 'LoadMutField'; code: 0xa0; index: number }
   | { name: 'StoreMutField'; code: 0xa1; index: number }
-  | { name: 'ApproveAlph'; code: 0xa2 }
+  | { name: 'ApproveOxm'; code: 0xa2 }
   | { name: 'ApproveToken'; code: 0xa3 }
-  | { name: 'AlphRemaining'; code: 0xa4 }
+  | { name: 'OxmRemaining'; code: 0xa4 }
   | { name: 'TokenRemaining'; code: 0xa5 }
   | { name: 'IsPaying'; code: 0xa6 }
-  | { name: 'TransferAlph'; code: 0xa7 }
-  | { name: 'TransferAlphFromSelf'; code: 0xa8 }
-  | { name: 'TransferAlphToSelf'; code: 0xa9 }
+  | { name: 'TransferOxm'; code: 0xa7 }
+  | { name: 'TransferOxmFromSelf'; code: 0xa8 }
+  | { name: 'TransferOxmToSelf'; code: 0xa9 }
   | { name: 'TransferToken'; code: 0xaa }
   | { name: 'TransferTokenFromSelf'; code: 0xab }
   | { name: 'TransferTokenToSelf'; code: 0xac }
@@ -407,14 +407,14 @@ export const LoadMutField: (index: number) => Instr = (index: number) => {
 export const StoreMutField: (index: number) => Instr = (index: number) => {
   return { name: 'StoreMutField', code: 0xa1, index }
 }
-export const ApproveAlph: Instr = { name: 'ApproveAlph', code: 0xa2 }
+export const ApproveOxm: Instr = { name: 'ApproveOxm', code: 0xa2 }
 export const ApproveToken: Instr = { name: 'ApproveToken', code: 0xa3 }
-export const AlphRemaining: Instr = { name: 'AlphRemaining', code: 0xa4 }
+export const OxmRemaining: Instr = { name: 'OxmRemaining', code: 0xa4 }
 export const TokenRemaining: Instr = { name: 'TokenRemaining', code: 0xa5 }
 export const IsPaying: Instr = { name: 'IsPaying', code: 0xa6 }
-export const TransferAlph: Instr = { name: 'TransferAlph', code: 0xa7 }
-export const TransferAlphFromSelf: Instr = { name: 'TransferAlphFromSelf', code: 0xa8 }
-export const TransferAlphToSelf: Instr = { name: 'TransferAlphToSelf', code: 0xa9 }
+export const TransferOxm: Instr = { name: 'TransferOxm', code: 0xa7 }
+export const TransferOxmFromSelf: Instr = { name: 'TransferOxmFromSelf', code: 0xa8 }
+export const TransferOxmToSelf: Instr = { name: 'TransferOxmToSelf', code: 0xa9 }
 export const TransferToken: Instr = { name: 'TransferToken', code: 0xaa }
 export const TransferTokenFromSelf: Instr = { name: 'TransferTokenFromSelf', code: 0xab }
 export const TransferTokenToSelf: Instr = { name: 'TransferTokenToSelf', code: 0xac }
@@ -761,21 +761,21 @@ export class InstrCodec extends Codec<Instr> {
         return new Uint8Array([0xa0, ...byteCodec.encode(instr.index)])
       case 'StoreMutField':
         return new Uint8Array([0xa1, ...byteCodec.encode(instr.index)])
-      case 'ApproveAlph':
+      case 'ApproveOxm':
         return new Uint8Array([0xa2])
       case 'ApproveToken':
         return new Uint8Array([0xa3])
-      case 'AlphRemaining':
+      case 'OxmRemaining':
         return new Uint8Array([0xa4])
       case 'TokenRemaining':
         return new Uint8Array([0xa5])
       case 'IsPaying':
         return new Uint8Array([0xa6])
-      case 'TransferAlph':
+      case 'TransferOxm':
         return new Uint8Array([0xa7])
-      case 'TransferAlphFromSelf':
+      case 'TransferOxmFromSelf':
         return new Uint8Array([0xa8])
-      case 'TransferAlphToSelf':
+      case 'TransferOxmToSelf':
         return new Uint8Array([0xa9])
       case 'TransferToken':
         return new Uint8Array([0xaa])
@@ -1155,21 +1155,21 @@ export class InstrCodec extends Codec<Instr> {
       case 0xa1:
         return StoreMutField(byteCodec._decode(input))
       case 0xa2:
-        return ApproveAlph
+        return ApproveOxm
       case 0xa3:
         return ApproveToken
       case 0xa4:
-        return AlphRemaining
+        return OxmRemaining
       case 0xa5:
         return TokenRemaining
       case 0xa6:
         return IsPaying
       case 0xa7:
-        return TransferAlph
+        return TransferOxm
       case 0xa8:
-        return TransferAlphFromSelf
+        return TransferOxmFromSelf
       case 0xa9:
-        return TransferAlphToSelf
+        return TransferOxmToSelf
       case 0xaa:
         return TransferToken
       case 0xab:

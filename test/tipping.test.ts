@@ -16,7 +16,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with the library. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import { NodeProvider, convertAlphAmountWithDecimals, number256ToNumber, DEFAULT_GAS_ALPH_AMOUNT } from '@oxygenium/web3'
+import { NodeProvider, convertOxmAmountWithDecimals, number256ToNumber, DEFAULT_GAS_ALPH_AMOUNT } from '@oxygenium/web3'
 import { testNodeWallet } from '@oxygenium/web3-test'
 import { PrivateKeyWallet, deriveHDWalletPrivateKey } from '@oxygenium/web3-wallet'
 import * as bip39 from 'bip39'
@@ -65,14 +65,14 @@ class TippingBot {
     const fromUserWallet = this.getUserWallet(fromUserId)
     const toUserAddress = this.getUserAddress(toUserId)
 
-    const attoAlphAmount = convertAlphAmountWithDecimals(amount)
-    if (attoAlphAmount === undefined) {
+    const attoOxmAmount = convertOxmAmountWithDecimals(amount)
+    if (attoOxmAmount === undefined) {
       throw new Error(`Invalid amount ${amount}`)
     }
 
     await fromUserWallet.signAndSubmitTransferTx({
       signerAddress: fromUserWallet.address,
-      destinations: [{ address: toUserAddress, attoAlphAmount }]
+      destinations: [{ address: toUserAddress, attoOxmAmount }]
     })
   }
 }
@@ -96,7 +96,7 @@ describe('tippingbot', function () {
       await testWallet.signAndSubmitTransferTx({
         signerAddress: (await testWallet.getSelectedAccount()).address,
         destinations: [
-          { address: tippingBot.getUserAddress(user), attoAlphAmount: convertAlphAmountWithDecimals('1.0')! }
+          { address: tippingBot.getUserAddress(user), attoOxmAmount: convertOxmAmountWithDecimals('1.0')! }
         ]
       })
     }

@@ -89,7 +89,7 @@ describe('transactions', function () {
     await signer.signAndSubmitTransferTx({
       signerAddress: genesisAccount.address,
       signerKeyType: genesisAccount.keyType,
-      destinations: [{ address: schnorrSigner.address, attoAlphAmount: 10n * ONE_ALPH }]
+      destinations: [{ address: schnorrSigner.address, attoOxmAmount: 10n * ONE_ALPH }]
     })
 
     const subInstance = (await Sub.deploy(schnorrSigner, { initialFields: { result: 0n } })).contractInstance
@@ -114,7 +114,7 @@ describe('transactions', function () {
 
     await testPrivateKeyWallet.signAndSubmitTransferTx({
       signerAddress: testPrivateKeyWallet.address,
-      destinations: [{ address: account1.address, attoAlphAmount: 100n * ONE_ALPH }]
+      destinations: [{ address: account1.address, attoOxmAmount: 100n * ONE_ALPH }]
     })
 
     return [wallet, account1, account2, account3]
@@ -129,7 +129,7 @@ describe('transactions', function () {
     const transferFrom1To2: SignTransferChainedTxParams = {
       signerAddress: account1.address,
       destinations: [
-        { address: account2.address, attoAlphAmount: 10n * ONE_ALPH, tokens: [{ id: tokenId, amount: 10n }] }
+        { address: account2.address, attoOxmAmount: 10n * ONE_ALPH, tokens: [{ id: tokenId, amount: 10n }] }
       ],
       type: 'Transfer'
     }
@@ -137,7 +137,7 @@ describe('transactions', function () {
     const transferFrom2To3: SignTransferChainedTxParams = {
       signerAddress: account2.address,
       destinations: [
-        { address: account3.address, attoAlphAmount: 5n * ONE_ALPH, tokens: [{ id: tokenId, amount: 5n }] }
+        { address: account3.address, attoOxmAmount: 5n * ONE_ALPH, tokens: [{ id: tokenId, amount: 5n }] }
       ],
       type: 'Transfer'
     }
@@ -157,13 +157,13 @@ describe('transactions', function () {
 
     const gasCostTransferFrom1To2 = BigInt(signedTransferFrom1To2.gasAmount) * BigInt(signedTransferFrom1To2.gasPrice)
     const gasCostTransferFrom2To3 = BigInt(signedTransferFrom2To3.gasAmount) * BigInt(signedTransferFrom2To3.gasPrice)
-    const expectedAccount1AlphBalance = 100n * ONE_ALPH - 10n * ONE_ALPH - gasCostTransferFrom1To2 + DUST_AMOUNT
-    const expectedAccount2AlphBalance = 10n * ONE_ALPH - 5n * ONE_ALPH - gasCostTransferFrom2To3
-    const expectedAccount3AlphBalance = 5n * ONE_ALPH
+    const expectedAccount1OxmBalance = 100n * ONE_ALPH - 10n * ONE_ALPH - gasCostTransferFrom1To2 + DUST_AMOUNT
+    const expectedAccount2OxmBalance = 10n * ONE_ALPH - 5n * ONE_ALPH - gasCostTransferFrom2To3
+    const expectedAccount3OxmBalance = 5n * ONE_ALPH
 
-    expect(BigInt(account1Balance.balance)).toBe(expectedAccount1AlphBalance)
-    expect(BigInt(account2Balance.balance)).toBe(expectedAccount2AlphBalance)
-    expect(BigInt(account3Balance.balance)).toBe(expectedAccount3AlphBalance)
+    expect(BigInt(account1Balance.balance)).toBe(expectedAccount1OxmBalance)
+    expect(BigInt(account2Balance.balance)).toBe(expectedAccount2OxmBalance)
+    expect(BigInt(account3Balance.balance)).toBe(expectedAccount3OxmBalance)
     expect(tokenBalance(account1Balance, tokenId)).toBeUndefined()
     expect(tokenBalance(account2Balance, tokenId)).toBe('5')
     expect(tokenBalance(account3Balance, tokenId)).toBe('5')
@@ -175,7 +175,7 @@ describe('transactions', function () {
 
     await wallet.setSelectedAccount(account2.address)
     const deployTxParams = await Transact.contract.txParamsForDeployment(wallet, {
-      initialAttoAlphAmount: ONE_ALPH,
+      initialAttoOxmAmount: ONE_ALPH,
       initialFields: { tokenId: ALPH_TOKEN_ID, totalALPH: 0n, totalTokens: 0n }
     })
     expect(deployTxParams.signerAddress).toBe(account2.address)
@@ -186,7 +186,7 @@ describe('transactions', function () {
 
     const transferTxParams: SignTransferChainedTxParams = {
       signerAddress: account1.address,
-      destinations: [{ address: account2.address, attoAlphAmount: 10n * ONE_ALPH }],
+      destinations: [{ address: account2.address, attoOxmAmount: 10n * ONE_ALPH }],
       type: 'Transfer'
     }
 
@@ -220,25 +220,25 @@ describe('transactions', function () {
     const deployer = await getSigner(100n * ONE_ALPH, 2)
     const { tokenId } = await mintToken(account1.address, 10n)
     const deploy = await Transact.deploy(deployer, {
-      initialAttoAlphAmount: ONE_ALPH,
+      initialAttoOxmAmount: ONE_ALPH,
       initialFields: { tokenId, totalALPH: 0n, totalTokens: 0n }
     })
     const transactInstance = deploy.contractInstance
     expect(transactInstance.groupIndex).toBe(2)
 
     await wallet.setSelectedAccount(account2.address)
-    const depositAlphTxParams = await Deposit.script.txParamsForExecution(wallet, {
+    const depositOxmTxParams = await Deposit.script.txParamsForExecution(wallet, {
       initialFields: { c: transactInstance.contractId },
-      attoAlphAmount: ONE_ALPH
+      attoOxmAmount: ONE_ALPH
     })
-    expect(depositAlphTxParams.signerAddress).toBe(account2.address)
-    await expect(wallet.signAndSubmitExecuteScriptTx(depositAlphTxParams)).rejects.toThrow(
+    expect(depositOxmTxParams.signerAddress).toBe(account2.address)
+    await expect(wallet.signAndSubmitExecuteScriptTx(depositOxmTxParams)).rejects.toThrow(
       `[API Error] - Insufficient funds for gas`
     )
 
     const depositTokenTxParams = await DepositToken.script.txParamsForExecution(wallet, {
       initialFields: { c: transactInstance.contractId, tokenId, amount: 5n },
-      attoAlphAmount: DUST_AMOUNT,
+      attoOxmAmount: DUST_AMOUNT,
       tokens: [{ id: tokenId, amount: 5n }]
     })
     expect(depositTokenTxParams.signerAddress).toBe(account2.address)
@@ -249,14 +249,14 @@ describe('transactions', function () {
     const transferTxParams: SignTransferChainedTxParams = {
       signerAddress: account1.address,
       destinations: [
-        { address: account2.address, attoAlphAmount: 10n * ONE_ALPH, tokens: [{ id: tokenId, amount: 5n }] }
+        { address: account2.address, attoOxmAmount: 10n * ONE_ALPH, tokens: [{ id: tokenId, amount: 5n }] }
       ],
       type: 'Transfer'
     }
 
-    const [transferResult, depositAlphResult, depositTokenResult] = await wallet.signAndSubmitChainedTx([
+    const [transferResult, depositOxmResult, depositTokenResult] = await wallet.signAndSubmitChainedTx([
       transferTxParams,
-      { ...depositAlphTxParams, type: 'ExecuteScript' },
+      { ...depositOxmTxParams, type: 'ExecuteScript' },
       { ...depositTokenTxParams, type: 'ExecuteScript' }
     ])
 
@@ -265,14 +265,14 @@ describe('transactions', function () {
     const contractBalance = await nodeProvider.addresses.getAddressesAddressBalance(transactInstance.address)
 
     const transferTxGasCost = BigInt(transferResult.gasAmount) * BigInt(transferResult.gasPrice)
-    const depositAlphTxGasCost = BigInt(depositAlphResult.gasAmount) * BigInt(depositAlphResult.gasPrice)
+    const depositOxmTxGasCost = BigInt(depositOxmResult.gasAmount) * BigInt(depositOxmResult.gasPrice)
     const depositTokenTxGasCost = BigInt(depositTokenResult.gasAmount) * BigInt(depositTokenResult.gasPrice)
-    const expectedAccount1AlphBalance = 100n * ONE_ALPH - 10n * ONE_ALPH - transferTxGasCost + DUST_AMOUNT
-    const expectedAccount2AlphBalance = 10n * ONE_ALPH - depositAlphTxGasCost - depositTokenTxGasCost - ONE_ALPH
+    const expectedAccount1OxmBalance = 100n * ONE_ALPH - 10n * ONE_ALPH - transferTxGasCost + DUST_AMOUNT
+    const expectedAccount2OxmBalance = 10n * ONE_ALPH - depositOxmTxGasCost - depositTokenTxGasCost - ONE_ALPH
     const expectedContractBalance = ONE_ALPH * 2n
 
-    expect(BigInt(account1Balance.balance)).toBe(expectedAccount1AlphBalance)
-    expect(BigInt(account2Balance.balance)).toBe(expectedAccount2AlphBalance)
+    expect(BigInt(account1Balance.balance)).toBe(expectedAccount1OxmBalance)
+    expect(BigInt(account2Balance.balance)).toBe(expectedAccount2OxmBalance)
     expect(BigInt(contractBalance.balance)).toBe(expectedContractBalance)
     expect(tokenBalance(account1Balance, tokenId)).toBe('5')
     expect(tokenBalance(account2Balance, tokenId)).toBeUndefined()
@@ -289,13 +289,13 @@ describe('transactions', function () {
 
     const transferFrom1To2: SignTransferChainedTxParams = {
       signerAddress: signer1.address,
-      destinations: [{ address: signer2.address, attoAlphAmount: 10n * ONE_ALPH }],
+      destinations: [{ address: signer2.address, attoOxmAmount: 10n * ONE_ALPH }],
       type: 'Transfer'
     }
 
     const transferFrom2To3: SignTransferChainedTxParams = {
       signerAddress: signer2.address,
-      destinations: [{ address: signer3.address, attoAlphAmount: 5n * ONE_ALPH }],
+      destinations: [{ address: signer3.address, attoOxmAmount: 5n * ONE_ALPH }],
       type: 'Transfer'
     }
 
@@ -328,7 +328,7 @@ describe('transactions', function () {
     const initBalance = await nodeProvider.addresses.getAddressesAddressBalance(signer.address)
     let alphBalance = BigInt(initBalance.balance)
     const result0 = await Transact.deploy(signer, {
-      initialAttoAlphAmount: MINIMAL_CONTRACT_DEPOSIT,
+      initialAttoOxmAmount: MINIMAL_CONTRACT_DEPOSIT,
       initialFields: { tokenId, totalALPH: 0n, totalTokens: 0n }
     })
     const contractAddress0 = result0.contractInstance.address
@@ -336,9 +336,9 @@ describe('transactions', function () {
     const unsignedTx0 = builder
       .callContract({
         contractAddress: contractAddress0,
-        methodIndex: 0, // Transact.depositAlph
+        methodIndex: 0, // Transact.depositOxm
         args: [],
-        attoAlphAmount: ONE_ALPH
+        attoOxmAmount: ONE_ALPH
       })
       .getResult()
     const tx0 = await signer.signAndSubmitExecuteScriptTx(unsignedTx0)
@@ -354,16 +354,16 @@ describe('transactions', function () {
     alphBalance = BigInt(balance0.balance)
 
     const result1 = await Sub.deploy(signer, {
-      initialAttoAlphAmount: MINIMAL_CONTRACT_DEPOSIT,
+      initialAttoOxmAmount: MINIMAL_CONTRACT_DEPOSIT,
       initialFields: { result: 0n }
     })
     const contractAddress1 = result1.contractInstance.address
     const unsignedTx1 = builder
       .callContract({
         contractAddress: contractAddress0,
-        methodIndex: 0, // Transact.depositAlph
+        methodIndex: 0, // Transact.depositOxm
         args: [],
-        attoAlphAmount: ONE_ALPH
+        attoOxmAmount: ONE_ALPH
       })
       .callContract({
         contractAddress: contractAddress0,

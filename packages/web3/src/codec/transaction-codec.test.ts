@@ -33,7 +33,7 @@ describe('Encode & decode transactions', function () {
       {
         hint: -140898739,
         key: 'a739ddff0dc02d9b49623a70baf4392b25478ddcc463b7873fbb7d54ec253e9e',
-        attoAlphAmount: '2500000000000000000',
+        attoOxmAmount: '2500000000000000000',
         address: '12WhBVry3PXzTyCm389eSZMVsDSQZjGh5csv6CPrNfgtz',
         tokens: [],
         lockTime: 1700264919275,
@@ -72,7 +72,7 @@ describe('Encode & decode transactions', function () {
       {
         hint: -1578566257,
         key: 'dda5408fb70d885622915c9dc953ab06d629dbbcc008fbcfe32a2d6a64430f17',
-        attoAlphAmount: '1000000000000000',
+        attoOxmAmount: '1000000000000000',
         address: '1EZea7zsGoh5wwDo1Dfsb7wEXwvhbcYf9rb3ZY5zbErAh',
         tokens: [
           {
@@ -86,7 +86,7 @@ describe('Encode & decode transactions', function () {
       {
         hint: -1188069109,
         key: '56f8073906894cf1917dfaf972d98d8be6891bf4786a621049ad52c845dba00c',
-        attoAlphAmount: '1000000000000000',
+        attoOxmAmount: '1000000000000000',
         address: '1H8jQaMZDnGjU3mZTRmEtYXh7ex6qaBqeQnk6tpicUvcj',
         tokens: [
           {
@@ -100,7 +100,7 @@ describe('Encode & decode transactions', function () {
       {
         hint: -1188069109,
         key: 'c664dfa9855bab63399a762cf99e768d96c98b8f3f24abf0eb79dc39568a80f0',
-        attoAlphAmount: '19996738000000000000',
+        attoOxmAmount: '19996738000000000000',
         address: '1H8jQaMZDnGjU3mZTRmEtYXh7ex6qaBqeQnk6tpicUvcj',
         tokens: [],
         lockTime: 0,
@@ -163,7 +163,7 @@ describe('Encode & decode transactions', function () {
       {
         hint: 372105921,
         key: '75aca42781ac293b8ffcd3d241085a5bedf519df6bafa847f5d613c97fa48ef0',
-        attoAlphAmount: '1000000000000000',
+        attoOxmAmount: '1000000000000000',
         address: '12aH6to1JQxDFsvJ89jtFCnKEcub5ew8x2EABGEDMTYyK',
         tokens: [
           {
@@ -177,7 +177,7 @@ describe('Encode & decode transactions', function () {
       {
         hint: 372105921,
         key: 'e0f425509fb1bd1209dc67dc150e3173f03954a27838f04b751a79a8dc63858b',
-        attoAlphAmount: '147139601147343278389',
+        attoOxmAmount: '147139601147343278389',
         address: '12aH6to1JQxDFsvJ89jtFCnKEcub5ew8x2EABGEDMTYyK',
         tokens: [],
         lockTime: 0,
@@ -190,7 +190,7 @@ describe('Encode & decode transactions', function () {
         type: 'ContractOutput',
         hint: 639485753, // note me
         key: '75aca42781ac293b8ffcd3d241085a5bedf519df6bafa847f5d613c97fa48ef0',
-        attoAlphAmount: '1000000000000000000',
+        attoOxmAmount: '1000000000000000000',
         address: 'zst5zMzizEeFYFis6DNSknY5GCYTpM85D3yXeRLe2ug3',
         tokens: [
           {
@@ -207,7 +207,7 @@ describe('Encode & decode transactions', function () {
         type: 'AssetOutput',
         hint: 372105921,
         key: 'e0f425509fb1bd1209dc67dc150e3173f03954a27838f04b751a79a8dc63858b',
-        attoAlphAmount: '1000000000000000',
+        attoOxmAmount: '1000000000000000',
         address: '12aH6to1JQxDFsvJ89jtFCnKEcub5ew8x2EABGEDMTYyK',
         tokens: [
           {
@@ -222,7 +222,7 @@ describe('Encode & decode transactions', function () {
         type: 'AssetOutput',
         hint: 372105921,
         key: 'f677e5e6611f1c8ced9cffd0f2a972689d6058dbbd368963d215cf4ea7afffea',
-        attoAlphAmount: '2000000000000000',
+        attoOxmAmount: '2000000000000000',
         address: '12aH6to1JQxDFsvJ89jtFCnKEcub5ew8x2EABGEDMTYyK',
         tokens: [],
         lockTime: 0,
@@ -265,7 +265,7 @@ describe('Encode & decode transactions', function () {
       {
         hint: -1979423717,
         key: 'acbabe13cc0332ef21663933b6d997e7152fbcac0848d9527156e9d27d784978',
-        attoAlphAmount: '2046000000000000000000',
+        attoOxmAmount: '2046000000000000000000',
         address: '16iXJwgCBjYn6jmsXwAXXQGJHbiAA2NZonirA8nxYR7x5',
         tokens: [],
         lockTime: 0,
@@ -274,7 +274,7 @@ describe('Encode & decode transactions', function () {
       {
         hint: -99304209,
         key: '7f840908c0c960aba891629f607858dfe37b56f60e1640b3309a3ecc539926ae',
-        attoAlphAmount: '54532000000000000000000',
+        attoOxmAmount: '54532000000000000000000',
         address: '14t6xiWEwJZ97U2UC9HjZUtVCMZm9f4D2XXchkT6ZeRro',
         tokens: [],
         lockTime: 0,
@@ -283,7 +283,7 @@ describe('Encode & decode transactions', function () {
       {
         hint: 2014035297,
         key: 'b17c481869e4f7e3bb526d9ff3194aa8cb0b709418f353233f420c05f56f7081',
-        attoAlphAmount: '84478921628000002359296',
+        attoOxmAmount: '84478921628000002359296',
         address:
           'X1YV9KRRCS4JEN2pd9c7mdqGcEKXKSUEobsekxkzZFWVheAmCE8VcZVGgMjgaLpsXdyqhZPjQrC2uN8FyZsu1ACstPyGb65gAeZZQmk5jYzXAPN2WRo2QpFXEy5jPwMAmB68bj',
         tokens: [],

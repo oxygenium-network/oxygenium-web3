@@ -20,7 +20,7 @@ import { Contract, web3, decodeArrayType, hexToBinUnsafe, binToHex } from '@oxyg
 import { Method } from './method-codec'
 import { contractCodec } from './contract-codec'
 import {
-  ApproveAlph,
+  ApproveOxm,
   AssertWithErrorCode,
   BoolAnd,
   ByteVecConcat,
@@ -285,7 +285,7 @@ describe('Encode & decode contract', function () {
             StoreLocal(7),
             LoadLocal(0),
             LoadLocal(1),
-            ApproveAlph,
+            ApproveOxm,
             LoadLocal(4),
             LoadLocal(5),
             ByteVecConcat,

@@ -611,7 +611,7 @@ describe('contract', function () {
         from: signer.address,
         value: { id: 1n, balance: 10n }
       },
-      attoAlphAmount: ONE_ALPH * 2n
+      attoOxmAmount: ONE_ALPH * 2n
     })
 
     const invalidAddress = randomContractAddress()
@@ -751,7 +751,7 @@ describe('contract', function () {
         payer: signerAddress
       },
       signer,
-      attoAlphAmount: ONE_ALPH * 2n,
+      attoOxmAmount: ONE_ALPH * 2n,
       tokens: [{ id: sub.contractInstance.contractId, amount: 200n }]
     })
 
@@ -809,7 +809,7 @@ describe('contract', function () {
         from: signer.address,
         value: { id: 1n, balance: 10n }
       },
-      attoAlphAmount: ONE_ALPH * 2n
+      attoOxmAmount: ONE_ALPH * 2n
     })
 
     const callResult0 = await CallScript0.call({ initialFields: { mapTest: mapTest.contractId, key: signer.address } })
@@ -954,11 +954,11 @@ describe('contract', function () {
   it('should test inline functions(integration test)', async () => {
     const deployResult0 = await InlineTest.deploy(signer, {
       initialFields: { count: 0n },
-      initialAttoAlphAmount: ONE_ALPH,
+      initialAttoOxmAmount: ONE_ALPH,
       exposePrivateFunctions: true
     })
     const instance = deployResult0.contractInstance
-    await instance.transact.nextCountWithPay({ signer, attoAlphAmount: ONE_ALPH })
+    await instance.transact.nextCountWithPay({ signer, attoOxmAmount: ONE_ALPH })
     const state0 = await instance.fetchState()
     expect(state0.fields.count).toEqual(1n)
     expect(state0.asset.alphAmount).toEqual(ONE_ALPH + ONE_ALPH / 100n)
@@ -968,7 +968,7 @@ describe('contract', function () {
     expect(state1.fields.count).toEqual(2n)
     expect(state1.asset.alphAmount).toEqual(ONE_ALPH + ONE_ALPH / 100n)
 
-    await instance.transact.nextCount({ signer, attoAlphAmount: ONE_ALPH })
+    await instance.transact.nextCount({ signer, attoOxmAmount: ONE_ALPH })
     const state2 = await instance.fetchState()
     expect(state2.fields.count).toEqual(4n)
     expect(state2.asset.alphAmount).toEqual(ONE_ALPH + (ONE_ALPH / 100n) * 2n)

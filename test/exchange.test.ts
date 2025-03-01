@@ -23,7 +23,7 @@ import {
   web3,
   ONE_ALPH,
   NodeProvider,
-  prettifyAttoAlphAmount,
+  prettifyAttoOxmAmount,
   node,
   sleep,
   TOTAL_NUMBER_OF_GROUPS,
@@ -84,7 +84,7 @@ class User {
   }
 
   async deposit(amount: bigint) {
-    console.log(`deposit ${prettifyAttoAlphAmount(amount)} to ${this.depositAddress}`)
+    console.log(`deposit ${prettifyAttoOxmAmount(amount)} to ${this.depositAddress}`)
     return transfer(this.wallet, this.depositAddress, ALPH_TOKEN_ID, amount).then((result) => {
       this.depositTxs.push(result.txId)
       return result
@@ -191,7 +191,7 @@ class Exchange {
   }
 
   async withdraw(user: User, amount: bigint) {
-    console.log(`withdraw ${prettifyAttoAlphAmount(amount)} to ${user.address}`)
+    console.log(`withdraw ${prettifyAttoOxmAmount(amount)} to ${user.address}`)
     const balance = this.getBalance(user.depositAddress)
     if (balance < amount + WithdrawFee) {
       throw new Error('Not enough balance')
@@ -289,7 +289,7 @@ describe('exchange', function () {
         .filter((u) => groupOfAddress(u.depositAddress) === i)
         .map((u) => ({
           address: u.depositAddress,
-          attoAlphAmount: ONE_ALPH.toString()
+          attoOxmAmount: ONE_ALPH.toString()
         }))
       if (destinations.length > 0) {
         const result = await testWallet.signAndSubmitTransferTx({

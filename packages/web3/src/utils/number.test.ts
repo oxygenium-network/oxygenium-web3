@@ -18,12 +18,12 @@ along with the library. If not, see <http://www.gnu.org/licenses/>.
 import BigNumber from 'bignumber.js'
 
 import {
-  convertAlphAmountWithDecimals,
+  convertOxmAmountWithDecimals,
   convertAmountWithDecimals,
   isNumeric,
   number256ToBigint,
   number256ToNumber,
-  prettifyAttoAlphAmount,
+  prettifyAttoOxmAmount,
   prettifyExactAmount,
   prettifyNumber,
   prettifyNumberConfig,
@@ -45,8 +45,8 @@ describe('prettify number', () => {
         expect(prettifyTokenAmount(test.raw.toString(), test.decimal)).toEqual(test.tokenFormat)
 
         if (test.decimal === 18) {
-          expect(prettifyAttoAlphAmount(test.raw)).toEqual(test.alphFormat)
-          expect(prettifyAttoAlphAmount(test.raw.toString())).toEqual(test.alphFormat)
+          expect(prettifyAttoOxmAmount(test.raw)).toEqual(test.alphFormat)
+          expect(prettifyAttoOxmAmount(test.raw.toString())).toEqual(test.alphFormat)
         }
       }
     })
@@ -84,8 +84,8 @@ describe('convertAmountWithDecimals()', () => {
         expect(convertAmountWithDecimals(parseFloat(test.raw), test.decimals)).toEqual(test.amount)
 
         if (test.decimals === 18) {
-          expect(convertAlphAmountWithDecimals(test.raw)).toEqual(test.amount)
-          expect(convertAlphAmountWithDecimals(parseFloat(test.raw))).toEqual(test.amount)
+          expect(convertOxmAmountWithDecimals(test.raw)).toEqual(test.amount)
+          expect(convertOxmAmountWithDecimals(parseFloat(test.raw))).toEqual(test.amount)
         }
       }
     })

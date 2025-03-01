@@ -35,7 +35,7 @@ export class ContractOutputCodec extends ObjectCodec<ContractOutput> {
   static convertToApiContractOutput(txIdBytes: Uint8Array, output: ContractOutput, index: number): ApiContractOutput {
     const hint = createHint(output.lockupScript)
     const key = binToHex(blakeHash(concatBytes([txIdBytes, intAs4BytesCodec.encode(index)])))
-    const attoAlphAmount = output.amount.toString()
+    const attoOxmAmount = output.amount.toString()
     const address = bs58.encode(new Uint8Array([0x03, ...output.lockupScript]))
     const tokens = output.tokens.map((token) => {
       return {
@@ -43,11 +43,11 @@ export class ContractOutputCodec extends ObjectCodec<ContractOutput> {
         amount: token.amount.toString()
       }
     })
-    return { hint, key, attoAlphAmount, address, tokens, type: 'ContractOutput' }
+    return { hint, key, attoOxmAmount, address, tokens, type: 'ContractOutput' }
   }
 
   static convertToOutput(apiContractOutput: ApiContractOutput): ContractOutput {
-    const amount = BigInt(apiContractOutput.attoAlphAmount)
+    const amount = BigInt(apiContractOutput.attoOxmAmount)
     const lockupScript: P2C = lockupScriptCodec.decode(bs58.decode(apiContractOutput.address)).value as P2C
 
     const tokens = apiContractOutput.tokens.map((token) => {

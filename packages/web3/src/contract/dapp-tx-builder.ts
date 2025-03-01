@@ -20,7 +20,7 @@ import { contractIdFromAddress, isContractAddress } from '../address'
 import { Val } from '../api'
 import {
   AddressConst,
-  ApproveAlph,
+  ApproveOxm,
   ApproveToken,
   BytesConst,
   CallExternal,
@@ -63,7 +63,7 @@ export class DappTransactionBuilder {
     contractAddress: string
     methodIndex: number
     args: Val[]
-    attoAlphAmount?: bigint
+    attoOxmAmount?: bigint
     tokens?: { id: HexString; amount: bigint }[]
     retLength?: number
   }) {
@@ -78,7 +78,7 @@ export class DappTransactionBuilder {
       throw new Error(`Invalid method index: ${params.methodIndex}`)
     }
 
-    const allTokens = (params.tokens ?? []).concat([{ id: ALPH_TOKEN_ID, amount: params.attoAlphAmount ?? 0n }])
+    const allTokens = (params.tokens ?? []).concat([{ id: ALPH_TOKEN_ID, amount: params.attoOxmAmount ?? 0n }])
     const instrs = [
       ...genApproveAssets(this.callerLockupScript, this.approveTokens(allTokens)),
       ...genContractCall(params.contractAddress, params.methodIndex, params.args, params.retLength ?? 0)
@@ -107,7 +107,7 @@ export class DappTransactionBuilder {
       signerAddress: this.callerAddress,
       signerKeyType: this.callerLockupScript.kind === 'P2PKH' ? 'default' : 'bip340-schnorr',
       bytecode: binToHex(bytecode),
-      attoAlphAmount: tokens.find((t) => t.id === ALPH_TOKEN_ID)?.amount,
+      attoOxmAmount: tokens.find((t) => t.id === ALPH_TOKEN_ID)?.amount,
       tokens: tokens.filter((t) => t.id !== ALPH_TOKEN_ID)
     }
   }
@@ -143,7 +143,7 @@ function genApproveAssets(callerLockupScript: LockupScript, tokens: { id: HexStr
   }
   const approveInstrs = tokens.flatMap((token) => {
     if (token.id === ALPH_TOKEN_ID) {
-      return [U256Const(token.amount), ApproveAlph]
+      return [U256Const(token.amount), ApproveOxm]
     } else {
       const tokenId = BytesConst(hexToBinUnsafe(token.id))
       return [tokenId, U256Const(token.amount), ApproveToken]
