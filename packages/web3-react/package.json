@@ -1,6 +1,6 @@
 {
   "name": "@oxygenium/web3-react",
-  "version": "1.11.6",
+  "version": "1.11.7",
   "homepage": "https://github.com/oxygenium-network/oxygenium-web3-react",
   "license": "GPL",
   "description": "React components for Oxygenium Web3.",
