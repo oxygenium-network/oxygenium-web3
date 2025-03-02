@@ -32,14 +32,14 @@
     "@oxygenium/web3-wallet": "workspace:^"
   },
   "devDependencies": {
-    "@types/find-up": "^2.1.1",
-    "@types/fs-extra": "^9.0.13",
-    "@types/jest": "^27.5.2",
-    "@types/mock-fs": "^4.13.1",
-    "@types/rewire": "^2.5.28",
-    "@typescript-eslint/eslint-plugin": "^5.57.0",
-    "@typescript-eslint/parser": "^5.57.0",
-    "crypto-browserify": "^3.12.0"
+    "@types/find-up": "^4.0.2",
+    "@types/fs-extra": "^11.0.4",
+    "@types/jest": "^29.5.14",
+    "@types/mock-fs": "^4.13.4",
+    "@types/rewire": "^2.5.30",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "crypto-browserify": "^3.12.1"
   },
   "engines": {
     "node": ">=16.0.0",
