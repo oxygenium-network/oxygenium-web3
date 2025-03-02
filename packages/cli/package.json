@@ -1,6 +1,6 @@
 {
   "name": "@oxygenium/cli",
-  "version": "1.11.7",
+  "version": "1.12.1",
   "description": "Oxygenium command line tool",
   "license": "GPL",
   "repository": {
